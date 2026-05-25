@@ -1,0 +1,1561 @@
+{
+  "manifestVersion": "1.0",
+  "citySlug": "sao-francisco-do-sul",
+  "dataset": {
+    "metadata": {
+      "datasetId": "dataset-verdes-mares-sfs-2026-04-17T12-00-00-000Z",
+      "createdAt": "2026-04-17T12:00:00.000Z",
+      "sourceName": "Verdes Mares Sao Francisco do Sul",
+      "sourceUrl": "https://vmares.com.br/sao-francisco-do-sul/",
+      "collectionMethod": "manual"
+    },
+    "transportLines": [
+      {
+        "id": "line-0203",
+        "code": "0203",
+        "slug": "0203-ribeira-via-cohab",
+        "name": "Ribeira via Cohab",
+        "operator": "Verdes Mares",
+        "summary": "Linha Centro - Ribeira via Cohab",
+        "routeLabel": "Centro -> Ribeira via Cohab",
+        "originLabel": "Centro",
+        "destinationLabel": "Ribeira via Cohab",
+        "transportMode": "municipal",
+        "operationalStatus": "on-time",
+        "fareSummary": "Tarifa urbana municipal",
+        "amenities": [],
+        "sourceUpdatedAt": "2026-04-17T12:00:00.000Z",
+        "sourceLineRef": "0203",
+        "isActive": true
+      }
+    ],
+    "routeDirections": [
+      {
+        "id": "line-0203-outbound",
+        "lineId": "line-0203",
+        "type": "outbound",
+        "slug": "outbound",
+        "name": "Sa?da do Centro",
+        "routeLabel": "Centro -> Ribeira via Cohab",
+        "originLabel": "Centro",
+        "destinationLabel": "Ribeira via Cohab",
+        "sortOrder": 0,
+        "isLoop": false,
+        "sourceDirectionRef": "outbound"
+      },
+      {
+        "id": "line-0203-inbound",
+        "lineId": "line-0203",
+        "type": "inbound",
+        "slug": "inbound",
+        "name": "Sa?da do Bairro",
+        "routeLabel": "Ribeira via Cohab -> Centro",
+        "originLabel": "Ribeira via Cohab",
+        "destinationLabel": "Centro",
+        "sortOrder": 1,
+        "isLoop": false,
+        "sourceDirectionRef": "inbound"
+      }
+    ],
+    "stops": [
+      {
+        "id": "stop-pra-a-dr-get-lio-vargas-2-m26_2434-m48_6379",
+        "name": "Pra?a Dr. Get?lio Vargas 2",
+        "slug": "pra-a-dr-get-lio-vargas-2",
+        "latitude": -26.243437512602945,
+        "longitude": -48.637910711972246
+      },
+      {
+        "id": "stop-ogmo-sfs-m26_2435-m48_6351",
+        "name": "Ogmo SFS",
+        "slug": "ogmo-sfs",
+        "latitude": -26.24347278215267,
+        "longitude": -48.63506422991534
+      },
+      {
+        "id": "stop-antiga-multipaper-sentido-centro-bairro-m26_2447-m48_6347",
+        "name": "Antiga Multipaper (Sentido Centro/Bairro)",
+        "slug": "antiga-multipaper-sentido-centro-bairro",
+        "latitude": -26.24469900660496,
+        "longitude": -48.63466469668285
+      },
+      {
+        "id": "stop-carioca-bica-d-gua-m26_2466-m48_6355",
+        "name": "Carioca (Bica d'?gua)",
+        "slug": "carioca-bica-d-gua",
+        "latitude": -26.24659710935892,
+        "longitude": -48.63549497664863
+      },
+      {
+        "id": "stop-col-gio-adventista-m26_2478-m48_6373",
+        "name": "Col?gio Adventista",
+        "slug": "col-gio-adventista",
+        "latitude": -26.24783478994036,
+        "longitude": -48.63733216779835
+      },
+      {
+        "id": "stop-restaurante-tom-brasil-m26_2492-m48_6384",
+        "name": "Restaurante Tom Brasil",
+        "slug": "restaurante-tom-brasil",
+        "latitude": -26.24924839021059,
+        "longitude": -48.63840582899403
+      },
+      {
+        "id": "stop-c-mara-de-vereadores-m26_2510-m48_6401",
+        "name": "C?mara de Vereadores",
+        "slug": "c-mara-de-vereadores",
+        "latitude": -26.251027110144122,
+        "longitude": -48.64008949321573
+      },
+      {
+        "id": "stop-imaribo-m26_2518-m48_6418",
+        "name": "Imaribo",
+        "slug": "imaribo",
+        "latitude": -26.25182051476358,
+        "longitude": -48.64179289028009
+      },
+      {
+        "id": "stop-academia-medley-m26_2540-m48_6430",
+        "name": "Academia Medley",
+        "slug": "academia-medley",
+        "latitude": -26.25403773020528,
+        "longitude": -48.64295042848828
+      },
+      {
+        "id": "stop-big-pizza-sentido-centro-bairro-m26_2572-m48_6442",
+        "name": "Big Pizza (Sentido Centro/Bairro)",
+        "slug": "big-pizza-sentido-centro-bairro",
+        "latitude": -26.25715361177297,
+        "longitude": -48.64419478064197
+      },
+      {
+        "id": "stop-frente-n-994-m26_2600-m48_6453",
+        "name": "Frente n? 994",
+        "slug": "frente-n-994",
+        "latitude": -26.260012968859453,
+        "longitude": -48.64525066562247
+      },
+      {
+        "id": "stop-travessa-olaria-em-frente-m26_2628-m48_6453",
+        "name": "Travessa Olaria (em frente)",
+        "slug": "travessa-olaria-em-frente",
+        "latitude": -26.26275729915342,
+        "longitude": -48.64526801194626
+      },
+      {
+        "id": "stop-antiga-leme-m26_2642-m48_6440",
+        "name": "Antiga LEME",
+        "slug": "antiga-leme",
+        "latitude": -26.26420833220331,
+        "longitude": -48.64404008690916
+      },
+      {
+        "id": "stop-pr-ximo-rua-joinville-centro-bairro-m26_2656-m48_6426",
+        "name": "Pr?ximo Rua Joinville (Centro/Bairro)",
+        "slug": "pr-ximo-rua-joinville-centro-bairro",
+        "latitude": -26.2656282116282,
+        "longitude": -48.6425769557269
+      },
+      {
+        "id": "stop-rua-jo-o-r-liberato-em-frente-m26_2674-m48_6416",
+        "name": "Rua Jo?o R. Liberato (em frente)",
+        "slug": "rua-jo-o-r-liberato-em-frente",
+        "latitude": -26.26742236856353,
+        "longitude": -48.64159232663566
+      },
+      {
+        "id": "stop-supermercado-bar-o-m26_2695-m48_6411",
+        "name": "Supermercado Bar?o",
+        "slug": "supermercado-bar-o",
+        "latitude": -26.26948599977044,
+        "longitude": -48.6410685268486
+      },
+      {
+        "id": "stop-antiga-pol-cia-rodovi-ria-federal-m26_2720-m48_6419",
+        "name": "Antiga Pol?cia Rodovi?ria Federal",
+        "slug": "antiga-pol-cia-rodovi-ria-federal",
+        "latitude": -26.27204790353976,
+        "longitude": -48.64194071901231
+      },
+      {
+        "id": "stop-eeb-claurinice-vieira-caldeira-sentido-cohab-m26_2719-m48_6435",
+        "name": "EEB Claurinice Vieira Caldeira (sentido Cohab)",
+        "slug": "eeb-claurinice-vieira-caldeira-sentido-cohab",
+        "latitude": -26.271897806727836,
+        "longitude": -48.643466890384424
+      },
+      {
+        "id": "stop-centro-comunit-rio-da-cohab-do-rocio-grande-m26_2705-m48_6442",
+        "name": "Centro Comunit?rio da Cohab do Rocio Grande",
+        "slug": "centro-comunit-rio-da-cohab-do-rocio-grande",
+        "latitude": -26.270526323477462,
+        "longitude": -48.64422225784454
+      },
+      {
+        "id": "stop-eeb-claurinice-vieira-caldeira-sentido-br-m26_2720-m48_6437",
+        "name": "EEB Claurinice Vieira Caldeira (sentido BR)",
+        "slug": "eeb-claurinice-vieira-caldeira-sentido-br",
+        "latitude": -26.271970578855978,
+        "longitude": -48.643710355930324
+      },
+      {
+        "id": "stop-posto-de-molas-braatz-m26_2776-m48_6460",
+        "name": "Posto de Molas Braatz",
+        "slug": "posto-de-molas-braatz",
+        "latitude": -26.27760746287246,
+        "longitude": -48.64601070880737
+      },
+      {
+        "id": "stop-restaurante-kalangas-m26_2828-m48_6465",
+        "name": "Restaurante Kalangas",
+        "slug": "restaurante-kalangas",
+        "latitude": -26.28282468397751,
+        "longitude": -48.64653764413156
+      },
+      {
+        "id": "stop-estacionamento-fecoagro-centro-bairro-m26_2852-m48_6463",
+        "name": "Estacionamento Fecoagro (Centro/Bairro)",
+        "slug": "estacionamento-fecoagro-centro-bairro",
+        "latitude": -26.2852172610099,
+        "longitude": -48.64631566305282
+      },
+      {
+        "id": "stop-br-280-3400-sentido-centro-bairro-m26_2930-m48_6441",
+        "name": "BR 280, 3400 (Sentido Centro/Bairro)",
+        "slug": "br-280-3400-sentido-centro-bairro",
+        "latitude": -26.29301678631301,
+        "longitude": -48.64409451720033
+      },
+      {
+        "id": "stop-arcelormittal-vega-sentido-centro-bairro-m26_2973-m48_6419",
+        "name": "ArcelorMittal Vega (Sentido Centro/Bairro)",
+        "slug": "arcelormittal-vega-sentido-centro-bairro",
+        "latitude": -26.2972754809426,
+        "longitude": -48.64185220836048
+      },
+      {
+        "id": "stop-igreja-adventista-miranda-m26_3010-m48_6402",
+        "name": "Igreja Adventista Miranda",
+        "slug": "igreja-adventista-miranda",
+        "latitude": -26.30099148404906,
+        "longitude": -48.64020794041085
+      },
+      {
+        "id": "stop-ei-morro-da-cruz-centro-bairro-m26_3031-m48_6404",
+        "name": "EI Morro da Cruz (Centro/Bairro)",
+        "slug": "ei-morro-da-cruz-centro-bairro",
+        "latitude": -26.30307355340789,
+        "longitude": -48.64042754415611
+      },
+      {
+        "id": "stop-s-tio-casa-de-pedra-centro-bairro-m26_3060-m48_6416",
+        "name": "S?tio Casa de Pedra (Centro/Bairro)",
+        "slug": "s-tio-casa-de-pedra-centro-bairro",
+        "latitude": -26.30599953186386,
+        "longitude": -48.64158981448634
+      },
+      {
+        "id": "stop-f-nix-club-m26_3124-m48_6443",
+        "name": "F?nix Club",
+        "slug": "f-nix-club",
+        "latitude": -26.31237604033425,
+        "longitude": -48.64428304841312
+      },
+      {
+        "id": "stop-estrada-do-felismino-1-centro-bairro-m26_3283-m48_6496",
+        "name": "Estrada do Felismino 1 (Centro/Bairro)",
+        "slug": "estrada-do-felismino-1-centro-bairro",
+        "latitude": -26.3283433871694,
+        "longitude": -48.6495961421293
+      },
+      {
+        "id": "stop-estrada-do-felismino-2-centro-bairro-m26_3295-m48_6490",
+        "name": "Estrada do Felismino 2 (Centro/Bairro)",
+        "slug": "estrada-do-felismino-2-centro-bairro",
+        "latitude": -26.32953872945053,
+        "longitude": -48.64898586451129
+      },
+      {
+        "id": "stop-estrada-do-felismino-pr-ximo-m26_3300-m48_6492",
+        "name": "Estrada do Felismino (Pr?ximo)",
+        "slug": "estrada-do-felismino-pr-ximo",
+        "latitude": -26.32995663541855,
+        "longitude": -48.64918471901228
+      },
+      {
+        "id": "stop-lanchonete-e-sorveteria-arco-iris-sentido-centro-bairro-m26_3322-m48_6508",
+        "name": "Lanchonete e Sorveteria Arco Iris (Sentido Centro/Bairro)",
+        "slug": "lanchonete-e-sorveteria-arco-iris-sentido-centro-bairro",
+        "latitude": -26.33224041501682,
+        "longitude": -48.65075991283638
+      },
+      {
+        "id": "stop-bar-miranda-m26_3359-m48_6535",
+        "name": "Bar Miranda",
+        "slug": "bar-miranda",
+        "latitude": -26.33592103627048,
+        "longitude": -48.65354702688907
+      },
+      {
+        "id": "stop-posto-de-sa-de-ribeira-sentido-centro-bairro-m26_3353-m48_6550",
+        "name": "Posto de Sa?de Ribeira (Sentido Centro/Bairro)",
+        "slug": "posto-de-sa-de-ribeira-sentido-centro-bairro",
+        "latitude": -26.33531106484419,
+        "longitude": -48.65499502295486
+      },
+      {
+        "id": "stop-estrada-da-ribeira-3-m26_3349-m48_6563",
+        "name": "Estrada da Ribeira 3",
+        "slug": "estrada-da-ribeira-3",
+        "latitude": -26.33492200742383,
+        "longitude": -48.65630119840832
+      },
+      {
+        "id": "stop-ponto-final-miranda-sentido-centro-bairro-m26_3352-m48_6576",
+        "name": "Ponto Final - Miranda (Sentido Centro/Bairro)",
+        "slug": "ponto-final-miranda-sentido-centro-bairro",
+        "latitude": -26.33517500012973,
+        "longitude": -48.65764888495627
+      },
+      {
+        "id": "stop-s-tio-sentido-centro-bairro-m26_3379-m48_6765",
+        "name": "S?tio (Sentido Centro/Bairro)",
+        "slug": "s-tio-sentido-centro-bairro",
+        "latitude": -26.33793589066274,
+        "longitude": -48.67651692477939
+      },
+      {
+        "id": "stop-em-ant-nio-canuto-sentido-centro-bairro-m26_3375-m48_6801",
+        "name": "EM Ant?nio Canuto (Sentido Centro/Bairro)",
+        "slug": "em-ant-nio-canuto-sentido-centro-bairro",
+        "latitude": -26.33748382010789,
+        "longitude": -48.68006292259714
+      },
+      {
+        "id": "stop-final-ribeira-m26_3343-m48_6825",
+        "name": "Final Ribeira",
+        "slug": "final-ribeira",
+        "latitude": -26.33428604467618,
+        "longitude": -48.68253559667544
+      },
+      {
+        "id": "stop-br-280-3757-m26_3299-m48_6844",
+        "name": "BR-280, 3757",
+        "slug": "br-280-3757",
+        "latitude": -26.329872604823088,
+        "longitude": -48.68440140790063
+      }
+    ],
+    "lineStops": [
+      {
+        "id": "line-0203-outbound-stop-1",
+        "directionId": "line-0203-outbound",
+        "stopId": "stop-pra-a-dr-get-lio-vargas-2-m26_2434-m48_6379",
+        "sequence": 1,
+        "isTimingPoint": true
+      },
+      {
+        "id": "line-0203-outbound-stop-2",
+        "directionId": "line-0203-outbound",
+        "stopId": "stop-ogmo-sfs-m26_2435-m48_6351",
+        "sequence": 2,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-outbound-stop-3",
+        "directionId": "line-0203-outbound",
+        "stopId": "stop-antiga-multipaper-sentido-centro-bairro-m26_2447-m48_6347",
+        "sequence": 3,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-outbound-stop-4",
+        "directionId": "line-0203-outbound",
+        "stopId": "stop-carioca-bica-d-gua-m26_2466-m48_6355",
+        "sequence": 4,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-outbound-stop-5",
+        "directionId": "line-0203-outbound",
+        "stopId": "stop-col-gio-adventista-m26_2478-m48_6373",
+        "sequence": 5,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-outbound-stop-6",
+        "directionId": "line-0203-outbound",
+        "stopId": "stop-restaurante-tom-brasil-m26_2492-m48_6384",
+        "sequence": 6,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-outbound-stop-7",
+        "directionId": "line-0203-outbound",
+        "stopId": "stop-c-mara-de-vereadores-m26_2510-m48_6401",
+        "sequence": 7,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-outbound-stop-8",
+        "directionId": "line-0203-outbound",
+        "stopId": "stop-imaribo-m26_2518-m48_6418",
+        "sequence": 8,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-outbound-stop-9",
+        "directionId": "line-0203-outbound",
+        "stopId": "stop-academia-medley-m26_2540-m48_6430",
+        "sequence": 9,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-outbound-stop-10",
+        "directionId": "line-0203-outbound",
+        "stopId": "stop-big-pizza-sentido-centro-bairro-m26_2572-m48_6442",
+        "sequence": 10,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-outbound-stop-11",
+        "directionId": "line-0203-outbound",
+        "stopId": "stop-frente-n-994-m26_2600-m48_6453",
+        "sequence": 11,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-outbound-stop-12",
+        "directionId": "line-0203-outbound",
+        "stopId": "stop-travessa-olaria-em-frente-m26_2628-m48_6453",
+        "sequence": 12,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-outbound-stop-13",
+        "directionId": "line-0203-outbound",
+        "stopId": "stop-antiga-leme-m26_2642-m48_6440",
+        "sequence": 13,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-outbound-stop-14",
+        "directionId": "line-0203-outbound",
+        "stopId": "stop-pr-ximo-rua-joinville-centro-bairro-m26_2656-m48_6426",
+        "sequence": 14,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-outbound-stop-15",
+        "directionId": "line-0203-outbound",
+        "stopId": "stop-rua-jo-o-r-liberato-em-frente-m26_2674-m48_6416",
+        "sequence": 15,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-outbound-stop-16",
+        "directionId": "line-0203-outbound",
+        "stopId": "stop-supermercado-bar-o-m26_2695-m48_6411",
+        "sequence": 16,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-outbound-stop-17",
+        "directionId": "line-0203-outbound",
+        "stopId": "stop-antiga-pol-cia-rodovi-ria-federal-m26_2720-m48_6419",
+        "sequence": 17,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-outbound-stop-18",
+        "directionId": "line-0203-outbound",
+        "stopId": "stop-eeb-claurinice-vieira-caldeira-sentido-cohab-m26_2719-m48_6435",
+        "sequence": 18,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-outbound-stop-19",
+        "directionId": "line-0203-outbound",
+        "stopId": "stop-centro-comunit-rio-da-cohab-do-rocio-grande-m26_2705-m48_6442",
+        "sequence": 19,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-outbound-stop-20",
+        "directionId": "line-0203-outbound",
+        "stopId": "stop-eeb-claurinice-vieira-caldeira-sentido-br-m26_2720-m48_6437",
+        "sequence": 20,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-outbound-stop-21",
+        "directionId": "line-0203-outbound",
+        "stopId": "stop-posto-de-molas-braatz-m26_2776-m48_6460",
+        "sequence": 21,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-outbound-stop-22",
+        "directionId": "line-0203-outbound",
+        "stopId": "stop-restaurante-kalangas-m26_2828-m48_6465",
+        "sequence": 22,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-outbound-stop-23",
+        "directionId": "line-0203-outbound",
+        "stopId": "stop-estacionamento-fecoagro-centro-bairro-m26_2852-m48_6463",
+        "sequence": 23,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-outbound-stop-24",
+        "directionId": "line-0203-outbound",
+        "stopId": "stop-br-280-3400-sentido-centro-bairro-m26_2930-m48_6441",
+        "sequence": 24,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-outbound-stop-25",
+        "directionId": "line-0203-outbound",
+        "stopId": "stop-arcelormittal-vega-sentido-centro-bairro-m26_2973-m48_6419",
+        "sequence": 25,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-outbound-stop-26",
+        "directionId": "line-0203-outbound",
+        "stopId": "stop-igreja-adventista-miranda-m26_3010-m48_6402",
+        "sequence": 26,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-outbound-stop-27",
+        "directionId": "line-0203-outbound",
+        "stopId": "stop-ei-morro-da-cruz-centro-bairro-m26_3031-m48_6404",
+        "sequence": 27,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-outbound-stop-28",
+        "directionId": "line-0203-outbound",
+        "stopId": "stop-s-tio-casa-de-pedra-centro-bairro-m26_3060-m48_6416",
+        "sequence": 28,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-outbound-stop-29",
+        "directionId": "line-0203-outbound",
+        "stopId": "stop-f-nix-club-m26_3124-m48_6443",
+        "sequence": 29,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-outbound-stop-30",
+        "directionId": "line-0203-outbound",
+        "stopId": "stop-estrada-do-felismino-1-centro-bairro-m26_3283-m48_6496",
+        "sequence": 30,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-outbound-stop-31",
+        "directionId": "line-0203-outbound",
+        "stopId": "stop-estrada-do-felismino-2-centro-bairro-m26_3295-m48_6490",
+        "sequence": 31,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-outbound-stop-32",
+        "directionId": "line-0203-outbound",
+        "stopId": "stop-estrada-do-felismino-pr-ximo-m26_3300-m48_6492",
+        "sequence": 32,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-outbound-stop-33",
+        "directionId": "line-0203-outbound",
+        "stopId": "stop-lanchonete-e-sorveteria-arco-iris-sentido-centro-bairro-m26_3322-m48_6508",
+        "sequence": 33,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-outbound-stop-34",
+        "directionId": "line-0203-outbound",
+        "stopId": "stop-bar-miranda-m26_3359-m48_6535",
+        "sequence": 34,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-outbound-stop-35",
+        "directionId": "line-0203-outbound",
+        "stopId": "stop-posto-de-sa-de-ribeira-sentido-centro-bairro-m26_3353-m48_6550",
+        "sequence": 35,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-outbound-stop-36",
+        "directionId": "line-0203-outbound",
+        "stopId": "stop-estrada-da-ribeira-3-m26_3349-m48_6563",
+        "sequence": 36,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-outbound-stop-37",
+        "directionId": "line-0203-outbound",
+        "stopId": "stop-ponto-final-miranda-sentido-centro-bairro-m26_3352-m48_6576",
+        "sequence": 37,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-outbound-stop-38",
+        "directionId": "line-0203-outbound",
+        "stopId": "stop-s-tio-sentido-centro-bairro-m26_3379-m48_6765",
+        "sequence": 38,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-outbound-stop-39",
+        "directionId": "line-0203-outbound",
+        "stopId": "stop-em-ant-nio-canuto-sentido-centro-bairro-m26_3375-m48_6801",
+        "sequence": 39,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-outbound-stop-40",
+        "directionId": "line-0203-outbound",
+        "stopId": "stop-final-ribeira-m26_3343-m48_6825",
+        "sequence": 40,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-outbound-stop-41",
+        "directionId": "line-0203-outbound",
+        "stopId": "stop-br-280-3757-m26_3299-m48_6844",
+        "sequence": 41,
+        "isTimingPoint": true
+      },
+      {
+        "id": "line-0203-inbound-stop-1",
+        "directionId": "line-0203-inbound",
+        "stopId": "stop-br-280-3757-m26_3299-m48_6844",
+        "sequence": 1,
+        "isTimingPoint": true
+      },
+      {
+        "id": "line-0203-inbound-stop-2",
+        "directionId": "line-0203-inbound",
+        "stopId": "stop-final-ribeira-m26_3343-m48_6825",
+        "sequence": 2,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-inbound-stop-3",
+        "directionId": "line-0203-inbound",
+        "stopId": "stop-em-ant-nio-canuto-sentido-centro-bairro-m26_3375-m48_6801",
+        "sequence": 3,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-inbound-stop-4",
+        "directionId": "line-0203-inbound",
+        "stopId": "stop-s-tio-sentido-centro-bairro-m26_3379-m48_6765",
+        "sequence": 4,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-inbound-stop-5",
+        "directionId": "line-0203-inbound",
+        "stopId": "stop-ponto-final-miranda-sentido-centro-bairro-m26_3352-m48_6576",
+        "sequence": 5,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-inbound-stop-6",
+        "directionId": "line-0203-inbound",
+        "stopId": "stop-estrada-da-ribeira-3-m26_3349-m48_6563",
+        "sequence": 6,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-inbound-stop-7",
+        "directionId": "line-0203-inbound",
+        "stopId": "stop-posto-de-sa-de-ribeira-sentido-centro-bairro-m26_3353-m48_6550",
+        "sequence": 7,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-inbound-stop-8",
+        "directionId": "line-0203-inbound",
+        "stopId": "stop-bar-miranda-m26_3359-m48_6535",
+        "sequence": 8,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-inbound-stop-9",
+        "directionId": "line-0203-inbound",
+        "stopId": "stop-lanchonete-e-sorveteria-arco-iris-sentido-centro-bairro-m26_3322-m48_6508",
+        "sequence": 9,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-inbound-stop-10",
+        "directionId": "line-0203-inbound",
+        "stopId": "stop-estrada-do-felismino-pr-ximo-m26_3300-m48_6492",
+        "sequence": 10,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-inbound-stop-11",
+        "directionId": "line-0203-inbound",
+        "stopId": "stop-estrada-do-felismino-2-centro-bairro-m26_3295-m48_6490",
+        "sequence": 11,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-inbound-stop-12",
+        "directionId": "line-0203-inbound",
+        "stopId": "stop-estrada-do-felismino-1-centro-bairro-m26_3283-m48_6496",
+        "sequence": 12,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-inbound-stop-13",
+        "directionId": "line-0203-inbound",
+        "stopId": "stop-f-nix-club-m26_3124-m48_6443",
+        "sequence": 13,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-inbound-stop-14",
+        "directionId": "line-0203-inbound",
+        "stopId": "stop-s-tio-casa-de-pedra-centro-bairro-m26_3060-m48_6416",
+        "sequence": 14,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-inbound-stop-15",
+        "directionId": "line-0203-inbound",
+        "stopId": "stop-ei-morro-da-cruz-centro-bairro-m26_3031-m48_6404",
+        "sequence": 15,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-inbound-stop-16",
+        "directionId": "line-0203-inbound",
+        "stopId": "stop-igreja-adventista-miranda-m26_3010-m48_6402",
+        "sequence": 16,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-inbound-stop-17",
+        "directionId": "line-0203-inbound",
+        "stopId": "stop-arcelormittal-vega-sentido-centro-bairro-m26_2973-m48_6419",
+        "sequence": 17,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-inbound-stop-18",
+        "directionId": "line-0203-inbound",
+        "stopId": "stop-br-280-3400-sentido-centro-bairro-m26_2930-m48_6441",
+        "sequence": 18,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-inbound-stop-19",
+        "directionId": "line-0203-inbound",
+        "stopId": "stop-estacionamento-fecoagro-centro-bairro-m26_2852-m48_6463",
+        "sequence": 19,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-inbound-stop-20",
+        "directionId": "line-0203-inbound",
+        "stopId": "stop-restaurante-kalangas-m26_2828-m48_6465",
+        "sequence": 20,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-inbound-stop-21",
+        "directionId": "line-0203-inbound",
+        "stopId": "stop-posto-de-molas-braatz-m26_2776-m48_6460",
+        "sequence": 21,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-inbound-stop-22",
+        "directionId": "line-0203-inbound",
+        "stopId": "stop-eeb-claurinice-vieira-caldeira-sentido-br-m26_2720-m48_6437",
+        "sequence": 22,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-inbound-stop-23",
+        "directionId": "line-0203-inbound",
+        "stopId": "stop-centro-comunit-rio-da-cohab-do-rocio-grande-m26_2705-m48_6442",
+        "sequence": 23,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-inbound-stop-24",
+        "directionId": "line-0203-inbound",
+        "stopId": "stop-eeb-claurinice-vieira-caldeira-sentido-cohab-m26_2719-m48_6435",
+        "sequence": 24,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-inbound-stop-25",
+        "directionId": "line-0203-inbound",
+        "stopId": "stop-antiga-pol-cia-rodovi-ria-federal-m26_2720-m48_6419",
+        "sequence": 25,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-inbound-stop-26",
+        "directionId": "line-0203-inbound",
+        "stopId": "stop-supermercado-bar-o-m26_2695-m48_6411",
+        "sequence": 26,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-inbound-stop-27",
+        "directionId": "line-0203-inbound",
+        "stopId": "stop-rua-jo-o-r-liberato-em-frente-m26_2674-m48_6416",
+        "sequence": 27,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-inbound-stop-28",
+        "directionId": "line-0203-inbound",
+        "stopId": "stop-pr-ximo-rua-joinville-centro-bairro-m26_2656-m48_6426",
+        "sequence": 28,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-inbound-stop-29",
+        "directionId": "line-0203-inbound",
+        "stopId": "stop-antiga-leme-m26_2642-m48_6440",
+        "sequence": 29,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-inbound-stop-30",
+        "directionId": "line-0203-inbound",
+        "stopId": "stop-travessa-olaria-em-frente-m26_2628-m48_6453",
+        "sequence": 30,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-inbound-stop-31",
+        "directionId": "line-0203-inbound",
+        "stopId": "stop-frente-n-994-m26_2600-m48_6453",
+        "sequence": 31,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-inbound-stop-32",
+        "directionId": "line-0203-inbound",
+        "stopId": "stop-big-pizza-sentido-centro-bairro-m26_2572-m48_6442",
+        "sequence": 32,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-inbound-stop-33",
+        "directionId": "line-0203-inbound",
+        "stopId": "stop-academia-medley-m26_2540-m48_6430",
+        "sequence": 33,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-inbound-stop-34",
+        "directionId": "line-0203-inbound",
+        "stopId": "stop-imaribo-m26_2518-m48_6418",
+        "sequence": 34,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-inbound-stop-35",
+        "directionId": "line-0203-inbound",
+        "stopId": "stop-c-mara-de-vereadores-m26_2510-m48_6401",
+        "sequence": 35,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-inbound-stop-36",
+        "directionId": "line-0203-inbound",
+        "stopId": "stop-restaurante-tom-brasil-m26_2492-m48_6384",
+        "sequence": 36,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-inbound-stop-37",
+        "directionId": "line-0203-inbound",
+        "stopId": "stop-col-gio-adventista-m26_2478-m48_6373",
+        "sequence": 37,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-inbound-stop-38",
+        "directionId": "line-0203-inbound",
+        "stopId": "stop-carioca-bica-d-gua-m26_2466-m48_6355",
+        "sequence": 38,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-inbound-stop-39",
+        "directionId": "line-0203-inbound",
+        "stopId": "stop-antiga-multipaper-sentido-centro-bairro-m26_2447-m48_6347",
+        "sequence": 39,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-inbound-stop-40",
+        "directionId": "line-0203-inbound",
+        "stopId": "stop-ogmo-sfs-m26_2435-m48_6351",
+        "sequence": 40,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0203-inbound-stop-41",
+        "directionId": "line-0203-inbound",
+        "stopId": "stop-pra-a-dr-get-lio-vargas-2-m26_2434-m48_6379",
+        "sequence": 41,
+        "isTimingPoint": true
+      }
+    ],
+    "schedules": [
+      {
+        "id": "collected-line-0203-outbound-weekday-1740",
+        "directionId": "line-0203-outbound",
+        "serviceDay": "weekday",
+        "departureTime": "17:40",
+        "departureMinutes": 1060,
+        "isPeak": true,
+        "occupancy": "medium"
+      },
+      {
+        "id": "collected-line-0203-inbound-weekday-0630",
+        "directionId": "line-0203-inbound",
+        "serviceDay": "weekday",
+        "departureTime": "06:30",
+        "departureMinutes": 390,
+        "isPeak": true,
+        "occupancy": "medium"
+      },
+      {
+        "id": "collected-line-0203-inbound-weekday-0730",
+        "directionId": "line-0203-inbound",
+        "serviceDay": "weekday",
+        "departureTime": "07:30",
+        "departureMinutes": 450,
+        "isPeak": true,
+        "occupancy": "medium"
+      },
+      {
+        "id": "collected-line-0203-inbound-weekday-1240",
+        "directionId": "line-0203-inbound",
+        "serviceDay": "weekday",
+        "departureTime": "12:40",
+        "departureMinutes": 760,
+        "isPeak": false,
+        "occupancy": "medium"
+      },
+      {
+        "id": "collected-line-0203-inbound-weekday-1820",
+        "directionId": "line-0203-inbound",
+        "serviceDay": "weekday",
+        "departureTime": "18:20",
+        "departureMinutes": 1100,
+        "isPeak": true,
+        "occupancy": "medium"
+      }
+    ],
+    "stopTimePredictions": [],
+    "routePaths": [
+      {
+        "id": "line-0203-outbound-path-1",
+        "directionId": "line-0203-outbound",
+        "sequence": 1,
+        "latitude": -26.243437512602945,
+        "longitude": -48.637910711972246
+      },
+      {
+        "id": "line-0203-outbound-path-2",
+        "directionId": "line-0203-outbound",
+        "sequence": 2,
+        "latitude": -26.24347278215267,
+        "longitude": -48.63506422991534
+      },
+      {
+        "id": "line-0203-outbound-path-3",
+        "directionId": "line-0203-outbound",
+        "sequence": 3,
+        "latitude": -26.24469900660496,
+        "longitude": -48.63466469668285
+      },
+      {
+        "id": "line-0203-outbound-path-4",
+        "directionId": "line-0203-outbound",
+        "sequence": 4,
+        "latitude": -26.24659710935892,
+        "longitude": -48.63549497664863
+      },
+      {
+        "id": "line-0203-outbound-path-5",
+        "directionId": "line-0203-outbound",
+        "sequence": 5,
+        "latitude": -26.24783478994036,
+        "longitude": -48.63733216779835
+      },
+      {
+        "id": "line-0203-outbound-path-6",
+        "directionId": "line-0203-outbound",
+        "sequence": 6,
+        "latitude": -26.24924839021059,
+        "longitude": -48.63840582899403
+      },
+      {
+        "id": "line-0203-outbound-path-7",
+        "directionId": "line-0203-outbound",
+        "sequence": 7,
+        "latitude": -26.251027110144122,
+        "longitude": -48.64008949321573
+      },
+      {
+        "id": "line-0203-outbound-path-8",
+        "directionId": "line-0203-outbound",
+        "sequence": 8,
+        "latitude": -26.25182051476358,
+        "longitude": -48.64179289028009
+      },
+      {
+        "id": "line-0203-outbound-path-9",
+        "directionId": "line-0203-outbound",
+        "sequence": 9,
+        "latitude": -26.25403773020528,
+        "longitude": -48.64295042848828
+      },
+      {
+        "id": "line-0203-outbound-path-10",
+        "directionId": "line-0203-outbound",
+        "sequence": 10,
+        "latitude": -26.25715361177297,
+        "longitude": -48.64419478064197
+      },
+      {
+        "id": "line-0203-outbound-path-11",
+        "directionId": "line-0203-outbound",
+        "sequence": 11,
+        "latitude": -26.260012968859453,
+        "longitude": -48.64525066562247
+      },
+      {
+        "id": "line-0203-outbound-path-12",
+        "directionId": "line-0203-outbound",
+        "sequence": 12,
+        "latitude": -26.26275729915342,
+        "longitude": -48.64526801194626
+      },
+      {
+        "id": "line-0203-outbound-path-13",
+        "directionId": "line-0203-outbound",
+        "sequence": 13,
+        "latitude": -26.26420833220331,
+        "longitude": -48.64404008690916
+      },
+      {
+        "id": "line-0203-outbound-path-14",
+        "directionId": "line-0203-outbound",
+        "sequence": 14,
+        "latitude": -26.2656282116282,
+        "longitude": -48.6425769557269
+      },
+      {
+        "id": "line-0203-outbound-path-15",
+        "directionId": "line-0203-outbound",
+        "sequence": 15,
+        "latitude": -26.26742236856353,
+        "longitude": -48.64159232663566
+      },
+      {
+        "id": "line-0203-outbound-path-16",
+        "directionId": "line-0203-outbound",
+        "sequence": 16,
+        "latitude": -26.26948599977044,
+        "longitude": -48.6410685268486
+      },
+      {
+        "id": "line-0203-outbound-path-17",
+        "directionId": "line-0203-outbound",
+        "sequence": 17,
+        "latitude": -26.27204790353976,
+        "longitude": -48.64194071901231
+      },
+      {
+        "id": "line-0203-outbound-path-18",
+        "directionId": "line-0203-outbound",
+        "sequence": 18,
+        "latitude": -26.271897806727836,
+        "longitude": -48.643466890384424
+      },
+      {
+        "id": "line-0203-outbound-path-19",
+        "directionId": "line-0203-outbound",
+        "sequence": 19,
+        "latitude": -26.270526323477462,
+        "longitude": -48.64422225784454
+      },
+      {
+        "id": "line-0203-outbound-path-20",
+        "directionId": "line-0203-outbound",
+        "sequence": 20,
+        "latitude": -26.271970578855978,
+        "longitude": -48.643710355930324
+      },
+      {
+        "id": "line-0203-outbound-path-21",
+        "directionId": "line-0203-outbound",
+        "sequence": 21,
+        "latitude": -26.27760746287246,
+        "longitude": -48.64601070880737
+      },
+      {
+        "id": "line-0203-outbound-path-22",
+        "directionId": "line-0203-outbound",
+        "sequence": 22,
+        "latitude": -26.28282468397751,
+        "longitude": -48.64653764413156
+      },
+      {
+        "id": "line-0203-outbound-path-23",
+        "directionId": "line-0203-outbound",
+        "sequence": 23,
+        "latitude": -26.2852172610099,
+        "longitude": -48.64631566305282
+      },
+      {
+        "id": "line-0203-outbound-path-24",
+        "directionId": "line-0203-outbound",
+        "sequence": 24,
+        "latitude": -26.29301678631301,
+        "longitude": -48.64409451720033
+      },
+      {
+        "id": "line-0203-outbound-path-25",
+        "directionId": "line-0203-outbound",
+        "sequence": 25,
+        "latitude": -26.2972754809426,
+        "longitude": -48.64185220836048
+      },
+      {
+        "id": "line-0203-outbound-path-26",
+        "directionId": "line-0203-outbound",
+        "sequence": 26,
+        "latitude": -26.30099148404906,
+        "longitude": -48.64020794041085
+      },
+      {
+        "id": "line-0203-outbound-path-27",
+        "directionId": "line-0203-outbound",
+        "sequence": 27,
+        "latitude": -26.30307355340789,
+        "longitude": -48.64042754415611
+      },
+      {
+        "id": "line-0203-outbound-path-28",
+        "directionId": "line-0203-outbound",
+        "sequence": 28,
+        "latitude": -26.30599953186386,
+        "longitude": -48.64158981448634
+      },
+      {
+        "id": "line-0203-outbound-path-29",
+        "directionId": "line-0203-outbound",
+        "sequence": 29,
+        "latitude": -26.31237604033425,
+        "longitude": -48.64428304841312
+      },
+      {
+        "id": "line-0203-outbound-path-30",
+        "directionId": "line-0203-outbound",
+        "sequence": 30,
+        "latitude": -26.3283433871694,
+        "longitude": -48.6495961421293
+      },
+      {
+        "id": "line-0203-outbound-path-31",
+        "directionId": "line-0203-outbound",
+        "sequence": 31,
+        "latitude": -26.32953872945053,
+        "longitude": -48.64898586451129
+      },
+      {
+        "id": "line-0203-outbound-path-32",
+        "directionId": "line-0203-outbound",
+        "sequence": 32,
+        "latitude": -26.32995663541855,
+        "longitude": -48.64918471901228
+      },
+      {
+        "id": "line-0203-outbound-path-33",
+        "directionId": "line-0203-outbound",
+        "sequence": 33,
+        "latitude": -26.33224041501682,
+        "longitude": -48.65075991283638
+      },
+      {
+        "id": "line-0203-outbound-path-34",
+        "directionId": "line-0203-outbound",
+        "sequence": 34,
+        "latitude": -26.33592103627048,
+        "longitude": -48.65354702688907
+      },
+      {
+        "id": "line-0203-outbound-path-35",
+        "directionId": "line-0203-outbound",
+        "sequence": 35,
+        "latitude": -26.33531106484419,
+        "longitude": -48.65499502295486
+      },
+      {
+        "id": "line-0203-outbound-path-36",
+        "directionId": "line-0203-outbound",
+        "sequence": 36,
+        "latitude": -26.33492200742383,
+        "longitude": -48.65630119840832
+      },
+      {
+        "id": "line-0203-outbound-path-37",
+        "directionId": "line-0203-outbound",
+        "sequence": 37,
+        "latitude": -26.33517500012973,
+        "longitude": -48.65764888495627
+      },
+      {
+        "id": "line-0203-outbound-path-38",
+        "directionId": "line-0203-outbound",
+        "sequence": 38,
+        "latitude": -26.33793589066274,
+        "longitude": -48.67651692477939
+      },
+      {
+        "id": "line-0203-outbound-path-39",
+        "directionId": "line-0203-outbound",
+        "sequence": 39,
+        "latitude": -26.33748382010789,
+        "longitude": -48.68006292259714
+      },
+      {
+        "id": "line-0203-outbound-path-40",
+        "directionId": "line-0203-outbound",
+        "sequence": 40,
+        "latitude": -26.33428604467618,
+        "longitude": -48.68253559667544
+      },
+      {
+        "id": "line-0203-outbound-path-41",
+        "directionId": "line-0203-outbound",
+        "sequence": 41,
+        "latitude": -26.329872604823088,
+        "longitude": -48.68440140790063
+      },
+      {
+        "id": "line-0203-inbound-path-1",
+        "directionId": "line-0203-inbound",
+        "sequence": 1,
+        "latitude": -26.329872604823088,
+        "longitude": -48.68440140790063
+      },
+      {
+        "id": "line-0203-inbound-path-2",
+        "directionId": "line-0203-inbound",
+        "sequence": 2,
+        "latitude": -26.33428604467618,
+        "longitude": -48.68253559667544
+      },
+      {
+        "id": "line-0203-inbound-path-3",
+        "directionId": "line-0203-inbound",
+        "sequence": 3,
+        "latitude": -26.33748382010789,
+        "longitude": -48.68006292259714
+      },
+      {
+        "id": "line-0203-inbound-path-4",
+        "directionId": "line-0203-inbound",
+        "sequence": 4,
+        "latitude": -26.33793589066274,
+        "longitude": -48.67651692477939
+      },
+      {
+        "id": "line-0203-inbound-path-5",
+        "directionId": "line-0203-inbound",
+        "sequence": 5,
+        "latitude": -26.33517500012973,
+        "longitude": -48.65764888495627
+      },
+      {
+        "id": "line-0203-inbound-path-6",
+        "directionId": "line-0203-inbound",
+        "sequence": 6,
+        "latitude": -26.33492200742383,
+        "longitude": -48.65630119840832
+      },
+      {
+        "id": "line-0203-inbound-path-7",
+        "directionId": "line-0203-inbound",
+        "sequence": 7,
+        "latitude": -26.33531106484419,
+        "longitude": -48.65499502295486
+      },
+      {
+        "id": "line-0203-inbound-path-8",
+        "directionId": "line-0203-inbound",
+        "sequence": 8,
+        "latitude": -26.33592103627048,
+        "longitude": -48.65354702688907
+      },
+      {
+        "id": "line-0203-inbound-path-9",
+        "directionId": "line-0203-inbound",
+        "sequence": 9,
+        "latitude": -26.33224041501682,
+        "longitude": -48.65075991283638
+      },
+      {
+        "id": "line-0203-inbound-path-10",
+        "directionId": "line-0203-inbound",
+        "sequence": 10,
+        "latitude": -26.32995663541855,
+        "longitude": -48.64918471901228
+      },
+      {
+        "id": "line-0203-inbound-path-11",
+        "directionId": "line-0203-inbound",
+        "sequence": 11,
+        "latitude": -26.32953872945053,
+        "longitude": -48.64898586451129
+      },
+      {
+        "id": "line-0203-inbound-path-12",
+        "directionId": "line-0203-inbound",
+        "sequence": 12,
+        "latitude": -26.3283433871694,
+        "longitude": -48.6495961421293
+      },
+      {
+        "id": "line-0203-inbound-path-13",
+        "directionId": "line-0203-inbound",
+        "sequence": 13,
+        "latitude": -26.31237604033425,
+        "longitude": -48.64428304841312
+      },
+      {
+        "id": "line-0203-inbound-path-14",
+        "directionId": "line-0203-inbound",
+        "sequence": 14,
+        "latitude": -26.30599953186386,
+        "longitude": -48.64158981448634
+      },
+      {
+        "id": "line-0203-inbound-path-15",
+        "directionId": "line-0203-inbound",
+        "sequence": 15,
+        "latitude": -26.30307355340789,
+        "longitude": -48.64042754415611
+      },
+      {
+        "id": "line-0203-inbound-path-16",
+        "directionId": "line-0203-inbound",
+        "sequence": 16,
+        "latitude": -26.30099148404906,
+        "longitude": -48.64020794041085
+      },
+      {
+        "id": "line-0203-inbound-path-17",
+        "directionId": "line-0203-inbound",
+        "sequence": 17,
+        "latitude": -26.2972754809426,
+        "longitude": -48.64185220836048
+      },
+      {
+        "id": "line-0203-inbound-path-18",
+        "directionId": "line-0203-inbound",
+        "sequence": 18,
+        "latitude": -26.29301678631301,
+        "longitude": -48.64409451720033
+      },
+      {
+        "id": "line-0203-inbound-path-19",
+        "directionId": "line-0203-inbound",
+        "sequence": 19,
+        "latitude": -26.2852172610099,
+        "longitude": -48.64631566305282
+      },
+      {
+        "id": "line-0203-inbound-path-20",
+        "directionId": "line-0203-inbound",
+        "sequence": 20,
+        "latitude": -26.28282468397751,
+        "longitude": -48.64653764413156
+      },
+      {
+        "id": "line-0203-inbound-path-21",
+        "directionId": "line-0203-inbound",
+        "sequence": 21,
+        "latitude": -26.27760746287246,
+        "longitude": -48.64601070880737
+      },
+      {
+        "id": "line-0203-inbound-path-22",
+        "directionId": "line-0203-inbound",
+        "sequence": 22,
+        "latitude": -26.271970578855978,
+        "longitude": -48.643710355930324
+      },
+      {
+        "id": "line-0203-inbound-path-23",
+        "directionId": "line-0203-inbound",
+        "sequence": 23,
+        "latitude": -26.270526323477462,
+        "longitude": -48.64422225784454
+      },
+      {
+        "id": "line-0203-inbound-path-24",
+        "directionId": "line-0203-inbound",
+        "sequence": 24,
+        "latitude": -26.271897806727836,
+        "longitude": -48.643466890384424
+      },
+      {
+        "id": "line-0203-inbound-path-25",
+        "directionId": "line-0203-inbound",
+        "sequence": 25,
+        "latitude": -26.27204790353976,
+        "longitude": -48.64194071901231
+      },
+      {
+        "id": "line-0203-inbound-path-26",
+        "directionId": "line-0203-inbound",
+        "sequence": 26,
+        "latitude": -26.26948599977044,
+        "longitude": -48.6410685268486
+      },
+      {
+        "id": "line-0203-inbound-path-27",
+        "directionId": "line-0203-inbound",
+        "sequence": 27,
+        "latitude": -26.26742236856353,
+        "longitude": -48.64159232663566
+      },
+      {
+        "id": "line-0203-inbound-path-28",
+        "directionId": "line-0203-inbound",
+        "sequence": 28,
+        "latitude": -26.2656282116282,
+        "longitude": -48.6425769557269
+      },
+      {
+        "id": "line-0203-inbound-path-29",
+        "directionId": "line-0203-inbound",
+        "sequence": 29,
+        "latitude": -26.26420833220331,
+        "longitude": -48.64404008690916
+      },
+      {
+        "id": "line-0203-inbound-path-30",
+        "directionId": "line-0203-inbound",
+        "sequence": 30,
+        "latitude": -26.26275729915342,
+        "longitude": -48.64526801194626
+      },
+      {
+        "id": "line-0203-inbound-path-31",
+        "directionId": "line-0203-inbound",
+        "sequence": 31,
+        "latitude": -26.260012968859453,
+        "longitude": -48.64525066562247
+      },
+      {
+        "id": "line-0203-inbound-path-32",
+        "directionId": "line-0203-inbound",
+        "sequence": 32,
+        "latitude": -26.25715361177297,
+        "longitude": -48.64419478064197
+      },
+      {
+        "id": "line-0203-inbound-path-33",
+        "directionId": "line-0203-inbound",
+        "sequence": 33,
+        "latitude": -26.25403773020528,
+        "longitude": -48.64295042848828
+      },
+      {
+        "id": "line-0203-inbound-path-34",
+        "directionId": "line-0203-inbound",
+        "sequence": 34,
+        "latitude": -26.25182051476358,
+        "longitude": -48.64179289028009
+      },
+      {
+        "id": "line-0203-inbound-path-35",
+        "directionId": "line-0203-inbound",
+        "sequence": 35,
+        "latitude": -26.251027110144122,
+        "longitude": -48.64008949321573
+      },
+      {
+        "id": "line-0203-inbound-path-36",
+        "directionId": "line-0203-inbound",
+        "sequence": 36,
+        "latitude": -26.24924839021059,
+        "longitude": -48.63840582899403
+      },
+      {
+        "id": "line-0203-inbound-path-37",
+        "directionId": "line-0203-inbound",
+        "sequence": 37,
+        "latitude": -26.24783478994036,
+        "longitude": -48.63733216779835
+      },
+      {
+        "id": "line-0203-inbound-path-38",
+        "directionId": "line-0203-inbound",
+        "sequence": 38,
+        "latitude": -26.24659710935892,
+        "longitude": -48.63549497664863
+      },
+      {
+        "id": "line-0203-inbound-path-39",
+        "directionId": "line-0203-inbound",
+        "sequence": 39,
+        "latitude": -26.24469900660496,
+        "longitude": -48.63466469668285
+      },
+      {
+        "id": "line-0203-inbound-path-40",
+        "directionId": "line-0203-inbound",
+        "sequence": 40,
+        "latitude": -26.24347278215267,
+        "longitude": -48.63506422991534
+      },
+      {
+        "id": "line-0203-inbound-path-41",
+        "directionId": "line-0203-inbound",
+        "sequence": 41,
+        "latitude": -26.243437512602945,
+        "longitude": -48.637910711972246
+      }
+    ],
+    "fares": [
+      {
+        "id": "collected-line-0203-fare-1",
+        "lineId": "line-0203",
+        "label": "Tarifa urbana municipal",
+        "currency": "BRL",
+        "sortOrder": 0
+      }
+    ],
+    "ferrySchedules": [],
+    "ferryFares": []
+  }
+}

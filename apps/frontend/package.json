@@ -4,15 +4,18 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "next dev",
+    "predev": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/dev-front-clean.ps1",
+    "dev": "next dev -p 3000",
+    "dev:clean": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/dev-front-clean.ps1",
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "type-check": "tsc --noEmit",
+    "type-check": "tsc --noEmit --incremental false",
     "test": "vitest run"
   },
   "dependencies": {
     "@cityline/shared": "*",
+    "framer-motion": "^12.38.0",
     "leaflet": "^1.9.4",
     "lucide-react": "^0.511.0",
     "next": "^15.3.2",

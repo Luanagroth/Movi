@@ -10,6 +10,7 @@ export interface UpcomingDeparture {
   status: 'now' | 'upcoming' | 'tomorrow';
   label: string;
   platform?: string;
+  note?: string;
   isPeak: boolean;
   occupancy: ScheduleEntry['occupancy'];
   isTomorrow: boolean;
@@ -53,6 +54,7 @@ export const selectNextDepartures = (
           status: minutesUntil <= 1 ? 'now' : 'upcoming',
           label: getFriendlyDepartureLabel(minutesUntil),
           platform: item.schedule.platform,
+          note: item.schedule.note,
           isPeak: item.schedule.isPeak,
           occupancy: item.schedule.occupancy,
           isTomorrow: false,
@@ -78,6 +80,7 @@ export const selectNextDepartures = (
             ? getFriendlyDepartureLabel(item.minutesUntil, true)
             : `proxima partida em ${daysUntil} dias`,
         platform: item.schedule.platform,
+        note: item.schedule.note,
         isPeak: item.schedule.isPeak,
         occupancy: item.schedule.occupancy,
         isTomorrow: item.isTomorrow,

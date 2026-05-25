@@ -3,6 +3,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { ZodError } from 'zod';
 import type { CollectedFerryRoute, CollectedLine, NormalizedTransportDataset } from '@cityline/shared';
+import { env } from '../../config/env.js';
 import { ingestionService } from './ingestion.service.js';
 import {
   parseCollectedManifest,
@@ -10,16 +11,22 @@ import {
   type CollectedManifestFile,
   type NormalizedManifestFile,
 } from './ingestion-manifest.js';
+import { OpenRouteServicePathProvider } from './route-path-enricher.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const backendRoot = path.resolve(__dirname, '../../../');
 const defaultNormalizedRoot = path.join(backendRoot, 'data', 'normalized');
 
+type IngestionCommand = 'normalize' | 'import' | 'enrich-paths';
+
 interface ParsedArgs {
-  command: 'normalize' | 'import';
+  command: IngestionCommand;
   input: string;
   output?: string;
+  provider?: 'openrouteservice';
+  profile?: string;
+  force?: boolean;
 }
 
 interface CityBundle {
@@ -32,16 +39,24 @@ interface CityBundle {
 const parseArgs = (argv: string[]): ParsedArgs => {
   const [command, ...rest] = argv;
 
-  if (command !== 'normalize' && command !== 'import') {
-    throw new Error('Comando invalido. Use "normalize" ou "import".');
+  if (command !== 'normalize' && command !== 'import' && command !== 'enrich-paths') {
+    throw new Error('Comando invalido. Use "normalize", "import" ou "enrich-paths".');
   }
 
   let input: string | undefined;
   let output: string | undefined;
+  let provider: ParsedArgs['provider'];
+  let profile: string | undefined;
+  let force = false;
 
   for (let index = 0; index < rest.length; index += 1) {
     const current = rest[index];
     const next = rest[index + 1];
+
+    if (current === '--force') {
+      force = true;
+      continue;
+    }
 
     if (current === '--input' && next) {
       input = next;
@@ -51,6 +66,18 @@ const parseArgs = (argv: string[]): ParsedArgs => {
 
     if (current === '--output' && next) {
       output = next;
+      index += 1;
+      continue;
+    }
+
+    if (current === '--provider' && next === 'openrouteservice') {
+      provider = next;
+      index += 1;
+      continue;
+    }
+
+    if (current === '--profile' && next) {
+      profile = next;
       index += 1;
     }
   }
@@ -63,6 +90,9 @@ const parseArgs = (argv: string[]): ParsedArgs => {
     command,
     input,
     output,
+    provider,
+    profile,
+    force,
   };
 };
 
@@ -194,6 +224,39 @@ const writeNormalizedOutputs = async (
   return writtenFiles;
 };
 
+const resolveCollectedOutputPath = (sourceFilePath: string, inputPath: string, explicitOutput?: string) => {
+  if (!explicitOutput) {
+    return sourceFilePath;
+  }
+
+  if (isJsonFilePath(explicitOutput)) {
+    return explicitOutput;
+  }
+
+  return path.join(explicitOutput, path.relative(inputPath, sourceFilePath));
+};
+
+const writeCollectedOutputs = async (
+  manifests: Array<{ filePath: string; manifest: CollectedManifestFile }>,
+  inputPath: string,
+  explicitOutput?: string
+) => {
+  if (manifests.length > 1 && explicitOutput && isJsonFilePath(explicitOutput)) {
+    throw new Error('Quando houver multiplos manifests collected, --output deve apontar para uma pasta.');
+  }
+
+  const writtenFiles: string[] = [];
+
+  for (const entry of manifests) {
+    const filePath = resolveCollectedOutputPath(entry.filePath, inputPath, explicitOutput);
+    await ensureDirectoryForFile(filePath);
+    await writeFile(filePath, `${JSON.stringify(entry.manifest, null, 2)}\n`, 'utf8');
+    writtenFiles.push(filePath);
+  }
+
+  return writtenFiles;
+};
+
 const runNormalize = async (inputPath: string, outputPath?: string) => {
   const collectedEntries = await loadCollectedManifests(inputPath);
   const cityBundles = groupCollectedByCity(collectedEntries);
@@ -224,6 +287,63 @@ const runNormalize = async (inputPath: string, outputPath?: string) => {
 
   for (const filePath of writtenFiles) {
     console.info(`[ingestion] Normalized gravado em ${filePath}`);
+  }
+};
+
+const runEnrichPaths = async (inputPath: string, outputPath: string | undefined, parsed: ParsedArgs) => {
+  const collectedEntries = await loadCollectedManifests(inputPath);
+
+  if ((parsed.provider ?? 'openrouteservice') !== 'openrouteservice') {
+    throw new Error('Provider de rota invalido. No momento, apenas openrouteservice esta disponivel.');
+  }
+
+  if (!env.OPENROUTESERVICE_API_KEY) {
+    throw new Error('OPENROUTESERVICE_API_KEY ausente. Configure a chave no ambiente antes de rodar enrich-paths.');
+  }
+
+  const provider = new OpenRouteServicePathProvider({
+    apiKey: env.OPENROUTESERVICE_API_KEY,
+    baseUrl: env.OPENROUTESERVICE_BASE_URL,
+    profile: parsed.profile ?? env.OPENROUTESERVICE_PROFILE,
+  });
+
+  console.info(`[ingestion] Collected manifests encontrados: ${collectedEntries.length}`);
+  console.info(
+    `[ingestion] Enriquecendo mapPath com provider "${parsed.provider ?? 'openrouteservice'}" no profile "${parsed.profile ?? env.OPENROUTESERVICE_PROFILE}".`
+  );
+
+  const enrichedEntries = await Promise.all(
+    collectedEntries.map(async (entry) => {
+      const beforeCount =
+        entry.manifest.entityType === 'line'
+          ? entry.manifest.data.directions.reduce((total, direction) => total + direction.mapPath.length, 0)
+          : 0;
+
+      const manifest = await ingestionService.enrichCollectedPaths(entry.manifest, {
+        provider,
+        force: parsed.force,
+      });
+
+      const afterCount =
+        manifest.entityType === 'line'
+          ? manifest.data.directions.reduce((total, direction) => total + direction.mapPath.length, 0)
+          : 0;
+
+      console.info(
+        `[ingestion] ${entry.filePath}: ${beforeCount} -> ${afterCount} ponto(s) de mapPath${parsed.force ? ' (force)' : ''}.`
+      );
+
+      return {
+        filePath: entry.filePath,
+        manifest,
+      };
+    })
+  );
+
+  const writtenFiles = await writeCollectedOutputs(enrichedEntries, inputPath, outputPath);
+
+  for (const filePath of writtenFiles) {
+    console.info(`[ingestion] Collected enriquecido gravado em ${filePath}`);
   }
 };
 
@@ -259,6 +379,11 @@ const main = async () => {
 
     if (parsed.command === 'normalize') {
       await runNormalize(inputPath, outputPath);
+      return;
+    }
+
+    if (parsed.command === 'enrich-paths') {
+      await runEnrichPaths(inputPath, outputPath, parsed);
       return;
     }
 

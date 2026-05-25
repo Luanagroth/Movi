@@ -39,6 +39,6 @@ describe('useUserLocation', () => {
     });
 
     expect(result.current.location).toBeNull();
-    expect(result.current.error).toContain('Permissão de localização negada');
+    expect(result.current.error).toContain('Permissao de localizacao negada');
   });
 });

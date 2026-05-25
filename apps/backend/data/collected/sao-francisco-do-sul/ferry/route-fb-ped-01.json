@@ -1,0 +1,172 @@
+{
+  "manifestVersion": "1.0",
+  "citySlug": "sao-francisco-do-sul",
+  "providerSlug": "prefeitura-sfs-ferry",
+  "entityType": "ferry-route",
+  "data": {
+    "id": "collected-ferry-fb-ped-01",
+    "code": "FB-PED-01",
+    "slug": "ferry-centro-historico-vila-da-gloria-pedestres",
+    "operator": "Prefeitura de Sao Francisco do Sul",
+    "routeLabel": "Centro Historico - Vila da Gloria (Pedestres)",
+    "originLabel": "Centro Historico",
+    "destinationLabel": "Vila da Gloria",
+    "summary": "Travessia gratuita para pedestres entre Centro Historico e Vila da Gloria.",
+    "fares": [
+      {
+        "id": "collected-ferry-fb-ped-01-fare-pedestrian",
+        "label": "Pedestre",
+        "riderCategory": "pedestrian",
+        "amountText": "Gratuito",
+        "amountCents": 0,
+        "currency": "BRL",
+        "appliesTo": "ferry",
+        "source": {
+          "sourceId": "prefeitura-sfs-ferry",
+          "sourceName": "Prefeitura de Sao Francisco do Sul",
+          "sourceUrl": "https://www.saofranciscodosul.sc.gov.br/",
+          "collectedAt": "2026-05-23T00:00:00.000Z",
+          "collectionMethod": "manual",
+          "sourceLineRef": "FB-PED-01"
+        }
+      }
+    ],
+    "directions": [
+      {
+        "id": "collected-ferry-fb-ped-01-outbound",
+        "type": "outbound",
+        "name": "Centro Historico -> Vila da Gloria",
+        "routeLabel": "Centro Historico -> Vila da Gloria",
+        "originLabel": "Centro Historico",
+        "destinationLabel": "Vila da Gloria",
+        "mapPath": [
+          { "sequence": 1, "lat": -26.2434, "lng": -48.6379 },
+          { "sequence": 2, "lat": -26.1791, "lng": -48.7247 }
+        ],
+        "stops": [
+          {
+            "id": "collected-ferry-fb-ped-01-stop-centro-historico",
+            "name": "Trapiche Centro Historico",
+            "sequence": 1,
+            "location": { "lat": -26.2434, "lng": -48.6379 },
+            "isTimingPoint": true
+          },
+          {
+            "id": "collected-ferry-fb-ped-01-stop-vila-da-gloria",
+            "name": "Trapiche Vila da Gloria",
+            "sequence": 2,
+            "location": { "lat": -26.1791, "lng": -48.7247 },
+            "isTimingPoint": true
+          }
+        ],
+        "departures": [
+          { "id": "collected-ferry-fb-ped-01-outbound-weekday-0600", "serviceDay": "weekday", "departureTime": "06:00", "stopPredictions": [] },
+          { "id": "collected-ferry-fb-ped-01-outbound-weekday-0730", "serviceDay": "weekday", "departureTime": "07:30", "stopPredictions": [] },
+          { "id": "collected-ferry-fb-ped-01-outbound-weekday-1030", "serviceDay": "weekday", "departureTime": "10:30", "stopPredictions": [] },
+          { "id": "collected-ferry-fb-ped-01-outbound-weekday-1215", "serviceDay": "weekday", "departureTime": "12:15", "stopPredictions": [] },
+          { "id": "collected-ferry-fb-ped-01-outbound-weekday-1430", "serviceDay": "weekday", "departureTime": "14:30", "stopPredictions": [] },
+          { "id": "collected-ferry-fb-ped-01-outbound-weekday-1700", "serviceDay": "weekday", "departureTime": "17:00", "stopPredictions": [] },
+          { "id": "collected-ferry-fb-ped-01-outbound-weekday-1830", "serviceDay": "weekday", "departureTime": "18:30", "stopPredictions": [] },
+          { "id": "collected-ferry-fb-ped-01-outbound-weekday-2230", "serviceDay": "weekday", "departureTime": "22:30", "stopPredictions": [] },
+          { "id": "collected-ferry-fb-ped-01-outbound-saturday-0600", "serviceDay": "saturday", "departureTime": "06:00", "stopPredictions": [] },
+          { "id": "collected-ferry-fb-ped-01-outbound-saturday-0730", "serviceDay": "saturday", "departureTime": "07:30", "stopPredictions": [] },
+          { "id": "collected-ferry-fb-ped-01-outbound-saturday-1030", "serviceDay": "saturday", "departureTime": "10:30", "stopPredictions": [] },
+          { "id": "collected-ferry-fb-ped-01-outbound-saturday-1215", "serviceDay": "saturday", "departureTime": "12:15", "stopPredictions": [] },
+          { "id": "collected-ferry-fb-ped-01-outbound-saturday-1430", "serviceDay": "saturday", "departureTime": "14:30", "stopPredictions": [] },
+          { "id": "collected-ferry-fb-ped-01-outbound-saturday-1700", "serviceDay": "saturday", "departureTime": "17:00", "stopPredictions": [] },
+          { "id": "collected-ferry-fb-ped-01-outbound-saturday-1830", "serviceDay": "saturday", "departureTime": "18:30", "stopPredictions": [] },
+          { "id": "collected-ferry-fb-ped-01-outbound-saturday-2230", "serviceDay": "saturday", "departureTime": "22:30", "stopPredictions": [] },
+          { "id": "collected-ferry-fb-ped-01-outbound-sunday-0600", "serviceDay": "sunday", "departureTime": "06:00", "stopPredictions": [] },
+          { "id": "collected-ferry-fb-ped-01-outbound-sunday-0730", "serviceDay": "sunday", "departureTime": "07:30", "stopPredictions": [] },
+          { "id": "collected-ferry-fb-ped-01-outbound-sunday-1030", "serviceDay": "sunday", "departureTime": "10:30", "stopPredictions": [] },
+          { "id": "collected-ferry-fb-ped-01-outbound-sunday-1215", "serviceDay": "sunday", "departureTime": "12:15", "stopPredictions": [] },
+          { "id": "collected-ferry-fb-ped-01-outbound-sunday-1430", "serviceDay": "sunday", "departureTime": "14:30", "stopPredictions": [] },
+          { "id": "collected-ferry-fb-ped-01-outbound-sunday-1700", "serviceDay": "sunday", "departureTime": "17:00", "stopPredictions": [] },
+          { "id": "collected-ferry-fb-ped-01-outbound-sunday-1830", "serviceDay": "sunday", "departureTime": "18:30", "stopPredictions": [] },
+          { "id": "collected-ferry-fb-ped-01-outbound-sunday-2230", "serviceDay": "sunday", "departureTime": "22:30", "stopPredictions": [] }
+        ],
+        "source": {
+          "sourceId": "prefeitura-sfs-ferry",
+          "sourceName": "Prefeitura de Sao Francisco do Sul",
+          "sourceUrl": "https://www.saofranciscodosul.sc.gov.br/",
+          "collectedAt": "2026-05-23T00:00:00.000Z",
+          "collectionMethod": "manual",
+          "sourceLineRef": "FB-PED-01",
+          "sourceDirectionRef": "outbound"
+        }
+      },
+      {
+        "id": "collected-ferry-fb-ped-01-inbound",
+        "type": "inbound",
+        "name": "Vila da Gloria -> Centro Historico",
+        "routeLabel": "Vila da Gloria -> Centro Historico",
+        "originLabel": "Vila da Gloria",
+        "destinationLabel": "Centro Historico",
+        "mapPath": [
+          { "sequence": 1, "lat": -26.1791, "lng": -48.7247 },
+          { "sequence": 2, "lat": -26.2434, "lng": -48.6379 }
+        ],
+        "stops": [
+          {
+            "id": "collected-ferry-fb-ped-01-stop-vila-da-gloria-inbound",
+            "name": "Trapiche Vila da Gloria",
+            "sequence": 1,
+            "location": { "lat": -26.1791, "lng": -48.7247 },
+            "isTimingPoint": true
+          },
+          {
+            "id": "collected-ferry-fb-ped-01-stop-centro-historico-inbound",
+            "name": "Trapiche Centro Historico",
+            "sequence": 2,
+            "location": { "lat": -26.2434, "lng": -48.6379 },
+            "isTimingPoint": true
+          }
+        ],
+        "departures": [
+          { "id": "collected-ferry-fb-ped-01-inbound-weekday-0645", "serviceDay": "weekday", "departureTime": "06:45", "stopPredictions": [] },
+          { "id": "collected-ferry-fb-ped-01-inbound-weekday-0815", "serviceDay": "weekday", "departureTime": "08:15", "stopPredictions": [] },
+          { "id": "collected-ferry-fb-ped-01-inbound-weekday-1130", "serviceDay": "weekday", "departureTime": "11:30", "stopPredictions": [] },
+          { "id": "collected-ferry-fb-ped-01-inbound-weekday-1300", "serviceDay": "weekday", "departureTime": "13:00", "stopPredictions": [] },
+          { "id": "collected-ferry-fb-ped-01-inbound-weekday-1515", "serviceDay": "weekday", "departureTime": "15:15", "stopPredictions": [] },
+          { "id": "collected-ferry-fb-ped-01-inbound-weekday-1745", "serviceDay": "weekday", "departureTime": "17:45", "stopPredictions": [] },
+          { "id": "collected-ferry-fb-ped-01-inbound-weekday-1915", "serviceDay": "weekday", "departureTime": "19:15", "stopPredictions": [] },
+          { "id": "collected-ferry-fb-ped-01-inbound-weekday-2315", "serviceDay": "weekday", "departureTime": "23:15", "stopPredictions": [] },
+          { "id": "collected-ferry-fb-ped-01-inbound-saturday-0645", "serviceDay": "saturday", "departureTime": "06:45", "stopPredictions": [] },
+          { "id": "collected-ferry-fb-ped-01-inbound-saturday-0815", "serviceDay": "saturday", "departureTime": "08:15", "stopPredictions": [] },
+          { "id": "collected-ferry-fb-ped-01-inbound-saturday-1130", "serviceDay": "saturday", "departureTime": "11:30", "stopPredictions": [] },
+          { "id": "collected-ferry-fb-ped-01-inbound-saturday-1300", "serviceDay": "saturday", "departureTime": "13:00", "stopPredictions": [] },
+          { "id": "collected-ferry-fb-ped-01-inbound-saturday-1515", "serviceDay": "saturday", "departureTime": "15:15", "stopPredictions": [] },
+          { "id": "collected-ferry-fb-ped-01-inbound-saturday-1745", "serviceDay": "saturday", "departureTime": "17:45", "stopPredictions": [] },
+          { "id": "collected-ferry-fb-ped-01-inbound-saturday-1915", "serviceDay": "saturday", "departureTime": "19:15", "stopPredictions": [] },
+          { "id": "collected-ferry-fb-ped-01-inbound-saturday-2315", "serviceDay": "saturday", "departureTime": "23:15", "stopPredictions": [] },
+          { "id": "collected-ferry-fb-ped-01-inbound-sunday-0645", "serviceDay": "sunday", "departureTime": "06:45", "stopPredictions": [] },
+          { "id": "collected-ferry-fb-ped-01-inbound-sunday-0815", "serviceDay": "sunday", "departureTime": "08:15", "stopPredictions": [] },
+          { "id": "collected-ferry-fb-ped-01-inbound-sunday-1130", "serviceDay": "sunday", "departureTime": "11:30", "stopPredictions": [] },
+          { "id": "collected-ferry-fb-ped-01-inbound-sunday-1300", "serviceDay": "sunday", "departureTime": "13:00", "stopPredictions": [] },
+          { "id": "collected-ferry-fb-ped-01-inbound-sunday-1515", "serviceDay": "sunday", "departureTime": "15:15", "stopPredictions": [] },
+          { "id": "collected-ferry-fb-ped-01-inbound-sunday-1745", "serviceDay": "sunday", "departureTime": "17:45", "stopPredictions": [] },
+          { "id": "collected-ferry-fb-ped-01-inbound-sunday-1915", "serviceDay": "sunday", "departureTime": "19:15", "stopPredictions": [] },
+          { "id": "collected-ferry-fb-ped-01-inbound-sunday-2315", "serviceDay": "sunday", "departureTime": "23:15", "stopPredictions": [] }
+        ],
+        "source": {
+          "sourceId": "prefeitura-sfs-ferry",
+          "sourceName": "Prefeitura de Sao Francisco do Sul",
+          "sourceUrl": "https://www.saofranciscodosul.sc.gov.br/",
+          "collectedAt": "2026-05-23T00:00:00.000Z",
+          "collectionMethod": "manual",
+          "sourceLineRef": "FB-PED-01",
+          "sourceDirectionRef": "inbound"
+        }
+      }
+    ],
+    "collectionStatus": "reviewed",
+    "source": {
+      "sourceId": "prefeitura-sfs-ferry",
+      "sourceName": "Prefeitura de Sao Francisco do Sul",
+      "sourceUrl": "https://www.saofranciscodosul.sc.gov.br/",
+      "collectedAt": "2026-05-23T00:00:00.000Z",
+      "collectionMethod": "manual",
+      "sourceLineRef": "FB-PED-01"
+    }
+  }
+}

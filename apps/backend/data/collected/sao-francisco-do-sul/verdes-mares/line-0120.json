@@ -1,0 +1,426 @@
+{
+  "manifestVersion": "1.0",
+  "citySlug": "sao-francisco-do-sul",
+  "providerSlug": "verdes-mares",
+  "entityType": "line",
+  "data": {
+    "id": "collected-line-0120",
+    "code": "0120",
+    "slug": "0120-forte-enseada",
+    "name": "Forte Enseada",
+    "operator": "Verdes Mares",
+    "mode": "urban",
+    "summary": "Linha Forte - Enseada",
+    "routeLabel": "Forte -> Enseada",
+    "originLabel": "Forte",
+    "destinationLabel": "Enseada",
+    "fares": [
+      {
+        "id": "collected-line-0120-fare-1",
+        "label": "Tarifa urbana municipal",
+        "appliesTo": "line",
+        "source": {
+          "sourceId": "verdes-mares-sfs",
+          "sourceName": "Verdes Mares Sao Francisco do Sul",
+          "sourceUrl": "https://vmares.com.br/sao-francisco-do-sul/",
+          "collectedAt": "2026-04-17T12:00:00.000Z",
+          "collectionMethod": "manual",
+          "sourceLineRef": "0120"
+        }
+      }
+    ],
+    "directions": [
+      {
+        "id": "collected-line-0120-outbound",
+        "type": "outbound",
+        "name": "Saída do Forte",
+        "routeLabel": "Forte -> Enseada",
+        "originLabel": "Forte",
+        "destinationLabel": "Enseada",
+        "mapPath": [
+          {
+            "sequence": 1,
+            "lat": -26.168114753304362,
+            "lng": -48.53456075459785
+          },
+          {
+            "sequence": 2,
+            "lat": -26.17332262855911,
+            "lng": -48.534197052437534
+          },
+          {
+            "sequence": 3,
+            "lat": -26.17457101554951,
+            "lng": -48.53311601462382
+          },
+          {
+            "sequence": 4,
+            "lat": -26.177195431024245,
+            "lng": -48.533213854661
+          },
+          {
+            "sequence": 5,
+            "lat": -26.178439199227615,
+            "lng": -48.534196700760226
+          },
+          {
+            "sequence": 6,
+            "lat": -26.180307304245265,
+            "lng": -48.53405866057154
+          },
+          {
+            "sequence": 7,
+            "lat": -26.182428087412184,
+            "lng": -48.533821231460934
+          },
+          {
+            "sequence": 8,
+            "lat": -26.185009642896798,
+            "lng": -48.534583213266075
+          },
+          {
+            "sequence": 9,
+            "lat": -26.18674386109734,
+            "lng": -48.53421326555498
+          },
+          {
+            "sequence": 10,
+            "lat": -26.189433106332924,
+            "lng": -48.53370959810906
+          },
+          {
+            "sequence": 11,
+            "lat": -26.19323295743177,
+            "lng": -48.531099762651344
+          },
+          {
+            "sequence": 12,
+            "lat": -26.197666459220525,
+            "lng": -48.52983036886005
+          },
+          {
+            "sequence": 13,
+            "lat": -26.199997505028865,
+            "lng": -48.52946091312311
+          },
+          {
+            "sequence": 14,
+            "lat": -26.20184500579295,
+            "lng": -48.529267945915116
+          },
+          {
+            "sequence": 15,
+            "lat": -26.204301635690246,
+            "lng": -48.528827707110295
+          },
+          {
+            "sequence": 16,
+            "lat": -26.206303864389408,
+            "lng": -48.52807668858587
+          },
+          {
+            "sequence": 17,
+            "lat": -26.20816119492769,
+            "lng": -48.527452854633125
+          },
+          {
+            "sequence": 18,
+            "lat": -26.211295061363288,
+            "lng": -48.52632691535398
+          },
+          {
+            "sequence": 19,
+            "lat": -26.21361924673476,
+            "lng": -48.52550695601464
+          },
+          {
+            "sequence": 20,
+            "lat": -26.215994914241,
+            "lng": -48.524635501638556
+          },
+          {
+            "sequence": 21,
+            "lat": -26.21936731928632,
+            "lng": -48.52342140725109
+          },
+          {
+            "sequence": 22,
+            "lat": -26.222942407526915,
+            "lng": -48.521630057592056
+          },
+          {
+            "sequence": 23,
+            "lat": -26.224075476667394,
+            "lng": -48.51809346809671
+          },
+          {
+            "sequence": 24,
+            "lat": -26.22524944329803,
+            "lng": -48.5148267615483
+          },
+          {
+            "sequence": 25,
+            "lat": -26.227065342408654,
+            "lng": -48.51013744052271
+          }
+        ],
+        "stops": [
+          {
+            "id": "collected-line-0120-outbound-stop-1",
+            "name": "Forte Marechal Luz",
+            "sequence": 1,
+            "location": {
+              "lat": -26.168114753304362,
+              "lng": -48.53456075459785
+            },
+            "isTimingPoint": true
+          },
+          {
+            "id": "collected-line-0120-outbound-stop-2",
+            "name": "Estrada do Forte 15",
+            "sequence": 2,
+            "location": {
+              "lat": -26.17332262855911,
+              "lng": -48.534197052437534
+            }
+          },
+          {
+            "id": "collected-line-0120-outbound-stop-3",
+            "name": "Estrada do Forte 16",
+            "sequence": 3,
+            "location": {
+              "lat": -26.17457101554951,
+              "lng": -48.53311601462382
+            }
+          },
+          {
+            "id": "collected-line-0120-outbound-stop-4",
+            "name": "Estrada do Forte 17",
+            "sequence": 4,
+            "location": {
+              "lat": -26.177195431024245,
+              "lng": -48.533213854661
+            }
+          },
+          {
+            "id": "collected-line-0120-outbound-stop-5",
+            "name": "Estrada do Forte 18",
+            "sequence": 5,
+            "location": {
+              "lat": -26.178439199227615,
+              "lng": -48.534196700760226
+            }
+          },
+          {
+            "id": "collected-line-0120-outbound-stop-6",
+            "name": "Estrada do Forte 19",
+            "sequence": 6,
+            "location": {
+              "lat": -26.180307304245265,
+              "lng": -48.53405866057154
+            }
+          },
+          {
+            "id": "collected-line-0120-outbound-stop-7",
+            "name": "Estrada do Forte 20",
+            "sequence": 7,
+            "location": {
+              "lat": -26.182428087412184,
+              "lng": -48.533821231460934
+            }
+          },
+          {
+            "id": "collected-line-0120-outbound-stop-8",
+            "name": "Estrada do Forte 21",
+            "sequence": 8,
+            "location": {
+              "lat": -26.185009642896798,
+              "lng": -48.534583213266075
+            }
+          },
+          {
+            "id": "collected-line-0120-outbound-stop-9",
+            "name": "Estrada do Forte 22",
+            "sequence": 9,
+            "location": {
+              "lat": -26.18674386109734,
+              "lng": -48.53421326555498
+            }
+          },
+          {
+            "id": "collected-line-0120-outbound-stop-10",
+            "name": "Estrada do Forte 23",
+            "sequence": 10,
+            "location": {
+              "lat": -26.189433106332924,
+              "lng": -48.53370959810906
+            }
+          },
+          {
+            "id": "collected-line-0120-outbound-stop-11",
+            "name": "Estrada do Forte 24",
+            "sequence": 11,
+            "location": {
+              "lat": -26.19323295743177,
+              "lng": -48.531099762651344
+            }
+          },
+          {
+            "id": "collected-line-0120-outbound-stop-12",
+            "name": "Gustavo Vogelsanger 1",
+            "sequence": 12,
+            "location": {
+              "lat": -26.197666459220525,
+              "lng": -48.52983036886005
+            }
+          },
+          {
+            "id": "collected-line-0120-outbound-stop-13",
+            "name": "Av. Bogotá 1",
+            "sequence": 13,
+            "location": {
+              "lat": -26.199997505028865,
+              "lng": -48.52946091312311
+            }
+          },
+          {
+            "id": "collected-line-0120-outbound-stop-14",
+            "name": "Rua Cabul, 118",
+            "sequence": 14,
+            "location": {
+              "lat": -26.20184500579295,
+              "lng": -48.529267945915116
+            }
+          },
+          {
+            "id": "collected-line-0120-outbound-stop-15",
+            "name": "Secretaria de Obras das Praias (Sentido Centro/Bairro)",
+            "sequence": 15,
+            "location": {
+              "lat": -26.204301635690246,
+              "lng": -48.528827707110295
+            }
+          },
+          {
+            "id": "collected-line-0120-outbound-stop-16",
+            "name": "Av. Bogotá 4 (Próximo FT)",
+            "sequence": 16,
+            "location": {
+              "lat": -26.206303864389408,
+              "lng": -48.52807668858587
+            }
+          },
+          {
+            "id": "collected-line-0120-outbound-stop-17",
+            "name": "Antiga Reinert Mat. Construção",
+            "sequence": 17,
+            "location": {
+              "lat": -26.20816119492769,
+              "lng": -48.527452854633125
+            }
+          },
+          {
+            "id": "collected-line-0120-outbound-stop-18",
+            "name": "Multipraia Society",
+            "sequence": 18,
+            "location": {
+              "lat": -26.211295061363288,
+              "lng": -48.52632691535398
+            }
+          },
+          {
+            "id": "collected-line-0120-outbound-stop-19",
+            "name": "Próximo Rua Armazém",
+            "sequence": 19,
+            "location": {
+              "lat": -26.21361924673476,
+              "lng": -48.52550695601464
+            }
+          },
+          {
+            "id": "collected-line-0120-outbound-stop-20",
+            "name": "Ubatuba Bebidas",
+            "sequence": 20,
+            "location": {
+              "lat": -26.215994914241,
+              "lng": -48.524635501638556
+            }
+          },
+          {
+            "id": "collected-line-0120-outbound-stop-21",
+            "name": "Próximo Contabilidade Enseada",
+            "sequence": 21,
+            "location": {
+              "lat": -26.21936731928632,
+              "lng": -48.52342140725109
+            }
+          },
+          {
+            "id": "collected-line-0120-outbound-stop-22",
+            "name": "Entrada Rua Felipe Musse",
+            "sequence": 22,
+            "location": {
+              "lat": -26.222942407526915,
+              "lng": -48.521630057592056
+            }
+          },
+          {
+            "id": "collected-line-0120-outbound-stop-23",
+            "name": "Pizzaria Kanto da Pizza",
+            "sequence": 23,
+            "location": {
+              "lat": -26.224075476667394,
+              "lng": -48.51809346809671
+            }
+          },
+          {
+            "id": "collected-line-0120-outbound-stop-24",
+            "name": "Mercado Pato Branco",
+            "sequence": 24,
+            "location": {
+              "lat": -26.22524944329803,
+              "lng": -48.5148267615483
+            }
+          },
+          {
+            "id": "collected-line-0120-outbound-stop-25",
+            "name": "Aquamires",
+            "sequence": 25,
+            "location": {
+              "lat": -26.227065342408654,
+              "lng": -48.51013744052271
+            },
+            "isTimingPoint": true
+          }
+        ],
+        "departures": [
+          {
+            "id": "collected-line-0120-outbound-weekday-0615",
+            "serviceDay": "weekday",
+            "departureTime": "06:15",
+            "stopPredictions": []
+          }
+        ],
+        "source": {
+          "sourceId": "verdes-mares-sfs",
+          "sourceName": "Verdes Mares Sao Francisco do Sul",
+          "sourceUrl": "https://vmares.com.br/sao-francisco-do-sul/",
+          "collectedAt": "2026-04-17T12:00:00.000Z",
+          "collectionMethod": "manual",
+          "sourceLineRef": "0120",
+          "sourceDirectionRef": "outbound"
+        }
+      }
+    ],
+    "collectionStatus": "reviewed",
+    "source": {
+      "sourceId": "verdes-mares-sfs",
+      "sourceName": "Verdes Mares Sao Francisco do Sul",
+      "sourceUrl": "https://vmares.com.br/sao-francisco-do-sul/",
+      "collectedAt": "2026-04-17T12:00:00.000Z",
+      "collectionMethod": "manual",
+      "sourceLineRef": "0120",
+      "notes": "Linha 0120 Forte Enseada montada com sentido bairro a partir das paradas informadas, reaproveitando coordenadas do banco local."
+    }
+  }
+}

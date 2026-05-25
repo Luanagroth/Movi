@@ -12,7 +12,7 @@ export function useUserLocation() {
 
   const requestLocation = useCallback(async () => {
     if (!supported) {
-      setError('Geolocalização não está disponível neste navegador.');
+      setError('Geolocalizacao nao esta disponivel neste navegador.');
       return;
     }
 
@@ -32,8 +32,8 @@ export function useUserLocation() {
         (geoError) => {
           setError(
             geoError.code === geoError.PERMISSION_DENIED
-              ? 'Permissão de localização negada. Libere o acesso para ver os pontos próximos.'
-              : 'Não foi possível obter sua localização agora.'
+              ? 'Permissao de localizacao negada. Libere o acesso para ver os pontos proximos.'
+              : 'Nao foi possivel obter sua localizacao agora.'
           );
           setIsLoading(false);
           resolve();

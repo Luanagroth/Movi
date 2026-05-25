@@ -137,6 +137,7 @@ export function DepartureList({ title, items, compact = false, referenceTime = n
               <p className={`mt-1 text-xs font-medium ${timing.status === 'past' ? 'text-slate-500' : timing.status === 'now' ? 'text-emerald-700' : 'text-brand-700'}`}>
                 {timingLabel}
               </p>
+              {'note' in item && item.note ? <p className="mt-1 text-[11px] text-slate-500">{item.note}</p> : null}
             </div>
           );
         })}

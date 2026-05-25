@@ -1,0 +1,4615 @@
+{
+  "manifestVersion": "1.0",
+  "citySlug": "sao-francisco-do-sul",
+  "dataset": {
+    "metadata": {
+      "datasetId": "dataset-verdes-mares-sfs-2026-04-17T12-00-00-000Z",
+      "createdAt": "2026-04-17T12:00:00.000Z",
+      "sourceName": "Verdes Mares Sao Francisco do Sul",
+      "sourceUrl": "https://vmares.com.br/sao-francisco-do-sul/",
+      "collectionMethod": "manual"
+    },
+    "transportLines": [
+      {
+        "id": "line-0201",
+        "code": "0201",
+        "slug": "0201-ribeira",
+        "name": "Ribeira",
+        "operator": "Verdes Mares",
+        "summary": "Linha Centro - Ribeira",
+        "routeLabel": "Centro -> Ribeira",
+        "originLabel": "Centro",
+        "destinationLabel": "Ribeira",
+        "transportMode": "municipal",
+        "operationalStatus": "on-time",
+        "fareSummary": "Tarifa urbana municipal",
+        "amenities": [],
+        "sourceUpdatedAt": "2026-04-17T12:00:00.000Z",
+        "sourceLineRef": "0201",
+        "isActive": true
+      }
+    ],
+    "routeDirections": [
+      {
+        "id": "line-0201-outbound",
+        "lineId": "line-0201",
+        "type": "outbound",
+        "slug": "outbound",
+        "name": "Saída do Centro",
+        "routeLabel": "Centro -> Ribeira",
+        "originLabel": "Centro",
+        "destinationLabel": "Ribeira",
+        "sortOrder": 0,
+        "isLoop": false,
+        "sourceDirectionRef": "outbound"
+      },
+      {
+        "id": "line-0201-inbound",
+        "lineId": "line-0201",
+        "type": "inbound",
+        "slug": "inbound",
+        "name": "Saída da Ribeira",
+        "routeLabel": "Ribeira -> Centro",
+        "originLabel": "Ribeira",
+        "destinationLabel": "Centro",
+        "sortOrder": 1,
+        "isLoop": false,
+        "sourceDirectionRef": "inbound"
+      }
+    ],
+    "stops": [
+      {
+        "id": "stop-praca-dr-getulio-vargas-2-m26_2434-m48_6379",
+        "name": "Praça Dr. Getúlio Vargas 2",
+        "slug": "praca-dr-getulio-vargas-2",
+        "latitude": -26.243437512602945,
+        "longitude": -48.637910711972246
+      },
+      {
+        "id": "stop-ogmo-sfs-m26_2435-m48_6351",
+        "name": "Ogmo SFS",
+        "slug": "ogmo-sfs",
+        "latitude": -26.24347278215267,
+        "longitude": -48.635064229915336
+      },
+      {
+        "id": "stop-antiga-multipaper-sentido-centro-bairro-m26_2447-m48_6347",
+        "name": "Antiga Multipaper (Sentido Centro/Bairro)",
+        "slug": "antiga-multipaper-sentido-centro-bairro",
+        "latitude": -26.244699006604957,
+        "longitude": -48.63466469668285
+      },
+      {
+        "id": "stop-carioca-bica-d-agua-m26_2466-m48_6355",
+        "name": "Carioca (Bica d'água)",
+        "slug": "carioca-bica-d-agua",
+        "latitude": -26.24659710935892,
+        "longitude": -48.63549497664863
+      },
+      {
+        "id": "stop-colegio-adventista-m26_2478-m48_6373",
+        "name": "Colégio Adventista",
+        "slug": "colegio-adventista",
+        "latitude": -26.247834789940356,
+        "longitude": -48.63733216779835
+      },
+      {
+        "id": "stop-restaurante-tom-brasil-m26_2492-m48_6384",
+        "name": "Restaurante Tom Brasil",
+        "slug": "restaurante-tom-brasil",
+        "latitude": -26.249248390210585,
+        "longitude": -48.63840582899403
+      },
+      {
+        "id": "stop-cabral-refrigeracao-m26_2512-m48_6386",
+        "name": "Cabral Refrigeração",
+        "slug": "cabral-refrigeracao",
+        "latitude": -26.251213467952397,
+        "longitude": -48.63859429423021
+      },
+      {
+        "id": "stop-entrada-alameda-ipiranga-m26_2511-m48_6413",
+        "name": "Entrada Alameda Ipiranga",
+        "slug": "entrada-alameda-ipiranga",
+        "latitude": -26.251061440030725,
+        "longitude": -48.641268209029356
+      },
+      {
+        "id": "stop-imaribo-m26_2518-m48_6418",
+        "name": "Imaribo",
+        "slug": "imaribo",
+        "latitude": -26.25182051476358,
+        "longitude": -48.641792890280094
+      },
+      {
+        "id": "stop-academia-medley-m26_2540-m48_6430",
+        "name": "Academia Medley",
+        "slug": "academia-medley",
+        "latitude": -26.254037730205283,
+        "longitude": -48.642950428488284
+      },
+      {
+        "id": "stop-big-pizza-sentido-centro-bairro-m26_2572-m48_6442",
+        "name": "Big Pizza (Sentido Centro/Bairro)",
+        "slug": "big-pizza-sentido-centro-bairro",
+        "latitude": -26.257153611772974,
+        "longitude": -48.644194780641975
+      },
+      {
+        "id": "stop-frente-n-994-m26_2600-m48_6453",
+        "name": "Frente nº 994",
+        "slug": "frente-n-994",
+        "latitude": -26.260012968859453,
+        "longitude": -48.64525066562247
+      },
+      {
+        "id": "stop-travessa-olaria-em-frente-m26_2628-m48_6453",
+        "name": "Travessa Olaria (em frente)",
+        "slug": "travessa-olaria-em-frente",
+        "latitude": -26.262757299153424,
+        "longitude": -48.645268011946264
+      },
+      {
+        "id": "stop-antiga-leme-m26_2642-m48_6440",
+        "name": "Antiga LEME",
+        "slug": "antiga-leme",
+        "latitude": -26.264208332203307,
+        "longitude": -48.64404008690916
+      },
+      {
+        "id": "stop-proximo-rua-joinville-centro-bairro-m26_2656-m48_6426",
+        "name": "Próximo Rua Joinville (Centro/Bairro)",
+        "slug": "proximo-rua-joinville-centro-bairro",
+        "latitude": -26.2656282116282,
+        "longitude": -48.6425769557269
+      },
+      {
+        "id": "stop-rua-joao-r-liberato-em-frente-m26_2674-m48_6416",
+        "name": "Rua João R. Liberato (em frente)",
+        "slug": "rua-joao-r-liberato-em-frente",
+        "latitude": -26.267422368563533,
+        "longitude": -48.64159232663566
+      },
+      {
+        "id": "stop-supermercado-barao-m26_2695-m48_6411",
+        "name": "Supermercado Barão",
+        "slug": "supermercado-barao",
+        "latitude": -26.26948599977044,
+        "longitude": -48.6410685268486
+      },
+      {
+        "id": "stop-antiga-policia-rodoviaria-federal-m26_2720-m48_6419",
+        "name": "Antiga Polícia Rodoviária Federal",
+        "slug": "antiga-policia-rodoviaria-federal",
+        "latitude": -26.272047903539757,
+        "longitude": -48.64194071901231
+      },
+      {
+        "id": "stop-posto-de-molas-braatz-m26_2776-m48_6460",
+        "name": "Posto de Molas Braatz",
+        "slug": "posto-de-molas-braatz",
+        "latitude": -26.277607462872457,
+        "longitude": -48.646010708807374
+      },
+      {
+        "id": "stop-restaurante-kalangas-m26_2828-m48_6465",
+        "name": "Restaurante Kalangas",
+        "slug": "restaurante-kalangas",
+        "latitude": -26.28282468397751,
+        "longitude": -48.646537644131556
+      },
+      {
+        "id": "stop-estacionamento-fecoagro-centro-bairro-m26_2852-m48_6463",
+        "name": "Estacionamento Fecoagro (Centro/Bairro)",
+        "slug": "estacionamento-fecoagro-centro-bairro",
+        "latitude": -26.285217261009905,
+        "longitude": -48.64631566305282
+      },
+      {
+        "id": "stop-br-280-3400-sentido-centro-bairro-m26_2930-m48_6441",
+        "name": "BR 280, 3400 (Sentido Centro/Bairro)",
+        "slug": "br-280-3400-sentido-centro-bairro",
+        "latitude": -26.29301678631301,
+        "longitude": -48.64409451720033
+      },
+      {
+        "id": "stop-arcelormittal-vega-sentido-centro-bairro-m26_2973-m48_6419",
+        "name": "ArcelorMittal Vega (Sentido Centro/Bairro)",
+        "slug": "arcelormittal-vega-sentido-centro-bairro",
+        "latitude": -26.297275480942595,
+        "longitude": -48.64185220836048
+      },
+      {
+        "id": "stop-igreja-adventista-miranda-m26_3010-m48_6402",
+        "name": "Igreja Adventista Miranda",
+        "slug": "igreja-adventista-miranda",
+        "latitude": -26.300991484049057,
+        "longitude": -48.64020794041085
+      },
+      {
+        "id": "stop-ei-morro-da-cruz-centro-bairro-m26_3031-m48_6404",
+        "name": "EI Morro da Cruz (Centro/Bairro)",
+        "slug": "ei-morro-da-cruz-centro-bairro",
+        "latitude": -26.303073553407895,
+        "longitude": -48.64042754415611
+      },
+      {
+        "id": "stop-sitio-casa-de-pedra-centro-bairro-m26_3060-m48_6416",
+        "name": "Sítio Casa de Pedra (Centro/Bairro)",
+        "slug": "sitio-casa-de-pedra-centro-bairro",
+        "latitude": -26.305999531863865,
+        "longitude": -48.641589814486345
+      },
+      {
+        "id": "stop-fenix-club-m26_3124-m48_6443",
+        "name": "Fênix Club",
+        "slug": "fenix-club",
+        "latitude": -26.312376040334254,
+        "longitude": -48.644283048413115
+      },
+      {
+        "id": "stop-estrada-do-felismino-1-centro-bairro-m26_3283-m48_6496",
+        "name": "Estrada do Felismino 1 (Centro/Bairro)",
+        "slug": "estrada-do-felismino-1-centro-bairro",
+        "latitude": -26.328343387169397,
+        "longitude": -48.6495961421293
+      },
+      {
+        "id": "stop-estrada-do-felismino-2-centro-bairro-m26_3295-m48_6490",
+        "name": "Estrada do Felismino 2 (Centro/Bairro)",
+        "slug": "estrada-do-felismino-2-centro-bairro",
+        "latitude": -26.32953872945053,
+        "longitude": -48.64898586451129
+      },
+      {
+        "id": "stop-estrada-do-felismino-proximo-m26_3300-m48_6492",
+        "name": "Estrada do Felismino (Próximo)",
+        "slug": "estrada-do-felismino-proximo",
+        "latitude": -26.32995663541855,
+        "longitude": -48.64918471901228
+      },
+      {
+        "id": "stop-lanchonete-e-sorveteria-arco-iris-sentido-centro-bairro-m26_3322-m48_6508",
+        "name": "Lanchonete e Sorveteria Arco Iris (Sentido Centro/Bairro)",
+        "slug": "lanchonete-e-sorveteria-arco-iris-sentido-centro-bairro",
+        "latitude": -26.33224041501682,
+        "longitude": -48.65075991283638
+      },
+      {
+        "id": "stop-bar-miranda-m26_3359-m48_6535",
+        "name": "Bar Miranda",
+        "slug": "bar-miranda",
+        "latitude": -26.335921036270477,
+        "longitude": -48.65354702688907
+      },
+      {
+        "id": "stop-posto-de-saude-ribeira-sentido-centro-bairro-m26_3353-m48_6550",
+        "name": "Posto de Saúde Ribeira (Sentido Centro/Bairro)",
+        "slug": "posto-de-saude-ribeira-sentido-centro-bairro",
+        "latitude": -26.335311064844195,
+        "longitude": -48.654995022954864
+      },
+      {
+        "id": "stop-estrada-da-ribeira-3-m26_3349-m48_6563",
+        "name": "Estrada da Ribeira 3",
+        "slug": "estrada-da-ribeira-3",
+        "latitude": -26.334922007423835,
+        "longitude": -48.65630119840832
+      },
+      {
+        "id": "stop-ponto-final-miranda-sentido-centro-bairro-m26_3352-m48_6576",
+        "name": "Ponto Final - Miranda (Sentido Centro/Bairro)",
+        "slug": "ponto-final-miranda-sentido-centro-bairro",
+        "latitude": -26.335175000129734,
+        "longitude": -48.65764888495627
+      },
+      {
+        "id": "stop-sitio-sentido-centro-bairro-m26_3379-m48_6765",
+        "name": "Sítio (Sentido Centro/Bairro)",
+        "slug": "sitio-sentido-centro-bairro",
+        "latitude": -26.33793589066274,
+        "longitude": -48.67651692477939
+      },
+      {
+        "id": "stop-em-antonio-canuto-sentido-centro-bairro-m26_3375-m48_6801",
+        "name": "EM Antônio Canuto (Sentido Centro/Bairro)",
+        "slug": "em-antonio-canuto-sentido-centro-bairro",
+        "latitude": -26.33748382010789,
+        "longitude": -48.68006292259714
+      },
+      {
+        "id": "stop-final-ribeira-m26_3343-m48_6825",
+        "name": "Final Ribeira",
+        "slug": "final-ribeira",
+        "latitude": -26.334286044676176,
+        "longitude": -48.682535596675436
+      },
+      {
+        "id": "stop-br-280-3757-m26_3299-m48_6844",
+        "name": "BR-280, 3757",
+        "slug": "br-280-3757",
+        "latitude": -26.329872604823088,
+        "longitude": -48.68440140790063
+      },
+      {
+        "id": "stop-ponto-final-ribeira-m26_3376-m48_6801",
+        "name": "Ponto Final Ribeira",
+        "slug": "ponto-final-ribeira",
+        "latitude": -26.337594637956364,
+        "longitude": -48.68009380448313
+      },
+      {
+        "id": "stop-em-antonio-canuto-sentido-bairro-centro-m26_3344-m48_6823",
+        "name": "EM Antônio Canuto (Sentido Bairro/Centro)",
+        "slug": "em-antonio-canuto-sentido-bairro-centro",
+        "latitude": -26.334442700023235,
+        "longitude": -48.68229664643862
+      },
+      {
+        "id": "stop-sitio-sentido-bairro-centro-m26_3380-m48_6765",
+        "name": "Sítio (Sentido Bairro/Centro)",
+        "slug": "sitio-sentido-bairro-centro",
+        "latitude": -26.33800119450906,
+        "longitude": -48.67649284440692
+      },
+      {
+        "id": "stop-ponto-final-miranda-sentido-bairro-centro-m26_3353-m48_6581",
+        "name": "Ponto Final - Miranda (Sentido Bairro/Centro)",
+        "slug": "ponto-final-miranda-sentido-bairro-centro",
+        "latitude": -26.33533786974948,
+        "longitude": -48.65809831731957
+      },
+      {
+        "id": "stop-estrada-da-ribeira-10-m26_3351-m48_6562",
+        "name": "Estrada da Ribeira 10",
+        "slug": "estrada-da-ribeira-10",
+        "latitude": -26.335054581823268,
+        "longitude": -48.656173717155056
+      },
+      {
+        "id": "stop-posto-de-saude-ribeira-sentido-bairro-centro-m26_3353-m48_6551",
+        "name": "Posto de Saúde Ribeira (Sentido Bairro/Centro)",
+        "slug": "posto-de-saude-ribeira-sentido-bairro-centro",
+        "latitude": -26.335346173410453,
+        "longitude": -48.65508362536882
+      },
+      {
+        "id": "stop-bar-miranda-bairro-centro-m26_3361-m48_6533",
+        "name": "Bar Miranda (Bairro/Centro)",
+        "slug": "bar-miranda-bairro-centro",
+        "latitude": -26.336120259660376,
+        "longitude": -48.65331768740878
+      },
+      {
+        "id": "stop-lanchonete-e-sorveteria-arco-iris-sentido-bairro-centro-m26_3323-m48_6507",
+        "name": "Lanchonete e Sorveteria Arco Iris (Sentido Bairro/Centro)",
+        "slug": "lanchonete-e-sorveteria-arco-iris-sentido-bairro-centro",
+        "latitude": -26.332322857936383,
+        "longitude": -48.65067218204439
+      },
+      {
+        "id": "stop-entrada-estrada-do-felismino-m26_3299-m48_6489",
+        "name": "Entrada - Estrada do Felismino",
+        "slug": "entrada-estrada-do-felismino",
+        "latitude": -26.329948929352597,
+        "longitude": -48.648936045394734
+      },
+      {
+        "id": "stop-estrada-do-felismino-2-bairro-centro-m26_3295-m48_6489",
+        "name": "Estrada do Felismino 2 (Bairro/Centro)",
+        "slug": "estrada-do-felismino-2-bairro-centro",
+        "latitude": -26.329480227660017,
+        "longitude": -48.648892743396694
+      },
+      {
+        "id": "stop-estrada-do-felismino-1-bairro-centro-m26_3283-m48_6495",
+        "name": "Estrada do Felismino 1 (Bairro/Centro)",
+        "slug": "estrada-do-felismino-1-bairro-centro",
+        "latitude": -26.32832936288774,
+        "longitude": -48.649538942377546
+      },
+      {
+        "id": "stop-linguica-taliane-proximo-m26_2656-m48_6425",
+        "name": "Linguiça Taliane (próximo)",
+        "slug": "linguica-taliane-proximo",
+        "latitude": -26.265614348774328,
+        "longitude": -48.642536639679236
+      },
+      {
+        "id": "stop-sitio-casa-de-pedra-bairro-centro-m26_2674-m48_6415",
+        "name": "Sítio Casa de Pedra (Bairro/Centro)",
+        "slug": "sitio-casa-de-pedra-bairro-centro",
+        "latitude": -26.267392724551236,
+        "longitude": -48.64148326933599
+      },
+      {
+        "id": "stop-ei-morro-da-cruz-bairro-centro-m26_2640-m48_6441",
+        "name": "EI Morro da Cruz (Bairro/Centro)",
+        "slug": "ei-morro-da-cruz-bairro-centro",
+        "latitude": -26.26400346055868,
+        "longitude": -48.64412336418416
+      },
+      {
+        "id": "stop-entrada-da-estrada-da-gamboa-m26_2594-m48_6450",
+        "name": "Entrada da Estrada da Gamboa",
+        "slug": "entrada-da-estrada-da-gamboa",
+        "latitude": -26.25941646755307,
+        "longitude": -48.645028099268735
+      },
+      {
+        "id": "stop-arcelormittal-vega-sentido-bairro-centro-m26_2572-m48_6441",
+        "name": "ArcelorMittal Vega (Sentido Bairro/Centro)",
+        "slug": "arcelormittal-vega-sentido-bairro-centro",
+        "latitude": -26.25716057297142,
+        "longitude": -48.644053374702416
+      },
+      {
+        "id": "stop-br-280-3400-sentido-bairro-centro-m26_2541-m48_6429",
+        "name": "BR 280, 3400 (Sentido Bairro/Centro)",
+        "slug": "br-280-3400-sentido-bairro-centro",
+        "latitude": -26.254143556766913,
+        "longitude": -48.64287350985404
+      },
+      {
+        "id": "stop-estacionamento-fecoagro-bairro-centro-m26_2851-m48_6462",
+        "name": "Estacionamento Fecoagro (Bairro/Centro)",
+        "slug": "estacionamento-fecoagro-bairro-centro",
+        "latitude": -26.28511141042505,
+        "longitude": -48.646157138282845
+      },
+      {
+        "id": "stop-antiga-fazenda-de-cafe-cejen-m26_2812-m48_6466",
+        "name": "Antiga Fazenda de Café/CEJEN",
+        "slug": "antiga-fazenda-de-cafe-cejen",
+        "latitude": -26.281247887237296,
+        "longitude": -48.64656427019397
+      },
+      {
+        "id": "stop-entrada-laranjeiras-m26_2763-m48_6450",
+        "name": "Entrada Laranjeiras",
+        "slug": "entrada-laranjeiras",
+        "latitude": -26.276264785098594,
+        "longitude": -48.64498758801077
+      },
+      {
+        "id": "stop-entrada-cohab-deposito-mira-m26_2727-m48_6422",
+        "name": "Entrada COHAB/Depósito Mira",
+        "slug": "entrada-cohab-deposito-mira",
+        "latitude": -26.272676347843667,
+        "longitude": -48.64219711066334
+      },
+      {
+        "id": "stop-dude-lanches-m26_2688-m48_6411",
+        "name": "Dude Lanches",
+        "slug": "dude-lanches",
+        "latitude": -26.26878043341198,
+        "longitude": -48.6411129064784
+      },
+      {
+        "id": "stop-avenida-doutor-nereu-ramos-1933-m26_2673-m48_6415",
+        "name": "Avenida Doutor Nereu Ramos, 1933",
+        "slug": "avenida-doutor-nereu-ramos-1933",
+        "latitude": -26.267333616595405,
+        "longitude": -48.64148200299945
+      },
+      {
+        "id": "stop-proximo-rua-joinville-bairro-centro-m26_2656-m48_6425",
+        "name": "Próximo Rua Joinville (Bairro/Centro)",
+        "slug": "proximo-rua-joinville-bairro-centro",
+        "latitude": -26.26560453159896,
+        "longitude": -48.642521996674816
+      },
+      {
+        "id": "stop-avenida-doutor-nereu-ramos-1473-m26_2640-m48_6441",
+        "name": "Avenida Doutor Nereu Ramos, 1473",
+        "slug": "avenida-doutor-nereu-ramos-1473",
+        "latitude": -26.26398069759273,
+        "longitude": -48.6441262369535
+      },
+      {
+        "id": "stop-avenida-doutor-nereu-ramos-926-m26_2594-m48_6450",
+        "name": "Avenida Doutor Nereu Ramos, 926",
+        "slug": "avenida-doutor-nereu-ramos-926",
+        "latitude": -26.25942931615892,
+        "longitude": -48.64504347613739
+      },
+      {
+        "id": "stop-big-pizza-sentido-bairro-centro-m26_2571-m48_6441",
+        "name": "Big Pizza (Sentido Bairro/Centro)",
+        "slug": "big-pizza-sentido-bairro-centro",
+        "latitude": -26.25713130866115,
+        "longitude": -48.64406159000166
+      },
+      {
+        "id": "stop-hospital-novo-m26_2541-m48_6429",
+        "name": "Hospital Novo",
+        "slug": "hospital-novo",
+        "latitude": -26.25412452849639,
+        "longitude": -48.642880280073754
+      },
+      {
+        "id": "stop-rodoviaria-velha-m26_2492-m48_6356",
+        "name": "Rodoviária Velha",
+        "slug": "rodoviaria-velha",
+        "latitude": -26.249224290355095,
+        "longitude": -48.63560230865354
+      },
+      {
+        "id": "stop-millium-m26_2477-m48_6345",
+        "name": "Millium",
+        "slug": "millium",
+        "latitude": -26.24773780113116,
+        "longitude": -48.634526537853745
+      },
+      {
+        "id": "stop-antiga-multipaper-sentido-bairro-centro-m26_2445-m48_6344",
+        "name": "Antiga Multipaper (Sentido Bairro/Centro)",
+        "slug": "antiga-multipaper-sentido-bairro-centro",
+        "latitude": -26.24448063883166,
+        "longitude": -48.634446201953615
+      },
+      {
+        "id": "stop-tapecar-m26_2426-m48_6353",
+        "name": "Tapecar",
+        "slug": "tapecar",
+        "latitude": -26.24256951527034,
+        "longitude": -48.63530239360171
+      },
+      {
+        "id": "stop-posto-rod-oil-m26_2420-m48_6373",
+        "name": "Posto Rod Oil",
+        "slug": "posto-rod-oil",
+        "latitude": -26.242030120062743,
+        "longitude": -48.63729731437912
+      }
+    ],
+    "lineStops": [
+      {
+        "id": "line-0201-outbound-stop-1",
+        "directionId": "line-0201-outbound",
+        "stopId": "stop-praca-dr-getulio-vargas-2-m26_2434-m48_6379",
+        "sequence": 1,
+        "isTimingPoint": true
+      },
+      {
+        "id": "line-0201-outbound-stop-2",
+        "directionId": "line-0201-outbound",
+        "stopId": "stop-ogmo-sfs-m26_2435-m48_6351",
+        "sequence": 2,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-outbound-stop-3",
+        "directionId": "line-0201-outbound",
+        "stopId": "stop-antiga-multipaper-sentido-centro-bairro-m26_2447-m48_6347",
+        "sequence": 3,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-outbound-stop-4",
+        "directionId": "line-0201-outbound",
+        "stopId": "stop-carioca-bica-d-agua-m26_2466-m48_6355",
+        "sequence": 4,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-outbound-stop-5",
+        "directionId": "line-0201-outbound",
+        "stopId": "stop-colegio-adventista-m26_2478-m48_6373",
+        "sequence": 5,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-outbound-stop-6",
+        "directionId": "line-0201-outbound",
+        "stopId": "stop-restaurante-tom-brasil-m26_2492-m48_6384",
+        "sequence": 6,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-outbound-stop-7",
+        "directionId": "line-0201-outbound",
+        "stopId": "stop-cabral-refrigeracao-m26_2512-m48_6386",
+        "sequence": 7,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-outbound-stop-8",
+        "directionId": "line-0201-outbound",
+        "stopId": "stop-entrada-alameda-ipiranga-m26_2511-m48_6413",
+        "sequence": 8,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-outbound-stop-9",
+        "directionId": "line-0201-outbound",
+        "stopId": "stop-imaribo-m26_2518-m48_6418",
+        "sequence": 9,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-outbound-stop-10",
+        "directionId": "line-0201-outbound",
+        "stopId": "stop-academia-medley-m26_2540-m48_6430",
+        "sequence": 10,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-outbound-stop-11",
+        "directionId": "line-0201-outbound",
+        "stopId": "stop-big-pizza-sentido-centro-bairro-m26_2572-m48_6442",
+        "sequence": 11,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-outbound-stop-12",
+        "directionId": "line-0201-outbound",
+        "stopId": "stop-frente-n-994-m26_2600-m48_6453",
+        "sequence": 12,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-outbound-stop-13",
+        "directionId": "line-0201-outbound",
+        "stopId": "stop-travessa-olaria-em-frente-m26_2628-m48_6453",
+        "sequence": 13,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-outbound-stop-14",
+        "directionId": "line-0201-outbound",
+        "stopId": "stop-antiga-leme-m26_2642-m48_6440",
+        "sequence": 14,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-outbound-stop-15",
+        "directionId": "line-0201-outbound",
+        "stopId": "stop-proximo-rua-joinville-centro-bairro-m26_2656-m48_6426",
+        "sequence": 15,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-outbound-stop-16",
+        "directionId": "line-0201-outbound",
+        "stopId": "stop-rua-joao-r-liberato-em-frente-m26_2674-m48_6416",
+        "sequence": 16,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-outbound-stop-17",
+        "directionId": "line-0201-outbound",
+        "stopId": "stop-supermercado-barao-m26_2695-m48_6411",
+        "sequence": 17,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-outbound-stop-18",
+        "directionId": "line-0201-outbound",
+        "stopId": "stop-antiga-policia-rodoviaria-federal-m26_2720-m48_6419",
+        "sequence": 18,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-outbound-stop-19",
+        "directionId": "line-0201-outbound",
+        "stopId": "stop-posto-de-molas-braatz-m26_2776-m48_6460",
+        "sequence": 19,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-outbound-stop-20",
+        "directionId": "line-0201-outbound",
+        "stopId": "stop-restaurante-kalangas-m26_2828-m48_6465",
+        "sequence": 20,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-outbound-stop-21",
+        "directionId": "line-0201-outbound",
+        "stopId": "stop-estacionamento-fecoagro-centro-bairro-m26_2852-m48_6463",
+        "sequence": 21,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-outbound-stop-22",
+        "directionId": "line-0201-outbound",
+        "stopId": "stop-br-280-3400-sentido-centro-bairro-m26_2930-m48_6441",
+        "sequence": 22,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-outbound-stop-23",
+        "directionId": "line-0201-outbound",
+        "stopId": "stop-arcelormittal-vega-sentido-centro-bairro-m26_2973-m48_6419",
+        "sequence": 23,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-outbound-stop-24",
+        "directionId": "line-0201-outbound",
+        "stopId": "stop-igreja-adventista-miranda-m26_3010-m48_6402",
+        "sequence": 24,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-outbound-stop-25",
+        "directionId": "line-0201-outbound",
+        "stopId": "stop-ei-morro-da-cruz-centro-bairro-m26_3031-m48_6404",
+        "sequence": 25,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-outbound-stop-26",
+        "directionId": "line-0201-outbound",
+        "stopId": "stop-sitio-casa-de-pedra-centro-bairro-m26_3060-m48_6416",
+        "sequence": 26,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-outbound-stop-27",
+        "directionId": "line-0201-outbound",
+        "stopId": "stop-fenix-club-m26_3124-m48_6443",
+        "sequence": 27,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-outbound-stop-28",
+        "directionId": "line-0201-outbound",
+        "stopId": "stop-estrada-do-felismino-1-centro-bairro-m26_3283-m48_6496",
+        "sequence": 28,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-outbound-stop-29",
+        "directionId": "line-0201-outbound",
+        "stopId": "stop-estrada-do-felismino-2-centro-bairro-m26_3295-m48_6490",
+        "sequence": 29,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-outbound-stop-30",
+        "directionId": "line-0201-outbound",
+        "stopId": "stop-estrada-do-felismino-proximo-m26_3300-m48_6492",
+        "sequence": 30,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-outbound-stop-31",
+        "directionId": "line-0201-outbound",
+        "stopId": "stop-lanchonete-e-sorveteria-arco-iris-sentido-centro-bairro-m26_3322-m48_6508",
+        "sequence": 31,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-outbound-stop-32",
+        "directionId": "line-0201-outbound",
+        "stopId": "stop-bar-miranda-m26_3359-m48_6535",
+        "sequence": 32,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-outbound-stop-33",
+        "directionId": "line-0201-outbound",
+        "stopId": "stop-posto-de-saude-ribeira-sentido-centro-bairro-m26_3353-m48_6550",
+        "sequence": 33,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-outbound-stop-34",
+        "directionId": "line-0201-outbound",
+        "stopId": "stop-estrada-da-ribeira-3-m26_3349-m48_6563",
+        "sequence": 34,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-outbound-stop-35",
+        "directionId": "line-0201-outbound",
+        "stopId": "stop-ponto-final-miranda-sentido-centro-bairro-m26_3352-m48_6576",
+        "sequence": 35,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-outbound-stop-36",
+        "directionId": "line-0201-outbound",
+        "stopId": "stop-sitio-sentido-centro-bairro-m26_3379-m48_6765",
+        "sequence": 36,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-outbound-stop-37",
+        "directionId": "line-0201-outbound",
+        "stopId": "stop-em-antonio-canuto-sentido-centro-bairro-m26_3375-m48_6801",
+        "sequence": 37,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-outbound-stop-38",
+        "directionId": "line-0201-outbound",
+        "stopId": "stop-final-ribeira-m26_3343-m48_6825",
+        "sequence": 38,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-outbound-stop-39",
+        "directionId": "line-0201-outbound",
+        "stopId": "stop-br-280-3757-m26_3299-m48_6844",
+        "sequence": 39,
+        "isTimingPoint": true
+      },
+      {
+        "id": "line-0201-inbound-stop-1",
+        "directionId": "line-0201-inbound",
+        "stopId": "stop-br-280-3757-m26_3299-m48_6844",
+        "sequence": 1,
+        "isTimingPoint": true
+      },
+      {
+        "id": "line-0201-inbound-stop-2",
+        "directionId": "line-0201-inbound",
+        "stopId": "stop-ponto-final-ribeira-m26_3376-m48_6801",
+        "sequence": 2,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-inbound-stop-3",
+        "directionId": "line-0201-inbound",
+        "stopId": "stop-em-antonio-canuto-sentido-bairro-centro-m26_3344-m48_6823",
+        "sequence": 3,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-inbound-stop-4",
+        "directionId": "line-0201-inbound",
+        "stopId": "stop-sitio-sentido-bairro-centro-m26_3380-m48_6765",
+        "sequence": 4,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-inbound-stop-5",
+        "directionId": "line-0201-inbound",
+        "stopId": "stop-ponto-final-miranda-sentido-bairro-centro-m26_3353-m48_6581",
+        "sequence": 5,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-inbound-stop-6",
+        "directionId": "line-0201-inbound",
+        "stopId": "stop-estrada-da-ribeira-10-m26_3351-m48_6562",
+        "sequence": 6,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-inbound-stop-7",
+        "directionId": "line-0201-inbound",
+        "stopId": "stop-posto-de-saude-ribeira-sentido-bairro-centro-m26_3353-m48_6551",
+        "sequence": 7,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-inbound-stop-8",
+        "directionId": "line-0201-inbound",
+        "stopId": "stop-bar-miranda-bairro-centro-m26_3361-m48_6533",
+        "sequence": 8,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-inbound-stop-9",
+        "directionId": "line-0201-inbound",
+        "stopId": "stop-lanchonete-e-sorveteria-arco-iris-sentido-bairro-centro-m26_3323-m48_6507",
+        "sequence": 9,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-inbound-stop-10",
+        "directionId": "line-0201-inbound",
+        "stopId": "stop-entrada-estrada-do-felismino-m26_3299-m48_6489",
+        "sequence": 10,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-inbound-stop-11",
+        "directionId": "line-0201-inbound",
+        "stopId": "stop-estrada-do-felismino-2-bairro-centro-m26_3295-m48_6489",
+        "sequence": 11,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-inbound-stop-12",
+        "directionId": "line-0201-inbound",
+        "stopId": "stop-estrada-do-felismino-1-bairro-centro-m26_3283-m48_6495",
+        "sequence": 12,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-inbound-stop-13",
+        "directionId": "line-0201-inbound",
+        "stopId": "stop-linguica-taliane-proximo-m26_2656-m48_6425",
+        "sequence": 13,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-inbound-stop-14",
+        "directionId": "line-0201-inbound",
+        "stopId": "stop-sitio-casa-de-pedra-bairro-centro-m26_2674-m48_6415",
+        "sequence": 14,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-inbound-stop-15",
+        "directionId": "line-0201-inbound",
+        "stopId": "stop-ei-morro-da-cruz-bairro-centro-m26_2640-m48_6441",
+        "sequence": 15,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-inbound-stop-16",
+        "directionId": "line-0201-inbound",
+        "stopId": "stop-entrada-da-estrada-da-gamboa-m26_2594-m48_6450",
+        "sequence": 16,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-inbound-stop-17",
+        "directionId": "line-0201-inbound",
+        "stopId": "stop-arcelormittal-vega-sentido-bairro-centro-m26_2572-m48_6441",
+        "sequence": 17,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-inbound-stop-18",
+        "directionId": "line-0201-inbound",
+        "stopId": "stop-br-280-3400-sentido-bairro-centro-m26_2541-m48_6429",
+        "sequence": 18,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-inbound-stop-19",
+        "directionId": "line-0201-inbound",
+        "stopId": "stop-estacionamento-fecoagro-bairro-centro-m26_2851-m48_6462",
+        "sequence": 19,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-inbound-stop-20",
+        "directionId": "line-0201-inbound",
+        "stopId": "stop-antiga-fazenda-de-cafe-cejen-m26_2812-m48_6466",
+        "sequence": 20,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-inbound-stop-21",
+        "directionId": "line-0201-inbound",
+        "stopId": "stop-entrada-laranjeiras-m26_2763-m48_6450",
+        "sequence": 21,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-inbound-stop-22",
+        "directionId": "line-0201-inbound",
+        "stopId": "stop-entrada-cohab-deposito-mira-m26_2727-m48_6422",
+        "sequence": 22,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-inbound-stop-23",
+        "directionId": "line-0201-inbound",
+        "stopId": "stop-dude-lanches-m26_2688-m48_6411",
+        "sequence": 23,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-inbound-stop-24",
+        "directionId": "line-0201-inbound",
+        "stopId": "stop-avenida-doutor-nereu-ramos-1933-m26_2673-m48_6415",
+        "sequence": 24,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-inbound-stop-25",
+        "directionId": "line-0201-inbound",
+        "stopId": "stop-proximo-rua-joinville-bairro-centro-m26_2656-m48_6425",
+        "sequence": 25,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-inbound-stop-26",
+        "directionId": "line-0201-inbound",
+        "stopId": "stop-avenida-doutor-nereu-ramos-1473-m26_2640-m48_6441",
+        "sequence": 26,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-inbound-stop-27",
+        "directionId": "line-0201-inbound",
+        "stopId": "stop-avenida-doutor-nereu-ramos-926-m26_2594-m48_6450",
+        "sequence": 27,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-inbound-stop-28",
+        "directionId": "line-0201-inbound",
+        "stopId": "stop-big-pizza-sentido-bairro-centro-m26_2571-m48_6441",
+        "sequence": 28,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-inbound-stop-29",
+        "directionId": "line-0201-inbound",
+        "stopId": "stop-hospital-novo-m26_2541-m48_6429",
+        "sequence": 29,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-inbound-stop-30",
+        "directionId": "line-0201-inbound",
+        "stopId": "stop-entrada-alameda-ipiranga-m26_2511-m48_6413",
+        "sequence": 30,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-inbound-stop-31",
+        "directionId": "line-0201-inbound",
+        "stopId": "stop-cabral-refrigeracao-m26_2512-m48_6386",
+        "sequence": 31,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-inbound-stop-32",
+        "directionId": "line-0201-inbound",
+        "stopId": "stop-rodoviaria-velha-m26_2492-m48_6356",
+        "sequence": 32,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-inbound-stop-33",
+        "directionId": "line-0201-inbound",
+        "stopId": "stop-millium-m26_2477-m48_6345",
+        "sequence": 33,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-inbound-stop-34",
+        "directionId": "line-0201-inbound",
+        "stopId": "stop-antiga-multipaper-sentido-bairro-centro-m26_2445-m48_6344",
+        "sequence": 34,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-inbound-stop-35",
+        "directionId": "line-0201-inbound",
+        "stopId": "stop-tapecar-m26_2426-m48_6353",
+        "sequence": 35,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-inbound-stop-36",
+        "directionId": "line-0201-inbound",
+        "stopId": "stop-posto-rod-oil-m26_2420-m48_6373",
+        "sequence": 36,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0201-inbound-stop-37",
+        "directionId": "line-0201-inbound",
+        "stopId": "stop-praca-dr-getulio-vargas-2-m26_2434-m48_6379",
+        "sequence": 37,
+        "isTimingPoint": true
+      }
+    ],
+    "schedules": [
+      {
+        "id": "collected-line-0201-outbound-weekday-0600",
+        "directionId": "line-0201-outbound",
+        "serviceDay": "weekday",
+        "departureTime": "06:00",
+        "departureMinutes": 360,
+        "isPeak": true,
+        "occupancy": "medium"
+      },
+      {
+        "id": "collected-line-0201-outbound-weekday-0645",
+        "directionId": "line-0201-outbound",
+        "serviceDay": "weekday",
+        "departureTime": "06:45",
+        "departureMinutes": 405,
+        "isPeak": true,
+        "occupancy": "medium"
+      },
+      {
+        "id": "collected-line-0201-outbound-weekday-1100",
+        "directionId": "line-0201-outbound",
+        "serviceDay": "weekday",
+        "departureTime": "11:00",
+        "departureMinutes": 660,
+        "isPeak": false,
+        "occupancy": "medium"
+      },
+      {
+        "id": "collected-line-0201-outbound-weekday-1410",
+        "directionId": "line-0201-outbound",
+        "serviceDay": "weekday",
+        "departureTime": "14:10",
+        "departureMinutes": 850,
+        "isPeak": false,
+        "occupancy": "medium"
+      },
+      {
+        "id": "collected-line-0201-outbound-weekday-1545",
+        "directionId": "line-0201-outbound",
+        "serviceDay": "weekday",
+        "departureTime": "15:45",
+        "departureMinutes": 945,
+        "isPeak": false,
+        "occupancy": "medium"
+      },
+      {
+        "id": "collected-line-0201-inbound-weekday-1440",
+        "directionId": "line-0201-inbound",
+        "serviceDay": "weekday",
+        "departureTime": "14:40",
+        "departureMinutes": 880,
+        "isPeak": false,
+        "occupancy": "medium"
+      }
+    ],
+    "stopTimePredictions": [],
+    "routePaths": [
+      {
+        "id": "line-0201-outbound-path-1",
+        "directionId": "line-0201-outbound",
+        "sequence": 1,
+        "latitude": -26.24342,
+        "longitude": -48.63788
+      },
+      {
+        "id": "line-0201-outbound-path-2",
+        "directionId": "line-0201-outbound",
+        "sequence": 2,
+        "latitude": -26.24352,
+        "longitude": -48.63783
+      },
+      {
+        "id": "line-0201-outbound-path-3",
+        "directionId": "line-0201-outbound",
+        "sequence": 3,
+        "latitude": -26.24331,
+        "longitude": -48.63742
+      },
+      {
+        "id": "line-0201-outbound-path-4",
+        "directionId": "line-0201-outbound",
+        "sequence": 4,
+        "latitude": -26.24315,
+        "longitude": -48.63715
+      },
+      {
+        "id": "line-0201-outbound-path-5",
+        "directionId": "line-0201-outbound",
+        "sequence": 5,
+        "latitude": -26.2424,
+        "longitude": -48.63635
+      },
+      {
+        "id": "line-0201-outbound-path-6",
+        "directionId": "line-0201-outbound",
+        "sequence": 6,
+        "latitude": -26.24232,
+        "longitude": -48.63623
+      },
+      {
+        "id": "line-0201-outbound-path-7",
+        "directionId": "line-0201-outbound",
+        "sequence": 7,
+        "latitude": -26.24225,
+        "longitude": -48.63609
+      },
+      {
+        "id": "line-0201-outbound-path-8",
+        "directionId": "line-0201-outbound",
+        "sequence": 8,
+        "latitude": -26.24219,
+        "longitude": -48.63594
+      },
+      {
+        "id": "line-0201-outbound-path-9",
+        "directionId": "line-0201-outbound",
+        "sequence": 9,
+        "latitude": -26.24213,
+        "longitude": -48.63566
+      },
+      {
+        "id": "line-0201-outbound-path-10",
+        "directionId": "line-0201-outbound",
+        "sequence": 10,
+        "latitude": -26.24348,
+        "longitude": -48.63507
+      },
+      {
+        "id": "line-0201-outbound-path-11",
+        "directionId": "line-0201-outbound",
+        "sequence": 11,
+        "latitude": -26.24466,
+        "longitude": -48.63455
+      },
+      {
+        "id": "line-0201-outbound-path-12",
+        "directionId": "line-0201-outbound",
+        "sequence": 12,
+        "latitude": -26.24501,
+        "longitude": -48.6344
+      },
+      {
+        "id": "line-0201-outbound-path-13",
+        "directionId": "line-0201-outbound",
+        "sequence": 13,
+        "latitude": -26.24559,
+        "longitude": -48.63418
+      },
+      {
+        "id": "line-0201-outbound-path-14",
+        "directionId": "line-0201-outbound",
+        "sequence": 14,
+        "latitude": -26.24567,
+        "longitude": -48.63419
+      },
+      {
+        "id": "line-0201-outbound-path-15",
+        "directionId": "line-0201-outbound",
+        "sequence": 15,
+        "latitude": -26.24583,
+        "longitude": -48.63427
+      },
+      {
+        "id": "line-0201-outbound-path-16",
+        "directionId": "line-0201-outbound",
+        "sequence": 16,
+        "latitude": -26.24593,
+        "longitude": -48.63435
+      },
+      {
+        "id": "line-0201-outbound-path-17",
+        "directionId": "line-0201-outbound",
+        "sequence": 17,
+        "latitude": -26.24601,
+        "longitude": -48.63445
+      },
+      {
+        "id": "line-0201-outbound-path-18",
+        "directionId": "line-0201-outbound",
+        "sequence": 18,
+        "latitude": -26.24647,
+        "longitude": -48.63507
+      },
+      {
+        "id": "line-0201-outbound-path-19",
+        "directionId": "line-0201-outbound",
+        "sequence": 19,
+        "latitude": -26.2467,
+        "longitude": -48.6354
+      },
+      {
+        "id": "line-0201-outbound-path-20",
+        "directionId": "line-0201-outbound",
+        "sequence": 20,
+        "latitude": -26.24797,
+        "longitude": -48.63721
+      },
+      {
+        "id": "line-0201-outbound-path-21",
+        "directionId": "line-0201-outbound",
+        "sequence": 21,
+        "latitude": -26.24819,
+        "longitude": -48.63752
+      },
+      {
+        "id": "line-0201-outbound-path-22",
+        "directionId": "line-0201-outbound",
+        "sequence": 22,
+        "latitude": -26.2483,
+        "longitude": -48.63768
+      },
+      {
+        "id": "line-0201-outbound-path-23",
+        "directionId": "line-0201-outbound",
+        "sequence": 23,
+        "latitude": -26.24858,
+        "longitude": -48.63819
+      },
+      {
+        "id": "line-0201-outbound-path-24",
+        "directionId": "line-0201-outbound",
+        "sequence": 24,
+        "latitude": -26.24899,
+        "longitude": -48.63895
+      },
+      {
+        "id": "line-0201-outbound-path-25",
+        "directionId": "line-0201-outbound",
+        "sequence": 25,
+        "latitude": -26.24931,
+        "longitude": -48.63845
+      },
+      {
+        "id": "line-0201-outbound-path-26",
+        "directionId": "line-0201-outbound",
+        "sequence": 26,
+        "latitude": -26.24944,
+        "longitude": -48.63825
+      },
+      {
+        "id": "line-0201-outbound-path-27",
+        "directionId": "line-0201-outbound",
+        "sequence": 27,
+        "latitude": -26.24983,
+        "longitude": -48.63762
+      },
+      {
+        "id": "line-0201-outbound-path-28",
+        "directionId": "line-0201-outbound",
+        "sequence": 28,
+        "latitude": -26.25124,
+        "longitude": -48.63764
+      },
+      {
+        "id": "line-0201-outbound-path-29",
+        "directionId": "line-0201-outbound",
+        "sequence": 29,
+        "latitude": -26.25123,
+        "longitude": -48.63859
+      },
+      {
+        "id": "line-0201-outbound-path-30",
+        "directionId": "line-0201-outbound",
+        "sequence": 30,
+        "latitude": -26.25122,
+        "longitude": -48.6396
+      },
+      {
+        "id": "line-0201-outbound-path-31",
+        "directionId": "line-0201-outbound",
+        "sequence": 31,
+        "latitude": -26.2512,
+        "longitude": -48.64127
+      },
+      {
+        "id": "line-0201-outbound-path-32",
+        "directionId": "line-0201-outbound",
+        "sequence": 32,
+        "latitude": -26.25119,
+        "longitude": -48.64156
+      },
+      {
+        "id": "line-0201-outbound-path-33",
+        "directionId": "line-0201-outbound",
+        "sequence": 33,
+        "latitude": -26.25151,
+        "longitude": -48.64157
+      },
+      {
+        "id": "line-0201-outbound-path-34",
+        "directionId": "line-0201-outbound",
+        "sequence": 34,
+        "latitude": -26.25161,
+        "longitude": -48.6416
+      },
+      {
+        "id": "line-0201-outbound-path-35",
+        "directionId": "line-0201-outbound",
+        "sequence": 35,
+        "latitude": -26.25185,
+        "longitude": -48.64172
+      },
+      {
+        "id": "line-0201-outbound-path-36",
+        "directionId": "line-0201-outbound",
+        "sequence": 36,
+        "latitude": -26.25228,
+        "longitude": -48.64193
+      },
+      {
+        "id": "line-0201-outbound-path-37",
+        "directionId": "line-0201-outbound",
+        "sequence": 37,
+        "latitude": -26.25388,
+        "longitude": -48.64278
+      },
+      {
+        "id": "line-0201-outbound-path-38",
+        "directionId": "line-0201-outbound",
+        "sequence": 38,
+        "latitude": -26.25394,
+        "longitude": -48.6428
+      },
+      {
+        "id": "line-0201-outbound-path-39",
+        "directionId": "line-0201-outbound",
+        "sequence": 39,
+        "latitude": -26.25407,
+        "longitude": -48.64286
+      },
+      {
+        "id": "line-0201-outbound-path-40",
+        "directionId": "line-0201-outbound",
+        "sequence": 40,
+        "latitude": -26.25432,
+        "longitude": -48.64298
+      },
+      {
+        "id": "line-0201-outbound-path-41",
+        "directionId": "line-0201-outbound",
+        "sequence": 41,
+        "latitude": -26.2548,
+        "longitude": -48.6432
+      },
+      {
+        "id": "line-0201-outbound-path-42",
+        "directionId": "line-0201-outbound",
+        "sequence": 42,
+        "latitude": -26.25491,
+        "longitude": -48.64324
+      },
+      {
+        "id": "line-0201-outbound-path-43",
+        "directionId": "line-0201-outbound",
+        "sequence": 43,
+        "latitude": -26.25556,
+        "longitude": -48.64327
+      },
+      {
+        "id": "line-0201-outbound-path-44",
+        "directionId": "line-0201-outbound",
+        "sequence": 44,
+        "latitude": -26.25593,
+        "longitude": -48.6433
+      },
+      {
+        "id": "line-0201-outbound-path-45",
+        "directionId": "line-0201-outbound",
+        "sequence": 45,
+        "latitude": -26.25606,
+        "longitude": -48.64335
+      },
+      {
+        "id": "line-0201-outbound-path-46",
+        "directionId": "line-0201-outbound",
+        "sequence": 46,
+        "latitude": -26.25644,
+        "longitude": -48.64359
+      },
+      {
+        "id": "line-0201-outbound-path-47",
+        "directionId": "line-0201-outbound",
+        "sequence": 47,
+        "latitude": -26.25688,
+        "longitude": -48.64387
+      },
+      {
+        "id": "line-0201-outbound-path-48",
+        "directionId": "line-0201-outbound",
+        "sequence": 48,
+        "latitude": -26.25721,
+        "longitude": -48.64408
+      },
+      {
+        "id": "line-0201-outbound-path-49",
+        "directionId": "line-0201-outbound",
+        "sequence": 49,
+        "latitude": -26.25759,
+        "longitude": -48.64432
+      },
+      {
+        "id": "line-0201-outbound-path-50",
+        "directionId": "line-0201-outbound",
+        "sequence": 50,
+        "latitude": -26.25766,
+        "longitude": -48.64436
+      },
+      {
+        "id": "line-0201-outbound-path-51",
+        "directionId": "line-0201-outbound",
+        "sequence": 51,
+        "latitude": -26.25796,
+        "longitude": -48.64456
+      },
+      {
+        "id": "line-0201-outbound-path-52",
+        "directionId": "line-0201-outbound",
+        "sequence": 52,
+        "latitude": -26.25851,
+        "longitude": -48.64492
+      },
+      {
+        "id": "line-0201-outbound-path-53",
+        "directionId": "line-0201-outbound",
+        "sequence": 53,
+        "latitude": -26.25866,
+        "longitude": -48.645
+      },
+      {
+        "id": "line-0201-outbound-path-54",
+        "directionId": "line-0201-outbound",
+        "sequence": 54,
+        "latitude": -26.25882,
+        "longitude": -48.64505
+      },
+      {
+        "id": "line-0201-outbound-path-55",
+        "directionId": "line-0201-outbound",
+        "sequence": 55,
+        "latitude": -26.25898,
+        "longitude": -48.64507
+      },
+      {
+        "id": "line-0201-outbound-path-56",
+        "directionId": "line-0201-outbound",
+        "sequence": 56,
+        "latitude": -26.25978,
+        "longitude": -48.64507
+      },
+      {
+        "id": "line-0201-outbound-path-57",
+        "directionId": "line-0201-outbound",
+        "sequence": 57,
+        "latitude": -26.26003,
+        "longitude": -48.64512
+      },
+      {
+        "id": "line-0201-outbound-path-58",
+        "directionId": "line-0201-outbound",
+        "sequence": 58,
+        "latitude": -26.26049,
+        "longitude": -48.64521
+      },
+      {
+        "id": "line-0201-outbound-path-59",
+        "directionId": "line-0201-outbound",
+        "sequence": 59,
+        "latitude": -26.26211,
+        "longitude": -48.64549
+      },
+      {
+        "id": "line-0201-outbound-path-60",
+        "directionId": "line-0201-outbound",
+        "sequence": 60,
+        "latitude": -26.26233,
+        "longitude": -48.6455
+      },
+      {
+        "id": "line-0201-outbound-path-61",
+        "directionId": "line-0201-outbound",
+        "sequence": 61,
+        "latitude": -26.26242,
+        "longitude": -48.64547
+      },
+      {
+        "id": "line-0201-outbound-path-62",
+        "directionId": "line-0201-outbound",
+        "sequence": 62,
+        "latitude": -26.26273,
+        "longitude": -48.64523
+      },
+      {
+        "id": "line-0201-outbound-path-63",
+        "directionId": "line-0201-outbound",
+        "sequence": 63,
+        "latitude": -26.26275,
+        "longitude": -48.64522
+      },
+      {
+        "id": "line-0201-outbound-path-64",
+        "directionId": "line-0201-outbound",
+        "sequence": 64,
+        "latitude": -26.26349,
+        "longitude": -48.64462
+      },
+      {
+        "id": "line-0201-outbound-path-65",
+        "directionId": "line-0201-outbound",
+        "sequence": 65,
+        "latitude": -26.26363,
+        "longitude": -48.6445
+      },
+      {
+        "id": "line-0201-outbound-path-66",
+        "directionId": "line-0201-outbound",
+        "sequence": 66,
+        "latitude": -26.26421,
+        "longitude": -48.64404
+      },
+      {
+        "id": "line-0201-outbound-path-67",
+        "directionId": "line-0201-outbound",
+        "sequence": 67,
+        "latitude": -26.26422,
+        "longitude": -48.64403
+      },
+      {
+        "id": "line-0201-outbound-path-68",
+        "directionId": "line-0201-outbound",
+        "sequence": 68,
+        "latitude": -26.26448,
+        "longitude": -48.64379
+      },
+      {
+        "id": "line-0201-outbound-path-69",
+        "directionId": "line-0201-outbound",
+        "sequence": 69,
+        "latitude": -26.2648,
+        "longitude": -48.64347
+      },
+      {
+        "id": "line-0201-outbound-path-70",
+        "directionId": "line-0201-outbound",
+        "sequence": 70,
+        "latitude": -26.26519,
+        "longitude": -48.64308
+      },
+      {
+        "id": "line-0201-outbound-path-71",
+        "directionId": "line-0201-outbound",
+        "sequence": 71,
+        "latitude": -26.26548,
+        "longitude": -48.64278
+      },
+      {
+        "id": "line-0201-outbound-path-72",
+        "directionId": "line-0201-outbound",
+        "sequence": 72,
+        "latitude": -26.26565,
+        "longitude": -48.64261
+      },
+      {
+        "id": "line-0201-outbound-path-73",
+        "directionId": "line-0201-outbound",
+        "sequence": 73,
+        "latitude": -26.26596,
+        "longitude": -48.6423
+      },
+      {
+        "id": "line-0201-outbound-path-74",
+        "directionId": "line-0201-outbound",
+        "sequence": 74,
+        "latitude": -26.26602,
+        "longitude": -48.64224
+      },
+      {
+        "id": "line-0201-outbound-path-75",
+        "directionId": "line-0201-outbound",
+        "sequence": 75,
+        "latitude": -26.26635,
+        "longitude": -48.64192
+      },
+      {
+        "id": "line-0201-outbound-path-76",
+        "directionId": "line-0201-outbound",
+        "sequence": 76,
+        "latitude": -26.26653,
+        "longitude": -48.64182
+      },
+      {
+        "id": "line-0201-outbound-path-77",
+        "directionId": "line-0201-outbound",
+        "sequence": 77,
+        "latitude": -26.26742,
+        "longitude": -48.64158
+      },
+      {
+        "id": "line-0201-outbound-path-78",
+        "directionId": "line-0201-outbound",
+        "sequence": 78,
+        "latitude": -26.26751,
+        "longitude": -48.64156
+      },
+      {
+        "id": "line-0201-outbound-path-79",
+        "directionId": "line-0201-outbound",
+        "sequence": 79,
+        "latitude": -26.26856,
+        "longitude": -48.64127
+      },
+      {
+        "id": "line-0201-outbound-path-80",
+        "directionId": "line-0201-outbound",
+        "sequence": 80,
+        "latitude": -26.26925,
+        "longitude": -48.64107
+      },
+      {
+        "id": "line-0201-outbound-path-81",
+        "directionId": "line-0201-outbound",
+        "sequence": 81,
+        "latitude": -26.26948,
+        "longitude": -48.64102
+      },
+      {
+        "id": "line-0201-outbound-path-82",
+        "directionId": "line-0201-outbound",
+        "sequence": 82,
+        "latitude": -26.26964,
+        "longitude": -48.64098
+      },
+      {
+        "id": "line-0201-outbound-path-83",
+        "directionId": "line-0201-outbound",
+        "sequence": 83,
+        "latitude": -26.26983,
+        "longitude": -48.64095
+      },
+      {
+        "id": "line-0201-outbound-path-84",
+        "directionId": "line-0201-outbound",
+        "sequence": 84,
+        "latitude": -26.27016,
+        "longitude": -48.64093
+      },
+      {
+        "id": "line-0201-outbound-path-85",
+        "directionId": "line-0201-outbound",
+        "sequence": 85,
+        "latitude": -26.27048,
+        "longitude": -48.64095
+      },
+      {
+        "id": "line-0201-outbound-path-86",
+        "directionId": "line-0201-outbound",
+        "sequence": 86,
+        "latitude": -26.27087,
+        "longitude": -48.64104
+      },
+      {
+        "id": "line-0201-outbound-path-87",
+        "directionId": "line-0201-outbound",
+        "sequence": 87,
+        "latitude": -26.27104,
+        "longitude": -48.64111
+      },
+      {
+        "id": "line-0201-outbound-path-88",
+        "directionId": "line-0201-outbound",
+        "sequence": 88,
+        "latitude": -26.27132,
+        "longitude": -48.64129
+      },
+      {
+        "id": "line-0201-outbound-path-89",
+        "directionId": "line-0201-outbound",
+        "sequence": 89,
+        "latitude": -26.27146,
+        "longitude": -48.64138
+      },
+      {
+        "id": "line-0201-outbound-path-90",
+        "directionId": "line-0201-outbound",
+        "sequence": 90,
+        "latitude": -26.27162,
+        "longitude": -48.64147
+      },
+      {
+        "id": "line-0201-outbound-path-91",
+        "directionId": "line-0201-outbound",
+        "sequence": 91,
+        "latitude": -26.27212,
+        "longitude": -48.64181
+      },
+      {
+        "id": "line-0201-outbound-path-92",
+        "directionId": "line-0201-outbound",
+        "sequence": 92,
+        "latitude": -26.27272,
+        "longitude": -48.64223
+      },
+      {
+        "id": "line-0201-outbound-path-93",
+        "directionId": "line-0201-outbound",
+        "sequence": 93,
+        "latitude": -26.27279,
+        "longitude": -48.64228
+      },
+      {
+        "id": "line-0201-outbound-path-94",
+        "directionId": "line-0201-outbound",
+        "sequence": 94,
+        "latitude": -26.27367,
+        "longitude": -48.64291
+      },
+      {
+        "id": "line-0201-outbound-path-95",
+        "directionId": "line-0201-outbound",
+        "sequence": 95,
+        "latitude": -26.27453,
+        "longitude": -48.64356
+      },
+      {
+        "id": "line-0201-outbound-path-96",
+        "directionId": "line-0201-outbound",
+        "sequence": 96,
+        "latitude": -26.27512,
+        "longitude": -48.644
+      },
+      {
+        "id": "line-0201-outbound-path-97",
+        "directionId": "line-0201-outbound",
+        "sequence": 97,
+        "latitude": -26.27565,
+        "longitude": -48.64443
+      },
+      {
+        "id": "line-0201-outbound-path-98",
+        "directionId": "line-0201-outbound",
+        "sequence": 98,
+        "latitude": -26.27646,
+        "longitude": -48.64507
+      },
+      {
+        "id": "line-0201-outbound-path-99",
+        "directionId": "line-0201-outbound",
+        "sequence": 99,
+        "latitude": -26.27683,
+        "longitude": -48.64533
+      },
+      {
+        "id": "line-0201-outbound-path-100",
+        "directionId": "line-0201-outbound",
+        "sequence": 100,
+        "latitude": -26.27746,
+        "longitude": -48.64577
+      },
+      {
+        "id": "line-0201-outbound-path-101",
+        "directionId": "line-0201-outbound",
+        "sequence": 101,
+        "latitude": -26.27766,
+        "longitude": -48.64592
+      },
+      {
+        "id": "line-0201-outbound-path-102",
+        "directionId": "line-0201-outbound",
+        "sequence": 102,
+        "latitude": -26.27822,
+        "longitude": -48.64633
+      },
+      {
+        "id": "line-0201-outbound-path-103",
+        "directionId": "line-0201-outbound",
+        "sequence": 103,
+        "latitude": -26.27852,
+        "longitude": -48.64652
+      },
+      {
+        "id": "line-0201-outbound-path-104",
+        "directionId": "line-0201-outbound",
+        "sequence": 104,
+        "latitude": -26.27866,
+        "longitude": -48.64659
+      },
+      {
+        "id": "line-0201-outbound-path-105",
+        "directionId": "line-0201-outbound",
+        "sequence": 105,
+        "latitude": -26.27881,
+        "longitude": -48.64665
+      },
+      {
+        "id": "line-0201-outbound-path-106",
+        "directionId": "line-0201-outbound",
+        "sequence": 106,
+        "latitude": -26.2792,
+        "longitude": -48.64673
+      },
+      {
+        "id": "line-0201-outbound-path-107",
+        "directionId": "line-0201-outbound",
+        "sequence": 107,
+        "latitude": -26.27961,
+        "longitude": -48.64676
+      },
+      {
+        "id": "line-0201-outbound-path-108",
+        "directionId": "line-0201-outbound",
+        "sequence": 108,
+        "latitude": -26.28268,
+        "longitude": -48.64648
+      },
+      {
+        "id": "line-0201-outbound-path-109",
+        "directionId": "line-0201-outbound",
+        "sequence": 109,
+        "latitude": -26.28282,
+        "longitude": -48.64647
+      },
+      {
+        "id": "line-0201-outbound-path-110",
+        "directionId": "line-0201-outbound",
+        "sequence": 110,
+        "latitude": -26.28344,
+        "longitude": -48.64641
+      },
+      {
+        "id": "line-0201-outbound-path-111",
+        "directionId": "line-0201-outbound",
+        "sequence": 111,
+        "latitude": -26.28407,
+        "longitude": -48.64636
+      },
+      {
+        "id": "line-0201-outbound-path-112",
+        "directionId": "line-0201-outbound",
+        "sequence": 112,
+        "latitude": -26.28502,
+        "longitude": -48.64625
+      },
+      {
+        "id": "line-0201-outbound-path-113",
+        "directionId": "line-0201-outbound",
+        "sequence": 113,
+        "latitude": -26.28508,
+        "longitude": -48.64625
+      },
+      {
+        "id": "line-0201-outbound-path-114",
+        "directionId": "line-0201-outbound",
+        "sequence": 114,
+        "latitude": -26.28521,
+        "longitude": -48.64623
+      },
+      {
+        "id": "line-0201-outbound-path-115",
+        "directionId": "line-0201-outbound",
+        "sequence": 115,
+        "latitude": -26.28574,
+        "longitude": -48.64618
+      },
+      {
+        "id": "line-0201-outbound-path-116",
+        "directionId": "line-0201-outbound",
+        "sequence": 116,
+        "latitude": -26.28613,
+        "longitude": -48.64614
+      },
+      {
+        "id": "line-0201-outbound-path-117",
+        "directionId": "line-0201-outbound",
+        "sequence": 117,
+        "latitude": -26.28629,
+        "longitude": -48.64612
+      },
+      {
+        "id": "line-0201-outbound-path-118",
+        "directionId": "line-0201-outbound",
+        "sequence": 118,
+        "latitude": -26.28882,
+        "longitude": -48.64588
+      },
+      {
+        "id": "line-0201-outbound-path-119",
+        "directionId": "line-0201-outbound",
+        "sequence": 119,
+        "latitude": -26.28912,
+        "longitude": -48.64583
+      },
+      {
+        "id": "line-0201-outbound-path-120",
+        "directionId": "line-0201-outbound",
+        "sequence": 120,
+        "latitude": -26.28947,
+        "longitude": -48.64575
+      },
+      {
+        "id": "line-0201-outbound-path-121",
+        "directionId": "line-0201-outbound",
+        "sequence": 121,
+        "latitude": -26.28972,
+        "longitude": -48.64567
+      },
+      {
+        "id": "line-0201-outbound-path-122",
+        "directionId": "line-0201-outbound",
+        "sequence": 122,
+        "latitude": -26.29002,
+        "longitude": -48.64556
+      },
+      {
+        "id": "line-0201-outbound-path-123",
+        "directionId": "line-0201-outbound",
+        "sequence": 123,
+        "latitude": -26.29152,
+        "longitude": -48.64482
+      },
+      {
+        "id": "line-0201-outbound-path-124",
+        "directionId": "line-0201-outbound",
+        "sequence": 124,
+        "latitude": -26.29278,
+        "longitude": -48.64415
+      },
+      {
+        "id": "line-0201-outbound-path-125",
+        "directionId": "line-0201-outbound",
+        "sequence": 125,
+        "latitude": -26.29302,
+        "longitude": -48.64409
+      },
+      {
+        "id": "line-0201-outbound-path-126",
+        "directionId": "line-0201-outbound",
+        "sequence": 126,
+        "latitude": -26.29301678631301,
+        "longitude": -48.64409451720033
+      },
+      {
+        "id": "line-0201-outbound-path-127",
+        "directionId": "line-0201-outbound",
+        "sequence": 127,
+        "latitude": -26.297275480942595,
+        "longitude": -48.64185220836048
+      },
+      {
+        "id": "line-0201-outbound-path-128",
+        "directionId": "line-0201-outbound",
+        "sequence": 128,
+        "latitude": -26.300991484049057,
+        "longitude": -48.64020794041085
+      },
+      {
+        "id": "line-0201-outbound-path-129",
+        "directionId": "line-0201-outbound",
+        "sequence": 129,
+        "latitude": -26.303073553407895,
+        "longitude": -48.64042754415611
+      },
+      {
+        "id": "line-0201-outbound-path-130",
+        "directionId": "line-0201-outbound",
+        "sequence": 130,
+        "latitude": -26.305999531863865,
+        "longitude": -48.641589814486345
+      },
+      {
+        "id": "line-0201-outbound-path-131",
+        "directionId": "line-0201-outbound",
+        "sequence": 131,
+        "latitude": -26.312376040334254,
+        "longitude": -48.644283048413115
+      },
+      {
+        "id": "line-0201-outbound-path-132",
+        "directionId": "line-0201-outbound",
+        "sequence": 132,
+        "latitude": -26.328343387169397,
+        "longitude": -48.6495961421293
+      },
+      {
+        "id": "line-0201-outbound-path-133",
+        "directionId": "line-0201-outbound",
+        "sequence": 133,
+        "latitude": -26.32953872945053,
+        "longitude": -48.64898586451129
+      },
+      {
+        "id": "line-0201-outbound-path-134",
+        "directionId": "line-0201-outbound",
+        "sequence": 134,
+        "latitude": -26.32995663541855,
+        "longitude": -48.64918471901228
+      },
+      {
+        "id": "line-0201-outbound-path-135",
+        "directionId": "line-0201-outbound",
+        "sequence": 135,
+        "latitude": -26.33224041501682,
+        "longitude": -48.65075991283638
+      },
+      {
+        "id": "line-0201-outbound-path-136",
+        "directionId": "line-0201-outbound",
+        "sequence": 136,
+        "latitude": -26.335921036270477,
+        "longitude": -48.65354702688907
+      },
+      {
+        "id": "line-0201-outbound-path-137",
+        "directionId": "line-0201-outbound",
+        "sequence": 137,
+        "latitude": -26.335311064844195,
+        "longitude": -48.654995022954864
+      },
+      {
+        "id": "line-0201-outbound-path-138",
+        "directionId": "line-0201-outbound",
+        "sequence": 138,
+        "latitude": -26.334922007423835,
+        "longitude": -48.65630119840832
+      },
+      {
+        "id": "line-0201-outbound-path-139",
+        "directionId": "line-0201-outbound",
+        "sequence": 139,
+        "latitude": -26.335175000129734,
+        "longitude": -48.65764888495627
+      },
+      {
+        "id": "line-0201-outbound-path-140",
+        "directionId": "line-0201-outbound",
+        "sequence": 140,
+        "latitude": -26.33793589066274,
+        "longitude": -48.67651692477939
+      },
+      {
+        "id": "line-0201-outbound-path-141",
+        "directionId": "line-0201-outbound",
+        "sequence": 141,
+        "latitude": -26.33748382010789,
+        "longitude": -48.68006292259714
+      },
+      {
+        "id": "line-0201-outbound-path-142",
+        "directionId": "line-0201-outbound",
+        "sequence": 142,
+        "latitude": -26.334286044676176,
+        "longitude": -48.682535596675436
+      },
+      {
+        "id": "line-0201-outbound-path-143",
+        "directionId": "line-0201-outbound",
+        "sequence": 143,
+        "latitude": -26.329872604823088,
+        "longitude": -48.68440140790063
+      },
+      {
+        "id": "line-0201-inbound-path-1",
+        "directionId": "line-0201-inbound",
+        "sequence": 1,
+        "latitude": -26.32988,
+        "longitude": -48.68435
+      },
+      {
+        "id": "line-0201-inbound-path-2",
+        "directionId": "line-0201-inbound",
+        "sequence": 2,
+        "latitude": -26.33004,
+        "longitude": -48.6844
+      },
+      {
+        "id": "line-0201-inbound-path-3",
+        "directionId": "line-0201-inbound",
+        "sequence": 3,
+        "latitude": -26.33024,
+        "longitude": -48.68443
+      },
+      {
+        "id": "line-0201-inbound-path-4",
+        "directionId": "line-0201-inbound",
+        "sequence": 4,
+        "latitude": -26.33038,
+        "longitude": -48.68441
+      },
+      {
+        "id": "line-0201-inbound-path-5",
+        "directionId": "line-0201-inbound",
+        "sequence": 5,
+        "latitude": -26.33051,
+        "longitude": -48.68437
+      },
+      {
+        "id": "line-0201-inbound-path-6",
+        "directionId": "line-0201-inbound",
+        "sequence": 6,
+        "latitude": -26.33178,
+        "longitude": -48.68378
+      },
+      {
+        "id": "line-0201-inbound-path-7",
+        "directionId": "line-0201-inbound",
+        "sequence": 7,
+        "latitude": -26.33206,
+        "longitude": -48.68357
+      },
+      {
+        "id": "line-0201-inbound-path-8",
+        "directionId": "line-0201-inbound",
+        "sequence": 8,
+        "latitude": -26.3325,
+        "longitude": -48.68313
+      },
+      {
+        "id": "line-0201-inbound-path-9",
+        "directionId": "line-0201-inbound",
+        "sequence": 9,
+        "latitude": -26.33305,
+        "longitude": -48.68256
+      },
+      {
+        "id": "line-0201-inbound-path-10",
+        "directionId": "line-0201-inbound",
+        "sequence": 10,
+        "latitude": -26.33321,
+        "longitude": -48.68245
+      },
+      {
+        "id": "line-0201-inbound-path-11",
+        "directionId": "line-0201-inbound",
+        "sequence": 11,
+        "latitude": -26.33338,
+        "longitude": -48.68239
+      },
+      {
+        "id": "line-0201-inbound-path-12",
+        "directionId": "line-0201-inbound",
+        "sequence": 12,
+        "latitude": -26.33377,
+        "longitude": -48.68234
+      },
+      {
+        "id": "line-0201-inbound-path-13",
+        "directionId": "line-0201-inbound",
+        "sequence": 13,
+        "latitude": -26.33386,
+        "longitude": -48.68237
+      },
+      {
+        "id": "line-0201-inbound-path-14",
+        "directionId": "line-0201-inbound",
+        "sequence": 14,
+        "latitude": -26.33418,
+        "longitude": -48.68254
+      },
+      {
+        "id": "line-0201-inbound-path-15",
+        "directionId": "line-0201-inbound",
+        "sequence": 15,
+        "latitude": -26.33428,
+        "longitude": -48.68258
+      },
+      {
+        "id": "line-0201-inbound-path-16",
+        "directionId": "line-0201-inbound",
+        "sequence": 16,
+        "latitude": -26.33435,
+        "longitude": -48.68257
+      },
+      {
+        "id": "line-0201-inbound-path-17",
+        "directionId": "line-0201-inbound",
+        "sequence": 17,
+        "latitude": -26.33445,
+        "longitude": -48.68253
+      },
+      {
+        "id": "line-0201-inbound-path-18",
+        "directionId": "line-0201-inbound",
+        "sequence": 18,
+        "latitude": -26.33454,
+        "longitude": -48.68244
+      },
+      {
+        "id": "line-0201-inbound-path-19",
+        "directionId": "line-0201-inbound",
+        "sequence": 19,
+        "latitude": -26.33525,
+        "longitude": -48.68171
+      },
+      {
+        "id": "line-0201-inbound-path-20",
+        "directionId": "line-0201-inbound",
+        "sequence": 20,
+        "latitude": -26.33537,
+        "longitude": -48.6816
+      },
+      {
+        "id": "line-0201-inbound-path-21",
+        "directionId": "line-0201-inbound",
+        "sequence": 21,
+        "latitude": -26.33548,
+        "longitude": -48.68153
+      },
+      {
+        "id": "line-0201-inbound-path-22",
+        "directionId": "line-0201-inbound",
+        "sequence": 22,
+        "latitude": -26.33578,
+        "longitude": -48.68138
+      },
+      {
+        "id": "line-0201-inbound-path-23",
+        "directionId": "line-0201-inbound",
+        "sequence": 23,
+        "latitude": -26.33655,
+        "longitude": -48.68091
+      },
+      {
+        "id": "line-0201-inbound-path-24",
+        "directionId": "line-0201-inbound",
+        "sequence": 24,
+        "latitude": -26.33681,
+        "longitude": -48.68078
+      },
+      {
+        "id": "line-0201-inbound-path-25",
+        "directionId": "line-0201-inbound",
+        "sequence": 25,
+        "latitude": -26.33698,
+        "longitude": -48.68069
+      },
+      {
+        "id": "line-0201-inbound-path-26",
+        "directionId": "line-0201-inbound",
+        "sequence": 26,
+        "latitude": -26.33752,
+        "longitude": -48.68047
+      },
+      {
+        "id": "line-0201-inbound-path-27",
+        "directionId": "line-0201-inbound",
+        "sequence": 27,
+        "latitude": -26.33757,
+        "longitude": -48.68009
+      },
+      {
+        "id": "line-0201-inbound-path-28",
+        "directionId": "line-0201-inbound",
+        "sequence": 28,
+        "latitude": -26.33752,
+        "longitude": -48.68047
+      },
+      {
+        "id": "line-0201-inbound-path-29",
+        "directionId": "line-0201-inbound",
+        "sequence": 29,
+        "latitude": -26.33698,
+        "longitude": -48.68069
+      },
+      {
+        "id": "line-0201-inbound-path-30",
+        "directionId": "line-0201-inbound",
+        "sequence": 30,
+        "latitude": -26.33681,
+        "longitude": -48.68078
+      },
+      {
+        "id": "line-0201-inbound-path-31",
+        "directionId": "line-0201-inbound",
+        "sequence": 31,
+        "latitude": -26.33655,
+        "longitude": -48.68091
+      },
+      {
+        "id": "line-0201-inbound-path-32",
+        "directionId": "line-0201-inbound",
+        "sequence": 32,
+        "latitude": -26.33578,
+        "longitude": -48.68138
+      },
+      {
+        "id": "line-0201-inbound-path-33",
+        "directionId": "line-0201-inbound",
+        "sequence": 33,
+        "latitude": -26.33548,
+        "longitude": -48.68153
+      },
+      {
+        "id": "line-0201-inbound-path-34",
+        "directionId": "line-0201-inbound",
+        "sequence": 34,
+        "latitude": -26.33537,
+        "longitude": -48.6816
+      },
+      {
+        "id": "line-0201-inbound-path-35",
+        "directionId": "line-0201-inbound",
+        "sequence": 35,
+        "latitude": -26.33525,
+        "longitude": -48.68171
+      },
+      {
+        "id": "line-0201-inbound-path-36",
+        "directionId": "line-0201-inbound",
+        "sequence": 36,
+        "latitude": -26.33454,
+        "longitude": -48.68244
+      },
+      {
+        "id": "line-0201-inbound-path-37",
+        "directionId": "line-0201-inbound",
+        "sequence": 37,
+        "latitude": -26.33445,
+        "longitude": -48.68253
+      },
+      {
+        "id": "line-0201-inbound-path-38",
+        "directionId": "line-0201-inbound",
+        "sequence": 38,
+        "latitude": -26.33435,
+        "longitude": -48.68257
+      },
+      {
+        "id": "line-0201-inbound-path-39",
+        "directionId": "line-0201-inbound",
+        "sequence": 39,
+        "latitude": -26.3343,
+        "longitude": -48.68233
+      },
+      {
+        "id": "line-0201-inbound-path-40",
+        "directionId": "line-0201-inbound",
+        "sequence": 40,
+        "latitude": -26.33435,
+        "longitude": -48.68257
+      },
+      {
+        "id": "line-0201-inbound-path-41",
+        "directionId": "line-0201-inbound",
+        "sequence": 41,
+        "latitude": -26.33445,
+        "longitude": -48.68253
+      },
+      {
+        "id": "line-0201-inbound-path-42",
+        "directionId": "line-0201-inbound",
+        "sequence": 42,
+        "latitude": -26.33454,
+        "longitude": -48.68244
+      },
+      {
+        "id": "line-0201-inbound-path-43",
+        "directionId": "line-0201-inbound",
+        "sequence": 43,
+        "latitude": -26.33525,
+        "longitude": -48.68171
+      },
+      {
+        "id": "line-0201-inbound-path-44",
+        "directionId": "line-0201-inbound",
+        "sequence": 44,
+        "latitude": -26.33537,
+        "longitude": -48.6816
+      },
+      {
+        "id": "line-0201-inbound-path-45",
+        "directionId": "line-0201-inbound",
+        "sequence": 45,
+        "latitude": -26.33548,
+        "longitude": -48.68153
+      },
+      {
+        "id": "line-0201-inbound-path-46",
+        "directionId": "line-0201-inbound",
+        "sequence": 46,
+        "latitude": -26.33578,
+        "longitude": -48.68138
+      },
+      {
+        "id": "line-0201-inbound-path-47",
+        "directionId": "line-0201-inbound",
+        "sequence": 47,
+        "latitude": -26.33655,
+        "longitude": -48.68091
+      },
+      {
+        "id": "line-0201-inbound-path-48",
+        "directionId": "line-0201-inbound",
+        "sequence": 48,
+        "latitude": -26.33681,
+        "longitude": -48.68078
+      },
+      {
+        "id": "line-0201-inbound-path-49",
+        "directionId": "line-0201-inbound",
+        "sequence": 49,
+        "latitude": -26.33698,
+        "longitude": -48.68069
+      },
+      {
+        "id": "line-0201-inbound-path-50",
+        "directionId": "line-0201-inbound",
+        "sequence": 50,
+        "latitude": -26.33752,
+        "longitude": -48.68047
+      },
+      {
+        "id": "line-0201-inbound-path-51",
+        "directionId": "line-0201-inbound",
+        "sequence": 51,
+        "latitude": -26.3376,
+        "longitude": -48.67982
+      },
+      {
+        "id": "line-0201-inbound-path-52",
+        "directionId": "line-0201-inbound",
+        "sequence": 52,
+        "latitude": -26.33774,
+        "longitude": -48.6787
+      },
+      {
+        "id": "line-0201-inbound-path-53",
+        "directionId": "line-0201-inbound",
+        "sequence": 53,
+        "latitude": -26.33797,
+        "longitude": -48.67649
+      },
+      {
+        "id": "line-0201-inbound-path-54",
+        "directionId": "line-0201-inbound",
+        "sequence": 54,
+        "latitude": -26.33798,
+        "longitude": -48.67637
+      },
+      {
+        "id": "line-0201-inbound-path-55",
+        "directionId": "line-0201-inbound",
+        "sequence": 55,
+        "latitude": -26.338,
+        "longitude": -48.67599
+      },
+      {
+        "id": "line-0201-inbound-path-56",
+        "directionId": "line-0201-inbound",
+        "sequence": 56,
+        "latitude": -26.33796,
+        "longitude": -48.67554
+      },
+      {
+        "id": "line-0201-inbound-path-57",
+        "directionId": "line-0201-inbound",
+        "sequence": 57,
+        "latitude": -26.33786,
+        "longitude": -48.67513
+      },
+      {
+        "id": "line-0201-inbound-path-58",
+        "directionId": "line-0201-inbound",
+        "sequence": 58,
+        "latitude": -26.33785,
+        "longitude": -48.67499
+      },
+      {
+        "id": "line-0201-inbound-path-59",
+        "directionId": "line-0201-inbound",
+        "sequence": 59,
+        "latitude": -26.33785,
+        "longitude": -48.67262
+      },
+      {
+        "id": "line-0201-inbound-path-60",
+        "directionId": "line-0201-inbound",
+        "sequence": 60,
+        "latitude": -26.3379,
+        "longitude": -48.67204
+      },
+      {
+        "id": "line-0201-inbound-path-61",
+        "directionId": "line-0201-inbound",
+        "sequence": 61,
+        "latitude": -26.33791,
+        "longitude": -48.67176
+      },
+      {
+        "id": "line-0201-inbound-path-62",
+        "directionId": "line-0201-inbound",
+        "sequence": 62,
+        "latitude": -26.33781,
+        "longitude": -48.67025
+      },
+      {
+        "id": "line-0201-inbound-path-63",
+        "directionId": "line-0201-inbound",
+        "sequence": 63,
+        "latitude": -26.33777,
+        "longitude": -48.67003
+      },
+      {
+        "id": "line-0201-inbound-path-64",
+        "directionId": "line-0201-inbound",
+        "sequence": 64,
+        "latitude": -26.3377,
+        "longitude": -48.6698
+      },
+      {
+        "id": "line-0201-inbound-path-65",
+        "directionId": "line-0201-inbound",
+        "sequence": 65,
+        "latitude": -26.33748,
+        "longitude": -48.66939
+      },
+      {
+        "id": "line-0201-inbound-path-66",
+        "directionId": "line-0201-inbound",
+        "sequence": 66,
+        "latitude": -26.33657,
+        "longitude": -48.66817
+      },
+      {
+        "id": "line-0201-inbound-path-67",
+        "directionId": "line-0201-inbound",
+        "sequence": 67,
+        "latitude": -26.33646,
+        "longitude": -48.66799
+      },
+      {
+        "id": "line-0201-inbound-path-68",
+        "directionId": "line-0201-inbound",
+        "sequence": 68,
+        "latitude": -26.33636,
+        "longitude": -48.66777
+      },
+      {
+        "id": "line-0201-inbound-path-69",
+        "directionId": "line-0201-inbound",
+        "sequence": 69,
+        "latitude": -26.33634,
+        "longitude": -48.6675
+      },
+      {
+        "id": "line-0201-inbound-path-70",
+        "directionId": "line-0201-inbound",
+        "sequence": 70,
+        "latitude": -26.33638,
+        "longitude": -48.6671
+      },
+      {
+        "id": "line-0201-inbound-path-71",
+        "directionId": "line-0201-inbound",
+        "sequence": 71,
+        "latitude": -26.33652,
+        "longitude": -48.66651
+      },
+      {
+        "id": "line-0201-inbound-path-72",
+        "directionId": "line-0201-inbound",
+        "sequence": 72,
+        "latitude": -26.3366,
+        "longitude": -48.66624
+      },
+      {
+        "id": "line-0201-inbound-path-73",
+        "directionId": "line-0201-inbound",
+        "sequence": 73,
+        "latitude": -26.33682,
+        "longitude": -48.66562
+      },
+      {
+        "id": "line-0201-inbound-path-74",
+        "directionId": "line-0201-inbound",
+        "sequence": 74,
+        "latitude": -26.33689,
+        "longitude": -48.66541
+      },
+      {
+        "id": "line-0201-inbound-path-75",
+        "directionId": "line-0201-inbound",
+        "sequence": 75,
+        "latitude": -26.33692,
+        "longitude": -48.66522
+      },
+      {
+        "id": "line-0201-inbound-path-76",
+        "directionId": "line-0201-inbound",
+        "sequence": 76,
+        "latitude": -26.33716,
+        "longitude": -48.66345
+      },
+      {
+        "id": "line-0201-inbound-path-77",
+        "directionId": "line-0201-inbound",
+        "sequence": 77,
+        "latitude": -26.3372,
+        "longitude": -48.66296
+      },
+      {
+        "id": "line-0201-inbound-path-78",
+        "directionId": "line-0201-inbound",
+        "sequence": 78,
+        "latitude": -26.33718,
+        "longitude": -48.6625
+      },
+      {
+        "id": "line-0201-inbound-path-79",
+        "directionId": "line-0201-inbound",
+        "sequence": 79,
+        "latitude": -26.33706,
+        "longitude": -48.66224
+      },
+      {
+        "id": "line-0201-inbound-path-80",
+        "directionId": "line-0201-inbound",
+        "sequence": 80,
+        "latitude": -26.33695,
+        "longitude": -48.66206
+      },
+      {
+        "id": "line-0201-inbound-path-81",
+        "directionId": "line-0201-inbound",
+        "sequence": 81,
+        "latitude": -26.33679,
+        "longitude": -48.66189
+      },
+      {
+        "id": "line-0201-inbound-path-82",
+        "directionId": "line-0201-inbound",
+        "sequence": 82,
+        "latitude": -26.33602,
+        "longitude": -48.66141
+      },
+      {
+        "id": "line-0201-inbound-path-83",
+        "directionId": "line-0201-inbound",
+        "sequence": 83,
+        "latitude": -26.33584,
+        "longitude": -48.66125
+      },
+      {
+        "id": "line-0201-inbound-path-84",
+        "directionId": "line-0201-inbound",
+        "sequence": 84,
+        "latitude": -26.33566,
+        "longitude": -48.66105
+      },
+      {
+        "id": "line-0201-inbound-path-85",
+        "directionId": "line-0201-inbound",
+        "sequence": 85,
+        "latitude": -26.33556,
+        "longitude": -48.6609
+      },
+      {
+        "id": "line-0201-inbound-path-86",
+        "directionId": "line-0201-inbound",
+        "sequence": 86,
+        "latitude": -26.3355,
+        "longitude": -48.66077
+      },
+      {
+        "id": "line-0201-inbound-path-87",
+        "directionId": "line-0201-inbound",
+        "sequence": 87,
+        "latitude": -26.33548,
+        "longitude": -48.66056
+      },
+      {
+        "id": "line-0201-inbound-path-88",
+        "directionId": "line-0201-inbound",
+        "sequence": 88,
+        "latitude": -26.33554,
+        "longitude": -48.6597
+      },
+      {
+        "id": "line-0201-inbound-path-89",
+        "directionId": "line-0201-inbound",
+        "sequence": 89,
+        "latitude": -26.33552,
+        "longitude": -48.65946
+      },
+      {
+        "id": "line-0201-inbound-path-90",
+        "directionId": "line-0201-inbound",
+        "sequence": 90,
+        "latitude": -26.33539,
+        "longitude": -48.65844
+      },
+      {
+        "id": "line-0201-inbound-path-91",
+        "directionId": "line-0201-inbound",
+        "sequence": 91,
+        "latitude": -26.33534,
+        "longitude": -48.6581
+      },
+      {
+        "id": "line-0201-inbound-path-92",
+        "directionId": "line-0201-inbound",
+        "sequence": 92,
+        "latitude": -26.33532,
+        "longitude": -48.65789
+      },
+      {
+        "id": "line-0201-inbound-path-93",
+        "directionId": "line-0201-inbound",
+        "sequence": 93,
+        "latitude": -26.33532,
+        "longitude": -48.65776
+      },
+      {
+        "id": "line-0201-inbound-path-94",
+        "directionId": "line-0201-inbound",
+        "sequence": 94,
+        "latitude": -26.33527,
+        "longitude": -48.65732
+      },
+      {
+        "id": "line-0201-inbound-path-95",
+        "directionId": "line-0201-inbound",
+        "sequence": 95,
+        "latitude": -26.33514,
+        "longitude": -48.65656
+      },
+      {
+        "id": "line-0201-inbound-path-96",
+        "directionId": "line-0201-inbound",
+        "sequence": 96,
+        "latitude": -26.33505,
+        "longitude": -48.65618
+      },
+      {
+        "id": "line-0201-inbound-path-97",
+        "directionId": "line-0201-inbound",
+        "sequence": 97,
+        "latitude": -26.33502,
+        "longitude": -48.65609
+      },
+      {
+        "id": "line-0201-inbound-path-98",
+        "directionId": "line-0201-inbound",
+        "sequence": 98,
+        "latitude": -26.33498,
+        "longitude": -48.65583
+      },
+      {
+        "id": "line-0201-inbound-path-99",
+        "directionId": "line-0201-inbound",
+        "sequence": 99,
+        "latitude": -26.33499,
+        "longitude": -48.6557
+      },
+      {
+        "id": "line-0201-inbound-path-100",
+        "directionId": "line-0201-inbound",
+        "sequence": 100,
+        "latitude": -26.33502,
+        "longitude": -48.65554
+      },
+      {
+        "id": "line-0201-inbound-path-101",
+        "directionId": "line-0201-inbound",
+        "sequence": 101,
+        "latitude": -26.33507,
+        "longitude": -48.65544
+      },
+      {
+        "id": "line-0201-inbound-path-102",
+        "directionId": "line-0201-inbound",
+        "sequence": 102,
+        "latitude": -26.33533,
+        "longitude": -48.65507
+      },
+      {
+        "id": "line-0201-inbound-path-103",
+        "directionId": "line-0201-inbound",
+        "sequence": 103,
+        "latitude": -26.33549,
+        "longitude": -48.65486
+      },
+      {
+        "id": "line-0201-inbound-path-104",
+        "directionId": "line-0201-inbound",
+        "sequence": 104,
+        "latitude": -26.3359,
+        "longitude": -48.65396
+      },
+      {
+        "id": "line-0201-inbound-path-105",
+        "directionId": "line-0201-inbound",
+        "sequence": 105,
+        "latitude": -26.33597,
+        "longitude": -48.65379
+      },
+      {
+        "id": "line-0201-inbound-path-106",
+        "directionId": "line-0201-inbound",
+        "sequence": 106,
+        "latitude": -26.33612,
+        "longitude": -48.65337
+      },
+      {
+        "id": "line-0201-inbound-path-107",
+        "directionId": "line-0201-inbound",
+        "sequence": 107,
+        "latitude": -26.33613,
+        "longitude": -48.65332
+      },
+      {
+        "id": "line-0201-inbound-path-108",
+        "directionId": "line-0201-inbound",
+        "sequence": 108,
+        "latitude": -26.33616,
+        "longitude": -48.65315
+      },
+      {
+        "id": "line-0201-inbound-path-109",
+        "directionId": "line-0201-inbound",
+        "sequence": 109,
+        "latitude": -26.33617,
+        "longitude": -48.65304
+      },
+      {
+        "id": "line-0201-inbound-path-110",
+        "directionId": "line-0201-inbound",
+        "sequence": 110,
+        "latitude": -26.33615,
+        "longitude": -48.6529
+      },
+      {
+        "id": "line-0201-inbound-path-111",
+        "directionId": "line-0201-inbound",
+        "sequence": 111,
+        "latitude": -26.33611,
+        "longitude": -48.65268
+      },
+      {
+        "id": "line-0201-inbound-path-112",
+        "directionId": "line-0201-inbound",
+        "sequence": 112,
+        "latitude": -26.33567,
+        "longitude": -48.65271
+      },
+      {
+        "id": "line-0201-inbound-path-113",
+        "directionId": "line-0201-inbound",
+        "sequence": 113,
+        "latitude": -26.33552,
+        "longitude": -48.65269
+      },
+      {
+        "id": "line-0201-inbound-path-114",
+        "directionId": "line-0201-inbound",
+        "sequence": 114,
+        "latitude": -26.33534,
+        "longitude": -48.65266
+      },
+      {
+        "id": "line-0201-inbound-path-115",
+        "directionId": "line-0201-inbound",
+        "sequence": 115,
+        "latitude": -26.3351,
+        "longitude": -48.65258
+      },
+      {
+        "id": "line-0201-inbound-path-116",
+        "directionId": "line-0201-inbound",
+        "sequence": 116,
+        "latitude": -26.33487,
+        "longitude": -48.65246
+      },
+      {
+        "id": "line-0201-inbound-path-117",
+        "directionId": "line-0201-inbound",
+        "sequence": 117,
+        "latitude": -26.33482,
+        "longitude": -48.65242
+      },
+      {
+        "id": "line-0201-inbound-path-118",
+        "directionId": "line-0201-inbound",
+        "sequence": 118,
+        "latitude": -26.33439,
+        "longitude": -48.65209
+      },
+      {
+        "id": "line-0201-inbound-path-119",
+        "directionId": "line-0201-inbound",
+        "sequence": 119,
+        "latitude": -26.33249,
+        "longitude": -48.65089
+      },
+      {
+        "id": "line-0201-inbound-path-120",
+        "directionId": "line-0201-inbound",
+        "sequence": 120,
+        "latitude": -26.33228,
+        "longitude": -48.65075
+      },
+      {
+        "id": "line-0201-inbound-path-121",
+        "directionId": "line-0201-inbound",
+        "sequence": 121,
+        "latitude": -26.33134,
+        "longitude": -48.65014
+      },
+      {
+        "id": "line-0201-inbound-path-122",
+        "directionId": "line-0201-inbound",
+        "sequence": 122,
+        "latitude": -26.33058,
+        "longitude": -48.64964
+      },
+      {
+        "id": "line-0201-inbound-path-123",
+        "directionId": "line-0201-inbound",
+        "sequence": 123,
+        "latitude": -26.33033,
+        "longitude": -48.64945
+      },
+      {
+        "id": "line-0201-inbound-path-124",
+        "directionId": "line-0201-inbound",
+        "sequence": 124,
+        "latitude": -26.33015,
+        "longitude": -48.64928
+      },
+      {
+        "id": "line-0201-inbound-path-125",
+        "directionId": "line-0201-inbound",
+        "sequence": 125,
+        "latitude": -26.33002,
+        "longitude": -48.64912
+      },
+      {
+        "id": "line-0201-inbound-path-126",
+        "directionId": "line-0201-inbound",
+        "sequence": 126,
+        "latitude": -26.32991,
+        "longitude": -48.64897
+      },
+      {
+        "id": "line-0201-inbound-path-127",
+        "directionId": "line-0201-inbound",
+        "sequence": 127,
+        "latitude": -26.3299,
+        "longitude": -48.64895
+      },
+      {
+        "id": "line-0201-inbound-path-128",
+        "directionId": "line-0201-inbound",
+        "sequence": 128,
+        "latitude": -26.32948,
+        "longitude": -48.64893
+      },
+      {
+        "id": "line-0201-inbound-path-129",
+        "directionId": "line-0201-inbound",
+        "sequence": 129,
+        "latitude": -26.32942,
+        "longitude": -48.64893
+      },
+      {
+        "id": "line-0201-inbound-path-130",
+        "directionId": "line-0201-inbound",
+        "sequence": 130,
+        "latitude": -26.32923,
+        "longitude": -48.64896
+      },
+      {
+        "id": "line-0201-inbound-path-131",
+        "directionId": "line-0201-inbound",
+        "sequence": 131,
+        "latitude": -26.32888,
+        "longitude": -48.64903
+      },
+      {
+        "id": "line-0201-inbound-path-132",
+        "directionId": "line-0201-inbound",
+        "sequence": 132,
+        "latitude": -26.3288,
+        "longitude": -48.64907
+      },
+      {
+        "id": "line-0201-inbound-path-133",
+        "directionId": "line-0201-inbound",
+        "sequence": 133,
+        "latitude": -26.32872,
+        "longitude": -48.64912
+      },
+      {
+        "id": "line-0201-inbound-path-134",
+        "directionId": "line-0201-inbound",
+        "sequence": 134,
+        "latitude": -26.32862,
+        "longitude": -48.64922
+      },
+      {
+        "id": "line-0201-inbound-path-135",
+        "directionId": "line-0201-inbound",
+        "sequence": 135,
+        "latitude": -26.32838,
+        "longitude": -48.64958
+      },
+      {
+        "id": "line-0201-inbound-path-136",
+        "directionId": "line-0201-inbound",
+        "sequence": 136,
+        "latitude": -26.32829,
+        "longitude": -48.64972
+      },
+      {
+        "id": "line-0201-inbound-path-137",
+        "directionId": "line-0201-inbound",
+        "sequence": 137,
+        "latitude": -26.32779,
+        "longitude": -48.65047
+      },
+      {
+        "id": "line-0201-inbound-path-138",
+        "directionId": "line-0201-inbound",
+        "sequence": 138,
+        "latitude": -26.3272,
+        "longitude": -48.65022
+      },
+      {
+        "id": "line-0201-inbound-path-139",
+        "directionId": "line-0201-inbound",
+        "sequence": 139,
+        "latitude": -26.32715,
+        "longitude": -48.6502
+      },
+      {
+        "id": "line-0201-inbound-path-140",
+        "directionId": "line-0201-inbound",
+        "sequence": 140,
+        "latitude": -26.31252,
+        "longitude": -48.64417
+      },
+      {
+        "id": "line-0201-inbound-path-141",
+        "directionId": "line-0201-inbound",
+        "sequence": 141,
+        "latitude": -26.31231,
+        "longitude": -48.64408
+      },
+      {
+        "id": "line-0201-inbound-path-142",
+        "directionId": "line-0201-inbound",
+        "sequence": 142,
+        "latitude": -26.31223,
+        "longitude": -48.64405
+      },
+      {
+        "id": "line-0201-inbound-path-143",
+        "directionId": "line-0201-inbound",
+        "sequence": 143,
+        "latitude": -26.30845,
+        "longitude": -48.64248
+      },
+      {
+        "id": "line-0201-inbound-path-144",
+        "directionId": "line-0201-inbound",
+        "sequence": 144,
+        "latitude": -26.30801,
+        "longitude": -48.64231
+      },
+      {
+        "id": "line-0201-inbound-path-145",
+        "directionId": "line-0201-inbound",
+        "sequence": 145,
+        "latitude": -26.30349,
+        "longitude": -48.64045
+      },
+      {
+        "id": "line-0201-inbound-path-146",
+        "directionId": "line-0201-inbound",
+        "sequence": 146,
+        "latitude": -26.30332,
+        "longitude": -48.64038
+      },
+      {
+        "id": "line-0201-inbound-path-147",
+        "directionId": "line-0201-inbound",
+        "sequence": 147,
+        "latitude": -26.30316,
+        "longitude": -48.64033
+      },
+      {
+        "id": "line-0201-inbound-path-148",
+        "directionId": "line-0201-inbound",
+        "sequence": 148,
+        "latitude": -26.30265,
+        "longitude": -48.64021
+      },
+      {
+        "id": "line-0201-inbound-path-149",
+        "directionId": "line-0201-inbound",
+        "sequence": 149,
+        "latitude": -26.30234,
+        "longitude": -48.64015
+      },
+      {
+        "id": "line-0201-inbound-path-150",
+        "directionId": "line-0201-inbound",
+        "sequence": 150,
+        "latitude": -26.30177,
+        "longitude": -48.64011
+      },
+      {
+        "id": "line-0201-inbound-path-151",
+        "directionId": "line-0201-inbound",
+        "sequence": 151,
+        "latitude": -26.30145,
+        "longitude": -48.64011
+      },
+      {
+        "id": "line-0201-inbound-path-152",
+        "directionId": "line-0201-inbound",
+        "sequence": 152,
+        "latitude": -26.30105,
+        "longitude": -48.64014
+      },
+      {
+        "id": "line-0201-inbound-path-153",
+        "directionId": "line-0201-inbound",
+        "sequence": 153,
+        "latitude": -26.30091,
+        "longitude": -48.64016
+      },
+      {
+        "id": "line-0201-inbound-path-154",
+        "directionId": "line-0201-inbound",
+        "sequence": 154,
+        "latitude": -26.30038,
+        "longitude": -48.64027
+      },
+      {
+        "id": "line-0201-inbound-path-155",
+        "directionId": "line-0201-inbound",
+        "sequence": 155,
+        "latitude": -26.30006,
+        "longitude": -48.64036
+      },
+      {
+        "id": "line-0201-inbound-path-156",
+        "directionId": "line-0201-inbound",
+        "sequence": 156,
+        "latitude": -26.2995,
+        "longitude": -48.6406
+      },
+      {
+        "id": "line-0201-inbound-path-157",
+        "directionId": "line-0201-inbound",
+        "sequence": 157,
+        "latitude": -26.298,
+        "longitude": -48.64137
+      },
+      {
+        "id": "line-0201-inbound-path-158",
+        "directionId": "line-0201-inbound",
+        "sequence": 158,
+        "latitude": -26.29686,
+        "longitude": -48.64204
+      },
+      {
+        "id": "line-0201-inbound-path-159",
+        "directionId": "line-0201-inbound",
+        "sequence": 159,
+        "latitude": -26.29666,
+        "longitude": -48.64214
+      },
+      {
+        "id": "line-0201-inbound-path-160",
+        "directionId": "line-0201-inbound",
+        "sequence": 160,
+        "latitude": -26.29621,
+        "longitude": -48.64226
+      },
+      {
+        "id": "line-0201-inbound-path-161",
+        "directionId": "line-0201-inbound",
+        "sequence": 161,
+        "latitude": -26.29579,
+        "longitude": -48.64234
+      },
+      {
+        "id": "line-0201-inbound-path-162",
+        "directionId": "line-0201-inbound",
+        "sequence": 162,
+        "latitude": -26.29557,
+        "longitude": -48.64239
+      },
+      {
+        "id": "line-0201-inbound-path-163",
+        "directionId": "line-0201-inbound",
+        "sequence": 163,
+        "latitude": -26.29542,
+        "longitude": -48.64246
+      },
+      {
+        "id": "line-0201-inbound-path-164",
+        "directionId": "line-0201-inbound",
+        "sequence": 164,
+        "latitude": -26.29528,
+        "longitude": -48.64257
+      },
+      {
+        "id": "line-0201-inbound-path-165",
+        "directionId": "line-0201-inbound",
+        "sequence": 165,
+        "latitude": -26.29438,
+        "longitude": -48.6433
+      },
+      {
+        "id": "line-0201-inbound-path-166",
+        "directionId": "line-0201-inbound",
+        "sequence": 166,
+        "latitude": -26.29278,
+        "longitude": -48.64415
+      },
+      {
+        "id": "line-0201-inbound-path-167",
+        "directionId": "line-0201-inbound",
+        "sequence": 167,
+        "latitude": -26.29152,
+        "longitude": -48.64482
+      },
+      {
+        "id": "line-0201-inbound-path-168",
+        "directionId": "line-0201-inbound",
+        "sequence": 168,
+        "latitude": -26.29002,
+        "longitude": -48.64556
+      },
+      {
+        "id": "line-0201-inbound-path-169",
+        "directionId": "line-0201-inbound",
+        "sequence": 169,
+        "latitude": -26.28972,
+        "longitude": -48.64567
+      },
+      {
+        "id": "line-0201-inbound-path-170",
+        "directionId": "line-0201-inbound",
+        "sequence": 170,
+        "latitude": -26.28947,
+        "longitude": -48.64575
+      },
+      {
+        "id": "line-0201-inbound-path-171",
+        "directionId": "line-0201-inbound",
+        "sequence": 171,
+        "latitude": -26.28912,
+        "longitude": -48.64583
+      },
+      {
+        "id": "line-0201-inbound-path-172",
+        "directionId": "line-0201-inbound",
+        "sequence": 172,
+        "latitude": -26.28882,
+        "longitude": -48.64588
+      },
+      {
+        "id": "line-0201-inbound-path-173",
+        "directionId": "line-0201-inbound",
+        "sequence": 173,
+        "latitude": -26.28629,
+        "longitude": -48.64612
+      },
+      {
+        "id": "line-0201-inbound-path-174",
+        "directionId": "line-0201-inbound",
+        "sequence": 174,
+        "latitude": -26.28613,
+        "longitude": -48.64614
+      },
+      {
+        "id": "line-0201-inbound-path-175",
+        "directionId": "line-0201-inbound",
+        "sequence": 175,
+        "latitude": -26.28574,
+        "longitude": -48.64618
+      },
+      {
+        "id": "line-0201-inbound-path-176",
+        "directionId": "line-0201-inbound",
+        "sequence": 176,
+        "latitude": -26.28508,
+        "longitude": -48.64625
+      },
+      {
+        "id": "line-0201-inbound-path-177",
+        "directionId": "line-0201-inbound",
+        "sequence": 177,
+        "latitude": -26.28502,
+        "longitude": -48.64625
+      },
+      {
+        "id": "line-0201-inbound-path-178",
+        "directionId": "line-0201-inbound",
+        "sequence": 178,
+        "latitude": -26.28407,
+        "longitude": -48.64636
+      },
+      {
+        "id": "line-0201-inbound-path-179",
+        "directionId": "line-0201-inbound",
+        "sequence": 179,
+        "latitude": -26.28344,
+        "longitude": -48.64641
+      },
+      {
+        "id": "line-0201-inbound-path-180",
+        "directionId": "line-0201-inbound",
+        "sequence": 180,
+        "latitude": -26.28268,
+        "longitude": -48.64648
+      },
+      {
+        "id": "line-0201-inbound-path-181",
+        "directionId": "line-0201-inbound",
+        "sequence": 181,
+        "latitude": -26.27961,
+        "longitude": -48.64676
+      },
+      {
+        "id": "line-0201-inbound-path-182",
+        "directionId": "line-0201-inbound",
+        "sequence": 182,
+        "latitude": -26.2792,
+        "longitude": -48.64673
+      },
+      {
+        "id": "line-0201-inbound-path-183",
+        "directionId": "line-0201-inbound",
+        "sequence": 183,
+        "latitude": -26.27881,
+        "longitude": -48.64665
+      },
+      {
+        "id": "line-0201-inbound-path-184",
+        "directionId": "line-0201-inbound",
+        "sequence": 184,
+        "latitude": -26.27866,
+        "longitude": -48.64659
+      },
+      {
+        "id": "line-0201-inbound-path-185",
+        "directionId": "line-0201-inbound",
+        "sequence": 185,
+        "latitude": -26.27852,
+        "longitude": -48.64652
+      },
+      {
+        "id": "line-0201-inbound-path-186",
+        "directionId": "line-0201-inbound",
+        "sequence": 186,
+        "latitude": -26.27822,
+        "longitude": -48.64633
+      },
+      {
+        "id": "line-0201-inbound-path-187",
+        "directionId": "line-0201-inbound",
+        "sequence": 187,
+        "latitude": -26.27746,
+        "longitude": -48.64577
+      },
+      {
+        "id": "line-0201-inbound-path-188",
+        "directionId": "line-0201-inbound",
+        "sequence": 188,
+        "latitude": -26.27683,
+        "longitude": -48.64533
+      },
+      {
+        "id": "line-0201-inbound-path-189",
+        "directionId": "line-0201-inbound",
+        "sequence": 189,
+        "latitude": -26.27646,
+        "longitude": -48.64507
+      },
+      {
+        "id": "line-0201-inbound-path-190",
+        "directionId": "line-0201-inbound",
+        "sequence": 190,
+        "latitude": -26.27565,
+        "longitude": -48.64443
+      },
+      {
+        "id": "line-0201-inbound-path-191",
+        "directionId": "line-0201-inbound",
+        "sequence": 191,
+        "latitude": -26.27512,
+        "longitude": -48.644
+      },
+      {
+        "id": "line-0201-inbound-path-192",
+        "directionId": "line-0201-inbound",
+        "sequence": 192,
+        "latitude": -26.27453,
+        "longitude": -48.64356
+      },
+      {
+        "id": "line-0201-inbound-path-193",
+        "directionId": "line-0201-inbound",
+        "sequence": 193,
+        "latitude": -26.27367,
+        "longitude": -48.64291
+      },
+      {
+        "id": "line-0201-inbound-path-194",
+        "directionId": "line-0201-inbound",
+        "sequence": 194,
+        "latitude": -26.27279,
+        "longitude": -48.64228
+      },
+      {
+        "id": "line-0201-inbound-path-195",
+        "directionId": "line-0201-inbound",
+        "sequence": 195,
+        "latitude": -26.27272,
+        "longitude": -48.64223
+      },
+      {
+        "id": "line-0201-inbound-path-196",
+        "directionId": "line-0201-inbound",
+        "sequence": 196,
+        "latitude": -26.27162,
+        "longitude": -48.64147
+      },
+      {
+        "id": "line-0201-inbound-path-197",
+        "directionId": "line-0201-inbound",
+        "sequence": 197,
+        "latitude": -26.27133,
+        "longitude": -48.64123
+      },
+      {
+        "id": "line-0201-inbound-path-198",
+        "directionId": "line-0201-inbound",
+        "sequence": 198,
+        "latitude": -26.27131,
+        "longitude": -48.64121
+      },
+      {
+        "id": "line-0201-inbound-path-199",
+        "directionId": "line-0201-inbound",
+        "sequence": 199,
+        "latitude": -26.27097,
+        "longitude": -48.64094
+      },
+      {
+        "id": "line-0201-inbound-path-200",
+        "directionId": "line-0201-inbound",
+        "sequence": 200,
+        "latitude": -26.2706,
+        "longitude": -48.64062
+      },
+      {
+        "id": "line-0201-inbound-path-201",
+        "directionId": "line-0201-inbound",
+        "sequence": 201,
+        "latitude": -26.27055,
+        "longitude": -48.64059
+      },
+      {
+        "id": "line-0201-inbound-path-202",
+        "directionId": "line-0201-inbound",
+        "sequence": 202,
+        "latitude": -26.27049,
+        "longitude": -48.64058
+      },
+      {
+        "id": "line-0201-inbound-path-203",
+        "directionId": "line-0201-inbound",
+        "sequence": 203,
+        "latitude": -26.27043,
+        "longitude": -48.64059
+      },
+      {
+        "id": "line-0201-inbound-path-204",
+        "directionId": "line-0201-inbound",
+        "sequence": 204,
+        "latitude": -26.27039,
+        "longitude": -48.64063
+      },
+      {
+        "id": "line-0201-inbound-path-205",
+        "directionId": "line-0201-inbound",
+        "sequence": 205,
+        "latitude": -26.27035,
+        "longitude": -48.64068
+      },
+      {
+        "id": "line-0201-inbound-path-206",
+        "directionId": "line-0201-inbound",
+        "sequence": 206,
+        "latitude": -26.27033,
+        "longitude": -48.64074
+      },
+      {
+        "id": "line-0201-inbound-path-207",
+        "directionId": "line-0201-inbound",
+        "sequence": 207,
+        "latitude": -26.27027,
+        "longitude": -48.64085
+      },
+      {
+        "id": "line-0201-inbound-path-208",
+        "directionId": "line-0201-inbound",
+        "sequence": 208,
+        "latitude": -26.27023,
+        "longitude": -48.64089
+      },
+      {
+        "id": "line-0201-inbound-path-209",
+        "directionId": "line-0201-inbound",
+        "sequence": 209,
+        "latitude": -26.27016,
+        "longitude": -48.64093
+      },
+      {
+        "id": "line-0201-inbound-path-210",
+        "directionId": "line-0201-inbound",
+        "sequence": 210,
+        "latitude": -26.26983,
+        "longitude": -48.64095
+      },
+      {
+        "id": "line-0201-inbound-path-211",
+        "directionId": "line-0201-inbound",
+        "sequence": 211,
+        "latitude": -26.26964,
+        "longitude": -48.64098
+      },
+      {
+        "id": "line-0201-inbound-path-212",
+        "directionId": "line-0201-inbound",
+        "sequence": 212,
+        "latitude": -26.26925,
+        "longitude": -48.64107
+      },
+      {
+        "id": "line-0201-inbound-path-213",
+        "directionId": "line-0201-inbound",
+        "sequence": 213,
+        "latitude": -26.26856,
+        "longitude": -48.64127
+      },
+      {
+        "id": "line-0201-inbound-path-214",
+        "directionId": "line-0201-inbound",
+        "sequence": 214,
+        "latitude": -26.26751,
+        "longitude": -48.64156
+      },
+      {
+        "id": "line-0201-inbound-path-215",
+        "directionId": "line-0201-inbound",
+        "sequence": 215,
+        "latitude": -26.26653,
+        "longitude": -48.64182
+      },
+      {
+        "id": "line-0201-inbound-path-216",
+        "directionId": "line-0201-inbound",
+        "sequence": 216,
+        "latitude": -26.26635,
+        "longitude": -48.64192
+      },
+      {
+        "id": "line-0201-inbound-path-217",
+        "directionId": "line-0201-inbound",
+        "sequence": 217,
+        "latitude": -26.26602,
+        "longitude": -48.64224
+      },
+      {
+        "id": "line-0201-inbound-path-218",
+        "directionId": "line-0201-inbound",
+        "sequence": 218,
+        "latitude": -26.26596,
+        "longitude": -48.6423
+      },
+      {
+        "id": "line-0201-inbound-path-219",
+        "directionId": "line-0201-inbound",
+        "sequence": 219,
+        "latitude": -26.26566,
+        "longitude": -48.6426
+      },
+      {
+        "id": "line-0201-inbound-path-220",
+        "directionId": "line-0201-inbound",
+        "sequence": 220,
+        "latitude": -26.26596,
+        "longitude": -48.6423
+      },
+      {
+        "id": "line-0201-inbound-path-221",
+        "directionId": "line-0201-inbound",
+        "sequence": 221,
+        "latitude": -26.26602,
+        "longitude": -48.64224
+      },
+      {
+        "id": "line-0201-inbound-path-222",
+        "directionId": "line-0201-inbound",
+        "sequence": 222,
+        "latitude": -26.26635,
+        "longitude": -48.64192
+      },
+      {
+        "id": "line-0201-inbound-path-223",
+        "directionId": "line-0201-inbound",
+        "sequence": 223,
+        "latitude": -26.26653,
+        "longitude": -48.64182
+      },
+      {
+        "id": "line-0201-inbound-path-224",
+        "directionId": "line-0201-inbound",
+        "sequence": 224,
+        "latitude": -26.26741,
+        "longitude": -48.64158
+      },
+      {
+        "id": "line-0201-inbound-path-225",
+        "directionId": "line-0201-inbound",
+        "sequence": 225,
+        "latitude": -26.26653,
+        "longitude": -48.64182
+      },
+      {
+        "id": "line-0201-inbound-path-226",
+        "directionId": "line-0201-inbound",
+        "sequence": 226,
+        "latitude": -26.26635,
+        "longitude": -48.64192
+      },
+      {
+        "id": "line-0201-inbound-path-227",
+        "directionId": "line-0201-inbound",
+        "sequence": 227,
+        "latitude": -26.26602,
+        "longitude": -48.64224
+      },
+      {
+        "id": "line-0201-inbound-path-228",
+        "directionId": "line-0201-inbound",
+        "sequence": 228,
+        "latitude": -26.26596,
+        "longitude": -48.6423
+      },
+      {
+        "id": "line-0201-inbound-path-229",
+        "directionId": "line-0201-inbound",
+        "sequence": 229,
+        "latitude": -26.26548,
+        "longitude": -48.64278
+      },
+      {
+        "id": "line-0201-inbound-path-230",
+        "directionId": "line-0201-inbound",
+        "sequence": 230,
+        "latitude": -26.26519,
+        "longitude": -48.64308
+      },
+      {
+        "id": "line-0201-inbound-path-231",
+        "directionId": "line-0201-inbound",
+        "sequence": 231,
+        "latitude": -26.2648,
+        "longitude": -48.64347
+      },
+      {
+        "id": "line-0201-inbound-path-232",
+        "directionId": "line-0201-inbound",
+        "sequence": 232,
+        "latitude": -26.26448,
+        "longitude": -48.64379
+      },
+      {
+        "id": "line-0201-inbound-path-233",
+        "directionId": "line-0201-inbound",
+        "sequence": 233,
+        "latitude": -26.26422,
+        "longitude": -48.64403
+      },
+      {
+        "id": "line-0201-inbound-path-234",
+        "directionId": "line-0201-inbound",
+        "sequence": 234,
+        "latitude": -26.26404,
+        "longitude": -48.64418
+      },
+      {
+        "id": "line-0201-inbound-path-235",
+        "directionId": "line-0201-inbound",
+        "sequence": 235,
+        "latitude": -26.26363,
+        "longitude": -48.6445
+      },
+      {
+        "id": "line-0201-inbound-path-236",
+        "directionId": "line-0201-inbound",
+        "sequence": 236,
+        "latitude": -26.26349,
+        "longitude": -48.64462
+      },
+      {
+        "id": "line-0201-inbound-path-237",
+        "directionId": "line-0201-inbound",
+        "sequence": 237,
+        "latitude": -26.26275,
+        "longitude": -48.64522
+      },
+      {
+        "id": "line-0201-inbound-path-238",
+        "directionId": "line-0201-inbound",
+        "sequence": 238,
+        "latitude": -26.26242,
+        "longitude": -48.64547
+      },
+      {
+        "id": "line-0201-inbound-path-239",
+        "directionId": "line-0201-inbound",
+        "sequence": 239,
+        "latitude": -26.26233,
+        "longitude": -48.6455
+      },
+      {
+        "id": "line-0201-inbound-path-240",
+        "directionId": "line-0201-inbound",
+        "sequence": 240,
+        "latitude": -26.26211,
+        "longitude": -48.64549
+      },
+      {
+        "id": "line-0201-inbound-path-241",
+        "directionId": "line-0201-inbound",
+        "sequence": 241,
+        "latitude": -26.26049,
+        "longitude": -48.64521
+      },
+      {
+        "id": "line-0201-inbound-path-242",
+        "directionId": "line-0201-inbound",
+        "sequence": 242,
+        "latitude": -26.25978,
+        "longitude": -48.64507
+      },
+      {
+        "id": "line-0201-inbound-path-243",
+        "directionId": "line-0201-inbound",
+        "sequence": 243,
+        "latitude": -26.25942,
+        "longitude": -48.64507
+      },
+      {
+        "id": "line-0201-inbound-path-244",
+        "directionId": "line-0201-inbound",
+        "sequence": 244,
+        "latitude": -26.25898,
+        "longitude": -48.64507
+      },
+      {
+        "id": "line-0201-inbound-path-245",
+        "directionId": "line-0201-inbound",
+        "sequence": 245,
+        "latitude": -26.25882,
+        "longitude": -48.64505
+      },
+      {
+        "id": "line-0201-inbound-path-246",
+        "directionId": "line-0201-inbound",
+        "sequence": 246,
+        "latitude": -26.25866,
+        "longitude": -48.645
+      },
+      {
+        "id": "line-0201-inbound-path-247",
+        "directionId": "line-0201-inbound",
+        "sequence": 247,
+        "latitude": -26.25851,
+        "longitude": -48.64492
+      },
+      {
+        "id": "line-0201-inbound-path-248",
+        "directionId": "line-0201-inbound",
+        "sequence": 248,
+        "latitude": -26.25796,
+        "longitude": -48.64456
+      },
+      {
+        "id": "line-0201-inbound-path-249",
+        "directionId": "line-0201-inbound",
+        "sequence": 249,
+        "latitude": -26.25766,
+        "longitude": -48.64436
+      },
+      {
+        "id": "line-0201-inbound-path-250",
+        "directionId": "line-0201-inbound",
+        "sequence": 250,
+        "latitude": -26.25759,
+        "longitude": -48.64432
+      },
+      {
+        "id": "line-0201-inbound-path-251",
+        "directionId": "line-0201-inbound",
+        "sequence": 251,
+        "latitude": -26.25716,
+        "longitude": -48.64405
+      },
+      {
+        "id": "line-0201-inbound-path-252",
+        "directionId": "line-0201-inbound",
+        "sequence": 252,
+        "latitude": -26.25688,
+        "longitude": -48.64387
+      },
+      {
+        "id": "line-0201-inbound-path-253",
+        "directionId": "line-0201-inbound",
+        "sequence": 253,
+        "latitude": -26.25644,
+        "longitude": -48.64359
+      },
+      {
+        "id": "line-0201-inbound-path-254",
+        "directionId": "line-0201-inbound",
+        "sequence": 254,
+        "latitude": -26.25606,
+        "longitude": -48.64335
+      },
+      {
+        "id": "line-0201-inbound-path-255",
+        "directionId": "line-0201-inbound",
+        "sequence": 255,
+        "latitude": -26.25593,
+        "longitude": -48.6433
+      },
+      {
+        "id": "line-0201-inbound-path-256",
+        "directionId": "line-0201-inbound",
+        "sequence": 256,
+        "latitude": -26.25556,
+        "longitude": -48.64327
+      },
+      {
+        "id": "line-0201-inbound-path-257",
+        "directionId": "line-0201-inbound",
+        "sequence": 257,
+        "latitude": -26.25491,
+        "longitude": -48.64324
+      },
+      {
+        "id": "line-0201-inbound-path-258",
+        "directionId": "line-0201-inbound",
+        "sequence": 258,
+        "latitude": -26.2548,
+        "longitude": -48.6432
+      },
+      {
+        "id": "line-0201-inbound-path-259",
+        "directionId": "line-0201-inbound",
+        "sequence": 259,
+        "latitude": -26.25432,
+        "longitude": -48.64298
+      },
+      {
+        "id": "line-0201-inbound-path-260",
+        "directionId": "line-0201-inbound",
+        "sequence": 260,
+        "latitude": -26.25414,
+        "longitude": -48.64289
+      },
+      {
+        "id": "line-0201-inbound-path-261",
+        "directionId": "line-0201-inbound",
+        "sequence": 261,
+        "latitude": -26.25432,
+        "longitude": -48.64298
+      },
+      {
+        "id": "line-0201-inbound-path-262",
+        "directionId": "line-0201-inbound",
+        "sequence": 262,
+        "latitude": -26.2548,
+        "longitude": -48.6432
+      },
+      {
+        "id": "line-0201-inbound-path-263",
+        "directionId": "line-0201-inbound",
+        "sequence": 263,
+        "latitude": -26.25491,
+        "longitude": -48.64324
+      },
+      {
+        "id": "line-0201-inbound-path-264",
+        "directionId": "line-0201-inbound",
+        "sequence": 264,
+        "latitude": -26.25556,
+        "longitude": -48.64327
+      },
+      {
+        "id": "line-0201-inbound-path-265",
+        "directionId": "line-0201-inbound",
+        "sequence": 265,
+        "latitude": -26.25593,
+        "longitude": -48.6433
+      },
+      {
+        "id": "line-0201-inbound-path-266",
+        "directionId": "line-0201-inbound",
+        "sequence": 266,
+        "latitude": -26.25606,
+        "longitude": -48.64335
+      },
+      {
+        "id": "line-0201-inbound-path-267",
+        "directionId": "line-0201-inbound",
+        "sequence": 267,
+        "latitude": -26.25644,
+        "longitude": -48.64359
+      },
+      {
+        "id": "line-0201-inbound-path-268",
+        "directionId": "line-0201-inbound",
+        "sequence": 268,
+        "latitude": -26.25688,
+        "longitude": -48.64387
+      },
+      {
+        "id": "line-0201-inbound-path-269",
+        "directionId": "line-0201-inbound",
+        "sequence": 269,
+        "latitude": -26.25759,
+        "longitude": -48.64432
+      },
+      {
+        "id": "line-0201-inbound-path-270",
+        "directionId": "line-0201-inbound",
+        "sequence": 270,
+        "latitude": -26.25766,
+        "longitude": -48.64436
+      },
+      {
+        "id": "line-0201-inbound-path-271",
+        "directionId": "line-0201-inbound",
+        "sequence": 271,
+        "latitude": -26.25796,
+        "longitude": -48.64456
+      },
+      {
+        "id": "line-0201-inbound-path-272",
+        "directionId": "line-0201-inbound",
+        "sequence": 272,
+        "latitude": -26.25851,
+        "longitude": -48.64492
+      },
+      {
+        "id": "line-0201-inbound-path-273",
+        "directionId": "line-0201-inbound",
+        "sequence": 273,
+        "latitude": -26.25866,
+        "longitude": -48.645
+      },
+      {
+        "id": "line-0201-inbound-path-274",
+        "directionId": "line-0201-inbound",
+        "sequence": 274,
+        "latitude": -26.25882,
+        "longitude": -48.64505
+      },
+      {
+        "id": "line-0201-inbound-path-275",
+        "directionId": "line-0201-inbound",
+        "sequence": 275,
+        "latitude": -26.25898,
+        "longitude": -48.64507
+      },
+      {
+        "id": "line-0201-inbound-path-276",
+        "directionId": "line-0201-inbound",
+        "sequence": 276,
+        "latitude": -26.25978,
+        "longitude": -48.64507
+      },
+      {
+        "id": "line-0201-inbound-path-277",
+        "directionId": "line-0201-inbound",
+        "sequence": 277,
+        "latitude": -26.26049,
+        "longitude": -48.64521
+      },
+      {
+        "id": "line-0201-inbound-path-278",
+        "directionId": "line-0201-inbound",
+        "sequence": 278,
+        "latitude": -26.26211,
+        "longitude": -48.64549
+      },
+      {
+        "id": "line-0201-inbound-path-279",
+        "directionId": "line-0201-inbound",
+        "sequence": 279,
+        "latitude": -26.26233,
+        "longitude": -48.6455
+      },
+      {
+        "id": "line-0201-inbound-path-280",
+        "directionId": "line-0201-inbound",
+        "sequence": 280,
+        "latitude": -26.26242,
+        "longitude": -48.64547
+      },
+      {
+        "id": "line-0201-inbound-path-281",
+        "directionId": "line-0201-inbound",
+        "sequence": 281,
+        "latitude": -26.26275,
+        "longitude": -48.64522
+      },
+      {
+        "id": "line-0201-inbound-path-282",
+        "directionId": "line-0201-inbound",
+        "sequence": 282,
+        "latitude": -26.26349,
+        "longitude": -48.64462
+      },
+      {
+        "id": "line-0201-inbound-path-283",
+        "directionId": "line-0201-inbound",
+        "sequence": 283,
+        "latitude": -26.26363,
+        "longitude": -48.6445
+      },
+      {
+        "id": "line-0201-inbound-path-284",
+        "directionId": "line-0201-inbound",
+        "sequence": 284,
+        "latitude": -26.26422,
+        "longitude": -48.64403
+      },
+      {
+        "id": "line-0201-inbound-path-285",
+        "directionId": "line-0201-inbound",
+        "sequence": 285,
+        "latitude": -26.26448,
+        "longitude": -48.64379
+      },
+      {
+        "id": "line-0201-inbound-path-286",
+        "directionId": "line-0201-inbound",
+        "sequence": 286,
+        "latitude": -26.2648,
+        "longitude": -48.64347
+      },
+      {
+        "id": "line-0201-inbound-path-287",
+        "directionId": "line-0201-inbound",
+        "sequence": 287,
+        "latitude": -26.26519,
+        "longitude": -48.64308
+      },
+      {
+        "id": "line-0201-inbound-path-288",
+        "directionId": "line-0201-inbound",
+        "sequence": 288,
+        "latitude": -26.26548,
+        "longitude": -48.64278
+      },
+      {
+        "id": "line-0201-inbound-path-289",
+        "directionId": "line-0201-inbound",
+        "sequence": 289,
+        "latitude": -26.26596,
+        "longitude": -48.6423
+      },
+      {
+        "id": "line-0201-inbound-path-290",
+        "directionId": "line-0201-inbound",
+        "sequence": 290,
+        "latitude": -26.26602,
+        "longitude": -48.64224
+      },
+      {
+        "id": "line-0201-inbound-path-291",
+        "directionId": "line-0201-inbound",
+        "sequence": 291,
+        "latitude": -26.26635,
+        "longitude": -48.64192
+      },
+      {
+        "id": "line-0201-inbound-path-292",
+        "directionId": "line-0201-inbound",
+        "sequence": 292,
+        "latitude": -26.26653,
+        "longitude": -48.64182
+      },
+      {
+        "id": "line-0201-inbound-path-293",
+        "directionId": "line-0201-inbound",
+        "sequence": 293,
+        "latitude": -26.26751,
+        "longitude": -48.64156
+      },
+      {
+        "id": "line-0201-inbound-path-294",
+        "directionId": "line-0201-inbound",
+        "sequence": 294,
+        "latitude": -26.26856,
+        "longitude": -48.64127
+      },
+      {
+        "id": "line-0201-inbound-path-295",
+        "directionId": "line-0201-inbound",
+        "sequence": 295,
+        "latitude": -26.26925,
+        "longitude": -48.64107
+      },
+      {
+        "id": "line-0201-inbound-path-296",
+        "directionId": "line-0201-inbound",
+        "sequence": 296,
+        "latitude": -26.26964,
+        "longitude": -48.64098
+      },
+      {
+        "id": "line-0201-inbound-path-297",
+        "directionId": "line-0201-inbound",
+        "sequence": 297,
+        "latitude": -26.26983,
+        "longitude": -48.64095
+      },
+      {
+        "id": "line-0201-inbound-path-298",
+        "directionId": "line-0201-inbound",
+        "sequence": 298,
+        "latitude": -26.27016,
+        "longitude": -48.64093
+      },
+      {
+        "id": "line-0201-inbound-path-299",
+        "directionId": "line-0201-inbound",
+        "sequence": 299,
+        "latitude": -26.27048,
+        "longitude": -48.64095
+      },
+      {
+        "id": "line-0201-inbound-path-300",
+        "directionId": "line-0201-inbound",
+        "sequence": 300,
+        "latitude": -26.27087,
+        "longitude": -48.64104
+      },
+      {
+        "id": "line-0201-inbound-path-301",
+        "directionId": "line-0201-inbound",
+        "sequence": 301,
+        "latitude": -26.27104,
+        "longitude": -48.64111
+      },
+      {
+        "id": "line-0201-inbound-path-302",
+        "directionId": "line-0201-inbound",
+        "sequence": 302,
+        "latitude": -26.27132,
+        "longitude": -48.64129
+      },
+      {
+        "id": "line-0201-inbound-path-303",
+        "directionId": "line-0201-inbound",
+        "sequence": 303,
+        "latitude": -26.27146,
+        "longitude": -48.64138
+      },
+      {
+        "id": "line-0201-inbound-path-304",
+        "directionId": "line-0201-inbound",
+        "sequence": 304,
+        "latitude": -26.27162,
+        "longitude": -48.64147
+      },
+      {
+        "id": "line-0201-inbound-path-305",
+        "directionId": "line-0201-inbound",
+        "sequence": 305,
+        "latitude": -26.27272,
+        "longitude": -48.64223
+      },
+      {
+        "id": "line-0201-inbound-path-306",
+        "directionId": "line-0201-inbound",
+        "sequence": 306,
+        "latitude": -26.27279,
+        "longitude": -48.64228
+      },
+      {
+        "id": "line-0201-inbound-path-307",
+        "directionId": "line-0201-inbound",
+        "sequence": 307,
+        "latitude": -26.27367,
+        "longitude": -48.64291
+      },
+      {
+        "id": "line-0201-inbound-path-308",
+        "directionId": "line-0201-inbound",
+        "sequence": 308,
+        "latitude": -26.27453,
+        "longitude": -48.64356
+      },
+      {
+        "id": "line-0201-inbound-path-309",
+        "directionId": "line-0201-inbound",
+        "sequence": 309,
+        "latitude": -26.27512,
+        "longitude": -48.644
+      },
+      {
+        "id": "line-0201-inbound-path-310",
+        "directionId": "line-0201-inbound",
+        "sequence": 310,
+        "latitude": -26.27565,
+        "longitude": -48.64443
+      },
+      {
+        "id": "line-0201-inbound-path-311",
+        "directionId": "line-0201-inbound",
+        "sequence": 311,
+        "latitude": -26.27646,
+        "longitude": -48.64507
+      },
+      {
+        "id": "line-0201-inbound-path-312",
+        "directionId": "line-0201-inbound",
+        "sequence": 312,
+        "latitude": -26.27683,
+        "longitude": -48.64533
+      },
+      {
+        "id": "line-0201-inbound-path-313",
+        "directionId": "line-0201-inbound",
+        "sequence": 313,
+        "latitude": -26.27746,
+        "longitude": -48.64577
+      },
+      {
+        "id": "line-0201-inbound-path-314",
+        "directionId": "line-0201-inbound",
+        "sequence": 314,
+        "latitude": -26.27822,
+        "longitude": -48.64633
+      },
+      {
+        "id": "line-0201-inbound-path-315",
+        "directionId": "line-0201-inbound",
+        "sequence": 315,
+        "latitude": -26.27852,
+        "longitude": -48.64652
+      },
+      {
+        "id": "line-0201-inbound-path-316",
+        "directionId": "line-0201-inbound",
+        "sequence": 316,
+        "latitude": -26.27866,
+        "longitude": -48.64659
+      },
+      {
+        "id": "line-0201-inbound-path-317",
+        "directionId": "line-0201-inbound",
+        "sequence": 317,
+        "latitude": -26.27881,
+        "longitude": -48.64665
+      },
+      {
+        "id": "line-0201-inbound-path-318",
+        "directionId": "line-0201-inbound",
+        "sequence": 318,
+        "latitude": -26.2792,
+        "longitude": -48.64673
+      },
+      {
+        "id": "line-0201-inbound-path-319",
+        "directionId": "line-0201-inbound",
+        "sequence": 319,
+        "latitude": -26.27961,
+        "longitude": -48.64676
+      },
+      {
+        "id": "line-0201-inbound-path-320",
+        "directionId": "line-0201-inbound",
+        "sequence": 320,
+        "latitude": -26.28268,
+        "longitude": -48.64648
+      },
+      {
+        "id": "line-0201-inbound-path-321",
+        "directionId": "line-0201-inbound",
+        "sequence": 321,
+        "latitude": -26.28344,
+        "longitude": -48.64641
+      },
+      {
+        "id": "line-0201-inbound-path-322",
+        "directionId": "line-0201-inbound",
+        "sequence": 322,
+        "latitude": -26.28407,
+        "longitude": -48.64636
+      },
+      {
+        "id": "line-0201-inbound-path-323",
+        "directionId": "line-0201-inbound",
+        "sequence": 323,
+        "latitude": -26.28502,
+        "longitude": -48.64625
+      },
+      {
+        "id": "line-0201-inbound-path-324",
+        "directionId": "line-0201-inbound",
+        "sequence": 324,
+        "latitude": -26.28508,
+        "longitude": -48.64625
+      },
+      {
+        "id": "line-0201-inbound-path-325",
+        "directionId": "line-0201-inbound",
+        "sequence": 325,
+        "latitude": -26.28512,
+        "longitude": -48.64624
+      },
+      {
+        "id": "line-0201-inbound-path-326",
+        "directionId": "line-0201-inbound",
+        "sequence": 326,
+        "latitude": -26.28508,
+        "longitude": -48.64625
+      },
+      {
+        "id": "line-0201-inbound-path-327",
+        "directionId": "line-0201-inbound",
+        "sequence": 327,
+        "latitude": -26.28502,
+        "longitude": -48.64625
+      },
+      {
+        "id": "line-0201-inbound-path-328",
+        "directionId": "line-0201-inbound",
+        "sequence": 328,
+        "latitude": -26.28407,
+        "longitude": -48.64636
+      },
+      {
+        "id": "line-0201-inbound-path-329",
+        "directionId": "line-0201-inbound",
+        "sequence": 329,
+        "latitude": -26.28344,
+        "longitude": -48.64641
+      },
+      {
+        "id": "line-0201-inbound-path-330",
+        "directionId": "line-0201-inbound",
+        "sequence": 330,
+        "latitude": -26.28268,
+        "longitude": -48.64648
+      },
+      {
+        "id": "line-0201-inbound-path-331",
+        "directionId": "line-0201-inbound",
+        "sequence": 331,
+        "latitude": -26.28125,
+        "longitude": -48.64661
+      },
+      {
+        "id": "line-0201-inbound-path-332",
+        "directionId": "line-0201-inbound",
+        "sequence": 332,
+        "latitude": -26.281247887237296,
+        "longitude": -48.64656427019397
+      },
+      {
+        "id": "line-0201-inbound-path-333",
+        "directionId": "line-0201-inbound",
+        "sequence": 333,
+        "latitude": -26.276264785098594,
+        "longitude": -48.64498758801077
+      },
+      {
+        "id": "line-0201-inbound-path-334",
+        "directionId": "line-0201-inbound",
+        "sequence": 334,
+        "latitude": -26.272676347843667,
+        "longitude": -48.64219711066334
+      },
+      {
+        "id": "line-0201-inbound-path-335",
+        "directionId": "line-0201-inbound",
+        "sequence": 335,
+        "latitude": -26.26878043341198,
+        "longitude": -48.6411129064784
+      },
+      {
+        "id": "line-0201-inbound-path-336",
+        "directionId": "line-0201-inbound",
+        "sequence": 336,
+        "latitude": -26.267333616595405,
+        "longitude": -48.64148200299945
+      },
+      {
+        "id": "line-0201-inbound-path-337",
+        "directionId": "line-0201-inbound",
+        "sequence": 337,
+        "latitude": -26.26560453159896,
+        "longitude": -48.642521996674816
+      },
+      {
+        "id": "line-0201-inbound-path-338",
+        "directionId": "line-0201-inbound",
+        "sequence": 338,
+        "latitude": -26.26398069759273,
+        "longitude": -48.6441262369535
+      },
+      {
+        "id": "line-0201-inbound-path-339",
+        "directionId": "line-0201-inbound",
+        "sequence": 339,
+        "latitude": -26.25942931615892,
+        "longitude": -48.64504347613739
+      },
+      {
+        "id": "line-0201-inbound-path-340",
+        "directionId": "line-0201-inbound",
+        "sequence": 340,
+        "latitude": -26.25713130866115,
+        "longitude": -48.64406159000166
+      },
+      {
+        "id": "line-0201-inbound-path-341",
+        "directionId": "line-0201-inbound",
+        "sequence": 341,
+        "latitude": -26.25412452849639,
+        "longitude": -48.642880280073754
+      },
+      {
+        "id": "line-0201-inbound-path-342",
+        "directionId": "line-0201-inbound",
+        "sequence": 342,
+        "latitude": -26.251061440030725,
+        "longitude": -48.641268209029356
+      },
+      {
+        "id": "line-0201-inbound-path-343",
+        "directionId": "line-0201-inbound",
+        "sequence": 343,
+        "latitude": -26.251213467952397,
+        "longitude": -48.63859429423021
+      },
+      {
+        "id": "line-0201-inbound-path-344",
+        "directionId": "line-0201-inbound",
+        "sequence": 344,
+        "latitude": -26.249224290355095,
+        "longitude": -48.63560230865354
+      },
+      {
+        "id": "line-0201-inbound-path-345",
+        "directionId": "line-0201-inbound",
+        "sequence": 345,
+        "latitude": -26.24773780113116,
+        "longitude": -48.634526537853745
+      },
+      {
+        "id": "line-0201-inbound-path-346",
+        "directionId": "line-0201-inbound",
+        "sequence": 346,
+        "latitude": -26.24448063883166,
+        "longitude": -48.634446201953615
+      },
+      {
+        "id": "line-0201-inbound-path-347",
+        "directionId": "line-0201-inbound",
+        "sequence": 347,
+        "latitude": -26.24256951527034,
+        "longitude": -48.63530239360171
+      },
+      {
+        "id": "line-0201-inbound-path-348",
+        "directionId": "line-0201-inbound",
+        "sequence": 348,
+        "latitude": -26.242030120062743,
+        "longitude": -48.63729731437912
+      },
+      {
+        "id": "line-0201-inbound-path-349",
+        "directionId": "line-0201-inbound",
+        "sequence": 349,
+        "latitude": -26.243437512602945,
+        "longitude": -48.637910711972246
+      }
+    ],
+    "fares": [
+      {
+        "id": "collected-line-0201-fare-1",
+        "lineId": "line-0201",
+        "label": "Tarifa urbana municipal",
+        "currency": "BRL",
+        "sortOrder": 0
+      }
+    ],
+    "ferrySchedules": [],
+    "ferryFares": []
+  }
+}

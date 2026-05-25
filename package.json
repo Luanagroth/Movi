@@ -8,9 +8,13 @@
     "apps/*"
   ],
   "scripts": {
-    "dev": "concurrently -n backend,frontend -c cyan,magenta \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev": "npm run dev:clean && npm run dev:prepare-db && npm run dev:up",
+    "dev:up": "concurrently -n backend,frontend -c cyan,magenta \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:clean": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/dev-clean.ps1",
+    "dev:prepare-db": "npm run db:ensure:transport --workspace @cityline/backend",
     "dev:frontend": "npm run dev --workspace @cityline/frontend",
     "dev:backend": "npm run dev --workspace @cityline/backend",
+    "db:load:transport": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/load-dev-transport-data.ps1",
     "build": "npm run build --workspace @cityline/shared && npm run build --workspace @cityline/backend && npm run build --workspace @cityline/frontend",
     "lint": "npm run lint --workspace @cityline/backend && npm run lint --workspace @cityline/frontend",
     "type-check": "npm run type-check --workspace @cityline/shared && npm run type-check --workspace @cityline/backend && npm run type-check --workspace @cityline/frontend",

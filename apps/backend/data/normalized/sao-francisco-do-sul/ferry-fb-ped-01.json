@@ -1,0 +1,547 @@
+{
+  "manifestVersion": "1.0",
+  "citySlug": "sao-francisco-do-sul",
+  "dataset": {
+    "metadata": {
+      "datasetId": "dataset-prefeitura-sfs-ferry-2026-05-23T00-00-00-000Z",
+      "createdAt": "2026-05-23T00:00:00.000Z",
+      "sourceName": "Prefeitura de Sao Francisco do Sul",
+      "sourceUrl": "https://www.saofranciscodosul.sc.gov.br/",
+      "collectionMethod": "manual"
+    },
+    "transportLines": [
+      {
+        "id": "ferry-fb-ped-01",
+        "code": "FB-PED-01",
+        "slug": "ferry-centro-historico-vila-da-gloria-pedestres",
+        "name": "Lancha Centro Historico - Vila da Gloria (Pedestres)",
+        "operator": "Prefeitura de Sao Francisco do Sul",
+        "summary": "Travessia gratuita para pedestres entre Centro Historico e Vila da Gloria.",
+        "routeLabel": "Lancha Centro Historico - Vila da Gloria (Pedestres)",
+        "originLabel": "Centro Historico",
+        "destinationLabel": "Vila da Gloria",
+        "transportMode": "ferry",
+        "operationalStatus": "on-time",
+        "fareSummary": "Pedestre R$ 0,00",
+        "amenities": [],
+        "sourceUpdatedAt": "2026-05-23T00:00:00.000Z",
+        "sourceLineRef": "FB-PED-01",
+        "isActive": true
+      }
+    ],
+    "routeDirections": [
+      {
+        "id": "ferry-fb-ped-01-outbound",
+        "lineId": "ferry-fb-ped-01",
+        "type": "outbound",
+        "slug": "outbound",
+        "name": "Centro Historico -> Vila da Gloria",
+        "routeLabel": "Centro Historico -> Vila da Gloria",
+        "originLabel": "Centro Historico",
+        "destinationLabel": "Vila da Gloria",
+        "sortOrder": 0,
+        "isLoop": false,
+        "sourceDirectionRef": "outbound"
+      },
+      {
+        "id": "ferry-fb-ped-01-inbound",
+        "lineId": "ferry-fb-ped-01",
+        "type": "inbound",
+        "slug": "inbound",
+        "name": "Vila da Gloria -> Centro Historico",
+        "routeLabel": "Vila da Gloria -> Centro Historico",
+        "originLabel": "Vila da Gloria",
+        "destinationLabel": "Centro Historico",
+        "sortOrder": 1,
+        "isLoop": false,
+        "sourceDirectionRef": "inbound"
+      }
+    ],
+    "stops": [
+      {
+        "id": "stop-trapiche-centro-historico-m26_2434-m48_6379",
+        "name": "Trapiche Centro Historico",
+        "slug": "trapiche-centro-historico",
+        "latitude": -26.2436432365298,
+        "longitude": -48.64060701338857
+      },
+      {
+        "id": "stop-trapiche-vila-da-gloria-m26_1791-m48_7247",
+        "name": "Trapiche Vila da Gloria",
+        "slug": "trapiche-vila-da-gloria",
+        "latitude": -26.22121377366158,
+        "longitude": -48.66463072324957
+      }
+    ],
+    "lineStops": [
+      {
+        "id": "ferry-fb-ped-01-outbound-stop-1",
+        "directionId": "ferry-fb-ped-01-outbound",
+        "stopId": "stop-trapiche-centro-historico-m26_2434-m48_6379",
+        "sequence": 1,
+        "isTimingPoint": true
+      },
+      {
+        "id": "ferry-fb-ped-01-outbound-stop-2",
+        "directionId": "ferry-fb-ped-01-outbound",
+        "stopId": "stop-trapiche-vila-da-gloria-m26_1791-m48_7247",
+        "sequence": 2,
+        "isTimingPoint": true
+      },
+      {
+        "id": "ferry-fb-ped-01-inbound-stop-1",
+        "directionId": "ferry-fb-ped-01-inbound",
+        "stopId": "stop-trapiche-vila-da-gloria-m26_1791-m48_7247",
+        "sequence": 1,
+        "isTimingPoint": true
+      },
+      {
+        "id": "ferry-fb-ped-01-inbound-stop-2",
+        "directionId": "ferry-fb-ped-01-inbound",
+        "stopId": "stop-trapiche-centro-historico-m26_2434-m48_6379",
+        "sequence": 2,
+        "isTimingPoint": true
+      }
+    ],
+    "schedules": [],
+    "stopTimePredictions": [],
+    "routePaths": [
+      {
+        "id": "ferry-fb-ped-01-outbound-path-1",
+        "directionId": "ferry-fb-ped-01-outbound",
+        "sequence": 1,
+        "latitude": -26.2436432365298,
+        "longitude": -48.64060701338857
+      },
+      {
+        "id": "ferry-fb-ped-01-outbound-path-2",
+        "directionId": "ferry-fb-ped-01-outbound",
+        "sequence": 2,
+        "latitude": -26.22121377366158,
+        "longitude": -48.66463072324957
+      },
+      {
+        "id": "ferry-fb-ped-01-inbound-path-1",
+        "directionId": "ferry-fb-ped-01-inbound",
+        "sequence": 1,
+        "latitude": -26.22121377366158,
+        "longitude": -48.66463072324957
+      },
+      {
+        "id": "ferry-fb-ped-01-inbound-path-2",
+        "directionId": "ferry-fb-ped-01-inbound",
+        "sequence": 2,
+        "latitude": -26.2436432365298,
+        "longitude": -48.64060701338857
+      }
+    ],
+    "fares": [
+      {
+        "id": "collected-ferry-fb-ped-01-fare-pedestrian",
+        "lineId": "ferry-fb-ped-01",
+        "label": "Pedestre",
+        "riderCategory": "pedestrian",
+        "amountCents": 0,
+        "currency": "BRL",
+        "sortOrder": 0
+      }
+    ],
+    "ferrySchedules": [
+      {
+        "id": "collected-ferry-fb-ped-01-outbound-weekday-0600",
+        "lineId": "ferry-fb-ped-01",
+        "directionId": "ferry-fb-ped-01-outbound",
+        "serviceDay": "weekday",
+        "departureTime": "06:00",
+        "departureMinutes": 360
+      },
+      {
+        "id": "collected-ferry-fb-ped-01-outbound-weekday-0730",
+        "lineId": "ferry-fb-ped-01",
+        "directionId": "ferry-fb-ped-01-outbound",
+        "serviceDay": "weekday",
+        "departureTime": "07:30",
+        "departureMinutes": 450
+      },
+      {
+        "id": "collected-ferry-fb-ped-01-outbound-weekday-1030",
+        "lineId": "ferry-fb-ped-01",
+        "directionId": "ferry-fb-ped-01-outbound",
+        "serviceDay": "weekday",
+        "departureTime": "10:30",
+        "departureMinutes": 630
+      },
+      {
+        "id": "collected-ferry-fb-ped-01-outbound-weekday-1215",
+        "lineId": "ferry-fb-ped-01",
+        "directionId": "ferry-fb-ped-01-outbound",
+        "serviceDay": "weekday",
+        "departureTime": "12:15",
+        "departureMinutes": 735
+      },
+      {
+        "id": "collected-ferry-fb-ped-01-outbound-weekday-1430",
+        "lineId": "ferry-fb-ped-01",
+        "directionId": "ferry-fb-ped-01-outbound",
+        "serviceDay": "weekday",
+        "departureTime": "14:30",
+        "departureMinutes": 870
+      },
+      {
+        "id": "collected-ferry-fb-ped-01-outbound-weekday-1700",
+        "lineId": "ferry-fb-ped-01",
+        "directionId": "ferry-fb-ped-01-outbound",
+        "serviceDay": "weekday",
+        "departureTime": "17:00",
+        "departureMinutes": 1020
+      },
+      {
+        "id": "collected-ferry-fb-ped-01-outbound-weekday-1830",
+        "lineId": "ferry-fb-ped-01",
+        "directionId": "ferry-fb-ped-01-outbound",
+        "serviceDay": "weekday",
+        "departureTime": "18:30",
+        "departureMinutes": 1110
+      },
+      {
+        "id": "collected-ferry-fb-ped-01-outbound-weekday-2230",
+        "lineId": "ferry-fb-ped-01",
+        "directionId": "ferry-fb-ped-01-outbound",
+        "serviceDay": "weekday",
+        "departureTime": "22:30",
+        "departureMinutes": 1350
+      },
+      {
+        "id": "collected-ferry-fb-ped-01-outbound-saturday-0600",
+        "lineId": "ferry-fb-ped-01",
+        "directionId": "ferry-fb-ped-01-outbound",
+        "serviceDay": "saturday",
+        "departureTime": "06:00",
+        "departureMinutes": 360
+      },
+      {
+        "id": "collected-ferry-fb-ped-01-outbound-saturday-0730",
+        "lineId": "ferry-fb-ped-01",
+        "directionId": "ferry-fb-ped-01-outbound",
+        "serviceDay": "saturday",
+        "departureTime": "07:30",
+        "departureMinutes": 450
+      },
+      {
+        "id": "collected-ferry-fb-ped-01-outbound-saturday-1030",
+        "lineId": "ferry-fb-ped-01",
+        "directionId": "ferry-fb-ped-01-outbound",
+        "serviceDay": "saturday",
+        "departureTime": "10:30",
+        "departureMinutes": 630
+      },
+      {
+        "id": "collected-ferry-fb-ped-01-outbound-saturday-1215",
+        "lineId": "ferry-fb-ped-01",
+        "directionId": "ferry-fb-ped-01-outbound",
+        "serviceDay": "saturday",
+        "departureTime": "12:15",
+        "departureMinutes": 735
+      },
+      {
+        "id": "collected-ferry-fb-ped-01-outbound-saturday-1430",
+        "lineId": "ferry-fb-ped-01",
+        "directionId": "ferry-fb-ped-01-outbound",
+        "serviceDay": "saturday",
+        "departureTime": "14:30",
+        "departureMinutes": 870
+      },
+      {
+        "id": "collected-ferry-fb-ped-01-outbound-saturday-1700",
+        "lineId": "ferry-fb-ped-01",
+        "directionId": "ferry-fb-ped-01-outbound",
+        "serviceDay": "saturday",
+        "departureTime": "17:00",
+        "departureMinutes": 1020
+      },
+      {
+        "id": "collected-ferry-fb-ped-01-outbound-saturday-1830",
+        "lineId": "ferry-fb-ped-01",
+        "directionId": "ferry-fb-ped-01-outbound",
+        "serviceDay": "saturday",
+        "departureTime": "18:30",
+        "departureMinutes": 1110
+      },
+      {
+        "id": "collected-ferry-fb-ped-01-outbound-saturday-2230",
+        "lineId": "ferry-fb-ped-01",
+        "directionId": "ferry-fb-ped-01-outbound",
+        "serviceDay": "saturday",
+        "departureTime": "22:30",
+        "departureMinutes": 1350
+      },
+      {
+        "id": "collected-ferry-fb-ped-01-outbound-sunday-0600",
+        "lineId": "ferry-fb-ped-01",
+        "directionId": "ferry-fb-ped-01-outbound",
+        "serviceDay": "sunday",
+        "departureTime": "06:00",
+        "departureMinutes": 360
+      },
+      {
+        "id": "collected-ferry-fb-ped-01-outbound-sunday-0730",
+        "lineId": "ferry-fb-ped-01",
+        "directionId": "ferry-fb-ped-01-outbound",
+        "serviceDay": "sunday",
+        "departureTime": "07:30",
+        "departureMinutes": 450
+      },
+      {
+        "id": "collected-ferry-fb-ped-01-outbound-sunday-1030",
+        "lineId": "ferry-fb-ped-01",
+        "directionId": "ferry-fb-ped-01-outbound",
+        "serviceDay": "sunday",
+        "departureTime": "10:30",
+        "departureMinutes": 630
+      },
+      {
+        "id": "collected-ferry-fb-ped-01-outbound-sunday-1215",
+        "lineId": "ferry-fb-ped-01",
+        "directionId": "ferry-fb-ped-01-outbound",
+        "serviceDay": "sunday",
+        "departureTime": "12:15",
+        "departureMinutes": 735
+      },
+      {
+        "id": "collected-ferry-fb-ped-01-outbound-sunday-1430",
+        "lineId": "ferry-fb-ped-01",
+        "directionId": "ferry-fb-ped-01-outbound",
+        "serviceDay": "sunday",
+        "departureTime": "14:30",
+        "departureMinutes": 870
+      },
+      {
+        "id": "collected-ferry-fb-ped-01-outbound-sunday-1700",
+        "lineId": "ferry-fb-ped-01",
+        "directionId": "ferry-fb-ped-01-outbound",
+        "serviceDay": "sunday",
+        "departureTime": "17:00",
+        "departureMinutes": 1020
+      },
+      {
+        "id": "collected-ferry-fb-ped-01-outbound-sunday-1830",
+        "lineId": "ferry-fb-ped-01",
+        "directionId": "ferry-fb-ped-01-outbound",
+        "serviceDay": "sunday",
+        "departureTime": "18:30",
+        "departureMinutes": 1110
+      },
+      {
+        "id": "collected-ferry-fb-ped-01-outbound-sunday-2230",
+        "lineId": "ferry-fb-ped-01",
+        "directionId": "ferry-fb-ped-01-outbound",
+        "serviceDay": "sunday",
+        "departureTime": "22:30",
+        "departureMinutes": 1350
+      },
+      {
+        "id": "collected-ferry-fb-ped-01-inbound-weekday-0645",
+        "lineId": "ferry-fb-ped-01",
+        "directionId": "ferry-fb-ped-01-inbound",
+        "serviceDay": "weekday",
+        "departureTime": "06:45",
+        "departureMinutes": 405
+      },
+      {
+        "id": "collected-ferry-fb-ped-01-inbound-weekday-0815",
+        "lineId": "ferry-fb-ped-01",
+        "directionId": "ferry-fb-ped-01-inbound",
+        "serviceDay": "weekday",
+        "departureTime": "08:15",
+        "departureMinutes": 495
+      },
+      {
+        "id": "collected-ferry-fb-ped-01-inbound-weekday-1130",
+        "lineId": "ferry-fb-ped-01",
+        "directionId": "ferry-fb-ped-01-inbound",
+        "serviceDay": "weekday",
+        "departureTime": "11:30",
+        "departureMinutes": 690
+      },
+      {
+        "id": "collected-ferry-fb-ped-01-inbound-weekday-1300",
+        "lineId": "ferry-fb-ped-01",
+        "directionId": "ferry-fb-ped-01-inbound",
+        "serviceDay": "weekday",
+        "departureTime": "13:00",
+        "departureMinutes": 780
+      },
+      {
+        "id": "collected-ferry-fb-ped-01-inbound-weekday-1515",
+        "lineId": "ferry-fb-ped-01",
+        "directionId": "ferry-fb-ped-01-inbound",
+        "serviceDay": "weekday",
+        "departureTime": "15:15",
+        "departureMinutes": 915
+      },
+      {
+        "id": "collected-ferry-fb-ped-01-inbound-weekday-1745",
+        "lineId": "ferry-fb-ped-01",
+        "directionId": "ferry-fb-ped-01-inbound",
+        "serviceDay": "weekday",
+        "departureTime": "17:45",
+        "departureMinutes": 1065
+      },
+      {
+        "id": "collected-ferry-fb-ped-01-inbound-weekday-1915",
+        "lineId": "ferry-fb-ped-01",
+        "directionId": "ferry-fb-ped-01-inbound",
+        "serviceDay": "weekday",
+        "departureTime": "19:15",
+        "departureMinutes": 1155
+      },
+      {
+        "id": "collected-ferry-fb-ped-01-inbound-weekday-2315",
+        "lineId": "ferry-fb-ped-01",
+        "directionId": "ferry-fb-ped-01-inbound",
+        "serviceDay": "weekday",
+        "departureTime": "23:15",
+        "departureMinutes": 1395
+      },
+      {
+        "id": "collected-ferry-fb-ped-01-inbound-saturday-0645",
+        "lineId": "ferry-fb-ped-01",
+        "directionId": "ferry-fb-ped-01-inbound",
+        "serviceDay": "saturday",
+        "departureTime": "06:45",
+        "departureMinutes": 405
+      },
+      {
+        "id": "collected-ferry-fb-ped-01-inbound-saturday-0815",
+        "lineId": "ferry-fb-ped-01",
+        "directionId": "ferry-fb-ped-01-inbound",
+        "serviceDay": "saturday",
+        "departureTime": "08:15",
+        "departureMinutes": 495
+      },
+      {
+        "id": "collected-ferry-fb-ped-01-inbound-saturday-1130",
+        "lineId": "ferry-fb-ped-01",
+        "directionId": "ferry-fb-ped-01-inbound",
+        "serviceDay": "saturday",
+        "departureTime": "11:30",
+        "departureMinutes": 690
+      },
+      {
+        "id": "collected-ferry-fb-ped-01-inbound-saturday-1300",
+        "lineId": "ferry-fb-ped-01",
+        "directionId": "ferry-fb-ped-01-inbound",
+        "serviceDay": "saturday",
+        "departureTime": "13:00",
+        "departureMinutes": 780
+      },
+      {
+        "id": "collected-ferry-fb-ped-01-inbound-saturday-1515",
+        "lineId": "ferry-fb-ped-01",
+        "directionId": "ferry-fb-ped-01-inbound",
+        "serviceDay": "saturday",
+        "departureTime": "15:15",
+        "departureMinutes": 915
+      },
+      {
+        "id": "collected-ferry-fb-ped-01-inbound-saturday-1745",
+        "lineId": "ferry-fb-ped-01",
+        "directionId": "ferry-fb-ped-01-inbound",
+        "serviceDay": "saturday",
+        "departureTime": "17:45",
+        "departureMinutes": 1065
+      },
+      {
+        "id": "collected-ferry-fb-ped-01-inbound-saturday-1915",
+        "lineId": "ferry-fb-ped-01",
+        "directionId": "ferry-fb-ped-01-inbound",
+        "serviceDay": "saturday",
+        "departureTime": "19:15",
+        "departureMinutes": 1155
+      },
+      {
+        "id": "collected-ferry-fb-ped-01-inbound-saturday-2315",
+        "lineId": "ferry-fb-ped-01",
+        "directionId": "ferry-fb-ped-01-inbound",
+        "serviceDay": "saturday",
+        "departureTime": "23:15",
+        "departureMinutes": 1395
+      },
+      {
+        "id": "collected-ferry-fb-ped-01-inbound-sunday-0645",
+        "lineId": "ferry-fb-ped-01",
+        "directionId": "ferry-fb-ped-01-inbound",
+        "serviceDay": "sunday",
+        "departureTime": "06:45",
+        "departureMinutes": 405
+      },
+      {
+        "id": "collected-ferry-fb-ped-01-inbound-sunday-0815",
+        "lineId": "ferry-fb-ped-01",
+        "directionId": "ferry-fb-ped-01-inbound",
+        "serviceDay": "sunday",
+        "departureTime": "08:15",
+        "departureMinutes": 495
+      },
+      {
+        "id": "collected-ferry-fb-ped-01-inbound-sunday-1130",
+        "lineId": "ferry-fb-ped-01",
+        "directionId": "ferry-fb-ped-01-inbound",
+        "serviceDay": "sunday",
+        "departureTime": "11:30",
+        "departureMinutes": 690
+      },
+      {
+        "id": "collected-ferry-fb-ped-01-inbound-sunday-1300",
+        "lineId": "ferry-fb-ped-01",
+        "directionId": "ferry-fb-ped-01-inbound",
+        "serviceDay": "sunday",
+        "departureTime": "13:00",
+        "departureMinutes": 780
+      },
+      {
+        "id": "collected-ferry-fb-ped-01-inbound-sunday-1515",
+        "lineId": "ferry-fb-ped-01",
+        "directionId": "ferry-fb-ped-01-inbound",
+        "serviceDay": "sunday",
+        "departureTime": "15:15",
+        "departureMinutes": 915
+      },
+      {
+        "id": "collected-ferry-fb-ped-01-inbound-sunday-1745",
+        "lineId": "ferry-fb-ped-01",
+        "directionId": "ferry-fb-ped-01-inbound",
+        "serviceDay": "sunday",
+        "departureTime": "17:45",
+        "departureMinutes": 1065
+      },
+      {
+        "id": "collected-ferry-fb-ped-01-inbound-sunday-1915",
+        "lineId": "ferry-fb-ped-01",
+        "directionId": "ferry-fb-ped-01-inbound",
+        "serviceDay": "sunday",
+        "departureTime": "19:15",
+        "departureMinutes": 1155
+      },
+      {
+        "id": "collected-ferry-fb-ped-01-inbound-sunday-2315",
+        "lineId": "ferry-fb-ped-01",
+        "directionId": "ferry-fb-ped-01-inbound",
+        "serviceDay": "sunday",
+        "departureTime": "23:15",
+        "departureMinutes": 1395
+      }
+    ],
+    "ferryFares": [
+      {
+        "id": "collected-ferry-fb-ped-01-fare-pedestrian",
+        "lineId": "ferry-fb-ped-01",
+        "label": "Pedestre",
+        "riderCategory": "pedestrian",
+        "amountCents": 0,
+        "currency": "BRL",
+        "sortOrder": 0
+      }
+    ]
+  }
+}

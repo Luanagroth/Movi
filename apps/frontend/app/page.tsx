@@ -1,169 +1,191 @@
-import { Bus, Database, MapPinned, Route, ShipWheel, Sparkles } from 'lucide-react';
+import Link from 'next/link';
+import Image from 'next/image';
+import { Suspense } from 'react';
+import {
+  ArrowRight,
+  Bus,
+  Clock,
+  CreditCard,
+  Leaf,
+  MapPin,
+  MessageCircle,
+  ShieldCheck,
+  Smartphone,
+  Users,
+} from 'lucide-react';
+import { AccountHeaderButton } from '@/components/account-header-button';
+import { MoviWordmark } from '@/components/movi-wordmark';
+import { WeatherCard } from '@/features/weather/components/weather-card';
+import { getSaoFranciscoDoSulWeather } from '@/services/weather/weather.service';
 
-const highlights = [
-  {
-    title: 'Mobilidade com dados reais',
-    description: 'O projeto esta evoluindo de uma base mockada para uma estrutura alimentada por coleta, normalizacao e importacao de dados reais.',
-    icon: Database,
-  },
-  {
-    title: 'Mapa interativo',
-    description: 'Linhas, sentidos, stops e trajetos podem ser visualizados em uma experiencia espacial pensada para evoluir sem refazer a base.',
-    icon: MapPinned,
-  },
-  {
-    title: 'Arquitetura escalavel',
-    description: 'Frontend, backend e dominio compartilhado foram separados para suportar crescimento de regras, cidades e modais.',
-    icon: Route,
-  },
-];
+const heroImage = '/images/cityline/onibus.png';
+const stopImage = '/images/cityline/ponto-de-onibus.png';
+const cityImage = '/images/cityline/content_DSCF3169.jpg';
 
-const roadmap = [
-  'Concluir a validacao da linha 0100 com dados revisados',
-  'Aprimorar o layout final do dashboard principal',
-  'Expandir a reutilizacao global de stops entre linhas',
-  'Evoluir recomendacao de embarque e inteligencia de rota',
-];
+async function HomeWeatherSection() {
+  const weather = await getSaoFranciscoDoSulWeather();
+  return <WeatherCard status={weather ? 'success' : 'error'} weather={weather} />;
+}
 
-export default function HomePage() {
+export default function MoviHomePage() {
   return (
-    <main className="min-h-screen bg-[radial-gradient(circle_at_top,_rgba(14,165,233,0.18),_transparent_38%),linear-gradient(180deg,_#f8fbff_0%,_#edf4fb_48%,_#f8fafc_100%)] text-slate-900">
-      <section className="mx-auto flex min-h-screen max-w-7xl flex-col px-5 pb-12 pt-6 sm:px-8 lg:px-10">
-        <header className="flex items-center justify-between gap-4">
-          <div>
-            <span className="inline-flex items-center gap-2 rounded-full border border-sky-200 bg-white/80 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-sky-700 shadow-sm backdrop-blur">
-              <Sparkles className="h-3.5 w-3.5" />
-              Demo Preview
-            </span>
-            <h1 className="mt-4 text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">
-              Cityline
-            </h1>
-          </div>
+    <main className="min-h-screen bg-[#f5f1e6] text-[#14233c] font-sans">
+      <section className="mx-auto min-h-screen max-w-[1460px] overflow-hidden rounded-none bg-[#f5f1e6] shadow-2xl lg:my-0 lg:rounded-[28px]">
+        <header className="absolute left-0 right-0 top-0 z-30 mx-auto flex max-w-[1460px] items-center justify-between px-8 py-7 lg:px-12">
+          <Link href="/">
+            <MoviWordmark subtitle="PROJETOS INDEPENDENTES" />
+          </Link>
 
-          <nav className="hidden items-center gap-3 sm:flex">
-            <a
-              href="https://github.com/Luanagroth/Cityline"
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-2 rounded-full bg-slate-950 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-800"
-            >
-              GitHub
-            </a>
+          <nav className="hidden items-center gap-10 text-sm font-extrabold uppercase tracking-tight text-[#14233c] lg:flex">
+            <Link className="border-b-2 border-[#1e7f3b] pb-1 text-[#1e7f3b]" href="/">
+              Início
+            </Link>
+            <Link href="/linhas">Linhas e horários</Link>
+            <Link href="/bilhetes">Bilhetes</Link>
+            <Link href="/alertas">Notícias</Link>
+            <Link href="/contato">Contato</Link>
           </nav>
+
+          <AccountHeaderButton guestClassName="hidden items-center gap-3 rounded-full bg-[#071d39] px-7 py-4 text-xs font-extrabold uppercase tracking-wide text-white shadow-xl lg:flex" />
         </header>
 
-        <div className="grid flex-1 items-center gap-10 py-14 lg:grid-cols-[1.15fr_0.85fr] lg:py-20">
-          <div>
-            <span className="inline-flex items-center gap-2 rounded-full border border-sky-200 bg-sky-50 px-3 py-1 text-xs font-semibold text-sky-700">
-              <Bus className="h-3.5 w-3.5" />
-              Mobilidade urbana em desenvolvimento avancado
-            </span>
+        <section className="relative min-h-[660px] overflow-hidden">
+          <div className="absolute inset-0">
+            <div className="relative h-full w-full">
+              <Image src={heroImage} alt="Ônibus amarelo MOVI" fill priority className="h-full w-full object-cover" />
+            </div>
+            <div className="absolute inset-0 bg-gradient-to-r from-[#f5f1e6] via-[#f5f1e6]/66 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-b from-[#f5f1e6]/35 via-transparent to-[#13100b]/10" />
+          </div>
 
-            <h2 className="mt-6 max-w-4xl text-4xl font-semibold leading-tight tracking-tight text-slate-950 sm:text-5xl">
-              Uma base moderna para visualizar linhas, horarios, paradas e rotas com potencial de produto real.
+          <div className="relative z-10 flex min-h-[660px] flex-col justify-center px-8 pt-28 lg:px-12">
+            <div className="max-w-[560px]">
+              <p className="mb-6 text-xs font-black uppercase tracking-[0.28em] text-[#14233c]">Mobilidade que conecta</p>
+              <h1 className="text-6xl font-black leading-[0.95] tracking-[-0.06em] text-[#10213d] lg:text-7xl">
+                São Chico
+                <br />
+                <span className="text-[#16803f]">em movimento</span>
+              </h1>
+              <p className="mt-7 max-w-[480px] text-lg font-medium leading-8 text-[#14233c]">
+                Transporte coletivo com mais conforto, segurança e compromisso com a cidade.
+              </p>
+
+              <div className="mt-9 flex flex-wrap gap-4">
+                <Link
+                  href="/linhas"
+                  className="flex items-center gap-3 rounded-full bg-[#ffd200] px-8 py-4 text-sm font-black uppercase text-[#101d32] shadow-lg shadow-yellow-500/20 transition hover:scale-[1.02]"
+                >
+                  <Bus size={18} />
+                  Ver linhas e horários
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="relative z-20 mx-8 -mt-16 grid overflow-hidden rounded-2xl bg-[#ffdf43] shadow-xl lg:mx-12 lg:grid-cols-4">
+          {[
+            { icon: ShieldCheck, title: 'Segurança', text: 'Frota monitorada e motoristas treinados para sua segurança.' },
+            { icon: Leaf, title: 'Sustentabilidade', text: 'Compromisso com um transporte mais limpo e consciente.' },
+            { icon: Users, title: 'Acessibilidade', text: 'Ônibus adaptados para garantir mobilidade para todos.' },
+            { icon: Clock, title: 'Pontualidade', text: 'Mais eficiência nos horários para o seu dia render mais.' },
+          ].map((item, index) => (
+            <article key={item.title} className={`flex gap-5 p-8 ${index > 0 ? 'border-l border-[#c9a900]/40' : ''}`}>
+              <item.icon className="mt-1 shrink-0 text-[#0b2440]" size={42} strokeWidth={2.2} />
+              <div>
+                <h3 className="text-sm font-black uppercase text-[#14233c]">{item.title}</h3>
+                <p className="mt-2 text-sm font-medium leading-6 text-[#14233c]">{item.text}</p>
+              </div>
+            </article>
+          ))}
+        </section>
+
+        <section className="px-8 lg:px-12">
+          <Suspense fallback={<WeatherCard status="loading" />}>
+            <HomeWeatherSection />
+          </Suspense>
+        </section>
+
+        <section className="grid gap-10 px-8 py-14 lg:grid-cols-[1.05fr_1.55fr_0.9fr] lg:px-12">
+          <div className="flex flex-col justify-center">
+            <p className="text-xs font-black uppercase tracking-[0.28em] text-[#14233c]">Conectando destinos</p>
+            <h2 className="mt-6 text-4xl font-black leading-tight tracking-[-0.04em] text-[#14233c]">
+              Mais que transporte,
+              <br /> conectamos <span className="text-[#16803f]">pessoas.</span>
             </h2>
-
-            <p className="mt-6 max-w-2xl text-base leading-8 text-slate-600 sm:text-lg">
-              Esta pagina funciona como uma landing temporaria para apresentar o projeto com mais clareza enquanto o
-              layout final do aplicativo principal ainda esta sendo refinado. A versao publica atual foi pensada como
-              uma vitrine do projeto, enquanto a experiencia completa segue em evolucao interna.
+            <p className="mt-6 max-w-[360px] text-base font-medium leading-8 text-[#14233c]">
+              Do centro aos bairros, da cidade à praia. Nosso compromisso é levar você com conforto e eficiência aonde precisa chegar.
             </p>
-
-            <div className="mt-8 flex flex-wrap gap-3">
-              <a
-                href="https://github.com/Luanagroth/Cityline"
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-full bg-sky-600 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-sky-200 transition hover:bg-sky-700"
-              >
-                Acompanhar no GitHub
-              </a>
-
-              <a
-                href="https://www.linkedin.com/in/luana-groth/"
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-700 shadow-sm transition hover:border-slate-300 hover:bg-slate-50"
-              >
-                Entrar em contato
-              </a>
-            </div>
-
-            <div className="mt-10 grid gap-4 sm:grid-cols-3">
-              <div className="rounded-3xl border border-white/70 bg-white/80 p-5 shadow-[0_16px_40px_rgba(15,23,42,0.06)] backdrop-blur">
-                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">Status</p>
-                <p className="mt-3 text-lg font-semibold text-slate-950">Em desenvolvimento avancado</p>
-              </div>
-              <div className="rounded-3xl border border-white/70 bg-white/80 p-5 shadow-[0_16px_40px_rgba(15,23,42,0.06)] backdrop-blur">
-                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">Backend</p>
-                <p className="mt-3 text-lg font-semibold text-slate-950">API funcional e modular</p>
-              </div>
-              <div className="rounded-3xl border border-white/70 bg-white/80 p-5 shadow-[0_16px_40px_rgba(15,23,42,0.06)] backdrop-blur">
-                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">Dados</p>
-                <p className="mt-3 text-lg font-semibold text-slate-950">Consolidacao real em andamento</p>
-              </div>
-            </div>
+            <Link
+              href="/linhas"
+              className="mt-8 flex w-fit items-center gap-4 rounded-full border border-[#14233c]/40 px-7 py-4 text-sm font-black uppercase text-[#14233c]"
+            >
+              Conheça nossas linhas
+              <ArrowRight size={18} />
+            </Link>
           </div>
 
-          <div className="relative">
-            <div className="absolute -left-6 top-10 hidden h-32 w-32 rounded-full bg-sky-200/60 blur-3xl sm:block" />
-            <div className="absolute -right-8 bottom-6 hidden h-40 w-40 rounded-full bg-cyan-200/60 blur-3xl sm:block" />
-
-            <div className="relative overflow-hidden rounded-[32px] border border-slate-200/80 bg-slate-950 p-6 text-white shadow-[0_30px_80px_rgba(15,23,42,0.18)]">
-              <div className="flex items-center justify-between">
-                <span className="rounded-full bg-white/10 px-3 py-1 text-xs font-semibold text-sky-100">
-                  Preview de produto
-                </span>
-                <ShipWheel className="h-5 w-5 text-sky-300" />
+          <div className="grid gap-5 md:grid-cols-2">
+            <article className="relative min-h-[320px] overflow-hidden rounded-2xl shadow-lg">
+              <Image src={stopImage} alt="Ponto de ônibus" fill className="h-full w-full object-cover" />
+              <div className="absolute bottom-4 left-4 right-4 rounded-2xl bg-[#071d39] p-6 text-white">
+                <h3 className="text-sm font-black uppercase">Conforto e estrutura</h3>
+                <p className="mt-3 text-sm leading-6">Paradas com mais comodidade para o seu dia a dia.</p>
               </div>
+            </article>
+            <article className="relative min-h-[320px] overflow-hidden rounded-2xl shadow-lg">
+              <Image src={cityImage} alt="Cidade e praia" fill className="h-full w-full object-cover" />
+              <div className="absolute bottom-4 left-4 right-4 rounded-2xl bg-[#071d39] p-6 text-white">
+                <h3 className="text-sm font-black uppercase">Conectamos você</h3>
+                <p className="mt-3 text-sm leading-6">Integramos a cidade e a praia com mais facilidade.</p>
+              </div>
+            </article>
+          </div>
 
-              <div className="mt-6 space-y-4">
-                {highlights.map(({ title, description, icon: Icon }) => (
-                  <div key={title} className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                    <div className="flex items-start gap-3">
-                      <div className="rounded-2xl bg-sky-500/15 p-2 text-sky-300">
-                        <Icon className="h-5 w-5" />
-                      </div>
-                      <div>
-                        <h3 className="text-sm font-semibold text-white">{title}</h3>
-                        <p className="mt-1 text-sm leading-6 text-slate-300">{description}</p>
-                      </div>
-                    </div>
+          <aside className="rounded-2xl bg-[#eee8d8] p-7 shadow-sm">
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-[#14233c]">Fique por dentro</p>
+            <h2 className="mt-3 text-3xl font-black tracking-[-0.04em] text-[#16803f]">Últimas notícias</h2>
+            <div className="mt-8 space-y-5">
+              {[
+                ['20', 'MAI', 'Novos horários para linhas de Praia Grande'],
+                ['12', 'MAI', 'Modernização da frota segue em andamento'],
+                ['05', 'MAI', 'Campanha do agasalho: solidariedade que aquece'],
+              ].map(([day, month, title]) => (
+                <div key={title} className="grid grid-cols-[48px_1fr_20px] items-center gap-4 border-b border-[#14233c]/12 pb-4">
+                  <div className="text-center font-black text-[#16803f]">
+                    <p className="text-xl leading-none">{day}</p>
+                    <p className="text-xs">{month}</p>
                   </div>
-                ))}
-              </div>
-
-              <div className="mt-6 rounded-2xl border border-emerald-400/20 bg-emerald-400/10 p-4">
-                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-emerald-200">Momento atual</p>
-                <p className="mt-2 text-sm leading-6 text-emerald-50">
-                  O foco agora esta em consolidar os dados reais da linha 0100, evoluir a experiencia visual e preparar
-                  a base para expansao por novas linhas e modais.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="border-y border-slate-200/70 bg-white/70 backdrop-blur">
-        <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-10">
-          <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">Roadmap imediato</p>
-              <h3 className="mt-4 text-3xl font-semibold tracking-tight text-slate-950">
-                Uma demo mais bonita agora, sem perder a profundidade tecnica do projeto.
-              </h3>
-            </div>
-
-            <div className="grid gap-4 sm:grid-cols-2">
-              {roadmap.map((item) => (
-                <div key={item} className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
-                  <p className="text-sm leading-7 text-slate-700">{item}</p>
+                  <p className="text-sm font-bold leading-5 text-[#14233c]">{title}</p>
+                  <ArrowRight size={16} />
                 </div>
               ))}
             </div>
-          </div>
-        </div>
+            <Link
+              href="/alertas"
+              className="mt-8 inline-flex w-full items-center justify-center rounded-lg border border-[#16803f]/60 py-4 text-xs font-black uppercase text-[#16803f]"
+            >
+              Ver todas as notícias
+            </Link>
+          </aside>
+        </section>
+
+        <footer className="mx-8 grid overflow-hidden rounded-t-[34px] bg-[#071d39] text-white lg:mx-12 lg:grid-cols-4">
+          {[
+            { icon: MapPin, title: 'Planeje sua viagem', text: 'Encontre a melhor rota até o seu destino.', href: '/linhas#mapa' },
+            { icon: CreditCard, title: 'Cartão transporte', text: 'Veja como adquirir e recarregar seu cartão.', href: '/bilhetes' },
+            { icon: MessageCircle, title: 'Atendimento', text: 'Fale conosco pelos canais oficiais.', href: '/contato' },
+            { icon: Smartphone, title: 'App MOVI', text: 'Baixe o app e tenha tudo na palma da mão.', href: '/login' },
+          ].map((item, index) => (
+            <Link key={item.title} href={item.href} className={`flex gap-5 p-8 ${index > 0 ? 'border-l border-white/10' : ''}`}>
+              <item.icon className="shrink-0" size={36} />
+              <div>
+                <h3 className="text-sm font-black uppercase">{item.title}</h3>
+                <p className="mt-2 text-sm leading-6 text-white/80">{item.text}</p>
+              </div>
+            </Link>
+          ))}
+        </footer>
       </section>
     </main>
   );

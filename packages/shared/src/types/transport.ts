@@ -22,6 +22,7 @@ export interface ScheduleEntry {
   isPeak: boolean;
   occupancy: 'low' | 'medium' | 'high';
   platform?: string;
+  note?: string;
 }
 
 export interface TransportLine {

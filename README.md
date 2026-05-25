@@ -1,53 +1,45 @@
-# 🚍 Cityline
+# MOVI — Projetos Independentes
 
-![Status](https://img.shields.io/badge/status-em%20desenvolvimento%20avancado-f4b400?style=for-the-badge)
-![Backend](https://img.shields.io/badge/backend-funcional-34a853?style=for-the-badge)
-![Mapa](https://img.shields.io/badge/mapa-integrado-1a73e8?style=for-the-badge)
-![Dados](https://img.shields.io/badge/dados-em%20consolidacao-fbbc05?style=for-the-badge)
-![Next.js](https://img.shields.io/badge/Next.js-15-111111?style=for-the-badge&logo=nextdotjs)
-![Node.js](https://img.shields.io/badge/Node.js-Express-2d6a4f?style=for-the-badge&logo=node.js)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178c6?style=for-the-badge&logo=typescript)
-![Prisma](https://img.shields.io/badge/Prisma-SQLite-2d3748?style=for-the-badge&logo=prisma)
+Plataforma pública de mobilidade urbana para São Francisco do Sul e região, com foco em consulta de linhas, horários, paradas, rotas e modais hidroviários.
 
-## 📌 Visão Geral
+O projeto é independente e organiza dados públicos para facilitar a experiência de busca de transporte no dia a dia.
 
-O **Cityline** é uma aplicação de mobilidade urbana criada para centralizar informações de transporte público em uma experiência visual mais clara, moderna e escalável.
+## Status
 
-O projeto integra dados de:
+- Frontend e backend integrados
+- Dados reais carregados no fluxo principal
+- Mapa interativo com linhas e paradas
+- Autenticação, favoritos e recuperação de senha
+- Base PWA ativa (manifest + service worker + offline básico)
 
-- ônibus urbano
-- ônibus intermunicipal
-- ferry boat
+## Contexto do projeto
 
-Hoje, o Cityline já conecta **frontend + backend + banco + mapa**, e está evoluindo para um fluxo mais realista de dados, com **coleta manual, normalização e importação estruturada**.
+### Propósito
 
-O foco do projeto é construir uma base sólida para algo que possa crescer como produto real, priorizando:
+O MOVI nasceu para organizar, em um só lugar, informações públicas de mobilidade urbana que normalmente ficam espalhadas entre sites, imagens, redes sociais e comunicados.
 
-- escalabilidade
-- organização de dados
-- arquitetura desacoplada
-- integração com fontes reais
-- experiência do usuário
+### Dores reais que o projeto resolve
 
-## 🎯 Objetivo do Projeto
+- Dificuldade de encontrar horários e rotas de forma rápida.
+- Falta de uma visualização clara por linha, sentido e paradas.
+- Baixa previsibilidade para quem depende de transporte no dia a dia.
+- Experiência confusa em mobile para consulta rápida “na rua”.
 
-O objetivo do Cityline é permitir que o usuário visualize:
+### Por que esse projeto foi criado
 
-- linhas disponíveis
-- sentidos de cada linha
-- paradas reais
-- horários por direção
-- rotas em mapa interativo
-- favoritos e localizações salvas
+- Consolidar dados públicos em uma experiência útil e simples para a população.
+- Criar um produto funcional de ponta a ponta como projeto independente.
+- Evoluir habilidades práticas em arquitetura, frontend, backend, dados, UX e PWA.
 
-Além disso, o projeto está sendo preparado para evoluir para recursos mais avançados, como:
+### Principais dificuldades encontradas
 
-- recomendação da melhor parada
-- reaproveitamento global de paradas entre linhas
-- expansão para mais cidades
-- atualização dinâmica de dados
+- Fontes com formatos diferentes e dados incompletos/inconsistentes.
+- Ajuste fino entre linha, sentido, paradas e trajetória no mapa.
+- Evitar chamadas inválidas e estados quebrados no frontend.
+- Garantir estabilidade de build/dev sem perder velocidade de iteração.
+- Manter qualidade (type-check, lint, testes e build) durante mudanças frequentes.
 
-## 🧱 Stack Utilizada
+## Stack
 
 ### Frontend
 
@@ -55,21 +47,15 @@ Além disso, o projeto está sendo preparado para evoluir para recursos mais ava
 - React 19
 - TypeScript
 - Tailwind CSS
-- Leaflet / React Leaflet
+- Leaflet / React-Leaflet
 
 ### Backend
 
 - Node.js
 - Express
 - TypeScript
-- Zod
-
-### Banco e Dados
-
 - Prisma
-- SQLite
-- manifests `collected`
-- datasets `normalized`
+- SQLite (desenvolvimento)
 
 ### Qualidade
 
@@ -77,251 +63,54 @@ Além disso, o projeto está sendo preparado para evoluir para recursos mais ava
 - Testing Library
 - ESLint
 
-## ✅ O Que Já Foi Implementado
-
-### 🧠 Backend estruturado
-
-- API REST para transporte já funcional
-- endpoints para linhas, sentidos, paradas, horários e path de rota
-- validação com Zod
-- respostas padronizadas
-- estrutura preparada para múltiplos modos de transporte
-
-Principais endpoints:
-
-- `GET /lines`
-- `GET /lines/:id`
-- `GET /lines/:id/directions`
-- `GET /lines/:id/directions/:directionId/stops`
-- `GET /lines/:id/directions/:directionId/schedules`
-- `GET /lines/:id/directions/:directionId/path`
-
-### 🗄️ Modelagem de dados em nível mais profissional
-
-- separação clara entre linha, direção, parada, horário, tarifa e rota
-- uso de IDs determinísticos e normalizados
-- estratégia de importação por manifests
-- upsert de registros para evitar duplicações
-- suporte ao domínio de transporte no Prisma
-
-Entidades principais já modeladas:
-
-- `TransportLine`
-- `RouteDirection`
-- `Stop`
-- `LineStop`
-- `Schedule`
-- `Fare`
-- `RoutePath`
-- `StopTimePrediction`
-
-### 🔄 Pipeline de ingestão de dados
-
-O projeto deixou de depender apenas de seed manual e já possui uma pipeline de ingestão em andamento:
-
-- `collected` → arquivos coletados manualmente
-- `normalized` → dataset canônico
-- `database` → importação estruturada para o Prisma
-
-Isso já permite:
-
-- validar manifests com schema
-- normalizar dados coletados
-- importar conjuntos de dados sem duplicação
-- preparar expansão para novas linhas e cidades
-
-### 🗺️ Integração com mapa
-
-- mapa funcional com Leaflet
-- renderização de paradas reais
-- popup com informações da parada
-- path dinâmico da rota via backend
-- `fitBounds` para ajuste automático de foco
-- fallback quando faltam dados
-
-O mapa já responde a:
-
-- linha selecionada
-- direção selecionada
-- dados retornados pela API
-
-### 🔌 Integração real entre frontend e backend
-
-- remoção da dependência principal de mocks para a visualização das linhas
-- consumo real da API
-- frontend desacoplado do backend
-- hooks e serviços separados por responsabilidade
-
-### 👤 Base para autenticação e personalização
-
-Já existe estrutura para:
-
-- autenticação
-- favoritos
-- localizações salvas
-- recomendação operacional de embarque com base na direção ativa
-
-## 📍 Dados Reais em Construção
-
-Uma das partes mais importantes do Cityline hoje é a consolidação de dados reais.
-
-O projeto já possui coleta iniciada para **São Francisco do Sul**, incluindo:
-
-- linha `0100` da Verdes Mares
-- dados de ferry boat
-- arquivos `collected` e `normalized` no backend
-
-Essa etapa inclui:
-
-- ajuste fino de coordenadas
-- revisão da posição das paradas
-- melhoria da aderência entre paradas e path da rota
-- consolidação dos identificadores das entidades
-
-## 🧩 Decisões Arquiteturais Importantes
-
-Algumas decisões de arquitetura já foram tomadas para evitar retrabalho no futuro:
-
-- separação entre frontend, backend e camada compartilhada
-- domínio de transporte independente da interface
-- preparo para reutilização de paradas entre múltiplas linhas
-- suporte a ônibus urbano, intermunicipal e ferry no mesmo sistema
-- fallback local quando o banco não estiver disponível
-
-Essas decisões deixam o projeto pronto para crescer sem precisar refazer a base.
-
-## ⚠️ Problemas Já Identificados
-
-Durante a evolução do projeto, alguns problemas apareceram e já foram total ou parcialmente tratados:
-
-- paradas desalinhadas com a rota
-- duplicação de paradas
-- dependência excessiva de dados mockados
-- rotas sem aderência visual às ruas
-- inconsistências entre IDs antigos e IDs canônicos
-
-Boa parte disso já foi mitigada com:
-
-- coordenadas reais
-- estratégia de ID estável
-- importação normalizada
-- backend servindo path e stops reais
-
-## 🚧 O Que Ainda Falta Implementar
-
-### 🗺️ Mapa
-
-- melhorar a precisão total das paradas
-- revisar integralmente a linha `0100`
-- destacar visualmente linha ativa e direção ativa
-- evoluir zoom, foco e interação do mapa
-
-### 🔁 Reutilização de paradas
-
-- implementar reaproveitamento real de `stops` entre múltiplas linhas
-- padronizar IDs globais de paradas
-- evitar duplicações no banco em cenário de escala
-
-### 🧠 Inteligência de rota
-
-- cálculo da melhor parada para o usuário
-- recomendação baseada em distância e tempo de caminhada
-- recomendação considerando o próximo horário disponível
-- futuro suporte para conexão entre linhas
-
-### ⏱️ Tempo real
-
-- integração com API oficial, se disponível
-- ou simulação de tempo real
-- atualização dinâmica no mapa
-
-### 👤 Experiência do usuário
-
-- evolução do fluxo de login
-- preferências do usuário
-- histórico de rotas
-- recursos desbloqueados por autenticação
-
-### 📊 Dashboard e UX
-
-- melhoria do layout geral
-- refinamento da exibição de horários
-- feedback visual mais claro
-- estados de carregamento melhores
-- melhoria de performance em transições e filtros
-
-### 📦 Escala do sistema
-
-- adicionar novas linhas
-- adicionar transporte intermunicipal com mais profundidade
-- completar o ferry boat com dados mais robustos
-- preparar expansão para mais cidades
-
-## 🎯 Próximos Passos Imediatos
-
-- finalizar a linha `0100`
-- validar o mapa com dados reais revisados
-- iniciar a segunda linha como teste de escala
-- implementar melhor reaproveitamento de paradas
-- evoluir a UX do mapa
-
-## 💡 Diferenciais do Projeto
-
-- integração com dados reais, não apenas mockados
-- backend desacoplado e preparado para escalar
-- modelagem de domínio mais madura
-- arquitetura preparada para múltiplos tipos de transporte
-- base pronta para crescer em direção a tempo real e múltiplas cidades
-- projeto com potencial de produto real
-
-## 🚀 Status Atual
-
-- 🟡 Em desenvolvimento avançado
-- 🟢 Backend funcional
-- 🟢 Mapa integrado
-- 🟡 Dados em fase de consolidação
-- 🔜 Escala e inteligência de rota
-
-## 🕰️ Histórico do Projeto
-
-### Fase 1
-
-O projeto começou como uma aplicação voltada para visualização de linhas e horários, com foco em montar a experiência base de transporte urbano.
-
-### Fase 2
-
-Depois disso, a arquitetura foi evoluindo para separar melhor:
-
-- frontend
-- backend
-- domínio compartilhado
-- persistência com Prisma
-
-### Fase 3
-
-Com a base estabilizada, o foco passou a ser a substituição de dados mockados por dados mais realistas, incluindo:
-
-- rotas dinâmicas
-- paradas reais
-- integração com mapa
-- estrutura de ingestão
-
-### Fase Atual
-
-Hoje, o Cityline está na fase de consolidação dos dados reais e preparação para escala, especialmente na linha `0100` e na expansão do fluxo `collected → normalized → database`.
-
-## 🔮 Futuro de Aprimorações
-
-O projeto ainda está em desenvolvimento e a ideia é continuar evoluindo em várias frentes:
-
-- consolidar uma base de dados mais confiável
-- permitir reutilização global de paradas
-- melhorar a inteligência do sistema para recomendação de embarque
-- ampliar a cobertura para mais linhas e cidades
-- estudar integração com dados mais próximos de tempo real
-- transformar o Cityline em um case cada vez mais forte de produto + arquitetura + dados
-
-## ⚙️ Como Rodar o Projeto
+## Estrutura do monorepo
+
+```text
+.
+├─ apps/
+│  ├─ backend/
+│  └─ frontend/
+├─ packages/
+│  └─ shared/
+├─ docs/
+├─ scripts/
+├─ package.json
+└─ README.md
+```
+
+## Principais funcionalidades
+
+- Home pública com navegação rápida
+- Página unificada de linhas e horários
+- Mapa da linha selecionada, com sentido e paradas
+- Área de ferry boat integrada ao fluxo de linhas
+- Página de bilhetes e tarifas
+- Página de notícias com conteúdos externos
+- Página de contato institucional do projeto
+- Login, cadastro e perfil
+- Favoritos por sessão autenticada
+- Recuperação de senha por e-mail (Brevo)
+- Widget de clima na home (Open-Meteo)
+
+## PWA
+
+Implementação atual:
+
+- `manifest.webmanifest`
+- registro de service worker em produção
+- cache de assets estáticos
+- fallback offline para navegação básica
+
+Observação:
+
+- O app não depende de cache agressivo de dados dinâmicos de transporte.
+
+## Como rodar localmente
+
+### Pré-requisitos
+
+- Node.js 20+
+- npm 10+
 
 ### Instalação
 
@@ -329,70 +118,104 @@ O projeto ainda está em desenvolvimento e a ideia é continuar evoluindo em vá
 npm install
 ```
 
-### Rodar frontend e backend
+### Subir projeto completo (backend + frontend)
 
 ```bash
 npm run dev
 ```
 
-### Rodar somente o frontend
+O comando `npm run dev` já executa preparação automática do banco para ambiente local.
 
-```bash
-npm run dev:frontend
-```
-
-### Rodar somente o backend
+### Rodar serviços separadamente
 
 ```bash
 npm run dev:backend
+npm run dev:frontend
 ```
 
-### Banco e ingestão
+## Scripts principais
 
 ```bash
-npm run db:generate --workspace @cityline/backend
-npm run db:push --workspace @cityline/backend
-npm run db:seed --workspace @cityline/backend
-npm run ingestion:normalize --workspace @cityline/backend -- --input data/collected
-npm run ingestion:import --workspace @cityline/backend -- --input data/normalized
-```
-
-### Qualidade
-
-```bash
-npm run type-check
+npm run dev
+npm run build
 npm run lint
+npm run type-check
 npm run test
 ```
 
-## 📁 Estrutura Principal
+## Variáveis de ambiente
 
-```text
-cityline-main/
-|-- apps/
-|   |-- backend/
-|   |   |-- data/
-|   |   |-- prisma/
-|   |   `-- src/
-|   `-- frontend/
-|       |-- app/
-|       |-- features/
-|       |-- hooks/
-|       |-- services/
-|       `-- components/
-|-- packages/
-|   `-- shared/
-|-- README.md
-`-- package.json
+Arquivo principal: `.env` na raiz.
+
+Exemplo mínimo para autenticação e reset de senha:
+
+```env
+JWT_SECRET=troque-por-um-segredo-forte
+APP_URL=http://localhost:3000
+
+BREVO_API_KEY=sua-chave-brevo
+BREVO_SENDER_EMAIL=seu-email-remetente
+BREVO_SENDER_NAME=MOVI
 ```
 
-## 📬 Contato
+> Em produção, altere `APP_URL` para a URL pública do deploy.
 
-Se quiser acompanhar minha evolução ou entrar em contato:
+## Banco de dados e dados de transporte
 
-- GitHub: [github.com/Luanagroth](https://github.com/Luanagroth)
+O backend usa Prisma + SQLite em desenvolvimento.
+
+Para garantir dados de transporte no ambiente local, o fluxo recomendado é usar `npm run dev`, que já chama a preparação de banco configurada no monorepo.
+
+## Deploy
+
+Fluxo recomendado:
+
+1. Rodar validações locais
+2. Subir no GitHub
+3. Deploy na Vercel (frontend) e backend conforme ambiente escolhido
+
+Checklist antes do deploy:
+
+- `npm run type-check`
+- `npm run lint`
+- `npm run test`
+- `npm run build`
+
+## Capturas de tela
+
+1. Home
+
+![Home MOVI](./docs/screenshots/home.png)
+
+2. Linhas e horários
+
+![Linhas e Horários](./docs/screenshots/linhas%20e%20hor%C3%A1rios.png)
+
+3. Bilhetes 1.0
+
+![Bilhetes 1.0](./docs/screenshots/bilhetes%201.0.png)
+
+4. Bilhetes 2.0
+
+![Bilhetes 2.0](./docs/screenshots/bilhetes%202.0.png)
+
+5. Notícias
+
+![Notícias](./docs/screenshots/noticias.png)
+
+## Aviso de independência
+
+O MOVI é um projeto independente, sem vínculo oficial com empresas operadoras de transporte, órgãos governamentais ou entidades municipais.
+
+As informações exibidas são organizadas a partir de fontes públicas e podem sofrer alterações nas fontes originais.
+
+## Desenvolvedora
+
+- **Luana Groth**
 - LinkedIn: [linkedin.com/in/luana-groth](https://www.linkedin.com/in/luana-groth/)
+- GitHub: [github.com/Luanagroth](https://github.com/Luanagroth)
+- Portfólio: [luana-groth-portfolio.vercel.app](https://luana-groth-portfolio.vercel.app/)
 
 ---
 
-Feito com foco em evolução real de produto, arquitetura e dados. Este projeto continua em desenvolvimento.
+© 2026 MOVI — Projetos Independentes

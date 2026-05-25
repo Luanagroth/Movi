@@ -1,18 +1,50 @@
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import type { Metadata, Viewport } from 'next';
+import { PwaServiceWorker } from '@/components/pwa-service-worker';
+import { AppShell } from '@/layouts/app-shell';
 import './globals.css';
 
-const inter = Inter({ subsets: ['latin'], display: 'swap' });
+export function generateMetadata(): Metadata {
+  const baseMetadata: Metadata = {
+    title: 'MOVI | Mobilidade urbana',
+    description: 'Plataforma premium de transporte urbano para São Francisco do Sul - SC.',
+    applicationName: 'MOVI',
+    appleWebApp: {
+      capable: true,
+      title: 'MOVI',
+      statusBarStyle: 'default',
+    },
+    icons: {
+      icon: [
+        { url: '/favicon.svg', type: 'image/svg+xml' },
+        { url: '/icons/cityline-icon-192.svg', sizes: '192x192', type: 'image/svg+xml' },
+        { url: '/icons/cityline-icon-512.svg', sizes: '512x512', type: 'image/svg+xml' },
+      ],
+      apple: [{ url: '/icons/cityline-icon-180.svg', sizes: '180x180', type: 'image/svg+xml' }],
+    },
+  };
 
-export const metadata: Metadata = {
-  title: 'CityLine | Mobilidade urbana inteligente',
-  description: 'Base moderna de mobilidade urbana com busca de linhas, horarios, favoritos e mapa.',
+  // Em desenvolvimento, evitamos rota de manifest para reduzir instabilidade de hot reload/chunks.
+  if (process.env.NODE_ENV === 'production') {
+    return {
+      ...baseMetadata,
+      manifest: '/manifest.webmanifest',
+    };
+  }
+
+  return baseMetadata;
+}
+
+export const viewport: Viewport = {
+  themeColor: '#14233C',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="pt-BR">
-      <body className={inter.className}>{children}</body>
+    <html lang="pt-BR" data-scroll-behavior="smooth">
+      <body className="font-sans">
+        <AppShell>{children}</AppShell>
+        <PwaServiceWorker />
+      </body>
     </html>
   );
 }

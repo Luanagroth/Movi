@@ -1,0 +1,401 @@
+{
+  "manifestVersion": "1.0",
+  "citySlug": "sao-francisco-do-sul",
+  "dataset": {
+    "metadata": {
+      "datasetId": "dataset-verdes-mares-sfs-2026-04-17T12-00-00-000Z",
+      "createdAt": "2026-04-17T12:00:00.000Z",
+      "sourceName": "Verdes Mares Sao Francisco do Sul",
+      "sourceUrl": "https://vmares.com.br/sao-francisco-do-sul/",
+      "collectionMethod": "manual"
+    },
+    "transportLines": [
+      {
+        "id": "line-0112",
+        "code": "0112",
+        "slug": "0112-joao-germano-via-franklin",
+        "name": "Jo?o Germano via Franklin",
+        "operator": "Verdes Mares",
+        "summary": "Linha Jo?o Germano - Franklin",
+        "routeLabel": "Jo?o Germano -> Franklin",
+        "originLabel": "Jo?o Germano",
+        "destinationLabel": "Franklin",
+        "transportMode": "municipal",
+        "operationalStatus": "on-time",
+        "fareSummary": "Tarifa urbana municipal",
+        "amenities": [],
+        "sourceUpdatedAt": "2026-04-17T12:00:00.000Z",
+        "sourceLineRef": "0112",
+        "isActive": true
+      }
+    ],
+    "routeDirections": [
+      {
+        "id": "line-0112-inbound",
+        "lineId": "line-0112",
+        "type": "inbound",
+        "slug": "inbound",
+        "name": "Saída do João Germano",
+        "routeLabel": "Jo?o Germano -> Franklin",
+        "originLabel": "Jo?o Germano",
+        "destinationLabel": "Franklin",
+        "sortOrder": 1,
+        "isLoop": false,
+        "sourceDirectionRef": "inbound"
+      }
+    ],
+    "stops": [
+      {
+        "id": "stop-rua-florencio-custodio-daniel-608-m26_2217-m48_5677",
+        "name": "Rua Florencio Custódio Daniel, 608",
+        "slug": "rua-florencio-custodio-daniel-608",
+        "latitude": -26.221726171154657,
+        "longitude": -48.567690500380166
+      },
+      {
+        "id": "stop-rua-rodovia-duque-de-caxias-5065-m26_2173-m48_5706",
+        "name": "Rua Rodovia Duque de Caxias, 5065",
+        "slug": "rua-rodovia-duque-de-caxias-5065",
+        "latitude": -26.217251972753047,
+        "longitude": -48.570614650577404
+      },
+      {
+        "id": "stop-estadio-municipal-do-iperoba-m26_2185-m48_5723",
+        "name": "Estádio Municipal do Iperoba",
+        "slug": "estadio-municipal-do-iperoba",
+        "latitude": -26.218484380518134,
+        "longitude": -48.57231933065357
+      },
+      {
+        "id": "stop-esquina-rua-raul-vanine-m26_2198-m48_5740",
+        "name": "Esquina Rua Raul Vanine",
+        "slug": "esquina-rua-raul-vanine",
+        "latitude": -26.219766636077885,
+        "longitude": -48.57398734874991
+      },
+      {
+        "id": "stop-posto-mediterraneo-bairro-centro-m26_2250-m48_5767",
+        "name": "Posto Mediterrâneo (Bairro/Centro)",
+        "slug": "posto-mediterraneo-bairro-centro",
+        "latitude": -26.224979687810706,
+        "longitude": -48.5767460404703
+      },
+      {
+        "id": "stop-associacao-do-porto-sentido-bairro-centro-m26_2282-m48_5791",
+        "name": "Associação do Porto (Sentido Bairro/Centro)",
+        "slug": "associacao-do-porto-sentido-bairro-centro",
+        "latitude": -26.228158860397553,
+        "longitude": -48.579124676466215
+      },
+      {
+        "id": "stop-serraria-do-ingo-m26_2301-m48_5817",
+        "name": "Serraria do Ingo",
+        "slug": "serraria-do-ingo",
+        "latitude": -26.230080158708976,
+        "longitude": -48.58174125774154
+      },
+      {
+        "id": "stop-rua-santa-clara-de-assis-410-m26_2328-m48_5803",
+        "name": "Rua Santa Clara de Assis, 410",
+        "slug": "rua-santa-clara-de-assis-410",
+        "latitude": -26.232753207819787,
+        "longitude": -48.580347178930886
+      },
+      {
+        "id": "stop-rua-simeao-de-mira-303-m26_2337-m48_5812",
+        "name": "Rua Simeão de Mira, 303",
+        "slug": "rua-simeao-de-mira-303",
+        "latitude": -26.23373242823788,
+        "longitude": -48.5812296256845
+      },
+      {
+        "id": "stop-rua-simeao-de-mira-151-m26_2327-m48_5821",
+        "name": "Rua Simeão de Mira, 151",
+        "slug": "rua-simeao-de-mira-151",
+        "latitude": -26.232733960160264,
+        "longitude": -48.58212011907546
+      },
+      {
+        "id": "stop-rua-rodovia-duque-de-caxias-4428-m26_2317-m48_5833",
+        "name": "Rua Rodovia Duque de Caxias, 4428",
+        "slug": "rua-rodovia-duque-de-caxias-4428",
+        "latitude": -26.231698203114323,
+        "longitude": -48.583296959676765
+      },
+      {
+        "id": "stop-km-3-sentido-bairro-centro-m26_2339-m48_5870",
+        "name": "KM 3 (Sentido Bairro/Centro)",
+        "slug": "km-3-sentido-bairro-centro",
+        "latitude": -26.23390449505082,
+        "longitude": -48.58703084559732
+      },
+      {
+        "id": "stop-porto-seco-rocha-sentido-bairro-centro-m26_2355-m48_5891",
+        "name": "Porto Seco Rocha (Sentido Bairro/Centro)",
+        "slug": "porto-seco-rocha-sentido-bairro-centro",
+        "latitude": -26.235482745167452,
+        "longitude": -48.58909898844154
+      },
+      {
+        "id": "stop-esquina-r-bem-vindo-alves-da-silva-m26_2389-m48_5937",
+        "name": "Esquina R. Bem-vindo Alves da Silva",
+        "slug": "esquina-r-bem-vindo-alves-da-silva",
+        "latitude": -26.238864361467705,
+        "longitude": -48.59370083037695
+      },
+      {
+        "id": "stop-rua-rodovia-duque-de-caxias-2015-m26_2446-m48_6013",
+        "name": "Rua Rodovia Duque de Caxias, 2015",
+        "slug": "rua-rodovia-duque-de-caxias-2015",
+        "latitude": -26.24457250626517,
+        "longitude": -48.60130795221043
+      }
+    ],
+    "lineStops": [
+      {
+        "id": "line-0112-inbound-stop-1",
+        "directionId": "line-0112-inbound",
+        "stopId": "stop-rua-florencio-custodio-daniel-608-m26_2217-m48_5677",
+        "sequence": 1,
+        "isTimingPoint": true
+      },
+      {
+        "id": "line-0112-inbound-stop-2",
+        "directionId": "line-0112-inbound",
+        "stopId": "stop-rua-rodovia-duque-de-caxias-5065-m26_2173-m48_5706",
+        "sequence": 2,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0112-inbound-stop-3",
+        "directionId": "line-0112-inbound",
+        "stopId": "stop-estadio-municipal-do-iperoba-m26_2185-m48_5723",
+        "sequence": 3,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0112-inbound-stop-4",
+        "directionId": "line-0112-inbound",
+        "stopId": "stop-esquina-rua-raul-vanine-m26_2198-m48_5740",
+        "sequence": 4,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0112-inbound-stop-5",
+        "directionId": "line-0112-inbound",
+        "stopId": "stop-posto-mediterraneo-bairro-centro-m26_2250-m48_5767",
+        "sequence": 5,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0112-inbound-stop-6",
+        "directionId": "line-0112-inbound",
+        "stopId": "stop-associacao-do-porto-sentido-bairro-centro-m26_2282-m48_5791",
+        "sequence": 6,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0112-inbound-stop-7",
+        "directionId": "line-0112-inbound",
+        "stopId": "stop-serraria-do-ingo-m26_2301-m48_5817",
+        "sequence": 7,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0112-inbound-stop-8",
+        "directionId": "line-0112-inbound",
+        "stopId": "stop-rua-santa-clara-de-assis-410-m26_2328-m48_5803",
+        "sequence": 8,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0112-inbound-stop-9",
+        "directionId": "line-0112-inbound",
+        "stopId": "stop-rua-simeao-de-mira-303-m26_2337-m48_5812",
+        "sequence": 9,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0112-inbound-stop-10",
+        "directionId": "line-0112-inbound",
+        "stopId": "stop-rua-simeao-de-mira-151-m26_2327-m48_5821",
+        "sequence": 10,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0112-inbound-stop-11",
+        "directionId": "line-0112-inbound",
+        "stopId": "stop-rua-rodovia-duque-de-caxias-4428-m26_2317-m48_5833",
+        "sequence": 11,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0112-inbound-stop-12",
+        "directionId": "line-0112-inbound",
+        "stopId": "stop-km-3-sentido-bairro-centro-m26_2339-m48_5870",
+        "sequence": 12,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0112-inbound-stop-13",
+        "directionId": "line-0112-inbound",
+        "stopId": "stop-porto-seco-rocha-sentido-bairro-centro-m26_2355-m48_5891",
+        "sequence": 13,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0112-inbound-stop-14",
+        "directionId": "line-0112-inbound",
+        "stopId": "stop-esquina-r-bem-vindo-alves-da-silva-m26_2389-m48_5937",
+        "sequence": 14,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0112-inbound-stop-15",
+        "directionId": "line-0112-inbound",
+        "stopId": "stop-rua-rodovia-duque-de-caxias-2015-m26_2446-m48_6013",
+        "sequence": 15,
+        "isTimingPoint": true
+      }
+    ],
+    "schedules": [
+      {
+        "id": "collected-line-0112-inbound-weekday-1120",
+        "directionId": "line-0112-inbound",
+        "serviceDay": "weekday",
+        "departureTime": "11:20",
+        "departureMinutes": 680,
+        "isPeak": false,
+        "occupancy": "medium"
+      },
+      {
+        "id": "collected-line-0112-inbound-weekday-1645",
+        "directionId": "line-0112-inbound",
+        "serviceDay": "weekday",
+        "departureTime": "16:45",
+        "departureMinutes": 1005,
+        "isPeak": false,
+        "occupancy": "medium"
+      }
+    ],
+    "stopTimePredictions": [],
+    "routePaths": [
+      {
+        "id": "line-0112-inbound-path-1",
+        "directionId": "line-0112-inbound",
+        "sequence": 1,
+        "latitude": -26.221726171154657,
+        "longitude": -48.567690500380166
+      },
+      {
+        "id": "line-0112-inbound-path-2",
+        "directionId": "line-0112-inbound",
+        "sequence": 2,
+        "latitude": -26.217251972753047,
+        "longitude": -48.570614650577404
+      },
+      {
+        "id": "line-0112-inbound-path-3",
+        "directionId": "line-0112-inbound",
+        "sequence": 3,
+        "latitude": -26.218484380518134,
+        "longitude": -48.57231933065357
+      },
+      {
+        "id": "line-0112-inbound-path-4",
+        "directionId": "line-0112-inbound",
+        "sequence": 4,
+        "latitude": -26.219766636077885,
+        "longitude": -48.57398734874991
+      },
+      {
+        "id": "line-0112-inbound-path-5",
+        "directionId": "line-0112-inbound",
+        "sequence": 5,
+        "latitude": -26.224979687810706,
+        "longitude": -48.5767460404703
+      },
+      {
+        "id": "line-0112-inbound-path-6",
+        "directionId": "line-0112-inbound",
+        "sequence": 6,
+        "latitude": -26.228158860397553,
+        "longitude": -48.579124676466215
+      },
+      {
+        "id": "line-0112-inbound-path-7",
+        "directionId": "line-0112-inbound",
+        "sequence": 7,
+        "latitude": -26.230080158708976,
+        "longitude": -48.58174125774154
+      },
+      {
+        "id": "line-0112-inbound-path-8",
+        "directionId": "line-0112-inbound",
+        "sequence": 8,
+        "latitude": -26.232753207819787,
+        "longitude": -48.580347178930886
+      },
+      {
+        "id": "line-0112-inbound-path-9",
+        "directionId": "line-0112-inbound",
+        "sequence": 9,
+        "latitude": -26.23373242823788,
+        "longitude": -48.5812296256845
+      },
+      {
+        "id": "line-0112-inbound-path-10",
+        "directionId": "line-0112-inbound",
+        "sequence": 10,
+        "latitude": -26.232733960160264,
+        "longitude": -48.58212011907546
+      },
+      {
+        "id": "line-0112-inbound-path-11",
+        "directionId": "line-0112-inbound",
+        "sequence": 11,
+        "latitude": -26.231698203114323,
+        "longitude": -48.583296959676765
+      },
+      {
+        "id": "line-0112-inbound-path-12",
+        "directionId": "line-0112-inbound",
+        "sequence": 12,
+        "latitude": -26.23390449505082,
+        "longitude": -48.58703084559732
+      },
+      {
+        "id": "line-0112-inbound-path-13",
+        "directionId": "line-0112-inbound",
+        "sequence": 13,
+        "latitude": -26.235482745167452,
+        "longitude": -48.58909898844154
+      },
+      {
+        "id": "line-0112-inbound-path-14",
+        "directionId": "line-0112-inbound",
+        "sequence": 14,
+        "latitude": -26.238864361467705,
+        "longitude": -48.59370083037695
+      },
+      {
+        "id": "line-0112-inbound-path-15",
+        "directionId": "line-0112-inbound",
+        "sequence": 15,
+        "latitude": -26.24457250626517,
+        "longitude": -48.60130795221043
+      }
+    ],
+    "fares": [
+      {
+        "id": "collected-line-0112-fare-1",
+        "lineId": "line-0112",
+        "label": "Tarifa urbana municipal",
+        "currency": "BRL",
+        "sortOrder": 0
+      }
+    ],
+    "ferrySchedules": [],
+    "ferryFares": []
+  }
+}

@@ -129,6 +129,7 @@ const toScheduleMap = (direction: TransportLineRecord['directions'][number] | un
       isPeak: schedule.isPeak,
       occupancy: toSharedOccupancy(schedule.occupancy),
       platform: schedule.platform ?? undefined,
+      note: schedule.note ?? undefined,
     });
   }
 

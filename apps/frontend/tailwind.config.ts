@@ -6,6 +6,8 @@ const config: Config = {
     './components/**/*.{ts,tsx}',
     './features/**/*.{ts,tsx}',
     './hooks/**/*.{ts,tsx}',
+    './layouts/**/*.{ts,tsx}',
+    './data/**/*.{ts,tsx}',
   ],
   theme: {
     extend: {
@@ -21,6 +23,17 @@ const config: Config = {
           700: '#0369a1',
           800: '#075985',
           900: '#0c4a6e',
+        },
+        cityline: {
+          primary: '#2563EB',
+          dark: '#1E3A8A',
+          accent: '#F4B400',
+          accentSoft: '#FFF5CF',
+          background: '#F8FAFC',
+          text: '#111827',
+          success: '#22C55E',
+          alert: '#F59E0B',
+          border: '#E5E7EB',
         },
       },
       boxShadow: {

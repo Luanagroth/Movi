@@ -1,0 +1,292 @@
+{
+  "manifestVersion": "1.0",
+  "citySlug": "sao-francisco-do-sul",
+  "providerSlug": "verdes-mares",
+  "entityType": "line",
+  "data": {
+    "id": "collected-line-0112",
+    "code": "0112",
+    "slug": "0112-joao-germano-via-franklin",
+    "name": "Jo?o Germano via Franklin",
+    "operator": "Verdes Mares",
+    "mode": "urban",
+    "summary": "Linha Jo?o Germano - Franklin",
+    "routeLabel": "Jo?o Germano -> Franklin",
+    "originLabel": "Jo?o Germano",
+    "destinationLabel": "Franklin",
+    "fares": [
+      {
+        "id": "collected-line-0112-fare-1",
+        "label": "Tarifa urbana municipal",
+        "appliesTo": "line",
+        "source": {
+          "sourceId": "verdes-mares-sfs",
+          "sourceName": "Verdes Mares Sao Francisco do Sul",
+          "sourceUrl": "https://vmares.com.br/sao-francisco-do-sul/",
+          "collectedAt": "2026-04-17T12:00:00.000Z",
+          "collectionMethod": "manual",
+          "sourceLineRef": "0112"
+        }
+      }
+    ],
+    "directions": [
+      {
+        "id": "collected-line-0112-inbound",
+        "type": "inbound",
+        "name": "Saída do João Germano",
+        "routeLabel": "Jo?o Germano -> Franklin",
+        "originLabel": "Jo?o Germano",
+        "destinationLabel": "Franklin",
+        "mapPath": [
+          {
+            "sequence": 1,
+            "lat": -26.221726171154657,
+            "lng": -48.567690500380166
+          },
+          {
+            "sequence": 2,
+            "lat": -26.217251972753047,
+            "lng": -48.570614650577404
+          },
+          {
+            "sequence": 3,
+            "lat": -26.218484380518134,
+            "lng": -48.57231933065357
+          },
+          {
+            "sequence": 4,
+            "lat": -26.219766636077885,
+            "lng": -48.57398734874991
+          },
+          {
+            "sequence": 5,
+            "lat": -26.224979687810706,
+            "lng": -48.5767460404703
+          },
+          {
+            "sequence": 6,
+            "lat": -26.228158860397553,
+            "lng": -48.579124676466215
+          },
+          {
+            "sequence": 7,
+            "lat": -26.230080158708976,
+            "lng": -48.58174125774154
+          },
+          {
+            "sequence": 8,
+            "lat": -26.232753207819787,
+            "lng": -48.580347178930886
+          },
+          {
+            "sequence": 9,
+            "lat": -26.23373242823788,
+            "lng": -48.5812296256845
+          },
+          {
+            "sequence": 10,
+            "lat": -26.232733960160264,
+            "lng": -48.58212011907546
+          },
+          {
+            "sequence": 11,
+            "lat": -26.231698203114323,
+            "lng": -48.583296959676765
+          },
+          {
+            "sequence": 12,
+            "lat": -26.23390449505082,
+            "lng": -48.58703084559732
+          },
+          {
+            "sequence": 13,
+            "lat": -26.235482745167452,
+            "lng": -48.58909898844154
+          },
+          {
+            "sequence": 14,
+            "lat": -26.238864361467705,
+            "lng": -48.59370083037695
+          },
+          {
+            "sequence": 15,
+            "lat": -26.24457250626517,
+            "lng": -48.60130795221043
+          }
+        ],
+        "stops": [
+          {
+            "id": "collected-line-0112-inbound-stop-1",
+            "name": "Rua Florencio Custódio Daniel, 608",
+            "sequence": 1,
+            "location": {
+              "lat": -26.221726171154657,
+              "lng": -48.567690500380166
+            },
+            "isTimingPoint": true
+          },
+          {
+            "id": "collected-line-0112-inbound-stop-2",
+            "name": "Rua Rodovia Duque de Caxias, 5065",
+            "sequence": 2,
+            "location": {
+              "lat": -26.217251972753047,
+              "lng": -48.570614650577404
+            }
+          },
+          {
+            "id": "collected-line-0112-inbound-stop-3",
+            "name": "Estádio Municipal do Iperoba",
+            "sequence": 3,
+            "location": {
+              "lat": -26.218484380518134,
+              "lng": -48.57231933065357
+            }
+          },
+          {
+            "id": "collected-line-0112-inbound-stop-4",
+            "name": "Esquina Rua Raul Vanine",
+            "sequence": 4,
+            "location": {
+              "lat": -26.219766636077885,
+              "lng": -48.57398734874991
+            }
+          },
+          {
+            "id": "collected-line-0112-inbound-stop-5",
+            "name": "Posto Mediterrâneo (Bairro/Centro)",
+            "sequence": 5,
+            "location": {
+              "lat": -26.224979687810706,
+              "lng": -48.5767460404703
+            }
+          },
+          {
+            "id": "collected-line-0112-inbound-stop-6",
+            "name": "Associação do Porto (Sentido Bairro/Centro)",
+            "sequence": 6,
+            "location": {
+              "lat": -26.228158860397553,
+              "lng": -48.579124676466215
+            }
+          },
+          {
+            "id": "collected-line-0112-inbound-stop-7",
+            "name": "Serraria do Ingo",
+            "sequence": 7,
+            "location": {
+              "lat": -26.230080158708976,
+              "lng": -48.58174125774154
+            }
+          },
+          {
+            "id": "collected-line-0112-inbound-stop-8",
+            "name": "Rua Santa Clara de Assis, 410",
+            "sequence": 8,
+            "location": {
+              "lat": -26.232753207819787,
+              "lng": -48.580347178930886
+            }
+          },
+          {
+            "id": "collected-line-0112-inbound-stop-9",
+            "name": "Rua Simeão de Mira, 303",
+            "sequence": 9,
+            "location": {
+              "lat": -26.23373242823788,
+              "lng": -48.5812296256845
+            }
+          },
+          {
+            "id": "collected-line-0112-inbound-stop-10",
+            "name": "Rua Simeão de Mira, 151",
+            "sequence": 10,
+            "location": {
+              "lat": -26.232733960160264,
+              "lng": -48.58212011907546
+            }
+          },
+          {
+            "id": "collected-line-0112-inbound-stop-11",
+            "name": "Rua Rodovia Duque de Caxias, 4428",
+            "sequence": 11,
+            "location": {
+              "lat": -26.231698203114323,
+              "lng": -48.583296959676765
+            }
+          },
+          {
+            "id": "collected-line-0112-inbound-stop-12",
+            "name": "KM 3 (Sentido Bairro/Centro)",
+            "sequence": 12,
+            "location": {
+              "lat": -26.23390449505082,
+              "lng": -48.58703084559732
+            }
+          },
+          {
+            "id": "collected-line-0112-inbound-stop-13",
+            "name": "Porto Seco Rocha (Sentido Bairro/Centro)",
+            "sequence": 13,
+            "location": {
+              "lat": -26.235482745167452,
+              "lng": -48.58909898844154
+            }
+          },
+          {
+            "id": "collected-line-0112-inbound-stop-14",
+            "name": "Esquina R. Bem-vindo Alves da Silva",
+            "sequence": 14,
+            "location": {
+              "lat": -26.238864361467705,
+              "lng": -48.59370083037695
+            }
+          },
+          {
+            "id": "collected-line-0112-inbound-stop-15",
+            "name": "Rua Rodovia Duque de Caxias, 2015",
+            "sequence": 15,
+            "location": {
+              "lat": -26.24457250626517,
+              "lng": -48.60130795221043
+            },
+            "isTimingPoint": true
+          }
+        ],
+        "departures": [
+          {
+            "id": "collected-line-0112-inbound-weekday-1120",
+            "serviceDay": "weekday",
+            "departureTime": "11:20",
+            "stopPredictions": []
+          },
+          {
+            "id": "collected-line-0112-inbound-weekday-1645",
+            "serviceDay": "weekday",
+            "departureTime": "16:45",
+            "stopPredictions": []
+          }
+        ],
+        "source": {
+          "sourceId": "verdes-mares-sfs",
+          "sourceName": "Verdes Mares Sao Francisco do Sul",
+          "sourceUrl": "https://vmares.com.br/sao-francisco-do-sul/",
+          "collectedAt": "2026-04-17T12:00:00.000Z",
+          "collectionMethod": "manual",
+          "sourceLineRef": "0112",
+          "sourceDirectionRef": "inbound"
+        }
+      }
+    ],
+    "collectionStatus": "reviewed",
+    "source": {
+      "sourceId": "verdes-mares-sfs",
+      "sourceName": "Verdes Mares Sao Francisco do Sul",
+      "sourceUrl": "https://vmares.com.br/sao-francisco-do-sul/",
+      "collectedAt": "2026-04-17T12:00:00.000Z",
+      "collectionMethod": "manual",
+      "sourceLineRef": "0112",
+      "notes": "Linha 0112 Joao Germano via Franklin montada com sentido unico para Franklin a partir das paradas informadas, reaproveitando coordenadas do banco local e coordenadas manuais para Santa Clara de Assis, Simeao de Mira e Rodovia Duque de Caxias 4428/2015."
+    }
+  }
+}

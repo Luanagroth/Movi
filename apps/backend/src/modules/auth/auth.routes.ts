@@ -2,7 +2,7 @@ import { Router, type Request, type RequestHandler, type Response } from 'expres
 import { sendOk } from '../../shared/http/response.js';
 import { optionalAuth, requireAuth, type AuthenticatedRequest } from '../../shared/auth/auth.middleware.js';
 import { authService } from './auth.service.js';
-import { loginSchema, registerSchema, saveLocationSchema } from './auth.schemas.js';
+import { forgotPasswordSchema, loginSchema, registerSchema, resetPasswordSchema, saveLocationSchema } from './auth.schemas.js';
 
 const asyncHandler = (handler: RequestHandler): RequestHandler => (request, response, next) => {
   Promise.resolve(handler(request, response, next)).catch(next);
@@ -24,6 +24,24 @@ authRouter.post(
   asyncHandler(async (request: Request, response: Response) => {
     const payload = loginSchema.parse(request.body);
     const result = await authService.login(payload);
+    sendOk(response, result, { source: 'fallback', fallback: false });
+  })
+);
+
+authRouter.post(
+  '/auth/forgot-password',
+  asyncHandler(async (request: Request, response: Response) => {
+    const payload = forgotPasswordSchema.parse(request.body);
+    const result = await authService.forgotPassword(payload);
+    sendOk(response, result, { source: 'fallback', fallback: false });
+  })
+);
+
+authRouter.post(
+  '/auth/reset-password',
+  asyncHandler(async (request: Request, response: Response) => {
+    const payload = resetPasswordSchema.parse(request.body);
+    const result = await authService.resetPassword(payload);
     sendOk(response, result, { source: 'fallback', fallback: false });
   })
 );

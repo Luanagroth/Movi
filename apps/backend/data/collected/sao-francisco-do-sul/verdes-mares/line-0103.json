@@ -1,0 +1,2936 @@
+{
+  "manifestVersion": "1.0",
+  "citySlug": "sao-francisco-do-sul",
+  "providerSlug": "verdes-mares",
+  "entityType": "line",
+  "data": {
+    "id": "collected-line-0103",
+    "code": "0103",
+    "slug": "0103-enseada-via-forte",
+    "name": "Enseada via Forte",
+    "operator": "Verdes Mares",
+    "mode": "urban",
+    "summary": "Linha Centro - Enseada via Forte",
+    "routeLabel": "Centro -> Enseada",
+    "originLabel": "Centro",
+    "destinationLabel": "Enseada",
+    "fares": [
+      {
+        "id": "collected-line-0103-fare-1",
+        "label": "Tarifa urbana municipal",
+        "appliesTo": "line",
+        "source": {
+          "sourceId": "verdes-mares-sfs",
+          "sourceName": "Verdes Mares Sao Francisco do Sul",
+          "sourceUrl": "https://vmares.com.br/sao-francisco-do-sul/",
+          "collectedAt": "2026-04-16T12:00:00.000Z",
+          "collectionMethod": "manual",
+          "sourceLineRef": "0103"
+        }
+      }
+    ],
+    "directions": [
+      {
+        "id": "collected-line-0103-outbound",
+        "type": "outbound",
+        "name": "Sa?da do Centro",
+        "routeLabel": "Centro -> Enseada",
+        "originLabel": "Centro",
+        "destinationLabel": "Enseada",
+        "mapPath": [
+          {
+            "sequence": 1,
+            "lat": -26.24342,
+            "lng": -48.63788
+          },
+          {
+            "sequence": 2,
+            "lat": -26.24352,
+            "lng": -48.63783
+          },
+          {
+            "sequence": 3,
+            "lat": -26.24331,
+            "lng": -48.63742
+          },
+          {
+            "sequence": 4,
+            "lat": -26.24315,
+            "lng": -48.63715
+          },
+          {
+            "sequence": 5,
+            "lat": -26.2424,
+            "lng": -48.63635
+          },
+          {
+            "sequence": 6,
+            "lat": -26.24232,
+            "lng": -48.63623
+          },
+          {
+            "sequence": 7,
+            "lat": -26.24225,
+            "lng": -48.63609
+          },
+          {
+            "sequence": 8,
+            "lat": -26.24219,
+            "lng": -48.63594
+          },
+          {
+            "sequence": 9,
+            "lat": -26.24213,
+            "lng": -48.63566
+          },
+          {
+            "sequence": 10,
+            "lat": -26.24348,
+            "lng": -48.63507
+          },
+          {
+            "sequence": 11,
+            "lat": -26.24466,
+            "lng": -48.63455
+          },
+          {
+            "sequence": 12,
+            "lat": -26.24501,
+            "lng": -48.6344
+          },
+          {
+            "sequence": 13,
+            "lat": -26.24559,
+            "lng": -48.63418
+          },
+          {
+            "sequence": 14,
+            "lat": -26.24567,
+            "lng": -48.63419
+          },
+          {
+            "sequence": 15,
+            "lat": -26.24583,
+            "lng": -48.63427
+          },
+          {
+            "sequence": 16,
+            "lat": -26.24593,
+            "lng": -48.63435
+          },
+          {
+            "sequence": 17,
+            "lat": -26.24601,
+            "lng": -48.63445
+          },
+          {
+            "sequence": 18,
+            "lat": -26.24647,
+            "lng": -48.63507
+          },
+          {
+            "sequence": 19,
+            "lat": -26.2467,
+            "lng": -48.6354
+          },
+          {
+            "sequence": 20,
+            "lat": -26.24797,
+            "lng": -48.63721
+          },
+          {
+            "sequence": 21,
+            "lat": -26.24819,
+            "lng": -48.63752
+          },
+          {
+            "sequence": 22,
+            "lat": -26.2483,
+            "lng": -48.63768
+          },
+          {
+            "sequence": 23,
+            "lat": -26.24858,
+            "lng": -48.63819
+          },
+          {
+            "sequence": 24,
+            "lat": -26.24899,
+            "lng": -48.63895
+          },
+          {
+            "sequence": 25,
+            "lat": -26.24931,
+            "lng": -48.63845
+          },
+          {
+            "sequence": 26,
+            "lat": -26.24944,
+            "lng": -48.63825
+          },
+          {
+            "sequence": 27,
+            "lat": -26.24983,
+            "lng": -48.63762
+          },
+          {
+            "sequence": 28,
+            "lat": -26.25024,
+            "lng": -48.63698
+          },
+          {
+            "sequence": 29,
+            "lat": -26.25048,
+            "lng": -48.63658
+          },
+          {
+            "sequence": 30,
+            "lat": -26.25049,
+            "lng": -48.63648
+          },
+          {
+            "sequence": 31,
+            "lat": -26.24924,
+            "lng": -48.63558
+          },
+          {
+            "sequence": 32,
+            "lat": -26.24916,
+            "lng": -48.63552
+          },
+          {
+            "sequence": 33,
+            "lat": -26.24843,
+            "lng": -48.635
+          },
+          {
+            "sequence": 34,
+            "lat": -26.24823,
+            "lng": -48.63485
+          },
+          {
+            "sequence": 35,
+            "lat": -26.2479,
+            "lng": -48.63461
+          },
+          {
+            "sequence": 36,
+            "lat": -26.24775,
+            "lng": -48.63451
+          },
+          {
+            "sequence": 37,
+            "lat": -26.24757,
+            "lng": -48.63438
+          },
+          {
+            "sequence": 38,
+            "lat": -26.2461,
+            "lng": -48.63332
+          },
+          {
+            "sequence": 39,
+            "lat": -26.24541,
+            "lng": -48.63283
+          },
+          {
+            "sequence": 40,
+            "lat": -26.24515,
+            "lng": -48.63265
+          },
+          {
+            "sequence": 41,
+            "lat": -26.24486,
+            "lng": -48.63245
+          },
+          {
+            "sequence": 42,
+            "lat": -26.24557,
+            "lng": -48.63092
+          },
+          {
+            "sequence": 43,
+            "lat": -26.24629,
+            "lng": -48.62932
+          },
+          {
+            "sequence": 44,
+            "lat": -26.24677,
+            "lng": -48.62826
+          },
+          {
+            "sequence": 45,
+            "lat": -26.24715,
+            "lng": -48.62744
+          },
+          {
+            "sequence": 46,
+            "lat": -26.24839,
+            "lng": -48.62479
+          },
+          {
+            "sequence": 47,
+            "lat": -26.24918,
+            "lng": -48.62306
+          },
+          {
+            "sequence": 48,
+            "lat": -26.24958,
+            "lng": -48.62218
+          },
+          {
+            "sequence": 49,
+            "lat": -26.24979,
+            "lng": -48.6219
+          },
+          {
+            "sequence": 50,
+            "lat": -26.25015,
+            "lng": -48.62129
+          },
+          {
+            "sequence": 51,
+            "lat": -26.25041,
+            "lng": -48.62075
+          },
+          {
+            "sequence": 52,
+            "lat": -26.25052,
+            "lng": -48.62035
+          },
+          {
+            "sequence": 53,
+            "lat": -26.25071,
+            "lng": -48.61964
+          },
+          {
+            "sequence": 54,
+            "lat": -26.25088,
+            "lng": -48.6193
+          },
+          {
+            "sequence": 55,
+            "lat": -26.25095,
+            "lng": -48.61918
+          },
+          {
+            "sequence": 56,
+            "lat": -26.25126,
+            "lng": -48.61879
+          },
+          {
+            "sequence": 57,
+            "lat": -26.25127,
+            "lng": -48.61878
+          },
+          {
+            "sequence": 58,
+            "lat": -26.25141,
+            "lng": -48.61855
+          },
+          {
+            "sequence": 59,
+            "lat": -26.25155,
+            "lng": -48.61837
+          },
+          {
+            "sequence": 60,
+            "lat": -26.25173,
+            "lng": -48.61821
+          },
+          {
+            "sequence": 61,
+            "lat": -26.2519,
+            "lng": -48.61809
+          },
+          {
+            "sequence": 62,
+            "lat": -26.25197,
+            "lng": -48.61807
+          },
+          {
+            "sequence": 63,
+            "lat": -26.25202,
+            "lng": -48.61803
+          },
+          {
+            "sequence": 64,
+            "lat": -26.25206,
+            "lng": -48.61797
+          },
+          {
+            "sequence": 65,
+            "lat": -26.25208,
+            "lng": -48.6179
+          },
+          {
+            "sequence": 66,
+            "lat": -26.25209,
+            "lng": -48.61783
+          },
+          {
+            "sequence": 67,
+            "lat": -26.25214,
+            "lng": -48.61762
+          },
+          {
+            "sequence": 68,
+            "lat": -26.25225,
+            "lng": -48.61734
+          },
+          {
+            "sequence": 69,
+            "lat": -26.25242,
+            "lng": -48.61711
+          },
+          {
+            "sequence": 70,
+            "lat": -26.25255,
+            "lng": -48.61694
+          },
+          {
+            "sequence": 71,
+            "lat": -26.25264,
+            "lng": -48.61681
+          },
+          {
+            "sequence": 72,
+            "lat": -26.25288,
+            "lng": -48.61646
+          },
+          {
+            "sequence": 73,
+            "lat": -26.25301,
+            "lng": -48.61625
+          },
+          {
+            "sequence": 74,
+            "lat": -26.25316,
+            "lng": -48.61591
+          },
+          {
+            "sequence": 75,
+            "lat": -26.25322,
+            "lng": -48.61572
+          },
+          {
+            "sequence": 76,
+            "lat": -26.2533,
+            "lng": -48.61542
+          },
+          {
+            "sequence": 77,
+            "lat": -26.25332,
+            "lng": -48.61532
+          },
+          {
+            "sequence": 78,
+            "lat": -26.25341,
+            "lng": -48.61489
+          },
+          {
+            "sequence": 79,
+            "lat": -26.25347,
+            "lng": -48.6145
+          },
+          {
+            "sequence": 80,
+            "lat": -26.25349,
+            "lng": -48.61429
+          },
+          {
+            "sequence": 81,
+            "lat": -26.25349,
+            "lng": -48.61417
+          },
+          {
+            "sequence": 82,
+            "lat": -26.25349,
+            "lng": -48.61401
+          },
+          {
+            "sequence": 83,
+            "lat": -26.25347,
+            "lng": -48.61369
+          },
+          {
+            "sequence": 84,
+            "lat": -26.25344,
+            "lng": -48.61311
+          },
+          {
+            "sequence": 85,
+            "lat": -26.25336,
+            "lng": -48.61283
+          },
+          {
+            "sequence": 86,
+            "lat": -26.25328,
+            "lng": -48.61265
+          },
+          {
+            "sequence": 87,
+            "lat": -26.25313,
+            "lng": -48.61237
+          },
+          {
+            "sequence": 88,
+            "lat": -26.25284,
+            "lng": -48.61192
+          },
+          {
+            "sequence": 89,
+            "lat": -26.25258,
+            "lng": -48.6116
+          },
+          {
+            "sequence": 90,
+            "lat": -26.25151,
+            "lng": -48.61034
+          },
+          {
+            "sequence": 91,
+            "lat": -26.25138,
+            "lng": -48.61019
+          },
+          {
+            "sequence": 92,
+            "lat": -26.25125,
+            "lng": -48.61004
+          },
+          {
+            "sequence": 93,
+            "lat": -26.25116,
+            "lng": -48.60996
+          },
+          {
+            "sequence": 94,
+            "lat": -26.25075,
+            "lng": -48.60972
+          },
+          {
+            "sequence": 95,
+            "lat": -26.25063,
+            "lng": -48.60955
+          },
+          {
+            "sequence": 96,
+            "lat": -26.2504,
+            "lng": -48.60923
+          },
+          {
+            "sequence": 97,
+            "lat": -26.25015,
+            "lng": -48.6089
+          },
+          {
+            "sequence": 98,
+            "lat": -26.25001,
+            "lng": -48.6087
+          },
+          {
+            "sequence": 99,
+            "lat": -26.24986,
+            "lng": -48.6085
+          },
+          {
+            "sequence": 100,
+            "lat": -26.24965,
+            "lng": -48.60821
+          },
+          {
+            "sequence": 101,
+            "lat": -26.24922,
+            "lng": -48.60763
+          },
+          {
+            "sequence": 102,
+            "lat": -26.24895,
+            "lng": -48.60726
+          },
+          {
+            "sequence": 103,
+            "lat": -26.24866,
+            "lng": -48.60687
+          },
+          {
+            "sequence": 104,
+            "lat": -26.24844,
+            "lng": -48.60657
+          },
+          {
+            "sequence": 105,
+            "lat": -26.24772,
+            "lng": -48.60558
+          },
+          {
+            "sequence": 106,
+            "lat": -26.24767,
+            "lng": -48.60552
+          },
+          {
+            "sequence": 107,
+            "lat": -26.24762,
+            "lng": -48.60545
+          },
+          {
+            "sequence": 108,
+            "lat": -26.24713,
+            "lng": -48.60479
+          },
+          {
+            "sequence": 109,
+            "lat": -26.24695,
+            "lng": -48.60455
+          },
+          {
+            "sequence": 110,
+            "lat": -26.24599,
+            "lng": -48.60324
+          },
+          {
+            "sequence": 111,
+            "lat": -26.24552,
+            "lng": -48.60259
+          },
+          {
+            "sequence": 112,
+            "lat": -26.24527,
+            "lng": -48.60225
+          },
+          {
+            "sequence": 113,
+            "lat": -26.24489,
+            "lng": -48.60174
+          },
+          {
+            "sequence": 114,
+            "lat": -26.24459,
+            "lng": -48.60133
+          },
+          {
+            "sequence": 115,
+            "lat": -26.24451,
+            "lng": -48.60122
+          },
+          {
+            "sequence": 116,
+            "lat": -26.24438,
+            "lng": -48.60105
+          },
+          {
+            "sequence": 117,
+            "lat": -26.24413,
+            "lng": -48.6007
+          },
+          {
+            "sequence": 118,
+            "lat": -26.24367,
+            "lng": -48.60008
+          },
+          {
+            "sequence": 119,
+            "lat": -26.24223,
+            "lng": -48.59812
+          },
+          {
+            "sequence": 120,
+            "lat": -26.24214,
+            "lng": -48.59801
+          },
+          {
+            "sequence": 121,
+            "lat": -26.24002,
+            "lng": -48.59512
+          },
+          {
+            "sequence": 122,
+            "lat": -26.23932,
+            "lng": -48.59417
+          },
+          {
+            "sequence": 123,
+            "lat": -26.23901,
+            "lng": -48.59374
+          },
+          {
+            "sequence": 124,
+            "lat": -26.23883,
+            "lng": -48.5935
+          },
+          {
+            "sequence": 125,
+            "lat": -26.23863,
+            "lng": -48.59322
+          },
+          {
+            "sequence": 126,
+            "lat": -26.23574,
+            "lng": -48.58929
+          },
+          {
+            "sequence": 127,
+            "lat": -26.23531,
+            "lng": -48.58871
+          },
+          {
+            "sequence": 128,
+            "lat": -26.2347,
+            "lng": -48.58788
+          },
+          {
+            "sequence": 129,
+            "lat": -26.23456,
+            "lng": -48.58769
+          },
+          {
+            "sequence": 130,
+            "lat": -26.23446,
+            "lng": -48.58756
+          },
+          {
+            "sequence": 131,
+            "lat": -26.23405,
+            "lng": -48.58699
+          },
+          {
+            "sequence": 132,
+            "lat": -26.23397,
+            "lng": -48.58689
+          },
+          {
+            "sequence": 133,
+            "lat": -26.23378,
+            "lng": -48.58662
+          },
+          {
+            "sequence": 134,
+            "lat": -26.23372,
+            "lng": -48.58655
+          },
+          {
+            "sequence": 135,
+            "lat": -26.23304,
+            "lng": -48.58561
+          },
+          {
+            "sequence": 136,
+            "lat": -26.23285,
+            "lng": -48.58536
+          },
+          {
+            "sequence": 137,
+            "lat": -26.23221,
+            "lng": -48.58449
+          },
+          {
+            "sequence": 138,
+            "lat": -26.23152,
+            "lng": -48.58354
+          },
+          {
+            "sequence": 139,
+            "lat": -26.23143,
+            "lng": -48.58342
+          },
+          {
+            "sequence": 140,
+            "lat": -26.23101,
+            "lng": -48.58284
+          },
+          {
+            "sequence": 141,
+            "lat": -26.23085,
+            "lng": -48.58263
+          },
+          {
+            "sequence": 142,
+            "lat": -26.23062,
+            "lng": -48.58231
+          },
+          {
+            "sequence": 143,
+            "lat": -26.23028,
+            "lng": -48.58184
+          },
+          {
+            "sequence": 144,
+            "lat": -26.23009,
+            "lng": -48.58158
+          },
+          {
+            "sequence": 145,
+            "lat": -26.23010662484238,
+            "lng": -48.58156423194107
+          },
+          {
+            "sequence": 146,
+            "lat": -26.228341720217372,
+            "lng": -48.579116629838914
+          },
+          {
+            "sequence": 147,
+            "lat": -26.225063901907514,
+            "lng": -48.57663070547908
+          },
+          {
+            "sequence": 148,
+            "lat": -26.220120350734142,
+            "lng": -48.57404903955047
+          },
+          {
+            "sequence": 149,
+            "lat": -26.218306317713612,
+            "lng": -48.57186603731601
+          },
+          {
+            "sequence": 150,
+            "lat": -26.217178784558783,
+            "lng": -48.5703807857199
+          },
+          {
+            "sequence": 151,
+            "lat": -26.215470858755566,
+            "lng": -48.56774623787437
+          },
+          {
+            "sequence": 152,
+            "lat": -26.21448188915687,
+            "lng": -48.56359941296332
+          },
+          {
+            "sequence": 153,
+            "lat": -26.213124773000214,
+            "lng": -48.55826110811527
+          },
+          {
+            "sequence": 154,
+            "lat": -26.20879120798978,
+            "lng": -48.544997895494866
+          },
+          {
+            "sequence": 155,
+            "lat": -26.20707248293841,
+            "lng": -48.540736957872326
+          },
+          {
+            "sequence": 156,
+            "lat": -26.202860516163796,
+            "lng": -48.53697643723416
+          },
+          {
+            "sequence": 157,
+            "lat": -26.20112475028817,
+            "lng": -48.53579338494922
+          },
+          {
+            "sequence": 158,
+            "lat": -26.198052085192742,
+            "lng": -48.532262502576124
+          },
+          {
+            "sequence": 159,
+            "lat": -26.193119216990677,
+            "lng": -48.53090170484589
+          },
+          {
+            "sequence": 160,
+            "lat": -26.188916766213776,
+            "lng": -48.53361700327354
+          },
+          {
+            "sequence": 161,
+            "lat": -26.186540711160877,
+            "lng": -48.53409731180496
+          },
+          {
+            "sequence": 162,
+            "lat": -26.184935318684133,
+            "lng": -48.534467259516056
+          },
+          {
+            "sequence": 163,
+            "lat": -26.1839591895995,
+            "lng": -48.53401448771022
+          },
+          {
+            "sequence": 164,
+            "lat": -26.181932580788043,
+            "lng": -48.53379362342522
+          },
+          {
+            "sequence": 165,
+            "lat": -26.18007441215611,
+            "lng": -48.53397031485724
+          },
+          {
+            "sequence": 166,
+            "lat": -26.178543258912637,
+            "lng": -48.53401448772447
+          },
+          {
+            "sequence": 167,
+            "lat": -26.17719047574594,
+            "lng": -48.53308133608954
+          },
+          {
+            "sequence": 168,
+            "lat": -26.17398170061045,
+            "lng": -48.533335681696926
+          },
+          {
+            "sequence": 169,
+            "lat": -26.172762662175412,
+            "lng": -48.53447313279473
+          },
+          {
+            "sequence": 170,
+            "lat": -26.168114753304362,
+            "lng": -48.53456075459785
+          },
+          {
+            "sequence": 171,
+            "lat": -26.17332262855911,
+            "lng": -48.534197052437534
+          },
+          {
+            "sequence": 172,
+            "lat": -26.17457101554951,
+            "lng": -48.53311601462382
+          },
+          {
+            "sequence": 173,
+            "lat": -26.177195431024245,
+            "lng": -48.533213854661
+          },
+          {
+            "sequence": 174,
+            "lat": -26.178439199227615,
+            "lng": -48.534196700760226
+          },
+          {
+            "sequence": 175,
+            "lat": -26.180307304245265,
+            "lng": -48.53405866057154
+          },
+          {
+            "sequence": 176,
+            "lat": -26.182428087412184,
+            "lng": -48.533821231460934
+          },
+          {
+            "sequence": 177,
+            "lat": -26.185009642896798,
+            "lng": -48.534583213266075
+          },
+          {
+            "sequence": 178,
+            "lat": -26.18674386109734,
+            "lng": -48.53421326555498
+          },
+          {
+            "sequence": 179,
+            "lat": -26.189433106332924,
+            "lng": -48.53370959810906
+          },
+          {
+            "sequence": 180,
+            "lat": -26.19323295743177,
+            "lng": -48.531099762651344
+          },
+          {
+            "sequence": 181,
+            "lat": -26.197666459220525,
+            "lng": -48.52983036886005
+          },
+          {
+            "sequence": 182,
+            "lat": -26.199997505028865,
+            "lng": -48.52946091312311
+          },
+          {
+            "sequence": 183,
+            "lat": -26.20184500579295,
+            "lng": -48.529267945915116
+          },
+          {
+            "sequence": 184,
+            "lat": -26.204301635690246,
+            "lng": -48.528827707110295
+          },
+          {
+            "sequence": 185,
+            "lat": -26.206303864389408,
+            "lng": -48.52807668858587
+          },
+          {
+            "sequence": 186,
+            "lat": -26.20816119492769,
+            "lng": -48.527452854633125
+          },
+          {
+            "sequence": 187,
+            "lat": -26.211295061363288,
+            "lng": -48.52632691535398
+          },
+          {
+            "sequence": 188,
+            "lat": -26.21361924673476,
+            "lng": -48.52550695601464
+          },
+          {
+            "sequence": 189,
+            "lat": -26.215994914241,
+            "lng": -48.524635501638556
+          },
+          {
+            "sequence": 190,
+            "lat": -26.21936731928632,
+            "lng": -48.52342140725109
+          },
+          {
+            "sequence": 191,
+            "lat": -26.222942407526915,
+            "lng": -48.521630057592056
+          },
+          {
+            "sequence": 192,
+            "lat": -26.224075476667394,
+            "lng": -48.51809346809671
+          },
+          {
+            "sequence": 193,
+            "lat": -26.22524944329803,
+            "lng": -48.5148267615483
+          },
+          {
+            "sequence": 194,
+            "lat": -26.227065342408654,
+            "lng": -48.51013744052271
+          },
+          {
+            "sequence": 195,
+            "lat": -26.227423033945513,
+            "lng": -48.504468115373506
+          },
+          {
+            "sequence": 196,
+            "lat": -26.226063872255548,
+            "lng": -48.502338993888074
+          },
+          {
+            "sequence": 197,
+            "lat": -26.22455012053676,
+            "lng": -48.50120214205206
+          },
+          {
+            "sequence": 198,
+            "lat": -26.221172351839055,
+            "lng": -48.50095605474087
+          }
+        ],
+        "stops": [
+          {
+            "id": "collected-line-0103-outbound-stop-1",
+            "name": "Praça Dr. Getúlio Vargas 1",
+            "sequence": 1,
+            "location": {
+              "lat": -26.243437512602945,
+              "lng": -48.637910711972246
+            },
+            "isTimingPoint": true
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-2",
+            "name": "Ogmo SFS",
+            "sequence": 2,
+            "location": {
+              "lat": -26.24347278215267,
+              "lng": -48.635064229915336
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-3",
+            "name": "Antiga Multipaper (Sentido Centro/Bairro)",
+            "sequence": 3,
+            "location": {
+              "lat": -26.244699006604957,
+              "lng": -48.63466469668285
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-4",
+            "name": "Carioca (Bica d'água)",
+            "sequence": 4,
+            "location": {
+              "lat": -26.24659710935892,
+              "lng": -48.63549497664863
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-5",
+            "name": "Colégio Adventista",
+            "sequence": 5,
+            "location": {
+              "lat": -26.247834789940356,
+              "lng": -48.63733216779835
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-6",
+            "name": "Restaurante Tom Brasil",
+            "sequence": 6,
+            "location": {
+              "lat": -26.249248390210585,
+              "lng": -48.63840582899403
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-7",
+            "name": "Rodoviária Velha",
+            "sequence": 7,
+            "location": {
+              "lat": -26.249224290355095,
+              "lng": -48.63560230865354
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-8",
+            "name": "Millium",
+            "sequence": 8,
+            "location": {
+              "lat": -26.24773780113116,
+              "lng": -48.634526537853745
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-9",
+            "name": "Colégio Santa Catarina, Rua Barão do Rio Branco 730",
+            "sequence": 9,
+            "location": {
+              "lat": -26.24515882173163,
+              "lng": -48.632634968370155
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-10",
+            "name": "Igreja Quadrangular (antigo Super 10)",
+            "sequence": 10,
+            "location": {
+              "lat": -26.246340804596205,
+              "lng": -48.629343796815185
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-11",
+            "name": "Auto Escola São Francisco",
+            "sequence": 11,
+            "location": {
+              "lat": -26.24719855818423,
+              "lng": -48.627462845459284
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-12",
+            "name": "Viação Verdes Mares",
+            "sequence": 12,
+            "location": {
+              "lat": -26.249219862252595,
+              "lng": -48.62307844858382
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-13",
+            "name": "Antiga Souza Vidal",
+            "sequence": 13,
+            "location": {
+              "lat": -26.25129673331392,
+              "lng": -48.61880208945875
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-14",
+            "name": "Borracharia do Eldo",
+            "sequence": 14,
+            "location": {
+              "lat": -26.252586180491125,
+              "lng": -48.61696827912255
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-15",
+            "name": "Gelo da Ilha",
+            "sequence": 15,
+            "location": {
+              "lat": -26.25350335302604,
+              "lng": -48.61416680995571
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-16",
+            "name": "Polimix",
+            "sequence": 16,
+            "location": {
+              "lat": -26.2502089362594,
+              "lng": -48.60884798948869
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-17",
+            "name": "Padaria KM 1,5",
+            "sequence": 17,
+            "location": {
+              "lat": -26.247697801414972,
+              "lng": -48.60548822716956
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-18",
+            "name": "EM Franklin de Oliveira (Sentido Centro/Bairro)",
+            "sequence": 18,
+            "location": {
+              "lat": -26.244593896062582,
+              "lng": -48.601328070731256
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-19",
+            "name": "Antes do Rocha",
+            "sequence": 19,
+            "location": {
+              "lat": -26.238657459849893,
+              "lng": -48.59319657509188
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-20",
+            "name": "Porto Seco Rocha (Sentido Centro/Bairro)",
+            "sequence": 20,
+            "location": {
+              "lat": -26.23577626467118,
+              "lng": -48.589257238770365
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-21",
+            "name": "KM 3 (Sentido Centro/Bairro)",
+            "sequence": 21,
+            "location": {
+              "lat": -26.233972591742404,
+              "lng": -48.5868932472597
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-22",
+            "name": "Pró-Ilha",
+            "sequence": 22,
+            "location": {
+              "lat": -26.23010662484238,
+              "lng": -48.58156423194107
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-23",
+            "name": "Associação do Porto (Sentido Centro/Bairro)",
+            "sequence": 23,
+            "location": {
+              "lat": -26.228341720217372,
+              "lng": -48.579116629838914
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-24",
+            "name": "Posto Mediterrâneo (Centro/Bairro)",
+            "sequence": 24,
+            "location": {
+              "lat": -26.225063901907514,
+              "lng": -48.57663070547908
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-25",
+            "name": "Próximo a Univille (Centro/Bairro)",
+            "sequence": 25,
+            "location": {
+              "lat": -26.220120350734142,
+              "lng": -48.57404903955047
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-26",
+            "name": "EM João Dias",
+            "sequence": 26,
+            "location": {
+              "lat": -26.218306317713612,
+              "lng": -48.57186603731601
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-27",
+            "name": "Rua Rodovia Duque de Caxias, 8111",
+            "sequence": 27,
+            "location": {
+              "lat": -26.217178784558783,
+              "lng": -48.5703807857199
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-28",
+            "name": "Peixaria do Pedrinho",
+            "sequence": 28,
+            "location": {
+              "lat": -26.215470858755566,
+              "lng": -48.56774623787437
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-29",
+            "name": "Mercado Palhares",
+            "sequence": 29,
+            "location": {
+              "lat": -26.21448188915687,
+              "lng": -48.56359941296332
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-30",
+            "name": "Lajes Ubatuba (Centro/Bairro)",
+            "sequence": 30,
+            "location": {
+              "lat": -26.213124773000214,
+              "lng": -48.55826110811527
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-31",
+            "name": "Posto Ká Brasil",
+            "sequence": 31,
+            "location": {
+              "lat": -26.20879120798978,
+              "lng": -48.544997895494866
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-32",
+            "name": "Mercado Bona (Centro/Bairro)",
+            "sequence": 32,
+            "location": {
+              "lat": -26.20707248293841,
+              "lng": -48.540736957872326
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-33",
+            "name": "Estrada do Forte 1",
+            "sequence": 33,
+            "location": {
+              "lat": -26.202860516163796,
+              "lng": -48.53697643723416
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-34",
+            "name": "Estrada do Forte, 630",
+            "sequence": 34,
+            "location": {
+              "lat": -26.20112475028817,
+              "lng": -48.53579338494922
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-35",
+            "name": "Estrada do Forte 25",
+            "sequence": 35,
+            "location": {
+              "lat": -26.198052085192742,
+              "lng": -48.532262502576124
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-36",
+            "name": "Estrada do Forte 4",
+            "sequence": 36,
+            "location": {
+              "lat": -26.193119216990677,
+              "lng": -48.53090170484589
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-37",
+            "name": "Estrada do Forte 5",
+            "sequence": 37,
+            "location": {
+              "lat": -26.188916766213776,
+              "lng": -48.53361700327354
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-38",
+            "name": "Estrada do Forte 6",
+            "sequence": 38,
+            "location": {
+              "lat": -26.186540711160877,
+              "lng": -48.53409731180496
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-39",
+            "name": "Estrada do Forte 7",
+            "sequence": 39,
+            "location": {
+              "lat": -26.184935318684133,
+              "lng": -48.534467259516056
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-40",
+            "name": "Estrada do Forte 8",
+            "sequence": 40,
+            "location": {
+              "lat": -26.1839591895995,
+              "lng": -48.53401448771022
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-41",
+            "name": "Estrada do Forte 9",
+            "sequence": 41,
+            "location": {
+              "lat": -26.181932580788043,
+              "lng": -48.53379362342522
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-42",
+            "name": "Estrada do Forte 10",
+            "sequence": 42,
+            "location": {
+              "lat": -26.18007441215611,
+              "lng": -48.53397031485724
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-43",
+            "name": "Estrada do Forte 11",
+            "sequence": 43,
+            "location": {
+              "lat": -26.178543258912637,
+              "lng": -48.53401448772447
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-44",
+            "name": "Estrada do Forte 12",
+            "sequence": 44,
+            "location": {
+              "lat": -26.17719047574594,
+              "lng": -48.53308133608954
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-45",
+            "name": "Estrada do Forte 13",
+            "sequence": 45,
+            "location": {
+              "lat": -26.17398170061045,
+              "lng": -48.533335681696926
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-46",
+            "name": "Estrada do Forte 14",
+            "sequence": 46,
+            "location": {
+              "lat": -26.172762662175412,
+              "lng": -48.53447313279473
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-47",
+            "name": "Forte Marechal Luz",
+            "sequence": 47,
+            "location": {
+              "lat": -26.168114753304362,
+              "lng": -48.53456075459785
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-48",
+            "name": "Estrada do Forte 15",
+            "sequence": 48,
+            "location": {
+              "lat": -26.17332262855911,
+              "lng": -48.534197052437534
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-49",
+            "name": "Estrada do Forte 16",
+            "sequence": 49,
+            "location": {
+              "lat": -26.17457101554951,
+              "lng": -48.53311601462382
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-50",
+            "name": "Estrada do Forte 17",
+            "sequence": 50,
+            "location": {
+              "lat": -26.177195431024245,
+              "lng": -48.533213854661
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-51",
+            "name": "Estrada do Forte 18",
+            "sequence": 51,
+            "location": {
+              "lat": -26.178439199227615,
+              "lng": -48.534196700760226
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-52",
+            "name": "Estrada do Forte 19",
+            "sequence": 52,
+            "location": {
+              "lat": -26.180307304245265,
+              "lng": -48.53405866057154
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-53",
+            "name": "Estrada do Forte 20",
+            "sequence": 53,
+            "location": {
+              "lat": -26.182428087412184,
+              "lng": -48.533821231460934
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-54",
+            "name": "Estrada do Forte 21",
+            "sequence": 54,
+            "location": {
+              "lat": -26.185009642896798,
+              "lng": -48.534583213266075
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-55",
+            "name": "Estrada do Forte 22",
+            "sequence": 55,
+            "location": {
+              "lat": -26.18674386109734,
+              "lng": -48.53421326555498
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-56",
+            "name": "Estrada do Forte 23",
+            "sequence": 56,
+            "location": {
+              "lat": -26.189433106332924,
+              "lng": -48.53370959810906
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-57",
+            "name": "Estrada do Forte 24",
+            "sequence": 57,
+            "location": {
+              "lat": -26.19323295743177,
+              "lng": -48.531099762651344
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-58",
+            "name": "Gustavo Vogelsanger 1",
+            "sequence": 58,
+            "location": {
+              "lat": -26.197666459220525,
+              "lng": -48.52983036886005
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-59",
+            "name": "Av. Bogotá 1",
+            "sequence": 59,
+            "location": {
+              "lat": -26.199997505028865,
+              "lng": -48.52946091312311
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-60",
+            "name": "Av. Bogotá 2",
+            "sequence": 60,
+            "location": {
+              "lat": -26.20184500579295,
+              "lng": -48.529267945915116
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-61",
+            "name": "Secretaria de Obras das Praias (Sentido Centro/Bairro)",
+            "sequence": 61,
+            "location": {
+              "lat": -26.204301635690246,
+              "lng": -48.528827707110295
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-62",
+            "name": "Av. Bogotá 4 (Próximo FT)",
+            "sequence": 62,
+            "location": {
+              "lat": -26.206303864389408,
+              "lng": -48.52807668858587
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-63",
+            "name": "Antiga Reinert Mat. Construção",
+            "sequence": 63,
+            "location": {
+              "lat": -26.20816119492769,
+              "lng": -48.527452854633125
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-64",
+            "name": "Multipraia Society",
+            "sequence": 64,
+            "location": {
+              "lat": -26.211295061363288,
+              "lng": -48.52632691535398
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-65",
+            "name": "Próximo Rua Armazém",
+            "sequence": 65,
+            "location": {
+              "lat": -26.21361924673476,
+              "lng": -48.52550695601464
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-66",
+            "name": "Ubatuba Bebidas",
+            "sequence": 66,
+            "location": {
+              "lat": -26.215994914241,
+              "lng": -48.524635501638556
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-67",
+            "name": "Próximo Contabilidade Enseada",
+            "sequence": 67,
+            "location": {
+              "lat": -26.21936731928632,
+              "lng": -48.52342140725109
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-68",
+            "name": "Entrada Rua Felipe Musse",
+            "sequence": 68,
+            "location": {
+              "lat": -26.222942407526915,
+              "lng": -48.521630057592056
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-69",
+            "name": "Pizzaria Kanto da Pizza",
+            "sequence": 69,
+            "location": {
+              "lat": -26.224075476667394,
+              "lng": -48.51809346809671
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-70",
+            "name": "Mercado Pato Branco",
+            "sequence": 70,
+            "location": {
+              "lat": -26.22524944329803,
+              "lng": -48.5148267615483
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-71",
+            "name": "Aquamires",
+            "sequence": 71,
+            "location": {
+              "lat": -26.227065342408654,
+              "lng": -48.51013744052271
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-72",
+            "name": "Santa Catarina 3",
+            "sequence": 72,
+            "location": {
+              "lat": -26.227423033945513,
+              "lng": -48.504468115373506
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-73",
+            "name": "Santa Catarina 4",
+            "sequence": 73,
+            "location": {
+              "lat": -26.226063872255548,
+              "lng": -48.502338993888074
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-74",
+            "name": "Fundos Hotel Fragata",
+            "sequence": 74,
+            "location": {
+              "lat": -26.22455012053676,
+              "lng": -48.50120214205206
+            }
+          },
+          {
+            "id": "collected-line-0103-outbound-stop-75",
+            "name": "Ponto Final Enseada",
+            "sequence": 75,
+            "location": {
+              "lat": -26.221172351839055,
+              "lng": -48.50095605474087
+            },
+            "isTimingPoint": true
+          }
+        ],
+        "departures": [
+          {
+            "id": "collected-line-0103-outbound-weekday-0700",
+            "serviceDay": "weekday",
+            "departureTime": "07:00",
+            "stopPredictions": []
+          },
+          {
+            "id": "collected-line-0103-outbound-weekday-1130",
+            "serviceDay": "weekday",
+            "departureTime": "11:30",
+            "stopPredictions": []
+          },
+          {
+            "id": "collected-line-0103-outbound-weekday-1650",
+            "serviceDay": "weekday",
+            "departureTime": "16:50",
+            "stopPredictions": []
+          }
+        ],
+        "source": {
+          "sourceId": "verdes-mares-sfs",
+          "sourceName": "Verdes Mares Sao Francisco do Sul",
+          "sourceUrl": "https://vmares.com.br/sao-francisco-do-sul/",
+          "collectedAt": "2026-04-16T12:00:00.000Z",
+          "collectionMethod": "manual",
+          "sourceLineRef": "0103",
+          "sourceDirectionRef": "outbound"
+        }
+      },
+      {
+        "id": "collected-line-0103-inbound",
+        "type": "inbound",
+        "name": "Sa?da da Enseada",
+        "routeLabel": "Enseada -> Centro",
+        "originLabel": "Enseada",
+        "destinationLabel": "Centro",
+        "mapPath": [
+          {
+            "sequence": 1,
+            "lat": -26.221172351839055,
+            "lng": -48.50095605474087
+          },
+          {
+            "sequence": 2,
+            "lat": -26.224244341484884,
+            "lng": -48.50176215003994
+          },
+          {
+            "sequence": 3,
+            "lat": -26.2257353682698,
+            "lng": -48.50287775763185
+          },
+          {
+            "sequence": 4,
+            "lat": -26.226620160188624,
+            "lng": -48.50425623999173
+          },
+          {
+            "sequence": 5,
+            "lat": -26.227121183946007,
+            "lng": -48.50668640934162
+          },
+          {
+            "sequence": 6,
+            "lat": -26.226433608231176,
+            "lng": -48.51017816857125
+          },
+          {
+            "sequence": 7,
+            "lat": -26.224971385901174,
+            "lng": -48.51342433610978
+          },
+          {
+            "sequence": 8,
+            "lat": -26.223819143961126,
+            "lng": -48.5189714036618
+          },
+          {
+            "sequence": 9,
+            "lat": -26.22252632690859,
+            "lng": -48.5218592042939
+          },
+          {
+            "sequence": 10,
+            "lat": -26.21864771524516,
+            "lng": -48.52347290227603
+          },
+          {
+            "sequence": 11,
+            "lat": -26.217061017022868,
+            "lng": -48.52405717282035
+          },
+          {
+            "sequence": 12,
+            "lat": -26.214337105001405,
+            "lng": -48.525027656100704
+          },
+          {
+            "sequence": 13,
+            "lat": -26.212153309533605,
+            "lng": -48.525790178679806
+          },
+          {
+            "sequence": 14,
+            "lat": -26.20889800760003,
+            "lng": -48.52696794516059
+          },
+          {
+            "sequence": 15,
+            "lat": -26.206290628615903,
+            "lng": -48.528017679985716
+          },
+          {
+            "sequence": 16,
+            "lat": -26.204276366959473,
+            "lng": -48.52870164328268
+          },
+          {
+            "sequence": 17,
+            "lat": -26.20184500579295,
+            "lng": -48.529267945915116
+          },
+          {
+            "sequence": 18,
+            "lat": -26.20000832312542,
+            "lng": -48.52934341948697
+          },
+          {
+            "sequence": 19,
+            "lat": -26.19753061340607,
+            "lng": -48.529903625901376
+          },
+          {
+            "sequence": 20,
+            "lat": -26.193119216990677,
+            "lng": -48.53090170484589
+          },
+          {
+            "sequence": 21,
+            "lat": -26.188916766213776,
+            "lng": -48.53361700327354
+          },
+          {
+            "sequence": 22,
+            "lat": -26.186540711160877,
+            "lng": -48.53409731180496
+          },
+          {
+            "sequence": 23,
+            "lat": -26.184935318684133,
+            "lng": -48.534467259516056
+          },
+          {
+            "sequence": 24,
+            "lat": -26.1839591895995,
+            "lng": -48.53401448771022
+          },
+          {
+            "sequence": 25,
+            "lat": -26.181932580788043,
+            "lng": -48.53379362342522
+          },
+          {
+            "sequence": 26,
+            "lat": -26.18007441215611,
+            "lng": -48.53397031485724
+          },
+          {
+            "sequence": 27,
+            "lat": -26.178543258912637,
+            "lng": -48.53401448772447
+          },
+          {
+            "sequence": 28,
+            "lat": -26.17719047574594,
+            "lng": -48.53308133608954
+          },
+          {
+            "sequence": 29,
+            "lat": -26.17398170061045,
+            "lng": -48.533335681696926
+          },
+          {
+            "sequence": 30,
+            "lat": -26.172762662175412,
+            "lng": -48.53447313279473
+          },
+          {
+            "sequence": 31,
+            "lat": -26.168114753304362,
+            "lng": -48.53456075459785
+          },
+          {
+            "sequence": 32,
+            "lat": -26.17332262855911,
+            "lng": -48.534197052437534
+          },
+          {
+            "sequence": 33,
+            "lat": -26.17457101554951,
+            "lng": -48.53311601462382
+          },
+          {
+            "sequence": 34,
+            "lat": -26.177195431024245,
+            "lng": -48.533213854661
+          },
+          {
+            "sequence": 35,
+            "lat": -26.178439199227615,
+            "lng": -48.534196700760226
+          },
+          {
+            "sequence": 36,
+            "lat": -26.180307304245265,
+            "lng": -48.53405866057154
+          },
+          {
+            "sequence": 37,
+            "lat": -26.182428087412184,
+            "lng": -48.533821231460934
+          },
+          {
+            "sequence": 38,
+            "lat": -26.185009642896798,
+            "lng": -48.534583213266075
+          },
+          {
+            "sequence": 39,
+            "lat": -26.18674386109734,
+            "lng": -48.53421326555498
+          },
+          {
+            "sequence": 40,
+            "lat": -26.189433106332924,
+            "lng": -48.53370959810906
+          },
+          {
+            "sequence": 41,
+            "lat": -26.19323295743177,
+            "lng": -48.531099762651344
+          },
+          {
+            "sequence": 42,
+            "lat": -26.198052085192742,
+            "lng": -48.532262502576124
+          },
+          {
+            "sequence": 43,
+            "lat": -26.201081588197173,
+            "lng": -48.53593385118549
+          },
+          {
+            "sequence": 44,
+            "lat": -26.202828576694163,
+            "lng": -48.53708900264268
+          },
+          {
+            "sequence": 45,
+            "lat": -26.205653891075887,
+            "lng": -48.53946538341731
+          },
+          {
+            "sequence": 46,
+            "lat": -26.207123411584394,
+            "lng": -48.54098806531549
+          },
+          {
+            "sequence": 47,
+            "lat": -26.208703076409147,
+            "lng": -48.545839422158565
+          },
+          {
+            "sequence": 48,
+            "lat": -26.213077712368303,
+            "lng": -48.5585344276863
+          },
+          {
+            "sequence": 49,
+            "lat": -26.21437910000339,
+            "lng": -48.56369604109449
+          },
+          {
+            "sequence": 50,
+            "lat": -26.21536187840773,
+            "lng": -48.567764183098724
+          },
+          {
+            "sequence": 51,
+            "lat": -26.217251972753047,
+            "lng": -48.570614650577404
+          },
+          {
+            "sequence": 52,
+            "lat": -26.218484380518134,
+            "lng": -48.57231933065357
+          },
+          {
+            "sequence": 53,
+            "lat": -26.219766636077885,
+            "lng": -48.57398734874991
+          },
+          {
+            "sequence": 54,
+            "lat": -26.224979687810706,
+            "lng": -48.5767460404703
+          },
+          {
+            "sequence": 55,
+            "lat": -26.228158860397553,
+            "lng": -48.579124676466215
+          },
+          {
+            "sequence": 56,
+            "lat": -26.230080158708976,
+            "lng": -48.58174125774154
+          },
+          {
+            "sequence": 57,
+            "lat": -26.23390449505082,
+            "lng": -48.58703084559732
+          },
+          {
+            "sequence": 58,
+            "lat": -26.235482745167452,
+            "lng": -48.58909898844154
+          },
+          {
+            "sequence": 59,
+            "lat": -26.238864361467705,
+            "lng": -48.59370083037695
+          },
+          {
+            "sequence": 60,
+            "lat": -26.24452653610626,
+            "lng": -48.60142865356738
+          },
+          {
+            "sequence": 61,
+            "lat": -26.24757391048873,
+            "lng": -48.60554053024434
+          },
+          {
+            "sequence": 62,
+            "lat": -26.250417020108006,
+            "lng": -48.60934285704239
+          },
+          {
+            "sequence": 63,
+            "lat": -26.252657970837262,
+            "lng": -48.61662799773309
+          },
+          {
+            "sequence": 64,
+            "lat": -26.250311727588592,
+            "lng": -48.61998411593799
+          },
+          {
+            "sequence": 65,
+            "lat": -26.249425446806114,
+            "lng": -48.62124387040831
+          },
+          {
+            "sequence": 66,
+            "lat": -26.24758858850027,
+            "lng": -48.62128739762634
+          },
+          {
+            "sequence": 67,
+            "lat": -26.244880230025736,
+            "lng": -48.62203531296437
+          },
+          {
+            "sequence": 68,
+            "lat": -26.244116288772304,
+            "lng": -48.62229333466024
+          },
+          {
+            "sequence": 69,
+            "lat": -26.243220154542165,
+            "lng": -48.625000537410585
+          },
+          {
+            "sequence": 70,
+            "lat": -26.243334727221654,
+            "lng": -48.627704456461984
+          },
+          {
+            "sequence": 71,
+            "lat": -26.24298830041126,
+            "lng": -48.62977109850075
+          },
+          {
+            "sequence": 72,
+            "lat": -26.245503479919236,
+            "lng": -48.63295432583705
+          },
+          {
+            "sequence": 73,
+            "lat": -26.24659710935892,
+            "lng": -48.63549497664863
+          },
+          {
+            "sequence": 74,
+            "lat": -26.247834789940356,
+            "lng": -48.63733216779835
+          },
+          {
+            "sequence": 75,
+            "lat": -26.249248390210585,
+            "lng": -48.63840582899403
+          },
+          {
+            "sequence": 76,
+            "lat": -26.249224290355095,
+            "lng": -48.63560230865354
+          },
+          {
+            "sequence": 77,
+            "lat": -26.24773780113116,
+            "lng": -48.634526537853745
+          },
+          {
+            "sequence": 78,
+            "lat": -26.24448063883166,
+            "lng": -48.634446201953615
+          },
+          {
+            "sequence": 79,
+            "lat": -26.24256951527034,
+            "lng": -48.63530239360171
+          },
+          {
+            "sequence": 80,
+            "lat": -26.242030120062743,
+            "lng": -48.63729731437912
+          },
+          {
+            "sequence": 81,
+            "lat": -26.243437512602945,
+            "lng": -48.637910711972246
+          }
+        ],
+        "stops": [
+          {
+            "id": "collected-line-0103-inbound-stop-1",
+            "name": "Ponto Final Enseada",
+            "sequence": 1,
+            "location": {
+              "lat": -26.221172351839055,
+              "lng": -48.50095605474087
+            },
+            "isTimingPoint": true
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-2",
+            "name": "Hotel Fragata",
+            "sequence": 2,
+            "location": {
+              "lat": -26.224244341484884,
+              "lng": -48.50176215003994
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-3",
+            "name": "Barra Shopping",
+            "sequence": 3,
+            "location": {
+              "lat": -26.2257353682698,
+              "lng": -48.50287775763185
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-4",
+            "name": "Lanches Sombreiro",
+            "sequence": 4,
+            "location": {
+              "lat": -26.226620160188624,
+              "lng": -48.50425623999173
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-5",
+            "name": "Ginásio de Esportes da Enseada",
+            "sequence": 5,
+            "location": {
+              "lat": -26.227121183946007,
+              "lng": -48.50668640934162
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-6",
+            "name": "Avenida Atlântica",
+            "sequence": 6,
+            "location": {
+              "lat": -26.226433608231176,
+              "lng": -48.51017816857125
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-7",
+            "name": "Bar do Monteiro",
+            "sequence": 7,
+            "location": {
+              "lat": -26.224971385901174,
+              "lng": -48.51342433610978
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-8",
+            "name": "Quadra de Skate da Enseada",
+            "sequence": 8,
+            "location": {
+              "lat": -26.223819143961126,
+              "lng": -48.5189714036618
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-9",
+            "name": "Pit Stop Lanches",
+            "sequence": 9,
+            "location": {
+              "lat": -26.22252632690859,
+              "lng": -48.5218592042939
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-10",
+            "name": "Panificadora Bannach",
+            "sequence": 10,
+            "location": {
+              "lat": -26.21864771524516,
+              "lng": -48.52347290227603
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-11",
+            "name": "Tele Alarme",
+            "sequence": 11,
+            "location": {
+              "lat": -26.217061017022868,
+              "lng": -48.52405717282035
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-12",
+            "name": "Imobiliária Ubatuba",
+            "sequence": 12,
+            "location": {
+              "lat": -26.214337105001405,
+              "lng": -48.525027656100704
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-13",
+            "name": "Multi Praia Aterros",
+            "sequence": 13,
+            "location": {
+              "lat": -26.212153309533605,
+              "lng": -48.525790178679806
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-14",
+            "name": "Farmácia Ubatuba",
+            "sequence": 14,
+            "location": {
+              "lat": -26.20889800760003,
+              "lng": -48.52696794516059
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-15",
+            "name": "FT Vigilância",
+            "sequence": 15,
+            "location": {
+              "lat": -26.206290628615903,
+              "lng": -48.528017679985716
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-16",
+            "name": "Secretaria de Obras das Praias (Sentido Bairro/Centro)",
+            "sequence": 16,
+            "location": {
+              "lat": -26.204276366959473,
+              "lng": -48.52870164328268
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-17",
+            "name": "Av. Bogotá 2",
+            "sequence": 17,
+            "location": {
+              "lat": -26.20184500579295,
+              "lng": -48.529267945915116
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-18",
+            "name": "Rua Dacar, 130",
+            "sequence": 18,
+            "location": {
+              "lat": -26.20000832312542,
+              "lng": -48.52934341948697
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-19",
+            "name": "Jacarta 1",
+            "sequence": 19,
+            "location": {
+              "lat": -26.19753061340607,
+              "lng": -48.529903625901376
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-20",
+            "name": "Estrada do Forte 4",
+            "sequence": 20,
+            "location": {
+              "lat": -26.193119216990677,
+              "lng": -48.53090170484589
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-21",
+            "name": "Estrada do Forte 5",
+            "sequence": 21,
+            "location": {
+              "lat": -26.188916766213776,
+              "lng": -48.53361700327354
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-22",
+            "name": "Estrada do Forte 6",
+            "sequence": 22,
+            "location": {
+              "lat": -26.186540711160877,
+              "lng": -48.53409731180496
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-23",
+            "name": "Estrada do Forte 7",
+            "sequence": 23,
+            "location": {
+              "lat": -26.184935318684133,
+              "lng": -48.534467259516056
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-24",
+            "name": "Estrada do Forte 8",
+            "sequence": 24,
+            "location": {
+              "lat": -26.1839591895995,
+              "lng": -48.53401448771022
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-25",
+            "name": "Estrada do Forte 9",
+            "sequence": 25,
+            "location": {
+              "lat": -26.181932580788043,
+              "lng": -48.53379362342522
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-26",
+            "name": "Estrada do Forte 10",
+            "sequence": 26,
+            "location": {
+              "lat": -26.18007441215611,
+              "lng": -48.53397031485724
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-27",
+            "name": "Estrada do Forte 11",
+            "sequence": 27,
+            "location": {
+              "lat": -26.178543258912637,
+              "lng": -48.53401448772447
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-28",
+            "name": "Estrada do Forte 12",
+            "sequence": 28,
+            "location": {
+              "lat": -26.17719047574594,
+              "lng": -48.53308133608954
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-29",
+            "name": "Estrada do Forte 13",
+            "sequence": 29,
+            "location": {
+              "lat": -26.17398170061045,
+              "lng": -48.533335681696926
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-30",
+            "name": "Estrada do Forte 14",
+            "sequence": 30,
+            "location": {
+              "lat": -26.172762662175412,
+              "lng": -48.53447313279473
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-31",
+            "name": "Forte Marechal Luz",
+            "sequence": 31,
+            "location": {
+              "lat": -26.168114753304362,
+              "lng": -48.53456075459785
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-32",
+            "name": "Estrada do Forte 15",
+            "sequence": 32,
+            "location": {
+              "lat": -26.17332262855911,
+              "lng": -48.534197052437534
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-33",
+            "name": "Estrada do Forte 16",
+            "sequence": 33,
+            "location": {
+              "lat": -26.17457101554951,
+              "lng": -48.53311601462382
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-34",
+            "name": "Estrada do Forte 17",
+            "sequence": 34,
+            "location": {
+              "lat": -26.177195431024245,
+              "lng": -48.533213854661
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-35",
+            "name": "Estrada do Forte 18",
+            "sequence": 35,
+            "location": {
+              "lat": -26.178439199227615,
+              "lng": -48.534196700760226
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-36",
+            "name": "Estrada do Forte 19",
+            "sequence": 36,
+            "location": {
+              "lat": -26.180307304245265,
+              "lng": -48.53405866057154
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-37",
+            "name": "Estrada do Forte 20",
+            "sequence": 37,
+            "location": {
+              "lat": -26.182428087412184,
+              "lng": -48.533821231460934
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-38",
+            "name": "Estrada do Forte 21",
+            "sequence": 38,
+            "location": {
+              "lat": -26.185009642896798,
+              "lng": -48.534583213266075
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-39",
+            "name": "Estrada do Forte 22",
+            "sequence": 39,
+            "location": {
+              "lat": -26.18674386109734,
+              "lng": -48.53421326555498
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-40",
+            "name": "Estrada do Forte 23",
+            "sequence": 40,
+            "location": {
+              "lat": -26.189433106332924,
+              "lng": -48.53370959810906
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-41",
+            "name": "Estrada do Forte 24",
+            "sequence": 41,
+            "location": {
+              "lat": -26.19323295743177,
+              "lng": -48.531099762651344
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-42",
+            "name": "Estrada do Forte 25",
+            "sequence": 42,
+            "location": {
+              "lat": -26.198052085192742,
+              "lng": -48.532262502576124
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-43",
+            "name": "Estrada do Forte 26",
+            "sequence": 43,
+            "location": {
+              "lat": -26.201081588197173,
+              "lng": -48.53593385118549
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-44",
+            "name": "Estrada do Forte 27",
+            "sequence": 44,
+            "location": {
+              "lat": -26.202828576694163,
+              "lng": -48.53708900264268
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-45",
+            "name": "EEB Rogério Zattar",
+            "sequence": 45,
+            "location": {
+              "lat": -26.205653891075887,
+              "lng": -48.53946538341731
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-46",
+            "name": "Mercado Bona (Bairro/Centro)",
+            "sequence": 46,
+            "location": {
+              "lat": -26.207123411584394,
+              "lng": -48.54098806531549
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-47",
+            "name": "Taberna Mate Amargo",
+            "sequence": 47,
+            "location": {
+              "lat": -26.208703076409147,
+              "lng": -48.545839422158565
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-48",
+            "name": "Lajes Ubatuba (Bairro/Centro)",
+            "sequence": 48,
+            "location": {
+              "lat": -26.213077712368303,
+              "lng": -48.5585344276863
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-49",
+            "name": "Peixaria Maia",
+            "sequence": 49,
+            "location": {
+              "lat": -26.21437910000339,
+              "lng": -48.56369604109449
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-50",
+            "name": "JCR Silva",
+            "sequence": 50,
+            "location": {
+              "lat": -26.21536187840773,
+              "lng": -48.567764183098724
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-51",
+            "name": "Rua Rodovia Duque de Caxias, 5065",
+            "sequence": 51,
+            "location": {
+              "lat": -26.217251972753047,
+              "lng": -48.570614650577404
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-52",
+            "name": "Estádio Municipal do Iperoba",
+            "sequence": 52,
+            "location": {
+              "lat": -26.218484380518134,
+              "lng": -48.57231933065357
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-53",
+            "name": "Esquina Rua Raul Vanine",
+            "sequence": 53,
+            "location": {
+              "lat": -26.219766636077885,
+              "lng": -48.57398734874991
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-54",
+            "name": "Posto Mediterrâneo (Bairro/Centro)",
+            "sequence": 54,
+            "location": {
+              "lat": -26.224979687810706,
+              "lng": -48.5767460404703
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-55",
+            "name": "Associação do Porto (Sentido Bairro/Centro)",
+            "sequence": 55,
+            "location": {
+              "lat": -26.228158860397553,
+              "lng": -48.579124676466215
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-56",
+            "name": "Serraria do Ingo",
+            "sequence": 56,
+            "location": {
+              "lat": -26.230080158708976,
+              "lng": -48.58174125774154
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-57",
+            "name": "KM 3 (Sentido Bairro/Centro)",
+            "sequence": 57,
+            "location": {
+              "lat": -26.23390449505082,
+              "lng": -48.58703084559732
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-58",
+            "name": "Porto Seco Rocha (Sentido Bairro/Centro)",
+            "sequence": 58,
+            "location": {
+              "lat": -26.235482745167452,
+              "lng": -48.58909898844154
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-59",
+            "name": "Esquina R. Bem-vindo Alves da Silva",
+            "sequence": 59,
+            "location": {
+              "lat": -26.238864361467705,
+              "lng": -48.59370083037695
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-60",
+            "name": "EM Franklin de Oliveira (Sentido Bairro/Centro)",
+            "sequence": 60,
+            "location": {
+              "lat": -26.24452653610626,
+              "lng": -48.60142865356738
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-61",
+            "name": "Panificadora Bom Dia",
+            "sequence": 61,
+            "location": {
+              "lat": -26.24757391048873,
+              "lng": -48.60554053024434
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-62",
+            "name": "Antigo LDM Terminais",
+            "sequence": 62,
+            "location": {
+              "lat": -26.250417020108006,
+              "lng": -48.60934285704239
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-63",
+            "name": "Madeireira Régis",
+            "sequence": 63,
+            "location": {
+              "lat": -26.252657970837262,
+              "lng": -48.61662799773309
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-64",
+            "name": "Antigo Garcez Material de Construção",
+            "sequence": 64,
+            "location": {
+              "lat": -26.250311727588592,
+              "lng": -48.61998411593799
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-65",
+            "name": "Delta Veículos (Sentido Bairro/Centro)",
+            "sequence": 65,
+            "location": {
+              "lat": -26.249425446806114,
+              "lng": -48.62124387040831
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-66",
+            "name": "Almirante Barroso 8",
+            "sequence": 66,
+            "location": {
+              "lat": -26.24758858850027,
+              "lng": -48.62128739762634
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-67",
+            "name": "Material de Construção Avenida",
+            "sequence": 67,
+            "location": {
+              "lat": -26.244880230025736,
+              "lng": -48.62203531296437
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-68",
+            "name": "EEB Victor Konder (Sentido Bairro/Centro)",
+            "sequence": 68,
+            "location": {
+              "lat": -26.244116288772304,
+              "lng": -48.62229333466024
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-69",
+            "name": "Breis Contabilidade",
+            "sequence": 69,
+            "location": {
+              "lat": -26.243220154542165,
+              "lng": -48.625000537410585
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-70",
+            "name": "CRAS",
+            "sequence": 70,
+            "location": {
+              "lat": -26.243334727221654,
+              "lng": -48.627704456461984
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-71",
+            "name": "Inês Zardo (sentido Centro)",
+            "sequence": 71,
+            "location": {
+              "lat": -26.24298830041126,
+              "lng": -48.62977109850075
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-72",
+            "name": "Regência Contabilidade/Imóveis",
+            "sequence": 72,
+            "location": {
+              "lat": -26.245503479919236,
+              "lng": -48.63295432583705
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-73",
+            "name": "Carioca (Bica d'água)",
+            "sequence": 73,
+            "location": {
+              "lat": -26.24659710935892,
+              "lng": -48.63549497664863
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-74",
+            "name": "Colégio Adventista",
+            "sequence": 74,
+            "location": {
+              "lat": -26.247834789940356,
+              "lng": -48.63733216779835
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-75",
+            "name": "Restaurante Tom Brasil",
+            "sequence": 75,
+            "location": {
+              "lat": -26.249248390210585,
+              "lng": -48.63840582899403
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-76",
+            "name": "Rodoviária Velha",
+            "sequence": 76,
+            "location": {
+              "lat": -26.249224290355095,
+              "lng": -48.63560230865354
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-77",
+            "name": "Millium",
+            "sequence": 77,
+            "location": {
+              "lat": -26.24773780113116,
+              "lng": -48.634526537853745
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-78",
+            "name": "Antiga Multipaper (Sentido Bairro/Centro)",
+            "sequence": 78,
+            "location": {
+              "lat": -26.24448063883166,
+              "lng": -48.634446201953615
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-79",
+            "name": "Tapecar",
+            "sequence": 79,
+            "location": {
+              "lat": -26.24256951527034,
+              "lng": -48.63530239360171
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-80",
+            "name": "Posto Rod Oil",
+            "sequence": 80,
+            "location": {
+              "lat": -26.242030120062743,
+              "lng": -48.63729731437912
+            }
+          },
+          {
+            "id": "collected-line-0103-inbound-stop-81",
+            "name": "Praça Dr. Getúlio Vargas 5",
+            "sequence": 81,
+            "location": {
+              "lat": -26.243437512602945,
+              "lng": -48.637910711972246
+            },
+            "isTimingPoint": true
+          }
+        ],
+        "departures": [
+          {
+            "id": "collected-line-0103-inbound-weekday-1130",
+            "serviceDay": "weekday",
+            "departureTime": "11:30",
+            "stopPredictions": []
+          },
+          {
+            "id": "collected-line-0103-inbound-weekday-1810",
+            "serviceDay": "weekday",
+            "departureTime": "18:10",
+            "stopPredictions": []
+          },
+          {
+            "id": "collected-line-0103-inbound-weekday-2015",
+            "serviceDay": "weekday",
+            "departureTime": "20:15",
+            "stopPredictions": []
+          },
+          {
+            "id": "collected-line-0103-inbound-weekday-2215",
+            "serviceDay": "weekday",
+            "departureTime": "22:15",
+            "stopPredictions": []
+          }
+        ],
+        "source": {
+          "sourceId": "verdes-mares-sfs",
+          "sourceName": "Verdes Mares Sao Francisco do Sul",
+          "sourceUrl": "https://vmares.com.br/sao-francisco-do-sul/",
+          "collectedAt": "2026-04-16T12:00:00.000Z",
+          "collectionMethod": "manual",
+          "sourceLineRef": "0103",
+          "sourceDirectionRef": "inbound"
+        }
+      }
+    ],
+    "collectionStatus": "reviewed",
+    "source": {
+      "sourceId": "verdes-mares-sfs",
+      "sourceName": "Verdes Mares Sao Francisco do Sul",
+      "sourceUrl": "https://vmares.com.br/sao-francisco-do-sul/",
+      "collectedAt": "2026-04-16T12:00:00.000Z",
+      "collectionMethod": "manual",
+      "sourceLineRef": "0103",
+      "notes": "Linha 0103 montada a partir do tronco compartilhado da 0100 e das coordenadas manuais do ramal Forte. Pontos de Capri/Estados Unidos foram preservados fora desta linha por nao constarem na lista oficial da 0103."
+    }
+  }
+}

@@ -1,30 +1,40 @@
 import { describe, expect, it } from 'vitest';
 import { fallbackLines } from '@cityline/shared';
-import { buildLineDirections, estimateWalkingMinutes, filterLinesByQuery, findNearestStopForDirection, findNearestStops, getDistanceInMeters, getMinutesUntilDeparture, getNextDepartures, recommendBoardingStopForDirection } from './transport';
+import {
+  buildLineDirections,
+  estimateWalkingMinutes,
+  filterLinesByQuery,
+  findNearestStopForDirection,
+  findNearestStops,
+  getDistanceInMeters,
+  getMinutesUntilDeparture,
+  getNextDepartures,
+  recommendBoardingStopForDirection,
+} from './transport';
 
 describe('transport helpers', () => {
   it('filtra linhas por texto relevante', () => {
     const result = filterLinesByQuery(fallbackLines, 'Praia');
     expect(result.length).toBeGreaterThan(0);
-    expect(result[0]?.name).toContain('Praia');
+    expect(result[0]?.name).toContain('Praia Grande');
   });
 
-  it('retorna apenas próximas partidas futuras', () => {
+  it('retorna apenas proximas partidas futuras', () => {
     const schedules = fallbackLines[0]!.schedules.weekday;
     const departures = getNextDepartures(schedules, new Date('2026-03-30T06:15:00'));
     expect(departures[0]?.time).toBe('06:20');
     expect(departures).toHaveLength(3);
   });
 
-  it('permite encontrar linhas pelo modal ferry', () => {
-    const result = filterLinesByQuery(fallbackLines, 'ferry');
-    expect(result.some((line) => line.mode === 'ferry')).toBe(true);
+  it('permite encontrar linhas pelo codigo', () => {
+    const result = filterLinesByQuery(fallbackLines, '0101');
+    expect(result.some((line) => line.code === '0101')).toBe(true);
   });
 
-  it('encontra os pontos mais próximos da localização do usuário', () => {
-    const matches = findNearestStops(fallbackLines, { lat: -26.2429, lng: -48.6384 });
+  it('encontra os pontos mais proximos da localizacao do usuario', () => {
+    const matches = findNearestStops(fallbackLines, { lat: -26.2434, lng: -48.6379 });
     expect(matches.length).toBeGreaterThan(0);
-    expect(matches[0]?.stopName).toContain('Terminal');
+    expect(matches[0]?.stopName).toContain('Praca');
     expect(matches[0]?.lines.length).toBeGreaterThan(0);
   });
 
@@ -45,17 +55,17 @@ describe('transport helpers', () => {
 
   it('seleciona a parada mais proxima dentro do sentido ativo', () => {
     const direction = buildLineDirections(fallbackLines[0]!)[0]!;
-    const nearest = findNearestStopForDirection(direction, { lat: -26.241, lng: -48.635 });
+    const nearest = findNearestStopForDirection(direction, { lat: -26.2434, lng: -48.6351 });
 
     expect(nearest).not.toBeNull();
-    expect(nearest?.stopName).toContain('Mercado');
+    expect(nearest?.stopName).toContain('Ogmo');
     expect(nearest?.walkingMinutes).toBeGreaterThan(0);
   });
 
   it('calcula distancia e caminhada estimada de forma consistente', () => {
-    const distance = getDistanceInMeters({ lat: -26.2429, lng: -48.6384 }, { lat: -26.2407, lng: -48.6348 });
+    const distance = getDistanceInMeters({ lat: -26.2434, lng: -48.6379 }, { lat: -26.2435, lng: -48.6351 });
 
-    expect(distance).toBeGreaterThan(300);
+    expect(distance).toBeGreaterThan(200);
     expect(estimateWalkingMinutes(distance)).toBeGreaterThanOrEqual(1);
   });
 
@@ -66,7 +76,12 @@ describe('transport helpers', () => {
 
   it('recomenda operacionalmente uma parada viavel para embarque', () => {
     const direction = buildLineDirections(fallbackLines[0]!)[0]!;
-    const recommendation = recommendBoardingStopForDirection(direction, 'weekday', { lat: -26.241, lng: -48.635 }, new Date('2026-03-30T06:00:00'));
+    const recommendation = recommendBoardingStopForDirection(
+      direction,
+      'weekday',
+      { lat: -26.2434, lng: -48.6351 },
+      new Date('2026-03-30T06:00:00')
+    );
 
     expect(recommendation).not.toBeNull();
     expect(recommendation?.reason).toBe('operational');
@@ -76,7 +91,12 @@ describe('transport helpers', () => {
 
   it('avisa quando o usuario nao chega a tempo para um embarque util', () => {
     const direction = buildLineDirections(fallbackLines[0]!)[0]!;
-    const recommendation = recommendBoardingStopForDirection(direction, 'weekday', { lat: -26.37, lng: -48.84 }, new Date('2026-03-30T19:55:00'));
+    const recommendation = recommendBoardingStopForDirection(
+      direction,
+      'weekday',
+      { lat: -26.37, lng: -48.84 },
+      new Date('2026-03-30T19:55:00')
+    );
 
     expect(recommendation).not.toBeNull();
     expect(recommendation?.canMakeIt).toBe(false);
@@ -93,10 +113,15 @@ describe('transport helpers', () => {
       },
     };
 
-    const recommendation = recommendBoardingStopForDirection(direction, 'weekday', { lat: -26.241, lng: -48.635 }, new Date('2026-03-30T06:00:00'));
+    const recommendation = recommendBoardingStopForDirection(
+      direction,
+      'weekday',
+      { lat: -26.2434, lng: -48.6351 },
+      new Date('2026-03-30T06:00:00')
+    );
 
     expect(recommendation).not.toBeNull();
     expect(recommendation?.reason).toBe('nearest-fallback');
-    expect(recommendation?.stopName).toContain('Mercado');
+    expect(recommendation?.stopName).toContain('Ogmo');
   });
 });

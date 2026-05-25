@@ -1,0 +1,266 @@
+{
+  "manifestVersion": "1.0",
+  "citySlug": "sao-francisco-do-sul",
+  "dataset": {
+    "metadata": {
+      "datasetId": "dataset-verdes-mares-sfs-2026-04-17T12-00-00-000Z",
+      "createdAt": "2026-04-17T12:00:00.000Z",
+      "sourceName": "Verdes Mares Sao Francisco do Sul",
+      "sourceUrl": "https://vmares.com.br/sao-francisco-do-sul/",
+      "collectionMethod": "manual"
+    },
+    "transportLines": [
+      {
+        "id": "line-0114",
+        "code": "0114",
+        "slug": "0114-franklin-reta",
+        "name": "Franklin Reta",
+        "operator": "Verdes Mares",
+        "summary": "Linha Franklin Reta",
+        "routeLabel": "Franklin -> Bairro",
+        "originLabel": "Franklin",
+        "destinationLabel": "Bairro",
+        "transportMode": "municipal",
+        "operationalStatus": "on-time",
+        "fareSummary": "Tarifa urbana municipal",
+        "amenities": [],
+        "sourceUpdatedAt": "2026-04-17T12:00:00.000Z",
+        "sourceLineRef": "0114",
+        "isActive": true
+      }
+    ],
+    "routeDirections": [
+      {
+        "id": "line-0114-outbound",
+        "lineId": "line-0114",
+        "type": "outbound",
+        "slug": "outbound",
+        "name": "Saída do Franklin",
+        "routeLabel": "Franklin -> Bairro",
+        "originLabel": "Franklin",
+        "destinationLabel": "Bairro",
+        "sortOrder": 0,
+        "isLoop": false,
+        "sourceDirectionRef": "outbound"
+      }
+    ],
+    "stops": [
+      {
+        "id": "stop-rua-rodovia-duque-de-caxias-2015-m26_2446-m48_6013",
+        "name": "Rua Rodovia Duque de Caxias, 2015",
+        "slug": "rua-rodovia-duque-de-caxias-2015",
+        "latitude": -26.24457250626517,
+        "longitude": -48.60130795221043
+      },
+      {
+        "id": "stop-antes-do-rocha-m26_2387-m48_5932",
+        "name": "Antes do Rocha",
+        "slug": "antes-do-rocha",
+        "latitude": -26.238657459849893,
+        "longitude": -48.59319657509188
+      },
+      {
+        "id": "stop-porto-seco-rocha-sentido-centro-bairro-m26_2358-m48_5893",
+        "name": "Porto Seco Rocha (Sentido Centro/Bairro)",
+        "slug": "porto-seco-rocha-sentido-centro-bairro",
+        "latitude": -26.23577626467118,
+        "longitude": -48.589257238770365
+      },
+      {
+        "id": "stop-km-3-sentido-centro-bairro-m26_2340-m48_5869",
+        "name": "KM 3 (Sentido Centro/Bairro)",
+        "slug": "km-3-sentido-centro-bairro",
+        "latitude": -26.233972591742404,
+        "longitude": -48.5868932472597
+      },
+      {
+        "id": "stop-rua-rodovia-duque-de-caxias-4428-m26_2317-m48_5833",
+        "name": "Rua Rodovia Duque de Caxias, 4428",
+        "slug": "rua-rodovia-duque-de-caxias-4428",
+        "latitude": -26.231698203114323,
+        "longitude": -48.583296959676765
+      },
+      {
+        "id": "stop-rua-simeao-de-mira-151-m26_2327-m48_5821",
+        "name": "Rua Simeão de Mira, 151",
+        "slug": "rua-simeao-de-mira-151",
+        "latitude": -26.232733960160264,
+        "longitude": -48.58212011907546
+      },
+      {
+        "id": "stop-rua-simeao-de-mira-303-m26_2337-m48_5812",
+        "name": "Rua Simeão de Mira, 303",
+        "slug": "rua-simeao-de-mira-303",
+        "latitude": -26.23373242823788,
+        "longitude": -48.5812296256845
+      },
+      {
+        "id": "stop-rua-santa-clara-de-assis-410-m26_2328-m48_5803",
+        "name": "Rua Santa Clara de Assis, 410",
+        "slug": "rua-santa-clara-de-assis-410",
+        "latitude": -26.232753207819787,
+        "longitude": -48.580347178930886
+      },
+      {
+        "id": "stop-rua-rodovia-duque-de-caxias-4602-m26_2305-m48_5823",
+        "name": "Rua Rodovia Duque de Caxias, 4602",
+        "slug": "rua-rodovia-duque-de-caxias-4602",
+        "latitude": -26.23047654858731,
+        "longitude": -48.58233903078628
+      }
+    ],
+    "lineStops": [
+      {
+        "id": "line-0114-outbound-stop-1",
+        "directionId": "line-0114-outbound",
+        "stopId": "stop-rua-rodovia-duque-de-caxias-2015-m26_2446-m48_6013",
+        "sequence": 1,
+        "isTimingPoint": true
+      },
+      {
+        "id": "line-0114-outbound-stop-2",
+        "directionId": "line-0114-outbound",
+        "stopId": "stop-antes-do-rocha-m26_2387-m48_5932",
+        "sequence": 2,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0114-outbound-stop-3",
+        "directionId": "line-0114-outbound",
+        "stopId": "stop-porto-seco-rocha-sentido-centro-bairro-m26_2358-m48_5893",
+        "sequence": 3,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0114-outbound-stop-4",
+        "directionId": "line-0114-outbound",
+        "stopId": "stop-km-3-sentido-centro-bairro-m26_2340-m48_5869",
+        "sequence": 4,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0114-outbound-stop-5",
+        "directionId": "line-0114-outbound",
+        "stopId": "stop-rua-rodovia-duque-de-caxias-4428-m26_2317-m48_5833",
+        "sequence": 5,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0114-outbound-stop-6",
+        "directionId": "line-0114-outbound",
+        "stopId": "stop-rua-simeao-de-mira-151-m26_2327-m48_5821",
+        "sequence": 6,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0114-outbound-stop-7",
+        "directionId": "line-0114-outbound",
+        "stopId": "stop-rua-simeao-de-mira-303-m26_2337-m48_5812",
+        "sequence": 7,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0114-outbound-stop-8",
+        "directionId": "line-0114-outbound",
+        "stopId": "stop-rua-santa-clara-de-assis-410-m26_2328-m48_5803",
+        "sequence": 8,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0114-outbound-stop-9",
+        "directionId": "line-0114-outbound",
+        "stopId": "stop-rua-rodovia-duque-de-caxias-4602-m26_2305-m48_5823",
+        "sequence": 9,
+        "isTimingPoint": true
+      }
+    ],
+    "schedules": [
+      {
+        "id": "collected-line-0114-outbound-weekday-1705",
+        "directionId": "line-0114-outbound",
+        "serviceDay": "weekday",
+        "departureTime": "17:05",
+        "departureMinutes": 1025,
+        "isPeak": true,
+        "occupancy": "medium"
+      }
+    ],
+    "stopTimePredictions": [],
+    "routePaths": [
+      {
+        "id": "line-0114-outbound-path-1",
+        "directionId": "line-0114-outbound",
+        "sequence": 1,
+        "latitude": -26.24457250626517,
+        "longitude": -48.60130795221043
+      },
+      {
+        "id": "line-0114-outbound-path-2",
+        "directionId": "line-0114-outbound",
+        "sequence": 2,
+        "latitude": -26.238657459849893,
+        "longitude": -48.59319657509188
+      },
+      {
+        "id": "line-0114-outbound-path-3",
+        "directionId": "line-0114-outbound",
+        "sequence": 3,
+        "latitude": -26.23577626467118,
+        "longitude": -48.589257238770365
+      },
+      {
+        "id": "line-0114-outbound-path-4",
+        "directionId": "line-0114-outbound",
+        "sequence": 4,
+        "latitude": -26.233972591742404,
+        "longitude": -48.5868932472597
+      },
+      {
+        "id": "line-0114-outbound-path-5",
+        "directionId": "line-0114-outbound",
+        "sequence": 5,
+        "latitude": -26.231698203114323,
+        "longitude": -48.583296959676765
+      },
+      {
+        "id": "line-0114-outbound-path-6",
+        "directionId": "line-0114-outbound",
+        "sequence": 6,
+        "latitude": -26.232733960160264,
+        "longitude": -48.58212011907546
+      },
+      {
+        "id": "line-0114-outbound-path-7",
+        "directionId": "line-0114-outbound",
+        "sequence": 7,
+        "latitude": -26.23373242823788,
+        "longitude": -48.5812296256845
+      },
+      {
+        "id": "line-0114-outbound-path-8",
+        "directionId": "line-0114-outbound",
+        "sequence": 8,
+        "latitude": -26.232753207819787,
+        "longitude": -48.580347178930886
+      },
+      {
+        "id": "line-0114-outbound-path-9",
+        "directionId": "line-0114-outbound",
+        "sequence": 9,
+        "latitude": -26.23047654858731,
+        "longitude": -48.58233903078628
+      }
+    ],
+    "fares": [
+      {
+        "id": "collected-line-0114-fare-1",
+        "lineId": "line-0114",
+        "label": "Tarifa urbana municipal",
+        "currency": "BRL",
+        "sortOrder": 0
+      }
+    ],
+    "ferrySchedules": [],
+    "ferryFares": []
+  }
+}

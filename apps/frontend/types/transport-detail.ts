@@ -22,6 +22,7 @@ export interface DirectionDeparture {
   status: 'now' | 'upcoming' | 'tomorrow';
   label: string;
   platform?: string;
+  note?: string;
   isPeak: boolean;
   occupancy: ScheduleEntry['occupancy'];
   isTomorrow: boolean;

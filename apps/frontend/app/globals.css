@@ -25,6 +25,23 @@ body {
   z-index: 0;
 }
 
+.leaflet-tooltip.map-stop-number-chip {
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(15, 23, 42, 0.2);
+  border-radius: 999px;
+  box-shadow: none;
+  color: #1e293b;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1;
+  padding: 1px 4px;
+  pointer-events: none;
+}
+
+.leaflet-tooltip.map-stop-number-chip::before {
+  display: none;
+}
+
 @layer components {
   .surface {
     @apply rounded-2xl border border-slate-200/90 bg-white/95 shadow-soft;

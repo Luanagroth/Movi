@@ -1,16 +1,17 @@
 'use client';
 
-import { Fragment, useEffect, useState } from 'react';
+import { Fragment, useEffect } from 'react';
 import 'leaflet/dist/leaflet.css';
 import type { GeoPoint, StopPoint } from '@cityline/shared';
 import { cityMapCenter } from '@cityline/shared';
-import { Circle, CircleMarker, MapContainer, Polyline, Popup, TileLayer, useMap } from 'react-leaflet';
+import { Circle, CircleMarker, MapContainer, Polyline, Popup, TileLayer, Tooltip, useMap } from 'react-leaflet';
 import type { UiLocale } from '@/lib/ui-copy';
 import { uiCopy } from '@/lib/ui-copy';
-import { requestApi } from '@/services/api/client';
 import type { MapLineView } from '@/types/dashboard';
 
 interface ActiveDirectionMapView {
+  id?: string;
+  lineId?: string;
   origin: string;
   destination: string;
   routeLabel: string;
@@ -23,22 +24,15 @@ export interface TransitMapProps {
   activeLineId?: string;
   activeDirectionId?: string;
   activeDirection?: ActiveDirectionMapView | null;
+  showStopNumbers?: boolean;
   userLocation?: GeoPoint;
-  highlightedStopId?: string;
   locale?: UiLocale;
   onSelectLine?: (lineId: string) => void;
 }
-
-interface BackendStopMapItem {
-  id: string;
-  name: string;
-  sequence: number;
-  location: GeoPoint;
-}
-
-interface BackendDirectionPathResponse {
-  path: GeoPoint[];
-}
+const toPathFromStops = (stops: StopPoint[]): GeoPoint[] =>
+  stops
+    .map((stop) => stop.location)
+    .filter((point): point is GeoPoint => point !== null && Number.isFinite(point.lat) && Number.isFinite(point.lng));
 
 function MapViewportSync({ points }: { points: GeoPoint[] }) {
   const map = useMap();
@@ -75,87 +69,28 @@ function MapViewportSync({ points }: { points: GeoPoint[] }) {
   return null;
 }
 
-export function TransitMap({ lines, activeLineId, activeDirectionId, activeDirection, userLocation, highlightedStopId, locale = 'pt-BR', onSelectLine }: TransitMapProps) {
+export function TransitMap({
+  lines,
+  activeLineId,
+  activeDirectionId,
+  activeDirection,
+  showStopNumbers = false,
+  userLocation,
+  locale = 'pt-BR',
+  onSelectLine,
+}: TransitMapProps) {
   const copy = uiCopy[locale].labels;
-  const [backendStops, setBackendStops] = useState<BackendStopMapItem[]>([]);
-  const [backendPath, setBackendPath] = useState<GeoPoint[]>([]);
+  const hasExplicitDirection = Boolean(activeDirectionId);
   const activeLine = lines.find((line) => line.id === activeLineId) ?? lines[0];
   const highlightedLineId = activeLineId ?? activeLine?.id;
   const center = activeDirection?.path[0] ?? activeLine?.path[0] ?? cityMapCenter;
+  const activeFallbackPath = hasExplicitDirection && activeDirection?.stops?.length ? toPathFromStops(activeDirection.stops) : [];
+  const visibleLines = highlightedLineId ? lines.filter((line) => line.id === highlightedLineId) : lines;
   const focusPoints = [
     ...(activeDirection?.path ?? activeLine?.path ?? []),
-    ...backendPath,
-    ...backendStops.map((stop) => stop.location),
+    ...activeFallbackPath,
     ...(userLocation ? [userLocation] : []),
   ];
-
-  useEffect(() => {
-    if (!activeLineId || !activeDirectionId) {
-      setBackendStops([]);
-      return;
-    }
-
-    let cancelled = false;
-
-    const loadBackendStops = async () => {
-      try {
-        const data = await requestApi<{ items: BackendStopMapItem[] }>(
-          `/lines/${activeLineId}/directions/${activeDirectionId}/stops`,
-          undefined,
-          { revalidate: 0 }
-        );
-
-        if (!cancelled) {
-          setBackendStops(data.items);
-        }
-      } catch (error) {
-        if (!cancelled) {
-          console.error(`Falha ao carregar stops reais de ${activeLineId}/${activeDirectionId} para o mapa.`, error);
-          setBackendStops([]);
-        }
-      }
-    };
-
-    void loadBackendStops();
-
-    return () => {
-      cancelled = true;
-    };
-  }, [activeDirectionId, activeLineId]);
-
-  useEffect(() => {
-    if (!activeLineId || !activeDirectionId) {
-      setBackendPath([]);
-      return;
-    }
-
-    let cancelled = false;
-
-    const loadBackendPath = async () => {
-      try {
-        const data = await requestApi<BackendDirectionPathResponse>(
-          `/lines/${activeLineId}/directions/${activeDirectionId}/path`,
-          undefined,
-          { revalidate: 0 }
-        );
-
-        if (!cancelled) {
-          setBackendPath(Array.isArray(data.path) ? data.path : []);
-        }
-      } catch (error) {
-        if (!cancelled) {
-          console.error(`Falha ao carregar path real de ${activeLineId}/${activeDirectionId} para o mapa.`, error);
-          setBackendPath([]);
-        }
-      }
-    };
-
-    void loadBackendPath();
-
-    return () => {
-      cancelled = true;
-    };
-  }, [activeDirectionId, activeLineId]);
 
   return (
     <div className="space-y-2">
@@ -199,9 +134,14 @@ export function TransitMap({ lines, activeLineId, activeDirectionId, activeDirec
             </>
           ) : null}
 
-          {lines.map((line) => {
+          {visibleLines.map((line) => {
             const isActive = line.id === highlightedLineId;
-            const path = isActive && activeDirection ? activeDirection.path : line.path;
+            const path =
+              isActive && activeDirection
+                ? activeDirection.path.length
+                  ? activeDirection.path
+                  : activeFallbackPath
+                : line.path;
             const stops = isActive && activeDirection ? activeDirection.stops : line.stops;
             const routeLabel = isActive && activeDirection ? activeDirection.routeLabel : `${line.origin} -> ${line.destination}`;
 
@@ -216,7 +156,7 @@ export function TransitMap({ lines, activeLineId, activeDirectionId, activeDirec
                   }}
                   eventHandlers={{ click: () => onSelectLine?.(line.id) }}
                 />
-                {stops.map((stop) => {
+                {stops.map((stop, stopIndex) => {
                   return (
                     <CircleMarker
                       key={stop.id}
@@ -230,6 +170,18 @@ export function TransitMap({ lines, activeLineId, activeDirectionId, activeDirec
                       }}
                       eventHandlers={{ click: () => onSelectLine?.(line.id) }}
                     >
+                      {showStopNumbers && isActive ? (
+                        <Tooltip
+                          permanent
+                          direction="center"
+                          offset={[0, 0]}
+                          opacity={1}
+                          interactive={false}
+                          className="map-stop-number-chip"
+                        >
+                          <span className="text-xs font-semibold text-slate-800">{stop.sequence ?? stopIndex + 1}</span>
+                        </Tooltip>
+                      ) : null}
                       <Popup>
                         <strong>
                           {line.code} · {stop.name}
@@ -243,37 +195,6 @@ export function TransitMap({ lines, activeLineId, activeDirectionId, activeDirec
               </Fragment>
             );
           })}
-
-          {backendStops.map((stop) => (
-            <CircleMarker
-              key={`backend-stop-${stop.id}`}
-              center={[stop.location.lat, stop.location.lng]}
-              radius={7}
-              pathOptions={{
-                color: '#b45309',
-                fillColor: '#f59e0b',
-                fillOpacity: 0.95,
-                weight: 2,
-              }}
-            >
-              <Popup>
-                <strong>{stop.name}</strong>
-                <br />
-                {activeDirectionId ?? 'direction-unavailable'} ? #{stop.sequence}
-              </Popup>
-            </CircleMarker>
-          ))}
-
-          {backendPath.length ? (
-            <Polyline
-              positions={backendPath.map((point) => [point.lat, point.lng] as [number, number])}
-              pathOptions={{
-                color: '#d97706',
-                weight: 5,
-                opacity: 0.9,
-              }}
-            />
-          ) : null}
         </MapContainer>
       </div>
     </div>

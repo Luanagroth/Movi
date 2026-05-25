@@ -1,0 +1,601 @@
+{
+  "manifestVersion": "1.0",
+  "citySlug": "sao-francisco-do-sul",
+  "dataset": {
+    "metadata": {
+      "datasetId": "dataset-portal-sao-chico-ferry-2026-05-23T00-00-00-000Z",
+      "createdAt": "2026-05-23T00:00:00.000Z",
+      "sourceName": "Portal Sao Chico Turismo - Ferry Boat",
+      "sourceUrl": "https://portalsaochicoturismo.com.br/ferry-boat/",
+      "collectionMethod": "manual"
+    },
+    "transportLines": [
+      {
+        "id": "ferry-fb-01",
+        "code": "FB-01",
+        "slug": "ferry-laranjeiras-vila-da-gloria",
+        "name": "Ferry Boat Laranjeiras - Vila da Gloria",
+        "operator": "Ferry Boat Babitonga",
+        "summary": "Travessia hidroviaria cobrada para pedestres, veiculos e cargas.",
+        "routeLabel": "Ferry Boat Laranjeiras - Vila da Gloria",
+        "originLabel": "Laranjeiras",
+        "destinationLabel": "Vila da Gloria",
+        "transportMode": "ferry",
+        "operationalStatus": "on-time",
+        "fareSummary": "Pedestre R$ 3,20 · Bicicleta R$ 4,80 · Motocicleta R$ 8,00 · Animal R$ 8,00 · Carro e Van R$ 24,00 · Carroca R$ 24,00 · Caminhao 608 e Similares R$ 35,15 · Carro com Reboque R$ 39,95 · Caminhao R$ 42,90 · Caminhao Trucado R$ 55,80 · Carreta R$ 95,90 · Bitrem R$ 106,55",
+        "amenities": [],
+        "sourceUpdatedAt": "2026-05-23T00:00:00.000Z",
+        "sourceLineRef": "FB-01",
+        "isActive": true
+      }
+    ],
+    "routeDirections": [
+      {
+        "id": "ferry-fb-01-outbound",
+        "lineId": "ferry-fb-01",
+        "type": "outbound",
+        "slug": "outbound",
+        "name": "Laranjeiras -> Vila da Gloria",
+        "routeLabel": "Laranjeiras -> Vila da Gloria",
+        "originLabel": "Laranjeiras",
+        "destinationLabel": "Vila da Gloria",
+        "sortOrder": 0,
+        "isLoop": false,
+        "sourceDirectionRef": "outbound"
+      },
+      {
+        "id": "ferry-fb-01-inbound",
+        "lineId": "ferry-fb-01",
+        "type": "inbound",
+        "slug": "inbound",
+        "name": "Vila da Gloria -> Laranjeiras",
+        "routeLabel": "Vila da Gloria -> Laranjeiras",
+        "originLabel": "Vila da Gloria",
+        "destinationLabel": "Laranjeiras",
+        "sortOrder": 1,
+        "isLoop": false,
+        "sourceDirectionRef": "inbound"
+      }
+    ],
+    "stops": [
+      {
+        "id": "stop-trapiche-laranjeiras-m26_2766-m48_6731",
+        "name": "Trapiche Laranjeiras",
+        "slug": "trapiche-laranjeiras",
+        "latitude": -26.27657442070498,
+        "longitude": -48.673128757145534
+      },
+      {
+        "id": "stop-trapiche-vila-da-gloria-m26_2485-m48_7058",
+        "name": "Trapiche Vila da Gloria",
+        "slug": "trapiche-vila-da-gloria",
+        "latitude": -26.248521954344668,
+        "longitude": -48.705775101462976
+      }
+    ],
+    "lineStops": [
+      {
+        "id": "ferry-fb-01-outbound-stop-1",
+        "directionId": "ferry-fb-01-outbound",
+        "stopId": "stop-trapiche-laranjeiras-m26_2766-m48_6731",
+        "sequence": 1,
+        "isTimingPoint": true
+      },
+      {
+        "id": "ferry-fb-01-outbound-stop-2",
+        "directionId": "ferry-fb-01-outbound",
+        "stopId": "stop-trapiche-vila-da-gloria-m26_2485-m48_7058",
+        "sequence": 2,
+        "isTimingPoint": true
+      },
+      {
+        "id": "ferry-fb-01-inbound-stop-1",
+        "directionId": "ferry-fb-01-inbound",
+        "stopId": "stop-trapiche-vila-da-gloria-m26_2485-m48_7058",
+        "sequence": 1,
+        "isTimingPoint": true
+      },
+      {
+        "id": "ferry-fb-01-inbound-stop-2",
+        "directionId": "ferry-fb-01-inbound",
+        "stopId": "stop-trapiche-laranjeiras-m26_2766-m48_6731",
+        "sequence": 2,
+        "isTimingPoint": true
+      }
+    ],
+    "schedules": [],
+    "stopTimePredictions": [],
+    "routePaths": [
+      {
+        "id": "ferry-fb-01-outbound-path-1",
+        "directionId": "ferry-fb-01-outbound",
+        "sequence": 1,
+        "latitude": -26.27657442070498,
+        "longitude": -48.673128757145534
+      },
+      {
+        "id": "ferry-fb-01-outbound-path-2",
+        "directionId": "ferry-fb-01-outbound",
+        "sequence": 2,
+        "latitude": -26.248521954344668,
+        "longitude": -48.705775101462976
+      },
+      {
+        "id": "ferry-fb-01-inbound-path-1",
+        "directionId": "ferry-fb-01-inbound",
+        "sequence": 1,
+        "latitude": -26.248521954344668,
+        "longitude": -48.705775101462976
+      },
+      {
+        "id": "ferry-fb-01-inbound-path-2",
+        "directionId": "ferry-fb-01-inbound",
+        "sequence": 2,
+        "latitude": -26.27657442070498,
+        "longitude": -48.673128757145534
+      }
+    ],
+    "fares": [
+      {
+        "id": "collected-ferry-fb-01-fare-pedestre",
+        "lineId": "ferry-fb-01",
+        "label": "Pedestre",
+        "riderCategory": "pedestrian",
+        "amountCents": 320,
+        "currency": "BRL",
+        "sortOrder": 0
+      },
+      {
+        "id": "collected-ferry-fb-01-fare-bicicleta",
+        "lineId": "ferry-fb-01",
+        "label": "Bicicleta",
+        "riderCategory": "bicycle",
+        "amountCents": 480,
+        "currency": "BRL",
+        "sortOrder": 1
+      },
+      {
+        "id": "collected-ferry-fb-01-fare-motocicleta",
+        "lineId": "ferry-fb-01",
+        "label": "Motocicleta",
+        "riderCategory": "motorcycle",
+        "amountCents": 800,
+        "currency": "BRL",
+        "sortOrder": 2
+      },
+      {
+        "id": "collected-ferry-fb-01-fare-animal",
+        "lineId": "ferry-fb-01",
+        "label": "Animal",
+        "riderCategory": "animal",
+        "amountCents": 800,
+        "currency": "BRL",
+        "sortOrder": 3
+      },
+      {
+        "id": "collected-ferry-fb-01-fare-carro-van",
+        "lineId": "ferry-fb-01",
+        "label": "Carro e Van",
+        "riderCategory": "car_van",
+        "amountCents": 2400,
+        "currency": "BRL",
+        "sortOrder": 4
+      },
+      {
+        "id": "collected-ferry-fb-01-fare-carroca",
+        "lineId": "ferry-fb-01",
+        "label": "Carroca",
+        "riderCategory": "carroca",
+        "amountCents": 2400,
+        "currency": "BRL",
+        "sortOrder": 5
+      },
+      {
+        "id": "collected-ferry-fb-01-fare-caminhao-608",
+        "lineId": "ferry-fb-01",
+        "label": "Caminhao 608 e Similares",
+        "riderCategory": "truck_608",
+        "amountCents": 3515,
+        "currency": "BRL",
+        "sortOrder": 6
+      },
+      {
+        "id": "collected-ferry-fb-01-fare-carro-reboque",
+        "lineId": "ferry-fb-01",
+        "label": "Carro com Reboque",
+        "riderCategory": "car_trailer",
+        "amountCents": 3995,
+        "currency": "BRL",
+        "sortOrder": 7
+      },
+      {
+        "id": "collected-ferry-fb-01-fare-caminhao",
+        "lineId": "ferry-fb-01",
+        "label": "Caminhao",
+        "riderCategory": "truck",
+        "amountCents": 4290,
+        "currency": "BRL",
+        "sortOrder": 8
+      },
+      {
+        "id": "collected-ferry-fb-01-fare-caminhao-trucado",
+        "lineId": "ferry-fb-01",
+        "label": "Caminhao Trucado",
+        "riderCategory": "truck_trucado",
+        "amountCents": 5580,
+        "currency": "BRL",
+        "sortOrder": 9
+      },
+      {
+        "id": "collected-ferry-fb-01-fare-carreta",
+        "lineId": "ferry-fb-01",
+        "label": "Carreta",
+        "riderCategory": "carreta",
+        "amountCents": 9590,
+        "currency": "BRL",
+        "sortOrder": 10
+      },
+      {
+        "id": "collected-ferry-fb-01-fare-bitrem",
+        "lineId": "ferry-fb-01",
+        "label": "Bitrem",
+        "riderCategory": "bitrem",
+        "amountCents": 10655,
+        "currency": "BRL",
+        "sortOrder": 11
+      }
+    ],
+    "ferrySchedules": [
+      {
+        "id": "collected-ferry-fb-01-outbound-weekday-0800",
+        "lineId": "ferry-fb-01",
+        "directionId": "ferry-fb-01-outbound",
+        "serviceDay": "weekday",
+        "departureTime": "08:00",
+        "departureMinutes": 480
+      },
+      {
+        "id": "collected-ferry-fb-01-outbound-weekday-1000",
+        "lineId": "ferry-fb-01",
+        "directionId": "ferry-fb-01-outbound",
+        "serviceDay": "weekday",
+        "departureTime": "10:00",
+        "departureMinutes": 600
+      },
+      {
+        "id": "collected-ferry-fb-01-outbound-weekday-1200",
+        "lineId": "ferry-fb-01",
+        "directionId": "ferry-fb-01-outbound",
+        "serviceDay": "weekday",
+        "departureTime": "12:00",
+        "departureMinutes": 720
+      },
+      {
+        "id": "collected-ferry-fb-01-outbound-weekday-1600",
+        "lineId": "ferry-fb-01",
+        "directionId": "ferry-fb-01-outbound",
+        "serviceDay": "weekday",
+        "departureTime": "16:00",
+        "departureMinutes": 960
+      },
+      {
+        "id": "collected-ferry-fb-01-outbound-weekday-1830",
+        "lineId": "ferry-fb-01",
+        "directionId": "ferry-fb-01-outbound",
+        "serviceDay": "weekday",
+        "departureTime": "18:30",
+        "departureMinutes": 1110
+      },
+      {
+        "id": "collected-ferry-fb-01-outbound-saturday-0800",
+        "lineId": "ferry-fb-01",
+        "directionId": "ferry-fb-01-outbound",
+        "serviceDay": "saturday",
+        "departureTime": "08:00",
+        "departureMinutes": 480
+      },
+      {
+        "id": "collected-ferry-fb-01-outbound-saturday-1000",
+        "lineId": "ferry-fb-01",
+        "directionId": "ferry-fb-01-outbound",
+        "serviceDay": "saturday",
+        "departureTime": "10:00",
+        "departureMinutes": 600
+      },
+      {
+        "id": "collected-ferry-fb-01-outbound-saturday-1200",
+        "lineId": "ferry-fb-01",
+        "directionId": "ferry-fb-01-outbound",
+        "serviceDay": "saturday",
+        "departureTime": "12:00",
+        "departureMinutes": 720
+      },
+      {
+        "id": "collected-ferry-fb-01-outbound-saturday-1600",
+        "lineId": "ferry-fb-01",
+        "directionId": "ferry-fb-01-outbound",
+        "serviceDay": "saturday",
+        "departureTime": "16:00",
+        "departureMinutes": 960
+      },
+      {
+        "id": "collected-ferry-fb-01-outbound-saturday-1830",
+        "lineId": "ferry-fb-01",
+        "directionId": "ferry-fb-01-outbound",
+        "serviceDay": "saturday",
+        "departureTime": "18:30",
+        "departureMinutes": 1110
+      },
+      {
+        "id": "collected-ferry-fb-01-outbound-sunday-0800",
+        "lineId": "ferry-fb-01",
+        "directionId": "ferry-fb-01-outbound",
+        "serviceDay": "sunday",
+        "departureTime": "08:00",
+        "departureMinutes": 480
+      },
+      {
+        "id": "collected-ferry-fb-01-outbound-sunday-1000",
+        "lineId": "ferry-fb-01",
+        "directionId": "ferry-fb-01-outbound",
+        "serviceDay": "sunday",
+        "departureTime": "10:00",
+        "departureMinutes": 600
+      },
+      {
+        "id": "collected-ferry-fb-01-outbound-sunday-1200",
+        "lineId": "ferry-fb-01",
+        "directionId": "ferry-fb-01-outbound",
+        "serviceDay": "sunday",
+        "departureTime": "12:00",
+        "departureMinutes": 720
+      },
+      {
+        "id": "collected-ferry-fb-01-outbound-sunday-1600",
+        "lineId": "ferry-fb-01",
+        "directionId": "ferry-fb-01-outbound",
+        "serviceDay": "sunday",
+        "departureTime": "16:00",
+        "departureMinutes": 960
+      },
+      {
+        "id": "collected-ferry-fb-01-outbound-sunday-1830",
+        "lineId": "ferry-fb-01",
+        "directionId": "ferry-fb-01-outbound",
+        "serviceDay": "sunday",
+        "departureTime": "18:30",
+        "departureMinutes": 1110
+      },
+      {
+        "id": "collected-ferry-fb-01-inbound-weekday-0700",
+        "lineId": "ferry-fb-01",
+        "directionId": "ferry-fb-01-inbound",
+        "serviceDay": "weekday",
+        "departureTime": "07:00",
+        "departureMinutes": 420
+      },
+      {
+        "id": "collected-ferry-fb-01-inbound-weekday-0900",
+        "lineId": "ferry-fb-01",
+        "directionId": "ferry-fb-01-inbound",
+        "serviceDay": "weekday",
+        "departureTime": "09:00",
+        "departureMinutes": 540
+      },
+      {
+        "id": "collected-ferry-fb-01-inbound-weekday-1100",
+        "lineId": "ferry-fb-01",
+        "directionId": "ferry-fb-01-inbound",
+        "serviceDay": "weekday",
+        "departureTime": "11:00",
+        "departureMinutes": 660
+      },
+      {
+        "id": "collected-ferry-fb-01-inbound-weekday-1500",
+        "lineId": "ferry-fb-01",
+        "directionId": "ferry-fb-01-inbound",
+        "serviceDay": "weekday",
+        "departureTime": "15:00",
+        "departureMinutes": 900
+      },
+      {
+        "id": "collected-ferry-fb-01-inbound-weekday-1730",
+        "lineId": "ferry-fb-01",
+        "directionId": "ferry-fb-01-inbound",
+        "serviceDay": "weekday",
+        "departureTime": "17:30",
+        "departureMinutes": 1050
+      },
+      {
+        "id": "collected-ferry-fb-01-inbound-saturday-0700",
+        "lineId": "ferry-fb-01",
+        "directionId": "ferry-fb-01-inbound",
+        "serviceDay": "saturday",
+        "departureTime": "07:00",
+        "departureMinutes": 420
+      },
+      {
+        "id": "collected-ferry-fb-01-inbound-saturday-0900",
+        "lineId": "ferry-fb-01",
+        "directionId": "ferry-fb-01-inbound",
+        "serviceDay": "saturday",
+        "departureTime": "09:00",
+        "departureMinutes": 540
+      },
+      {
+        "id": "collected-ferry-fb-01-inbound-saturday-1100",
+        "lineId": "ferry-fb-01",
+        "directionId": "ferry-fb-01-inbound",
+        "serviceDay": "saturday",
+        "departureTime": "11:00",
+        "departureMinutes": 660
+      },
+      {
+        "id": "collected-ferry-fb-01-inbound-saturday-1500",
+        "lineId": "ferry-fb-01",
+        "directionId": "ferry-fb-01-inbound",
+        "serviceDay": "saturday",
+        "departureTime": "15:00",
+        "departureMinutes": 900
+      },
+      {
+        "id": "collected-ferry-fb-01-inbound-saturday-1730",
+        "lineId": "ferry-fb-01",
+        "directionId": "ferry-fb-01-inbound",
+        "serviceDay": "saturday",
+        "departureTime": "17:30",
+        "departureMinutes": 1050
+      },
+      {
+        "id": "collected-ferry-fb-01-inbound-sunday-0700",
+        "lineId": "ferry-fb-01",
+        "directionId": "ferry-fb-01-inbound",
+        "serviceDay": "sunday",
+        "departureTime": "07:00",
+        "departureMinutes": 420
+      },
+      {
+        "id": "collected-ferry-fb-01-inbound-sunday-0900",
+        "lineId": "ferry-fb-01",
+        "directionId": "ferry-fb-01-inbound",
+        "serviceDay": "sunday",
+        "departureTime": "09:00",
+        "departureMinutes": 540
+      },
+      {
+        "id": "collected-ferry-fb-01-inbound-sunday-1100",
+        "lineId": "ferry-fb-01",
+        "directionId": "ferry-fb-01-inbound",
+        "serviceDay": "sunday",
+        "departureTime": "11:00",
+        "departureMinutes": 660
+      },
+      {
+        "id": "collected-ferry-fb-01-inbound-sunday-1500",
+        "lineId": "ferry-fb-01",
+        "directionId": "ferry-fb-01-inbound",
+        "serviceDay": "sunday",
+        "departureTime": "15:00",
+        "departureMinutes": 900
+      },
+      {
+        "id": "collected-ferry-fb-01-inbound-sunday-1730",
+        "lineId": "ferry-fb-01",
+        "directionId": "ferry-fb-01-inbound",
+        "serviceDay": "sunday",
+        "departureTime": "17:30",
+        "departureMinutes": 1050
+      }
+    ],
+    "ferryFares": [
+      {
+        "id": "collected-ferry-fb-01-fare-pedestre",
+        "lineId": "ferry-fb-01",
+        "label": "Pedestre",
+        "riderCategory": "pedestrian",
+        "amountCents": 320,
+        "currency": "BRL",
+        "sortOrder": 0
+      },
+      {
+        "id": "collected-ferry-fb-01-fare-bicicleta",
+        "lineId": "ferry-fb-01",
+        "label": "Bicicleta",
+        "riderCategory": "bicycle",
+        "amountCents": 480,
+        "currency": "BRL",
+        "sortOrder": 1
+      },
+      {
+        "id": "collected-ferry-fb-01-fare-motocicleta",
+        "lineId": "ferry-fb-01",
+        "label": "Motocicleta",
+        "riderCategory": "motorcycle",
+        "amountCents": 800,
+        "currency": "BRL",
+        "sortOrder": 2
+      },
+      {
+        "id": "collected-ferry-fb-01-fare-animal",
+        "lineId": "ferry-fb-01",
+        "label": "Animal",
+        "riderCategory": "animal",
+        "amountCents": 800,
+        "currency": "BRL",
+        "sortOrder": 3
+      },
+      {
+        "id": "collected-ferry-fb-01-fare-carro-van",
+        "lineId": "ferry-fb-01",
+        "label": "Carro e Van",
+        "riderCategory": "car_van",
+        "amountCents": 2400,
+        "currency": "BRL",
+        "sortOrder": 4
+      },
+      {
+        "id": "collected-ferry-fb-01-fare-carroca",
+        "lineId": "ferry-fb-01",
+        "label": "Carroca",
+        "riderCategory": "carroca",
+        "amountCents": 2400,
+        "currency": "BRL",
+        "sortOrder": 5
+      },
+      {
+        "id": "collected-ferry-fb-01-fare-caminhao-608",
+        "lineId": "ferry-fb-01",
+        "label": "Caminhao 608 e Similares",
+        "riderCategory": "truck_608",
+        "amountCents": 3515,
+        "currency": "BRL",
+        "sortOrder": 6
+      },
+      {
+        "id": "collected-ferry-fb-01-fare-carro-reboque",
+        "lineId": "ferry-fb-01",
+        "label": "Carro com Reboque",
+        "riderCategory": "car_trailer",
+        "amountCents": 3995,
+        "currency": "BRL",
+        "sortOrder": 7
+      },
+      {
+        "id": "collected-ferry-fb-01-fare-caminhao",
+        "lineId": "ferry-fb-01",
+        "label": "Caminhao",
+        "riderCategory": "truck",
+        "amountCents": 4290,
+        "currency": "BRL",
+        "sortOrder": 8
+      },
+      {
+        "id": "collected-ferry-fb-01-fare-caminhao-trucado",
+        "lineId": "ferry-fb-01",
+        "label": "Caminhao Trucado",
+        "riderCategory": "truck_trucado",
+        "amountCents": 5580,
+        "currency": "BRL",
+        "sortOrder": 9
+      },
+      {
+        "id": "collected-ferry-fb-01-fare-carreta",
+        "lineId": "ferry-fb-01",
+        "label": "Carreta",
+        "riderCategory": "carreta",
+        "amountCents": 9590,
+        "currency": "BRL",
+        "sortOrder": 10
+      },
+      {
+        "id": "collected-ferry-fb-01-fare-bitrem",
+        "lineId": "ferry-fb-01",
+        "label": "Bitrem",
+        "riderCategory": "bitrem",
+        "amountCents": 10655,
+        "currency": "BRL",
+        "sortOrder": 11
+      }
+    ]
+  }
+}

@@ -2,7 +2,7 @@
 
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef } from 'react';
 import { Heart, LocateFixed, LogIn, LogOut, Map, SearchCheck, ShieldCheck, ShipWheel } from 'lucide-react';
 import type { TransportMode } from '@cityline/shared';
 import { EmptyState } from '@/components/ui/empty-state';
@@ -82,7 +82,7 @@ export function MobilityDashboard({ initialData }: MobilityDashboardProps) {
 
   useEffect(() => {
     if (!selectedLineId && visibleLines[0]) setSelectedLineId(visibleLines[0].id);
-  }, [selectedLineId, visibleLines]);
+  }, [selectedLineId, setSelectedLineId, visibleLines]);
 
   useEffect(() => {
     if (!selectedLineId) return;
@@ -95,7 +95,7 @@ export function MobilityDashboard({ initialData }: MobilityDashboardProps) {
         <div className="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
           <div>
             <p className="text-sm font-medium text-sky-100">{copy.sections.heroTag}</p>
-            <h1 className="mt-1 text-3xl font-bold tracking-tight">CityLine</h1>
+            <h1 className="mt-1 text-3xl font-bold tracking-tight">MOVI</h1>
             <p className="mt-2 max-w-2xl text-sm text-slate-200 sm:text-base">{copy.sections.heroDescription}</p>
           </div>
 

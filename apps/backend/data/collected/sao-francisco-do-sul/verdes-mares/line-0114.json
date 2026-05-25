@@ -1,0 +1,202 @@
+{
+  "manifestVersion": "1.0",
+  "citySlug": "sao-francisco-do-sul",
+  "providerSlug": "verdes-mares",
+  "entityType": "line",
+  "data": {
+    "id": "collected-line-0114",
+    "code": "0114",
+    "slug": "0114-franklin-reta",
+    "name": "Franklin Reta",
+    "operator": "Verdes Mares",
+    "mode": "urban",
+    "summary": "Linha Franklin Reta",
+    "routeLabel": "Franklin -> Bairro",
+    "originLabel": "Franklin",
+    "destinationLabel": "Bairro",
+    "fares": [
+      {
+        "id": "collected-line-0114-fare-1",
+        "label": "Tarifa urbana municipal",
+        "appliesTo": "line",
+        "source": {
+          "sourceId": "verdes-mares-sfs",
+          "sourceName": "Verdes Mares Sao Francisco do Sul",
+          "sourceUrl": "https://vmares.com.br/sao-francisco-do-sul/",
+          "collectedAt": "2026-04-17T12:00:00.000Z",
+          "collectionMethod": "manual",
+          "sourceLineRef": "0114"
+        }
+      }
+    ],
+    "directions": [
+      {
+        "id": "collected-line-0114-outbound",
+        "type": "outbound",
+        "name": "Saída do Franklin",
+        "routeLabel": "Franklin -> Bairro",
+        "originLabel": "Franklin",
+        "destinationLabel": "Bairro",
+        "mapPath": [
+          {
+            "sequence": 1,
+            "lat": -26.24457250626517,
+            "lng": -48.60130795221043
+          },
+          {
+            "sequence": 2,
+            "lat": -26.238657459849893,
+            "lng": -48.59319657509188
+          },
+          {
+            "sequence": 3,
+            "lat": -26.23577626467118,
+            "lng": -48.589257238770365
+          },
+          {
+            "sequence": 4,
+            "lat": -26.233972591742404,
+            "lng": -48.5868932472597
+          },
+          {
+            "sequence": 5,
+            "lat": -26.231698203114323,
+            "lng": -48.583296959676765
+          },
+          {
+            "sequence": 6,
+            "lat": -26.232733960160264,
+            "lng": -48.58212011907546
+          },
+          {
+            "sequence": 7,
+            "lat": -26.23373242823788,
+            "lng": -48.5812296256845
+          },
+          {
+            "sequence": 8,
+            "lat": -26.232753207819787,
+            "lng": -48.580347178930886
+          },
+          {
+            "sequence": 9,
+            "lat": -26.23047654858731,
+            "lng": -48.58233903078628
+          }
+        ],
+        "stops": [
+          {
+            "id": "collected-line-0114-outbound-stop-1",
+            "name": "Rua Rodovia Duque de Caxias, 2015",
+            "sequence": 1,
+            "location": {
+              "lat": -26.24457250626517,
+              "lng": -48.60130795221043
+            },
+            "isTimingPoint": true
+          },
+          {
+            "id": "collected-line-0114-outbound-stop-2",
+            "name": "Antes do Rocha",
+            "sequence": 2,
+            "location": {
+              "lat": -26.238657459849893,
+              "lng": -48.59319657509188
+            }
+          },
+          {
+            "id": "collected-line-0114-outbound-stop-3",
+            "name": "Porto Seco Rocha (Sentido Centro/Bairro)",
+            "sequence": 3,
+            "location": {
+              "lat": -26.23577626467118,
+              "lng": -48.589257238770365
+            }
+          },
+          {
+            "id": "collected-line-0114-outbound-stop-4",
+            "name": "KM 3 (Sentido Centro/Bairro)",
+            "sequence": 4,
+            "location": {
+              "lat": -26.233972591742404,
+              "lng": -48.5868932472597
+            }
+          },
+          {
+            "id": "collected-line-0114-outbound-stop-5",
+            "name": "Rua Rodovia Duque de Caxias, 4428",
+            "sequence": 5,
+            "location": {
+              "lat": -26.231698203114323,
+              "lng": -48.583296959676765
+            }
+          },
+          {
+            "id": "collected-line-0114-outbound-stop-6",
+            "name": "Rua Simeão de Mira, 151",
+            "sequence": 6,
+            "location": {
+              "lat": -26.232733960160264,
+              "lng": -48.58212011907546
+            }
+          },
+          {
+            "id": "collected-line-0114-outbound-stop-7",
+            "name": "Rua Simeão de Mira, 303",
+            "sequence": 7,
+            "location": {
+              "lat": -26.23373242823788,
+              "lng": -48.5812296256845
+            }
+          },
+          {
+            "id": "collected-line-0114-outbound-stop-8",
+            "name": "Rua Santa Clara de Assis, 410",
+            "sequence": 8,
+            "location": {
+              "lat": -26.232753207819787,
+              "lng": -48.580347178930886
+            }
+          },
+          {
+            "id": "collected-line-0114-outbound-stop-9",
+            "name": "Rua Rodovia Duque de Caxias, 4602",
+            "sequence": 9,
+            "location": {
+              "lat": -26.23047654858731,
+              "lng": -48.58233903078628
+            },
+            "isTimingPoint": true
+          }
+        ],
+        "departures": [
+          {
+            "id": "collected-line-0114-outbound-weekday-1705",
+            "serviceDay": "weekday",
+            "departureTime": "17:05",
+            "stopPredictions": []
+          }
+        ],
+        "source": {
+          "sourceId": "verdes-mares-sfs",
+          "sourceName": "Verdes Mares Sao Francisco do Sul",
+          "sourceUrl": "https://vmares.com.br/sao-francisco-do-sul/",
+          "collectedAt": "2026-04-17T12:00:00.000Z",
+          "collectionMethod": "manual",
+          "sourceLineRef": "0114",
+          "sourceDirectionRef": "outbound"
+        }
+      }
+    ],
+    "collectionStatus": "reviewed",
+    "source": {
+      "sourceId": "verdes-mares-sfs",
+      "sourceName": "Verdes Mares Sao Francisco do Sul",
+      "sourceUrl": "https://vmares.com.br/sao-francisco-do-sul/",
+      "collectedAt": "2026-04-17T12:00:00.000Z",
+      "collectionMethod": "manual",
+      "sourceLineRef": "0114",
+      "notes": "Linha 0114 Franklin Reta montada com sentido bairro a partir das paradas informadas, reaproveitando coordenadas do banco local."
+    }
+  }
+}

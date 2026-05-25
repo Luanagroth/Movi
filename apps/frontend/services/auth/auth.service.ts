@@ -20,6 +20,10 @@ export interface SavedLocationRecord {
   createdAt: string;
 }
 
+export interface PasswordRecoveryResponse {
+  message: string;
+}
+
 const AUTH_STORAGE_KEY = 'cityline:auth:v1';
 
 const canUseBrowserStorage = () => typeof window !== 'undefined';
@@ -60,7 +64,7 @@ export function getAuthHeaders(token?: string): HeadersInit {
   return authToken ? { Authorization: `Bearer ${authToken}` } : {};
 }
 
-export async function registerWithEmail(input: { name?: string; email: string; password: string }) {
+export async function registerWithEmail(input: { name?: string; email: string; password: string; phone?: string }) {
   const session = await requestApi<AuthSession>(
     '/auth/register',
     {
@@ -125,6 +129,28 @@ export async function listSavedLocations(token?: string) {
       headers: {
         ...getAuthHeaders(token),
       },
+    },
+    { revalidate: 0 }
+  );
+}
+
+export async function requestPasswordRecovery(input: { email: string }) {
+  return requestApi<PasswordRecoveryResponse>(
+    '/auth/forgot-password',
+    {
+      method: 'POST',
+      body: JSON.stringify(input),
+    },
+    { revalidate: 0 }
+  );
+}
+
+export async function resetPassword(input: { token: string; newPassword: string }) {
+  return requestApi<PasswordRecoveryResponse>(
+    '/auth/reset-password',
+    {
+      method: 'POST',
+      body: JSON.stringify(input),
     },
     { revalidate: 0 }
   );
