@@ -1,71 +1,118 @@
-# MOVI — Projetos Independentes
+# 🚍 MOVI — Plataforma de Mobilidade Urbana
 
 Plataforma pública de mobilidade urbana para São Francisco do Sul e região, com foco em consulta de linhas, horários, paradas, rotas e modais hidroviários.
 
-O projeto é independente e organiza dados públicos para facilitar a experiência de busca de transporte no dia a dia.
+O projeto organiza dados públicos em uma experiência moderna, simples e acessível para facilitar o uso do transporte no dia a dia.
 
-## Status
+---
 
-- Frontend e backend integrados
-- Dados reais carregados no fluxo principal
-- Mapa interativo com linhas e paradas
-- Autenticação, favoritos e recuperação de senha
-- Base PWA ativa (manifest + service worker + offline básico)
+## 🌐 Deploy
 
-## Contexto do projeto
+🔗 Frontend Online: https://movi-frontend.vercel.app/
 
-### Propósito
+---
 
-O MOVI nasceu para organizar, em um só lugar, informações públicas de mobilidade urbana que normalmente ficam espalhadas entre sites, imagens, redes sociais e comunicados.
+## 🚀 Status do Projeto
 
-### Dores reais que o projeto resolve
+✅ Frontend e backend integrados  
+✅ Dados reais carregados no fluxo principal  
+✅ Mapa interativo com linhas e paradas  
+✅ Sistema de autenticação  
+✅ Favoritos por usuário  
+✅ Recuperação de senha por e-mail  
+✅ Estrutura PWA ativa  
+✅ Build, lint e testes funcionando  
 
-- Dificuldade de encontrar horários e rotas de forma rápida.
-- Falta de uma visualização clara por linha, sentido e paradas.
-- Baixa previsibilidade para quem depende de transporte no dia a dia.
-- Experiência confusa em mobile para consulta rápida “na rua”.
+---
 
-### Por que esse projeto foi criado
+# 📌 Sobre o Projeto
 
-- Consolidar dados públicos em uma experiência útil e simples para a população.
-- Criar um produto funcional de ponta a ponta como projeto independente.
-- Evoluir habilidades práticas em arquitetura, frontend, backend, dados, UX e PWA.
+## 🎯 Propósito
 
-### Principais dificuldades encontradas
+O MOVI nasceu para centralizar informações públicas de mobilidade urbana que normalmente ficam espalhadas entre:
 
-- Fontes com formatos diferentes e dados incompletos/inconsistentes.
-- Ajuste fino entre linha, sentido, paradas e trajetória no mapa.
-- Evitar chamadas inválidas e estados quebrados no frontend.
-- Garantir estabilidade de build/dev sem perder velocidade de iteração.
-- Manter qualidade (type-check, lint, testes e build) durante mudanças frequentes.
+- sites
+- imagens
+- PDFs
+- redes sociais
+- comunicados públicos
 
-## Stack
+A proposta é transformar essas informações em uma experiência rápida, organizada e acessível.
 
-### Frontend
+---
+
+# ⚠️ Problemas que o projeto busca resolver
+
+- Dificuldade de encontrar horários e rotas rapidamente
+- Falta de visualização clara por linha, sentido e paradas
+- Baixa previsibilidade para quem depende de transporte público
+- Experiência ruim em dispositivos móveis
+- Informações espalhadas em múltiplas fontes
+
+---
+
+# 🧠 Motivação
+
+Este projeto foi criado para:
+
+- Consolidar dados públicos em uma experiência funcional
+- Construir um produto completo de ponta a ponta
+- Evoluir habilidades práticas em:
+  - arquitetura
+  - frontend
+  - backend
+  - UX/UI
+  - dados
+  - PWA
+  - organização de monorepo
+
+---
+
+# 🛠️ Principais Desafios Técnicos
+
+- Padronização de fontes de dados inconsistentes
+- Relacionamento entre linhas, sentidos e paradas
+- Controle de estados complexos no frontend
+- Evitar chamadas inválidas e loops de renderização
+- Garantir estabilidade sem perder velocidade de desenvolvimento
+- Manter qualidade com lint, type-check, testes e build
+
+---
+
+# 🧱 Stack Utilizada
+
+## 🎨 Frontend
 
 - Next.js 15
 - React 19
 - TypeScript
 - Tailwind CSS
-- Leaflet / React-Leaflet
+- Leaflet
+- React-Leaflet
 
-### Backend
+---
+
+## ⚙️ Backend
 
 - Node.js
 - Express
 - TypeScript
-- Prisma
-- SQLite (desenvolvimento)
+- Prisma ORM
+- SQLite
 
-### Qualidade
+---
+
+## 🧪 Qualidade e Testes
 
 - Vitest
 - Testing Library
 - ESLint
 
-## Estrutura do monorepo
+---
 
-```text
+# 📂 Estrutura do Monorepo
+
+```bash
 .
 ├─ apps/
 │  ├─ backend/
@@ -78,62 +125,96 @@ O MOVI nasceu para organizar, em um só lugar, informações públicas de mobili
 └─ README.md
 ```
 
-## Principais funcionalidades
+---
 
-- Home pública com navegação rápida
-- Página unificada de linhas e horários
-- Mapa da linha selecionada, com sentido e paradas
-- Área de ferry boat integrada ao fluxo de linhas
+# ✨ Funcionalidades
+
+## 🚏 Transporte
+
+- Consulta de linhas e horários
+- Visualização de trajetos no mapa
+- Paradas por sentido
+- Integração com ferry boat
 - Página de bilhetes e tarifas
-- Página de notícias com conteúdos externos
-- Página de contato institucional do projeto
-- Login, cadastro e perfil
-- Favoritos por sessão autenticada
-- Recuperação de senha por e-mail (Brevo)
-- Widget de clima na home (Open-Meteo)
 
-## PWA
+---
 
-Implementação atual:
+## 👤 Usuário
 
-- `manifest.webmanifest`
-- registro de service worker em produção
-- cache de assets estáticos
-- fallback offline para navegação básica
+- Login e cadastro
+- Perfil autenticado
+- Favoritos por usuário
+- Recuperação de senha via Brevo
 
-Observação:
+---
 
-- O app não depende de cache agressivo de dados dinâmicos de transporte.
+## 🌎 Extras
 
-## Como rodar localmente
+- Página de notícias
+- Página institucional de contato
+- Widget de clima (Open-Meteo)
+- Navegação responsiva
+- Estrutura PWA
 
-### Pré-requisitos
+---
+
+# 📱 PWA
+
+## Implementações atuais
+
+✅ manifest.webmanifest  
+✅ Service Worker em produção  
+✅ Cache de assets estáticos  
+✅ Fallback offline básico  
+
+> O app não depende de cache agressivo de dados dinâmicos de transporte.
+
+---
+
+# 💻 Como Rodar Localmente
+
+## 📋 Pré-requisitos
 
 - Node.js 20+
 - npm 10+
 
-### Instalação
+---
+
+## 📦 Instalação
 
 ```bash
 npm install
 ```
 
-### Subir projeto completo (backend + frontend)
+---
+
+## ▶️ Rodar projeto completo
 
 ```bash
 npm run dev
 ```
 
-O comando `npm run dev` já executa preparação automática do banco para ambiente local.
+O comando já executa automaticamente a preparação do banco local.
 
-### Rodar serviços separadamente
+---
+
+## 🔧 Rodar serviços separadamente
+
+### Backend
 
 ```bash
 npm run dev:backend
+```
+
+### Frontend
+
+```bash
 npm run dev:frontend
 ```
 
-## Scripts principais
+---
+
+# 📜 Scripts Principais
 
 ```bash
 npm run dev
@@ -143,79 +224,118 @@ npm run type-check
 npm run test
 ```
 
-## Variáveis de ambiente
+---
 
-Arquivo principal: `.env` na raiz.
+# 🔐 Variáveis de Ambiente
 
-Exemplo mínimo para autenticação e reset de senha:
+Arquivo principal:
+
+```env
+.env
+```
+
+## Exemplo mínimo:
 
 ```env
 JWT_SECRET=troque-por-um-segredo-forte
 APP_URL=http://localhost:3000
 
 BREVO_API_KEY=sua-chave-brevo
-BREVO_SENDER_EMAIL=seu-email-remetente
+BREVO_SENDER_EMAIL=seu-email
 BREVO_SENDER_NAME=MOVI
 ```
 
 > Em produção, altere `APP_URL` para a URL pública do deploy.
 
-## Banco de dados e dados de transporte
+---
 
-O backend usa Prisma + SQLite em desenvolvimento.
+# 🗄️ Banco de Dados
 
-Para garantir dados de transporte no ambiente local, o fluxo recomendado é usar `npm run dev`, que já chama a preparação de banco configurada no monorepo.
+O backend utiliza:
 
-## Deploy
+- Prisma ORM
+- SQLite em ambiente de desenvolvimento
 
-Fluxo recomendado:
+O fluxo recomendado é utilizar:
 
-1. Rodar validações locais
-2. Subir no GitHub
-3. Deploy na Vercel (frontend) e backend conforme ambiente escolhido
+```bash
+npm run dev
+```
 
-Checklist antes do deploy:
-
-- `npm run type-check`
-- `npm run lint`
-- `npm run test`
-- `npm run build`
-
-## Capturas de tela
-
-1. Home
-
-![Home MOVI](./docs/screenshots/home.png)
-
-2. Linhas e horários
-
-![Linhas e Horários](./docs/screenshots/linhas%20e%20hor%C3%A1rios.png)
-
-3. Bilhetes 1.0
-
-![Bilhetes 1.0](./docs/screenshots/bilhetes%201.0.png)
-
-4. Bilhetes 2.0
-
-![Bilhetes 2.0](./docs/screenshots/bilhetes%202.0.png)
-
-5. Notícias
-
-![Notícias](./docs/screenshots/noticias.png)
-
-## Aviso de independência
-
-O MOVI é um projeto independente, sem vínculo oficial com empresas operadoras de transporte, órgãos governamentais ou entidades municipais.
-
-As informações exibidas são organizadas a partir de fontes públicas e podem sofrer alterações nas fontes originais.
-
-## Desenvolvedora
-
-- **Luana Groth**
-- LinkedIn: [linkedin.com/in/luana-groth](https://www.linkedin.com/in/luana-groth/)
-- GitHub: [github.com/Luanagroth](https://github.com/Luanagroth)
-- Portfólio: [luana-groth-portfolio.vercel.app](https://luana-groth-portfolio.vercel.app/)
+pois ele já prepara automaticamente o ambiente local.
 
 ---
 
-© 2026 MOVI — Projetos Independentes
+# 🚀 Deploy
+
+## Fluxo recomendado
+
+1. Rodar validações locais
+2. Subir alterações no GitHub
+3. Realizar deploy do frontend na Vercel
+4. Configurar backend conforme ambiente escolhido
+
+---
+
+## ✅ Checklist antes do deploy
+
+```bash
+npm run type-check
+npm run lint
+npm run test
+npm run build
+```
+
+---
+
+# 📸 Capturas de Tela
+
+## 🏠 Home
+
+![Home do MOVI](docs/screenshots/home.png)
+
+---
+
+## 🗺️ Linhas e Horários
+
+![Página de linhas e horários do MOVI](docs/screenshots/linhas%20e%20hor%C3%A1rios.png)
+
+---
+
+## 🎫 Bilhetes
+
+![Página de bilhetes do MOVI - visão 1](docs/screenshots/bilhetes%201.0.png)
+
+![Página de bilhetes do MOVI - visão 2](docs/screenshots/bilhetes%202.0.png)
+
+---
+
+## 📰 Notícias
+
+![Página de notícias do MOVI](docs/screenshots/noticias.png)
+
+---
+
+# ⚠️ Aviso de Independência
+
+O MOVI é um projeto independente e não possui vínculo oficial com:
+
+- empresas operadoras
+- órgãos governamentais
+- entidades municipais
+
+As informações exibidas são organizadas a partir de fontes públicas e podem sofrer alterações nas fontes originais.
+
+---
+
+# 👩‍💻 Desenvolvedora
+
+## Luana Groth
+
+🔗 LinkedIn: https://linkedin.com/in/luana-groth  
+🔗 GitHub: https://github.com/Luanagroth  
+🔗 Portfólio: https://luana-groth-portfolio.vercel.app/
+
+---
+
+# ©️ 2026 MOVI — Projetos Independentes

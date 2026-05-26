@@ -31,7 +31,7 @@ export function AppShell({ children }: { children: ReactNode }) {
   if (isImmersiveRoute) {
     return (
       <div className="min-h-screen bg-[#f5f1e6] text-[#14233c]">
-        <main>{children}</main>
+        <div>{children}</div>
       </div>
     );
   }
@@ -122,7 +122,7 @@ export function AppShell({ children }: { children: ReactNode }) {
         </div>
       ) : null}
 
-      <main className="mx-auto w-full max-w-[1280px] px-4 pb-14 pt-6 sm:px-6 lg:px-8">{children}</main>
+      <div className="mx-auto w-full max-w-[1280px] px-4 pb-14 pt-6 sm:px-6 lg:px-8">{children}</div>
     </div>
   );
 }
