@@ -456,8 +456,8 @@ export function LinesSchedulesUnifiedPage({ lines, initialLineId, initialPanel =
           </div>
         </section>
 
-        <section className="grid gap-6 px-3 py-8 sm:px-8 lg:grid-cols-[360px_1fr] lg:gap-8 lg:px-12 lg:py-10">
-          <aside className="rounded-3xl border border-[#14233c]/10 bg-[#f0eadc] p-5 shadow-sm sm:p-8">
+        <section className="grid min-w-0 gap-6 px-3 py-8 sm:px-8 lg:grid-cols-[360px_minmax(0,1fr)] lg:gap-8 lg:px-12 lg:py-10">
+          <aside className="min-w-0 overflow-hidden rounded-3xl border border-[#14233c]/10 bg-[#f0eadc] p-5 shadow-sm sm:p-8">
             <h2 className="text-sm font-black uppercase text-[#14233c]">Todas as linhas</h2>
             <p className="mt-2 text-sm font-medium text-[#14233c]/75">Navegue e selecione a linha desejada</p>
 
@@ -473,7 +473,7 @@ export function LinesSchedulesUnifiedPage({ lines, initialLineId, initialPanel =
                       setSelectedLineId(line.id);
                       scrollToSelectedDetails();
                     }}
-                    className={`flex w-full items-center gap-4 rounded-xl p-3 text-left transition ${active ? 'bg-[#ffd200] shadow-lg shadow-yellow-500/20' : 'hover:bg-white/70'}`}
+                    className={`flex w-full min-w-0 items-center gap-4 rounded-xl p-3 text-left transition ${active ? 'bg-[#ffd200] shadow-lg shadow-yellow-500/20' : 'hover:bg-white/70'}`}
                   >
                     <LineBadge label={line.code} tone={toneByIndex[index % toneByIndex.length] ?? 'green'} active={active} />
                     <span className="min-w-0 flex-1">
@@ -492,16 +492,16 @@ export function LinesSchedulesUnifiedPage({ lines, initialLineId, initialPanel =
                 setActivePanel('ferry');
                 scrollToSelectedDetails();
               }}
-              className={`mt-8 flex w-full items-center gap-4 rounded-2xl border p-6 text-left shadow-sm transition ${
+              className={`mt-8 flex w-full min-w-0 items-center gap-4 rounded-2xl border p-6 text-left shadow-sm transition ${
                 activePanel === 'ferry'
                   ? 'border-[#14233c]/30 bg-[#ffd200]/40'
                   : 'border-[#d7bd58]/40 bg-[#fff4cd] hover:bg-[#ffefb3]'
               }`}
             >
               <ShipWheel size={38} className="text-[#071d39]" />
-              <span className="flex-1">
+              <span className="min-w-0 flex-1">
                 <span className="block text-sm font-black text-[#14233c]">Ferry Boat</span>
-                <span className="mt-1 block text-xs font-medium leading-5 text-[#14233c]/70">
+                <span className="mt-1 block truncate text-xs font-medium leading-5 text-[#14233c]/70">
                   {ferryLines.length
                     ? `${ferryLines.length} rota(s) hidroviárias - ver horários e informações`
                     : 'Clique aqui para ver horários e informações'}
@@ -513,7 +513,7 @@ export function LinesSchedulesUnifiedPage({ lines, initialLineId, initialPanel =
 
           <section
             ref={detailsRef}
-            className="scroll-mt-6 rounded-3xl border border-[#14233c]/14 bg-[#f8f3e8] p-5 shadow-[0_18px_45px_rgba(20,35,60,0.10)] sm:p-8"
+            className="min-w-0 overflow-hidden scroll-mt-6 rounded-3xl border border-[#14233c]/14 bg-[#f8f3e8] p-5 shadow-[0_18px_45px_rgba(20,35,60,0.10)] sm:p-8"
           >
             {selectedDisplayLine ? (
               <>
@@ -549,7 +549,7 @@ export function LinesSchedulesUnifiedPage({ lines, initialLineId, initialPanel =
                   <div className="flex min-w-0 items-start gap-4 sm:gap-5">
                     <LineBadge label={selectedDisplayLine.code} tone="yellow" active />
                     <div className="min-w-0">
-                      <h2 className="break-words text-2xl font-black tracking-normal text-[#14233c] sm:text-3xl">{selectedDisplayLine.name}</h2>
+                      <h2 className="text-2xl font-black tracking-normal text-[#14233c] [overflow-wrap:anywhere] sm:text-3xl">{selectedDisplayLine.name}</h2>
                       {ferryLabel ? (
                         <div className="mt-2 flex flex-wrap items-center gap-2">
                           <span className="rounded-full border border-[#14233c]/20 bg-white px-3 py-1 text-[11px] font-black uppercase tracking-[0.08em] text-[#14233c]">
@@ -564,7 +564,7 @@ export function LinesSchedulesUnifiedPage({ lines, initialLineId, initialPanel =
                           </span>
                         </div>
                       ) : null}
-                      <p className="mt-2 break-words text-base font-medium text-[#14233c]">{activeRouteLabel}</p>
+                      <p className="mt-2 text-base font-medium text-[#14233c] [overflow-wrap:anywhere]">{activeRouteLabel}</p>
                     </div>
                   </div>
                   <div className="flex gap-3">
