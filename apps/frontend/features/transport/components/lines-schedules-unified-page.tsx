@@ -405,7 +405,7 @@ export function LinesSchedulesUnifiedPage({ lines, initialLineId, initialPanel =
   }, []);
 
   return (
-    <main className="min-h-screen bg-[#ebe4d4] px-2 text-[#14233c] font-sans sm:px-4 lg:px-0">
+    <main className="min-h-screen bg-[#ebe4d4] px-2 text-[#14233c] font-sans sm:px-4 lg:px-6">
       <section className="mx-auto min-h-screen max-w-[1460px] overflow-hidden rounded-[22px] border border-[#14233c]/12 bg-[#f5f1e6] shadow-2xl lg:rounded-[28px]">
         <ImmersiveHeader activeHref="/linhas" />
 
