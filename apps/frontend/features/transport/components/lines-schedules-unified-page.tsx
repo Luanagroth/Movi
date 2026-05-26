@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
@@ -234,6 +234,7 @@ const estimateDurationMinutes = (distanceKm: number, stopCount: number, mode?: T
 export function LinesSchedulesUnifiedPage({ lines, initialLineId, initialPanel = 'terrestrial', dataSource }: LinesSchedulesUnifiedPageProps) {
   const { isAuthenticated } = useAuthSession();
   const { isFavorite, toggleFavorite, pendingLineIds, error: favoritesError } = useFavorites();
+  const detailsRef = useRef<HTMLElement | null>(null);
   const [query, setQuery] = useState('');
   const dayType: ServiceDay = 'weekday';
   const [showStops, setShowStops] = useState(false);
@@ -397,6 +398,11 @@ export function LinesSchedulesUnifiedPage({ lines, initialLineId, initialPanel =
   }, [activeDirectionId, dataSource, selectedDisplayLine]);
 
   const visibleLines = filteredLines.length ? filteredLines : terrestrialLines;
+  const scrollToSelectedDetails = useCallback(() => {
+    window.requestAnimationFrame(() => {
+      detailsRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  }, []);
 
   return (
     <main className="min-h-screen bg-[#f5f1e6] text-[#14233c] font-sans">
@@ -450,8 +456,8 @@ export function LinesSchedulesUnifiedPage({ lines, initialLineId, initialPanel =
           </div>
         </section>
 
-        <section className="grid gap-8 px-8 py-10 lg:grid-cols-[360px_1fr] lg:px-12">
-          <aside className="rounded-3xl bg-[#f0eadc] p-8 shadow-sm">
+        <section className="grid gap-6 px-4 py-8 sm:px-8 lg:grid-cols-[360px_1fr] lg:gap-8 lg:px-12 lg:py-10">
+          <aside className="rounded-3xl bg-[#f0eadc] p-5 shadow-sm sm:p-8">
             <h2 className="text-sm font-black uppercase text-[#14233c]">Todas as linhas</h2>
             <p className="mt-2 text-sm font-medium text-[#14233c]/75">Navegue e selecione a linha desejada</p>
 
@@ -465,6 +471,7 @@ export function LinesSchedulesUnifiedPage({ lines, initialLineId, initialPanel =
                     onClick={() => {
                       setActivePanel('terrestrial');
                       setSelectedLineId(line.id);
+                      scrollToSelectedDetails();
                     }}
                     className={`flex w-full items-center gap-4 rounded-xl p-3 text-left transition ${active ? 'bg-[#ffd200] shadow-lg shadow-yellow-500/20' : 'hover:bg-white/70'}`}
                   >
@@ -481,7 +488,10 @@ export function LinesSchedulesUnifiedPage({ lines, initialLineId, initialPanel =
 
             <button
               type="button"
-              onClick={() => setActivePanel('ferry')}
+              onClick={() => {
+                setActivePanel('ferry');
+                scrollToSelectedDetails();
+              }}
               className={`mt-8 flex w-full items-center gap-4 rounded-2xl border p-6 text-left shadow-sm transition ${
                 activePanel === 'ferry'
                   ? 'border-[#14233c]/30 bg-[#ffd200]/40'
@@ -501,7 +511,10 @@ export function LinesSchedulesUnifiedPage({ lines, initialLineId, initialPanel =
             </button>
           </aside>
 
-          <section className="rounded-3xl border border-[#14233c]/10 bg-[#f8f3e8] p-8 shadow-sm">
+          <section
+            ref={detailsRef}
+            className="scroll-mt-6 rounded-3xl border border-[#14233c]/10 bg-[#f8f3e8] p-5 shadow-sm sm:p-8"
+          >
             {selectedDisplayLine ? (
               <>
                 {activePanel === 'ferry' && ferryLines.length > 1 ? (
@@ -512,7 +525,10 @@ export function LinesSchedulesUnifiedPage({ lines, initialLineId, initialPanel =
                         <button
                           key={line.id}
                           type="button"
-                          onClick={() => setSelectedFerryLineId(line.id)}
+                          onClick={() => {
+                            setSelectedFerryLineId(line.id);
+                            scrollToSelectedDetails();
+                          }}
                           className={`rounded-xl border px-4 py-3 text-left transition ${
                             selectedDisplayLine.id === line.id
                               ? 'border-[#14233c] bg-[#14233c] text-white shadow-sm'
@@ -530,10 +546,10 @@ export function LinesSchedulesUnifiedPage({ lines, initialLineId, initialPanel =
                   </div>
                 ) : null}
                 <div className="flex flex-wrap items-start justify-between gap-6">
-                  <div className="flex items-start gap-5">
+                  <div className="flex min-w-0 items-start gap-4 sm:gap-5">
                     <LineBadge label={selectedDisplayLine.code} tone="yellow" active />
-                    <div>
-                      <h2 className="text-3xl font-black tracking-[-0.04em] text-[#14233c]">{selectedDisplayLine.name}</h2>
+                    <div className="min-w-0">
+                      <h2 className="break-words text-2xl font-black tracking-normal text-[#14233c] sm:text-3xl">{selectedDisplayLine.name}</h2>
                       {ferryLabel ? (
                         <div className="mt-2 flex flex-wrap items-center gap-2">
                           <span className="rounded-full border border-[#14233c]/20 bg-white px-3 py-1 text-[11px] font-black uppercase tracking-[0.08em] text-[#14233c]">
@@ -548,7 +564,7 @@ export function LinesSchedulesUnifiedPage({ lines, initialLineId, initialPanel =
                           </span>
                         </div>
                       ) : null}
-                      <p className="mt-2 text-base font-medium text-[#14233c]">{activeRouteLabel}</p>
+                      <p className="mt-2 break-words text-base font-medium text-[#14233c]">{activeRouteLabel}</p>
                     </div>
                   </div>
                   <div className="flex gap-3">
@@ -579,19 +595,19 @@ export function LinesSchedulesUnifiedPage({ lines, initialLineId, initialPanel =
                     { icon: CreditCard, label: 'Tarifa', value: fareCardValue },
                     { icon: Bus, label: 'Tipo de serviço', value: selectedDisplayLine.mode === 'intercity' ? 'Intermunicipal' : selectedDisplayLine.mode === 'ferry' ? 'Hidroviário' : 'Convencional' },
                   ].map((item) => (
-                    <div key={item.label} className="flex items-center gap-4 rounded-xl border border-[#14233c]/10 bg-white/55 p-5">
+                    <div key={item.label} className="flex min-w-0 items-center gap-4 rounded-xl border border-[#14233c]/10 bg-white/55 p-5">
                       <item.icon size={26} className="text-[#14233c]" />
-                      <div>
+                      <div className="min-w-0">
                         <p className="text-xs font-medium text-[#14233c]/70">{item.label}</p>
-                        <p className="mt-1 text-base font-black text-[#14233c]">{item.value}</p>
+                        <p className="mt-1 break-words text-base font-black text-[#14233c]">{item.value}</p>
                       </div>
                     </div>
                   ))}
                 </div>
 
                 {activePanel === 'ferry' ? (
-                  <div className="mt-6 rounded-xl border border-[#14233c]/10 bg-white/70 p-5">
-                    <div className="mb-4 flex items-center justify-between gap-3">
+                  <div className="mt-6 rounded-xl border border-[#14233c]/10 bg-white/70 p-4 sm:p-5">
+                    <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
                       <h3 className="text-sm font-black uppercase tracking-[0.08em] text-[#14233c]">Tarifas da travessia</h3>
                       {isPedestrianFerry(selectedDisplayLine) ? (
                         <span className="rounded-full bg-green-100 px-3 py-1 text-xs font-black uppercase text-green-800">Gratuita</span>
@@ -606,14 +622,17 @@ export function LinesSchedulesUnifiedPage({ lines, initialLineId, initialPanel =
                       </div>
                     ) : ferryFareRows.length ? (
                       <div className="overflow-hidden rounded-xl border border-[#14233c]/10 bg-white">
-                        <div className="grid grid-cols-[1fr_auto] border-b border-[#14233c]/10 bg-[#f5f1e6] px-4 py-3 text-xs font-black uppercase tracking-[0.06em] text-[#14233c]">
+                        <div className="hidden grid-cols-[minmax(0,1fr)_auto] border-b border-[#14233c]/10 bg-[#f5f1e6] px-4 py-3 text-xs font-black uppercase tracking-normal text-[#14233c] sm:grid">
                           <span>Categoria</span>
                           <span>Valor</span>
                         </div>
                         {ferryFareRows.map((row) => (
-                          <div key={`${row.category}-${row.price}`} className="grid grid-cols-[1fr_auto] border-b border-[#14233c]/10 px-4 py-3 text-sm last:border-b-0">
-                            <span className="font-medium text-[#14233c]">{row.category}</span>
-                            <span className="font-black text-[#14233c]">{row.price || '-'}</span>
+                          <div
+                            key={`${row.category}-${row.price}`}
+                            className="grid gap-1 border-b border-[#14233c]/10 px-4 py-3 text-sm last:border-b-0 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-center sm:gap-4"
+                          >
+                            <span className="min-w-0 break-words font-medium text-[#14233c]">{row.category}</span>
+                            <span className="font-black text-[#14233c] sm:text-right">{row.price || '-'}</span>
                           </div>
                         ))}
                       </div>
