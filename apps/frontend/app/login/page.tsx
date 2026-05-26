@@ -5,8 +5,7 @@ import Image from 'next/image';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useEffect, useMemo, useState } from 'react';
 import { ArrowLeft, Eye, EyeOff, Loader2, LogIn, ShieldCheck, UserRound } from 'lucide-react';
-import { AccountHeaderButton } from '@/components/account-header-button';
-import { MoviWordmark } from '@/components/movi-wordmark';
+import { ImmersiveHeader } from '@/components/immersive-header';
 import { useAuthSession } from '@/hooks/use-auth-session';
 import { DEFAULT_LOCALE, type UiLocale } from '@/lib/ui-copy';
 import { loginWithEmail, registerWithEmail } from '@/services/auth/auth.service';
@@ -284,26 +283,7 @@ export default function LoginPage() {
   return (
     <main className="min-h-screen bg-[#f5f1e6] text-[#14233c] font-sans">
       <section className="mx-auto min-h-screen max-w-[1460px] overflow-hidden bg-[#f5f1e6] shadow-2xl lg:rounded-[28px]">
-        <header className="absolute left-0 right-0 top-0 z-30 mx-auto flex max-w-[1460px] items-center justify-between px-8 py-7 lg:px-12">
-          <Link href="/">
-            <MoviWordmark subtitle="PROJETOS INDEPENDENTES" />
-          </Link>
-
-          <nav className="hidden items-center gap-10 text-sm font-extrabold uppercase tracking-tight text-[#14233c] lg:flex">
-            <Link className="border-b-2 border-[#1e7f3b] pb-1 text-[#1e7f3b]" href="/">
-              Início
-            </Link>
-            <Link href="/linhas">Linhas e horários</Link>
-            <Link href="/alertas">Notícias</Link>
-            <Link href="/bilhetes">Bilhetes</Link>
-            <Link href="/contato">Contato</Link>
-          </nav>
-
-          <AccountHeaderButton
-            guestClassName="hidden items-center gap-3 rounded-full bg-[#071d39] px-7 py-4 text-xs font-extrabold uppercase tracking-wide text-white shadow-xl lg:flex"
-            iconClassName="hidden h-11 w-11 items-center justify-center rounded-full bg-[#071d39] text-white shadow-xl lg:inline-flex"
-          />
-        </header>
+        <ImmersiveHeader />
 
         <section className="relative min-h-[700px] overflow-hidden">
           <div className="absolute inset-0">
@@ -322,7 +302,7 @@ export default function LoginPage() {
               </Link>
 
               <p className="mt-6 text-sm font-black uppercase tracking-[0.24em] text-[#17803e]">{text.accessTag}</p>
-              <h1 className="mt-3 text-5xl font-black leading-[0.98] tracking-[-0.05em] text-[#10213d] lg:text-6xl">
+              <h1 className="mt-3 text-4xl font-black leading-[0.98] tracking-normal text-[#10213d] sm:text-5xl lg:text-6xl">
                 Acesse sua
                 <br />
                 <span className="text-[#16803f]">conta MOVI</span>

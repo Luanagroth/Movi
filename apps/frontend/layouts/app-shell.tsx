@@ -26,6 +26,7 @@ export function AppShell({ children }: { children: ReactNode }) {
     pathname === '/bilhetes' ||
     pathname === '/alertas' ||
     pathname === '/contato' ||
+    pathname === '/trabalhe-conosco' ||
     pathname === '/login';
 
   if (isImmersiveRoute) {

@@ -8,11 +8,15 @@
 
 html {
   scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
   @apply bg-slate-100 text-slate-900 antialiased;
   font-feature-settings: 'rlig' 1, 'calt' 1;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 * {

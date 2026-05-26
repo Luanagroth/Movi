@@ -25,8 +25,7 @@ import {
   Wallet,
   Mic,
 } from 'lucide-react';
-import { AccountHeaderButton } from '@/components/account-header-button';
-import { MoviWordmark } from '@/components/movi-wordmark';
+import { ImmersiveHeader } from '@/components/immersive-header';
 
 const heroImage = '/images/cityline/onibus.png';
 const recargaPontos = [
@@ -45,28 +44,6 @@ const ferryFares = [
   { icon: Bus, vehicle: 'Caminhão', fare: 'R$ 74,10' },
   { icon: Bus, vehicle: 'Ônibus', fare: 'R$ 98,60' },
 ];
-
-function Header() {
-  return (
-    <header className="absolute left-0 right-0 top-0 z-30 mx-auto flex max-w-[1460px] items-center justify-between px-8 py-7 lg:px-12">
-      <Link href="/">
-        <MoviWordmark subtitle="PROJETOS INDEPENDENTES" />
-      </Link>
-
-      <nav className="hidden items-center gap-10 text-sm font-extrabold uppercase tracking-tight text-[#14233c] lg:flex">
-        <Link href="/">Início</Link>
-        <Link href="/linhas">Linhas e horários</Link>
-        <Link className="border-b-2 border-[#1e7f3b] pb-1 text-[#1e7f3b]" href="/bilhetes">
-          Bilhetes
-        </Link>
-        <Link href="/alertas">Notícias</Link>
-        <Link href="/contato">Contato</Link>
-      </nav>
-
-      <AccountHeaderButton guestClassName="hidden items-center gap-3 rounded-full bg-[#071d39] px-7 py-4 text-xs font-extrabold uppercase tracking-wide text-white shadow-xl lg:flex" />
-    </header>
-  );
-}
 
 function SectionTitle({ icon: Icon, title }: { icon: ComponentType<{ size?: number; className?: string }>; title: string }) {
   return (
@@ -180,7 +157,7 @@ export default function BilhetesPage() {
   return (
     <main className="min-h-screen bg-[#f5f1e6] text-[#14233c] font-sans">
       <section className="mx-auto min-h-screen max-w-[1460px] overflow-hidden bg-[#f5f1e6] shadow-2xl lg:rounded-[28px]">
-        <Header />
+        <ImmersiveHeader activeHref="/bilhetes" />
 
         <section className="relative min-h-[560px] overflow-hidden">
           <div className="absolute inset-0">
@@ -194,7 +171,7 @@ export default function BilhetesPage() {
           <div className="relative z-10 flex min-h-[560px] flex-col justify-center px-8 pt-28 lg:px-12">
             <div className="max-w-[570px]">
               <p className="mb-6 text-sm font-black uppercase tracking-[0.24em] text-[#14233c]">Bilhetes e tarifas</p>
-              <h1 className="text-5xl font-black leading-[0.98] tracking-[-0.06em] text-[#10213d] lg:text-7xl">
+              <h1 className="text-4xl font-black leading-[0.98] tracking-normal text-[#10213d] sm:text-5xl lg:text-7xl">
                 Transparência
                 <br />
                 <span className="text-[#16803f]">e praticidade</span>
