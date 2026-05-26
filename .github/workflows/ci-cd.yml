@@ -32,6 +32,9 @@ jobs:
       - name: Push database schema
         run: npm run db:push --workspace @cityline/backend
 
+      - name: Build shared package
+        run: npm run build --workspace @cityline/shared
+
       - name: Seed database
         run: npm run db:seed --workspace @cityline/backend
 
