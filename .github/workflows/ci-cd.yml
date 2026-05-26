@@ -10,6 +10,8 @@ jobs:
   ci:
     name: Lint, Typecheck, Test and Build
     runs-on: ubuntu-latest
+    env:
+      DATABASE_URL: file:./dev.db
 
     steps:
       - name: Checkout repository
@@ -48,7 +50,7 @@ jobs:
   deploy_frontend:
     name: Deploy Frontend to Vercel
     needs: ci
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main' && secrets.VERCEL_TOKEN != '' && secrets.VERCEL_ORG_ID != '' && secrets.VERCEL_PROJECT_ID != ''
     runs-on: ubuntu-latest
 
     steps:
