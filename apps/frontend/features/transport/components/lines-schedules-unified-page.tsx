@@ -405,8 +405,8 @@ export function LinesSchedulesUnifiedPage({ lines, initialLineId, initialPanel =
   }, []);
 
   return (
-    <main className="min-h-screen bg-[#f5f1e6] text-[#14233c] font-sans">
-      <section className="mx-auto min-h-screen max-w-[1460px] overflow-hidden bg-[#f5f1e6] shadow-2xl lg:rounded-[28px]">
+    <main className="min-h-screen bg-[#ebe4d4] px-2 text-[#14233c] font-sans sm:px-4 lg:px-0">
+      <section className="mx-auto min-h-screen max-w-[1460px] overflow-hidden rounded-[22px] border border-[#14233c]/12 bg-[#f5f1e6] shadow-2xl lg:rounded-[28px]">
         <ImmersiveHeader activeHref="/linhas" />
 
         <section className="relative min-h-[560px] overflow-hidden">
@@ -433,7 +433,7 @@ export function LinesSchedulesUnifiedPage({ lines, initialLineId, initialPanel =
           </div>
         </section>
 
-        <section className="relative z-20 mx-auto -mt-12 max-w-[820px] px-8">
+        <section className="relative z-20 mx-auto -mt-12 max-w-[820px] px-4 sm:px-8">
           <div className="grid gap-3 rounded-3xl border border-[#14233c]/10 bg-white/92 p-4 shadow-lg backdrop-blur md:grid-cols-[1fr_auto] md:items-center">
             <label className="flex items-center gap-3 rounded-2xl border border-[#14233c]/15 bg-white px-4 py-3">
               <Search size={20} className="text-[#14233c]" />
@@ -456,8 +456,8 @@ export function LinesSchedulesUnifiedPage({ lines, initialLineId, initialPanel =
           </div>
         </section>
 
-        <section className="grid gap-6 px-4 py-8 sm:px-8 lg:grid-cols-[360px_1fr] lg:gap-8 lg:px-12 lg:py-10">
-          <aside className="rounded-3xl bg-[#f0eadc] p-5 shadow-sm sm:p-8">
+        <section className="grid gap-6 px-3 py-8 sm:px-8 lg:grid-cols-[360px_1fr] lg:gap-8 lg:px-12 lg:py-10">
+          <aside className="rounded-3xl border border-[#14233c]/10 bg-[#f0eadc] p-5 shadow-sm sm:p-8">
             <h2 className="text-sm font-black uppercase text-[#14233c]">Todas as linhas</h2>
             <p className="mt-2 text-sm font-medium text-[#14233c]/75">Navegue e selecione a linha desejada</p>
 
@@ -513,7 +513,7 @@ export function LinesSchedulesUnifiedPage({ lines, initialLineId, initialPanel =
 
           <section
             ref={detailsRef}
-            className="scroll-mt-6 rounded-3xl border border-[#14233c]/10 bg-[#f8f3e8] p-5 shadow-sm sm:p-8"
+            className="scroll-mt-6 rounded-3xl border border-[#14233c]/14 bg-[#f8f3e8] p-5 shadow-[0_18px_45px_rgba(20,35,60,0.10)] sm:p-8"
           >
             {selectedDisplayLine ? (
               <>

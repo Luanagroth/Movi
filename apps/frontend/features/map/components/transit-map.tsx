@@ -108,7 +108,15 @@ export function TransitMap({
         </div>
       </div>
       <div className="h-[340px] overflow-hidden rounded-2xl border border-slate-200">
-        <MapContainer center={[center.lat, center.lng]} zoom={12} scrollWheelZoom className="h-full w-full">
+        <MapContainer
+          center={[center.lat, center.lng]}
+          zoom={12}
+          scrollWheelZoom
+          touchZoom="center"
+          doubleClickZoom
+          zoomControl
+          className="h-full w-full"
+        >
           <MapViewportSync points={focusPoints.length ? focusPoints : [center]} />
 
           <TileLayer attribution="&copy; OpenStreetMap contributors" url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />

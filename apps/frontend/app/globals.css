@@ -27,6 +27,7 @@ body {
   width: 100%;
   height: 100%;
   z-index: 0;
+  touch-action: pan-x pan-y pinch-zoom;
 }
 
 .leaflet-tooltip.map-stop-number-chip {
